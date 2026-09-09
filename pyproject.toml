@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swarm-worlds"
+dynamic = ["version"]
+description = "Maps, robot descriptions and textures the Swarm drone simulator loads"
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "Swarm" }
+]
+keywords = [
+  "autonomous-drones",
+  "pybullet",
+  "simulation",
+  "swarm",
+]
+classifiers = [
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering",
+]
+
+[project.urls]
+Homepage = "https://github.com/swarm-subnet/swarm-worlds"
+Repository = "https://github.com/swarm-subnet/swarm-worlds"
+Issues = "https://github.com/swarm-subnet/swarm-worlds/issues"
+
+[tool.setuptools]
+include-package-data = true
+license-files = ["LICENSE"]
+
+[tool.setuptools.packages.find]
+include = ["swarm_worlds*"]
+
+[tool.setuptools.package-data]
+swarm_worlds = ["maps/**/*", "robots/**/*", "textures/**/*"]
+
+[tool.setuptools.exclude-package-data]
+"*" = ["__pycache__/*", "*.py[cod]"]
+
+[tool.setuptools.dynamic]
+version = { attr = "swarm_worlds.__version__" }
+
+[tool.ruff]
+line-length = 200
+target-version = "py311"
+extend-exclude = ["swarm_worlds/maps", "swarm_worlds/robots", "swarm_worlds/textures"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
