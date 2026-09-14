@@ -1,0 +1,36 @@
+# Run on every commit once installed:  pre-commit install
+# Run over the whole tree on demand:   pre-commit run --all-files
+#
+# The asset folders are excluded from the text hooks; third-party packs keep
+# their original line endings and whitespace. check-added-large-files still
+# sees them, which is where a large binary would land.
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+        exclude: &skip |
+          (?x)^(
+            swarm_worlds/maps/.*|
+            swarm_worlds/robots/.*|
+            swarm_worlds/textures/.*
+          )$
+      - id: end-of-file-fixer
+        exclude: *skip
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: check-toml
+      - id: check-json
+      - id: check-xml
+        files: \.urdf$
+      - id: check-case-conflict
+      - id: check-added-large-files
+        args: [--maxkb=51200]
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.16.5
+    hooks:
+      - id: ruff-check
+        args: [--fix]
+        exclude: *skip

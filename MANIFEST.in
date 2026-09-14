@@ -1,0 +1,7 @@
+include LICENSE
+include README.md
+recursive-include swarm_worlds/maps *
+recursive-include swarm_worlds/robots *
+recursive-include swarm_worlds/textures *
+global-exclude __pycache__/*
+global-exclude *.py[cod]
