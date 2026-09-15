@@ -24,7 +24,7 @@ names the simulator has always used.
 
 from importlib.resources import files
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 
 _ROOT = files(__name__)
 
@@ -42,3 +42,8 @@ def robots_dir() -> str:
 def textures_dir() -> str:
     """Root of the standalone textures the map builders apply to generated geometry."""
     return str(_ROOT / "textures")
+
+
+def skies_dir() -> str:
+    """Root of the sky photographs a daylight family paints behind its colour camera, with their manifest."""
+    return str(_ROOT / "skies")

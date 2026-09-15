@@ -38,7 +38,7 @@ license-files = ["LICENSE"]
 include = ["swarm_worlds*"]
 
 [tool.setuptools.package-data]
-swarm_worlds = ["maps/**/*", "robots/**/*", "textures/**/*"]
+swarm_worlds = ["maps/**/*", "robots/**/*", "textures/**/*", "skies/**/*"]
 
 [tool.setuptools.exclude-package-data]
 "*" = ["__pycache__/*", "*.py[cod]"]
@@ -49,7 +49,7 @@ version = { attr = "swarm_worlds.__version__" }
 [tool.ruff]
 line-length = 200
 target-version = "py311"
-extend-exclude = ["swarm_worlds/maps", "swarm_worlds/robots", "swarm_worlds/textures"]
+extend-exclude = ["swarm_worlds/maps", "swarm_worlds/robots", "swarm_worlds/skies", "swarm_worlds/textures"]
 
 [tool.ruff.lint]
 select = ["E4", "E7", "E9", "F", "I"]

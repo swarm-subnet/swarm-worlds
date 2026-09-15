@@ -1,0 +1,134 @@
+{
+  "format": "equirectangular RGB PNG, 2048 x 1024, top row the zenith, column 0 the +x heading, sRGB-encoded linear radiance scaled so the brightest one percent of the upper hemisphere clips to white",
+  "source": "Poly Haven pure-sky HDRIs, CC0, https://polyhaven.com/hdris/skies",
+  "skies": [
+    {
+      "file": "autumn_field_puresky.png",
+      "name": "autumn_field_puresky",
+      "sun_azimuth_deg": 216.2,
+      "sun_elevation_deg": 29.1,
+      "look": "clear, thin haze",
+      "source": "https://polyhaven.com/a/autumn_field_puresky"
+    },
+    {
+      "file": "belfast_sunset_puresky.png",
+      "name": "belfast_sunset_puresky",
+      "sun_azimuth_deg": 215.8,
+      "sun_elevation_deg": 2.6,
+      "look": "sunset under cloud",
+      "source": "https://polyhaven.com/a/belfast_sunset_puresky"
+    },
+    {
+      "file": "industrial_sunset_puresky.png",
+      "name": "industrial_sunset_puresky",
+      "sun_azimuth_deg": 216.4,
+      "sun_elevation_deg": 4.2,
+      "look": "sunset, broken cloud",
+      "source": "https://polyhaven.com/a/industrial_sunset_puresky"
+    },
+    {
+      "file": "kloofendal_28d_misty_puresky.png",
+      "name": "kloofendal_28d_misty_puresky",
+      "sun_azimuth_deg": 169.1,
+      "sun_elevation_deg": 28.6,
+      "look": "misty, sun veiled",
+      "source": "https://polyhaven.com/a/kloofendal_28d_misty_puresky"
+    },
+    {
+      "file": "kloofendal_38d_partly_cloudy_puresky.png",
+      "name": "kloofendal_38d_partly_cloudy_puresky",
+      "sun_azimuth_deg": 216.0,
+      "sun_elevation_deg": 38.0,
+      "look": "partly cloudy",
+      "source": "https://polyhaven.com/a/kloofendal_38d_partly_cloudy_puresky"
+    },
+    {
+      "file": "kloofendal_43d_clear_puresky.png",
+      "name": "kloofendal_43d_clear_puresky",
+      "sun_azimuth_deg": 216.0,
+      "sun_elevation_deg": 43.0,
+      "look": "clear",
+      "source": "https://polyhaven.com/a/kloofendal_43d_clear_puresky"
+    },
+    {
+      "file": "kloofendal_48d_partly_cloudy_puresky.png",
+      "name": "kloofendal_48d_partly_cloudy_puresky",
+      "sun_azimuth_deg": 214.2,
+      "sun_elevation_deg": 47.9,
+      "look": "cumulus",
+      "source": "https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky"
+    },
+    {
+      "file": "qwantani_afternoon_puresky.png",
+      "name": "qwantani_afternoon_puresky",
+      "sun_azimuth_deg": 216.0,
+      "sun_elevation_deg": 40.9,
+      "look": "clear",
+      "source": "https://polyhaven.com/a/qwantani_afternoon_puresky"
+    },
+    {
+      "file": "qwantani_late_afternoon_puresky.png",
+      "name": "qwantani_late_afternoon_puresky",
+      "sun_azimuth_deg": 216.0,
+      "sun_elevation_deg": 19.2,
+      "look": "clear, low sun",
+      "source": "https://polyhaven.com/a/qwantani_late_afternoon_puresky"
+    },
+    {
+      "file": "qwantani_mid_morning_puresky.png",
+      "name": "qwantani_mid_morning_puresky",
+      "sun_azimuth_deg": 215.9,
+      "sun_elevation_deg": 40.2,
+      "look": "clear",
+      "source": "https://polyhaven.com/a/qwantani_mid_morning_puresky"
+    },
+    {
+      "file": "qwantani_noon_puresky.png",
+      "name": "qwantani_noon_puresky",
+      "sun_azimuth_deg": 216.0,
+      "sun_elevation_deg": 49.9,
+      "look": "clear, high sun",
+      "source": "https://polyhaven.com/a/qwantani_noon_puresky"
+    },
+    {
+      "file": "rustig_koppie_puresky.png",
+      "name": "rustig_koppie_puresky",
+      "sun_azimuth_deg": 214.9,
+      "sun_elevation_deg": 28.4,
+      "look": "clear, thin cloud",
+      "source": "https://polyhaven.com/a/rustig_koppie_puresky"
+    },
+    {
+      "file": "sunflowers_puresky.png",
+      "name": "sunflowers_puresky",
+      "sun_azimuth_deg": 216.4,
+      "sun_elevation_deg": 43.3,
+      "look": "cumulus",
+      "source": "https://polyhaven.com/a/sunflowers_puresky"
+    },
+    {
+      "file": "syferfontein_18d_clear_puresky.png",
+      "name": "syferfontein_18d_clear_puresky",
+      "sun_azimuth_deg": 215.8,
+      "sun_elevation_deg": 18.4,
+      "look": "clear, low sun",
+      "source": "https://polyhaven.com/a/syferfontein_18d_clear_puresky"
+    },
+    {
+      "file": "syferfontein_6d_clear_puresky.png",
+      "name": "syferfontein_6d_clear_puresky",
+      "sun_azimuth_deg": 215.7,
+      "sun_elevation_deg": 5.9,
+      "look": "clear, sun near the horizon",
+      "source": "https://polyhaven.com/a/syferfontein_6d_clear_puresky"
+    },
+    {
+      "file": "wasteland_clouds_puresky.png",
+      "name": "wasteland_clouds_puresky",
+      "sun_azimuth_deg": 215.8,
+      "sun_elevation_deg": 7.4,
+      "look": "low sun under cloud",
+      "source": "https://polyhaven.com/a/wasteland_clouds_puresky"
+    }
+  ]
+}

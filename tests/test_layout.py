@@ -15,6 +15,8 @@
 # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
+"""Checks that every asset root, manifest entry, robot description, material library and sky the package ships resolves."""
+
 import json
 import os
 import re
@@ -28,6 +30,7 @@ import swarm_worlds
 MAPS = Path(swarm_worlds.maps_dir())
 ROBOTS = Path(swarm_worlds.robots_dir())
 TEXTURES = Path(swarm_worlds.textures_dir())
+SKIES = Path(swarm_worlds.skies_dir())
 
 # GitHub refuses files above 100 MB and warns above 50 MB.
 MAX_FILE_BYTES = 50 * 1024 * 1024
@@ -58,26 +61,51 @@ EXPECTED_MAP_DIRS = {
 
 
 def _all_files(root: Path):
+    """Every file under a root, recursively."""
     return [p for p in root.rglob("*") if p.is_file()]
 
 
 def test_roots_are_absolute_directories():
-    for root in (MAPS, ROBOTS, TEXTURES):
+    """Each asset root resolves to an absolute directory."""
+    for root in (MAPS, ROBOTS, TEXTURES, SKIES):
         assert root.is_absolute()
         assert root.is_dir()
 
 
 @pytest.mark.parametrize("rel", sorted(EXPECTED_MAP_DIRS))
 def test_expected_map_directories_exist(rel):
+    """Every folder the simulator addresses below the maps root exists."""
     assert (MAPS / rel).is_dir()
 
 
 def test_textures_present():
+    """The three standalone textures are shipped."""
     for name in ("tao.png", "Swarm.png", "Swarm_2.png"):
         assert (TEXTURES / name).is_file()
 
 
+def test_sky_manifest_points_at_real_equirectangular_files():
+    """Every sky in the manifest is a shipped 2048 x 1024 8-bit RGB PNG with a sun position and a source."""
+    manifest = json.loads((SKIES / "skies.json").read_text(encoding="utf-8"))
+    skies = manifest["skies"]
+    assert len(skies) >= 8
+    assert {p.name for p in SKIES.glob("*.png")} == {sky["file"] for sky in skies}
+    for sky in skies:
+        path = SKIES / sky["file"]
+        assert path.is_file(), sky["file"]
+        assert 0.0 <= sky["sun_azimuth_deg"] < 360.0
+        assert 0.0 < sky["sun_elevation_deg"] < 90.0
+        assert sky["source"].startswith("https://polyhaven.com/a/")
+        with open(path, "rb") as handle:
+            head = handle.read(29)
+        width, height = int.from_bytes(head[16:20], "big"), int.from_bytes(head[20:24], "big")
+        bit_depth, colour_type = head[24], head[25]
+        assert (width, height) == (2048, 1024), sky["file"]
+        assert (bit_depth, colour_type) == (8, 2), sky["file"]
+
+
 def test_lost_person_manifest_points_at_real_files():
+    """Every lost-person character in the manifest has its model file, a scale and maps."""
     people = MAPS / "custom" / "people" / "lost_person_characters"
     manifest = json.loads((people / "manifest.json").read_text(encoding="utf-8"))
     characters = manifest["characters"]
@@ -95,6 +123,7 @@ MESHES_FROM_GYM = {"cf2.dae"}
 
 @pytest.mark.parametrize("urdf", sorted(p.name for p in ROBOTS.glob("*.urdf")))
 def test_urdf_parses_and_meshes_resolve(urdf):
+    """Each robot description parses and every mesh it names is shipped, but for the one staged from the gym."""
     path = ROBOTS / urdf
     root = ET.parse(path).getroot()
     assert root.tag == "robot"
@@ -105,13 +134,15 @@ def test_urdf_parses_and_meshes_resolve(urdf):
 
 
 def test_robots_contain_the_two_swarm_drones():
+    """The two drone descriptions and the tello mesh folder are shipped."""
     assert (ROBOTS / "tello.urdf").is_file()
     assert (ROBOTS / "interceptor_drone.urdf").is_file()
     assert (ROBOTS / "tello").is_dir()
 
 
 def test_no_file_exceeds_github_limit():
-    too_big = [p for root in (MAPS, ROBOTS, TEXTURES) for p in _all_files(root) if p.stat().st_size > MAX_FILE_BYTES]
+    """No shipped file is above the size GitHub refuses."""
+    too_big = [p for root in (MAPS, ROBOTS, TEXTURES, SKIES) for p in _all_files(root) if p.stat().st_size > MAX_FILE_BYTES]
     assert too_big == []
 
 
@@ -125,6 +156,7 @@ KNOWN_MISSING_MTL = {
 
 
 def test_obj_material_libraries_resolve():
+    """Every material library an OBJ names is shipped, except the two known missing ones."""
     missing = set()
     for obj in MAPS.rglob("*.obj"):
         for line in obj.read_text(encoding="utf-8", errors="ignore").splitlines():
@@ -136,10 +168,12 @@ def test_obj_material_libraries_resolve():
 
 
 def test_version_matches_tag_format():
+    """The package version is a plain three-number tag."""
     assert re.fullmatch(r"\d+\.\d+\.\d+", swarm_worlds.__version__)
 
 
 def test_package_data_is_installed_not_only_checked_out():
+    """The asset roots come from the installed package, not from a source checkout."""
     # A wheel or git install must ship the files, not just an editable checkout.
     assert os.path.isfile(MAPS / "README.md")
     assert os.path.isfile(MAPS / "custom" / "LICENSE_CUSTOM_MAPS.md")

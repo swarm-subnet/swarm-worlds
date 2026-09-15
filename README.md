@@ -98,6 +98,7 @@ here decide what it is built from.
 | **Open terrain** | generated from the seed; the landing pad texture in `textures/` |
 | **Office** | `custom/office`, the baked digital twin with its pieces manifest |
 | **Search and Rescue targets** | `custom/people`, 32 lost-person characters and the mannequin |
+| **Daylight skies** | `skies/`, sixteen photographed skies a daylight family turns to the seed's sun |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -114,13 +115,15 @@ swarm_worlds/
     kenney/          Kenney kits: suburban, commercial, roads, car, conveyor, furniture, holiday
     other_sources/   third-party assets kept under their original licenses
   robots/            tello.urdf with its mesh folder, interceptor_drone.urdf
+  skies/             sky photographs, 2048 x 1024 equirectangular PNG, with skies.json giving each sun's heading and height
   textures/          tao.png (landing pad), Swarm.png and Swarm_2.png (wall posters)
 docs/img/            the pictures on this page
 tests/               checks that every root, manifest entry, URDF and material library resolves
 ```
 
 Every folder keeps the license and source notice of the pack it came from. `maps/README.md` and
-`maps/custom/LICENSE_CUSTOM_MAPS.md` describe the origin of each group.
+`maps/custom/LICENSE_CUSTOM_MAPS.md` describe the origin of each group; `skies/README.md` says where
+each sky comes from and how the files were made.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,6 +138,7 @@ import swarm_worlds
 swarm_worlds.maps_dir()      # .../swarm_worlds/maps
 swarm_worlds.robots_dir()    # .../swarm_worlds/robots
 swarm_worlds.textures_dir()  # .../swarm_worlds/textures
+swarm_worlds.skies_dir()     # .../swarm_worlds/skies
 ```
 
 Each function returns an absolute path. Assets are addressed by their relative name below that
