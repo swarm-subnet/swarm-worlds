@@ -1,0 +1,3 @@
+newmtl pickup_wheel_front_right
+Kd 1 1 1
+map_Kd pickup_wheel_front_right.png

@@ -11,6 +11,16 @@ organizational category, not a replacement for an asset's license notice.
 - `forest/`: forest asset packs; preserve each pack's included source and
   license information.
 
+## Solar park
+
+`custom/solar/` is a 1:1 replica of a real photovoltaic park, read by the solar map builder in the
+swarm repository. The seed decides how much of the forest and the grass stands and when the movers
+move; everything else stays where the real park has it.
+
+- `manifest.json`: every piece, its placements, and the forest entry.
+- `park/`, `terrain/`, `grass/`, `movers/`: the pieces, one folder per group.
+- `plants/`: the forest table and the tree meshes it names.
+
 ## Lost-person characters
 
 `custom/people/lost_person_characters/` contains character targets intended

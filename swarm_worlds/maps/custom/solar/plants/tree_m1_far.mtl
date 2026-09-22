@@ -1,0 +1,3 @@
+newmtl tree_m1_far
+Kd 1 1 1
+map_Kd tree_m1_far_leaves.png

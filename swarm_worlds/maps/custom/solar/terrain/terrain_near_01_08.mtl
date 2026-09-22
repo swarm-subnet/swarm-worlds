@@ -1,0 +1,3 @@
+newmtl terrain_near_01_08
+Kd 1 1 1
+map_Kd terrain_near_01_08.png

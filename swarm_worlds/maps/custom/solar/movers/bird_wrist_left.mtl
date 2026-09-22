@@ -1,0 +1,3 @@
+newmtl bird_wrist_left
+Kd 1 1 1
+map_Kd bird_wrist_left.png

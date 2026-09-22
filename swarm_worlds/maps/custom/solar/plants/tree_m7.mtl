@@ -1,0 +1,3 @@
+newmtl tree_m7
+Kd 1 1 1
+map_Kd tree_m7_leaves.png

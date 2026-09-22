@@ -1,0 +1,3 @@
+newmtl bird_root
+Kd 1 1 1
+map_Kd bird_root.png

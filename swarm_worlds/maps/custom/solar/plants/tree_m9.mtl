@@ -1,0 +1,3 @@
+newmtl tree_m9
+Kd 1 1 1
+map_Kd tree_m9_leaves.png

@@ -1,0 +1,3 @@
+newmtl gate
+Kd 1 1 1
+map_Kd gate.png

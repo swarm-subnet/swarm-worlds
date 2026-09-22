@@ -1,0 +1,3 @@
+newmtl service_object
+Kd 1 1 1
+map_Kd service_object.png

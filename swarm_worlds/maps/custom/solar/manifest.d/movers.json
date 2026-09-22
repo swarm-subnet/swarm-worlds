@@ -1,0 +1,1302 @@
+{
+ "group": "movers",
+ "source": "manolas_phase6f.blend",
+ "source_sha256_prefix": "cfa4b147f93d085c",
+ "frame": 1501,
+ "written": "2026-09-22 00:12:20",
+ "notes": "25 items, 64908 triangles, 134764 placed; the pickup and the bird follow their path tables from the scene, and the goat walks a 20-frame cycle stored as vertex poses in goat_poses.npz.",
+ "items": [
+  {
+   "name": "goat",
+   "obj": "goat.obj",
+   "texture": "goat.png",
+   "triangles": 17464,
+   "bounds_min": [
+    -0.1506,
+    -0.65,
+    0.0
+   ],
+   "bounds_max": [
+    0.155,
+    0.6632,
+    0.9822
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [],
+   "collision": "none",
+   "specular": 0.0,
+   "obj_vertices": 8780,
+   "render_vertices": 52392
+  },
+  {
+   "name": "pickup_body",
+   "obj": "pickup_body.obj",
+   "texture": "pickup_body.png",
+   "triangles": 26232,
+   "bounds_min": [
+    -2.6903,
+    -1.175,
+    -0.205
+   ],
+   "bounds_max": [
+    2.6523,
+    1.175,
+    1.5718
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [],
+   "collision": "box",
+   "specular": 0.22
+  },
+  {
+   "name": "pickup_glass",
+   "obj": "pickup_glass.obj",
+   "texture": "pickup_glass.png",
+   "triangles": 2264,
+   "bounds_min": [
+    -2.583,
+    -0.8605,
+    0.502
+   ],
+   "bounds_max": [
+    2.5567,
+    0.8605,
+    1.3831
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [
+    "glass",
+    "double_sided"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "pickup_wheel_front_left",
+   "obj": "pickup_wheel_front_left.obj",
+   "texture": "pickup_wheel_front_left.png",
+   "triangles": 2643,
+   "bounds_min": [
+    -0.36,
+    -0.1214,
+    -0.36
+   ],
+   "bounds_max": [
+    0.36,
+    0.159,
+    0.36
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "pickup_wheel_front_right",
+   "obj": "pickup_wheel_front_right.obj",
+   "texture": "pickup_wheel_front_right.png",
+   "triangles": 2644,
+   "bounds_min": [
+    -0.36,
+    -0.159,
+    -0.36
+   ],
+   "bounds_max": [
+    0.36,
+    0.1214,
+    0.36
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "pickup_wheel_rear_left",
+   "obj": "pickup_wheel_rear_left.obj",
+   "texture": "pickup_wheel_rear_left.png",
+   "triangles": 2644,
+   "bounds_min": [
+    -0.3599,
+    -0.1214,
+    -0.36
+   ],
+   "bounds_max": [
+    0.36,
+    0.159,
+    0.36
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "pickup_wheel_rear_right",
+   "obj": "pickup_wheel_rear_right.obj",
+   "texture": "pickup_wheel_rear_right.png",
+   "triangles": 2644,
+   "bounds_min": [
+    -0.36,
+    -0.159,
+    -0.36
+   ],
+   "bounds_max": [
+    0.36,
+    0.1216,
+    0.36
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "bird_root",
+   "obj": "bird_root.obj",
+   "texture": "bird_root.png",
+   "triangles": 3666,
+   "bounds_min": [
+    -0.063,
+    -0.1298,
+    -0.0723
+   ],
+   "bounds_max": [
+    0.0617,
+    0.1468,
+    0.0678
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [
+    "double_sided"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "bird_head",
+   "obj": "bird_head.obj",
+   "texture": "bird_head.png",
+   "triangles": 1835,
+   "bounds_min": [
+    -0.0391,
+    -0.0275,
+    -0.0279
+   ],
+   "bounds_max": [
+    0.0385,
+    0.0982,
+    0.0448
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [
+    "double_sided"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "bird_shoulder_left",
+   "obj": "bird_shoulder_left.obj",
+   "texture": "bird_shoulder_left.png",
+   "triangles": 737,
+   "bounds_min": [
+    -0.2892,
+    -0.2253,
+    -0.0241
+   ],
+   "bounds_max": [
+    0.0043,
+    0.03,
+    0.019
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [
+    "double_sided"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "bird_wrist_left",
+   "obj": "bird_wrist_left.obj",
+   "texture": "bird_wrist_left.png",
+   "triangles": 442,
+   "bounds_min": [
+    -0.2845,
+    -0.2654,
+    -0.0132
+   ],
+   "bounds_max": [
+    0.027,
+    0.0295,
+    0.0175
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [
+    "double_sided"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "bird_shoulder_right",
+   "obj": "bird_shoulder_right.obj",
+   "texture": "bird_shoulder_right.png",
+   "triangles": 737,
+   "bounds_min": [
+    -0.005,
+    -0.2253,
+    -0.0242
+   ],
+   "bounds_max": [
+    0.2942,
+    0.03,
+    0.0188
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [
+    "double_sided"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "bird_wrist_right",
+   "obj": "bird_wrist_right.obj",
+   "texture": "bird_wrist_right.png",
+   "triangles": 442,
+   "bounds_min": [
+    -0.0222,
+    -0.2594,
+    -0.013
+   ],
+   "bounds_max": [
+    0.2874,
+    0.027,
+    0.0175
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [
+    "double_sided"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "bird_rectrix_00",
+   "obj": "bird_rectrix_00.obj",
+   "texture": "bird_rectrix_00.png",
+   "triangles": 43,
+   "bounds_min": [
+    -0.07,
+    -0.1606,
+    -0.0089
+   ],
+   "bounds_max": [
+    0.0038,
+    0.0001,
+    0.0005
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [
+    "double_sided"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "bird_rectrix_01",
+   "obj": "bird_rectrix_01.obj",
+   "texture": "bird_rectrix_01.png",
+   "triangles": 43,
+   "bounds_min": [
+    -0.0599,
+    -0.1677,
+    -0.0089
+   ],
+   "bounds_max": [
+    0.0049,
+    0.0001,
+    0.0008
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [
+    "double_sided"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "bird_rectrix_02",
+   "obj": "bird_rectrix_02.obj",
+   "texture": "bird_rectrix_02.png",
+   "triangles": 42,
+   "bounds_min": [
+    -0.0494,
+    -0.1742,
+    -0.009
+   ],
+   "bounds_max": [
+    0.0061,
+    0.0001,
+    0.0006
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [
+    "double_sided"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "bird_rectrix_03",
+   "obj": "bird_rectrix_03.obj",
+   "texture": "bird_rectrix_03.png",
+   "triangles": 43,
+   "bounds_min": [
+    -0.0389,
+    -0.1798,
+    -0.009
+   ],
+   "bounds_max": [
+    0.0083,
+    0.0001,
+    0.0006
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [
+    "double_sided"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "bird_rectrix_04",
+   "obj": "bird_rectrix_04.obj",
+   "texture": "bird_rectrix_04.png",
+   "triangles": 43,
+   "bounds_min": [
+    -0.0286,
+    -0.1846,
+    -0.009
+   ],
+   "bounds_max": [
+    0.0107,
+    0.0,
+    0.0007
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [
+    "double_sided"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "bird_rectrix_05",
+   "obj": "bird_rectrix_05.obj",
+   "texture": "bird_rectrix_05.png",
+   "triangles": 43,
+   "bounds_min": [
+    -0.0195,
+    -0.1884,
+    -0.0089
+   ],
+   "bounds_max": [
+    0.0147,
+    0.0,
+    0.0008
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [
+    "double_sided"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "bird_rectrix_06",
+   "obj": "bird_rectrix_06.obj",
+   "texture": "bird_rectrix_06.png",
+   "triangles": 42,
+   "bounds_min": [
+    -0.0128,
+    -0.1884,
+    -0.009
+   ],
+   "bounds_max": [
+    0.0216,
+    0.0,
+    0.0008
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [
+    "double_sided"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "bird_rectrix_07",
+   "obj": "bird_rectrix_07.obj",
+   "texture": "bird_rectrix_07.png",
+   "triangles": 43,
+   "bounds_min": [
+    -0.0092,
+    -0.1846,
+    -0.0089
+   ],
+   "bounds_max": [
+    0.0299,
+    0.0,
+    0.0005
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [
+    "double_sided"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "bird_rectrix_08",
+   "obj": "bird_rectrix_08.obj",
+   "texture": "bird_rectrix_08.png",
+   "triangles": 43,
+   "bounds_min": [
+    -0.0062,
+    -0.1798,
+    -0.009
+   ],
+   "bounds_max": [
+    0.0403,
+    0.0001,
+    0.0006
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [
+    "double_sided"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "bird_rectrix_09",
+   "obj": "bird_rectrix_09.obj",
+   "texture": "bird_rectrix_09.png",
+   "triangles": 43,
+   "bounds_min": [
+    -0.0053,
+    -0.1742,
+    -0.0089
+   ],
+   "bounds_max": [
+    0.0503,
+    0.0001,
+    0.0006
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [
+    "double_sided"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "bird_rectrix_10",
+   "obj": "bird_rectrix_10.obj",
+   "texture": "bird_rectrix_10.png",
+   "triangles": 43,
+   "bounds_min": [
+    -0.0043,
+    -0.1677,
+    -0.009
+   ],
+   "bounds_max": [
+    0.061,
+    0.0001,
+    0.0008
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [
+    "double_sided"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "bird_rectrix_11",
+   "obj": "bird_rectrix_11.obj",
+   "texture": "bird_rectrix_11.png",
+   "triangles": 43,
+   "bounds_min": [
+    -0.0029,
+    -0.1606,
+    -0.009
+   ],
+   "bounds_max": [
+    0.0708,
+    0.0001,
+    0.0005
+   ],
+   "group": "movers",
+   "folder": "movers",
+   "flags": [
+    "double_sided"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  }
+ ],
+ "placements": [
+  {
+   "item": "goat",
+   "position": [
+    -140.9161,
+    -121.0458,
+    27.25
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    -0.105458,
+    0.994424
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "goat",
+   "herd": 0,
+   "path": "goat_herd.json"
+  },
+  {
+   "item": "goat",
+   "position": [
+    -139.5695,
+    -117.2515,
+    27.2927
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.198386,
+    0.980124
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "goat",
+   "herd": 1,
+   "path": "goat_herd.json"
+  },
+  {
+   "item": "goat",
+   "position": [
+    -142.1283,
+    -119.6774,
+    27.6089
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    -0.226806,
+    0.97394
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "goat",
+   "herd": 2,
+   "path": "goat_herd.json"
+  },
+  {
+   "item": "goat",
+   "position": [
+    -139.5684,
+    -121.4907,
+    26.9387
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    -0.059843,
+    0.998208
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "goat",
+   "herd": 3,
+   "path": "goat_herd.json"
+  },
+  {
+   "item": "goat",
+   "position": [
+    -138.136,
+    -120.352,
+    26.734
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.246456,
+    0.969154
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "goat",
+   "herd": 4,
+   "path": "goat_herd.json"
+  },
+  {
+   "item": "pickup_body",
+   "position": [
+    39.3641,
+    -11.6298,
+    25.149
+   ],
+   "quaternion": [
+    0.04595,
+    0.073695,
+    -0.706359,
+    0.702506
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "pickup",
+   "path": "pickup_path.json",
+   "parent": "pickup_body",
+   "local_position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "local_quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "item": "pickup_glass",
+   "position": [
+    39.3641,
+    -11.6298,
+    25.149
+   ],
+   "quaternion": [
+    0.04595,
+    0.073695,
+    -0.706359,
+    0.702506
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "pickup",
+   "path": "pickup_path.json",
+   "parent": "pickup_body",
+   "local_position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "local_quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "item": "pickup_wheel_front_left",
+   "position": [
+    40.1955,
+    -13.1672,
+    24.8504
+   ],
+   "quaternion": [
+    -0.705665,
+    -0.701433,
+    -0.055602,
+    0.083292
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "pickup",
+   "path": "pickup_path.json",
+   "parent": "pickup_body",
+   "local_position": [
+    1.5584,
+    0.8458,
+    -0.0027
+   ],
+   "local_quaternion": [
+    -0.0,
+    -0.999907,
+    0.0,
+    0.013671
+   ],
+   "spin_axis": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "item": "pickup_wheel_front_right",
+   "position": [
+    38.5055,
+    -13.1522,
+    24.9192
+   ],
+   "quaternion": [
+    -0.407323,
+    -0.383299,
+    -0.578915,
+    0.593319
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "pickup",
+   "path": "pickup_path.json",
+   "parent": "pickup_body",
+   "local_position": [
+    1.5468,
+    -0.8456,
+    -0.0027
+   ],
+   "local_quaternion": [
+    -0.0,
+    -0.627312,
+    -0.0,
+    0.778768
+   ],
+   "spin_axis": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "item": "pickup_wheel_rear_left",
+   "position": [
+    40.2226,
+    -10.1073,
+    25.3724
+   ],
+   "quaternion": [
+    -0.705112,
+    -0.70062,
+    -0.062222,
+    0.089871
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "pickup",
+   "path": "pickup_path.json",
+   "parent": "pickup_body",
+   "local_position": [
+    -1.5458,
+    0.8458,
+    -0.0036
+   ],
+   "local_quaternion": [
+    -0.0,
+    -0.999734,
+    0.0,
+    0.023054
+   ],
+   "spin_axis": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "item": "pickup_wheel_rear_right",
+   "position": [
+    38.5327,
+    -10.0923,
+    25.4393
+   ],
+   "quaternion": [
+    -0.400636,
+    -0.376447,
+    -0.583563,
+    0.59769
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "pickup",
+   "path": "pickup_path.json",
+   "parent": "pickup_body",
+   "local_position": [
+    -1.557,
+    -0.8455,
+    -0.0055
+   ],
+   "local_quaternion": [
+    -1e-06,
+    -0.618311,
+    0.0,
+    0.785934
+   ],
+   "spin_axis": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "item": "bird_root",
+   "position": [
+    -74.0,
+    40.0,
+    98.0
+   ],
+   "quaternion": [
+    0.0,
+    -0.122613,
+    0.0,
+    0.992454
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "bird",
+   "path": "bird_path.json",
+   "poses": "bird_poses.npz"
+  },
+  {
+   "item": "bird_head",
+   "position": [
+    -74.0088,
+    40.14,
+    98.0349
+   ],
+   "quaternion": [
+    0.0,
+    -0.122613,
+    0.0,
+    0.992454
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "bird",
+   "path": "bird_path.json",
+   "poses": "bird_poses.npz"
+  },
+  {
+   "item": "bird_shoulder_left",
+   "position": [
+    -74.0473,
+    40.065,
+    98.0036
+   ],
+   "quaternion": [
+    0.0,
+    -0.079207,
+    0.0,
+    0.996858
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "bird",
+   "path": "bird_path.json",
+   "poses": "bird_poses.npz"
+  },
+  {
+   "item": "bird_wrist_left",
+   "position": [
+    -74.309,
+    40.077,
+    97.9618
+   ],
+   "quaternion": [
+    0.0,
+    -0.079207,
+    0.0,
+    0.996858
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "bird",
+   "path": "bird_path.json",
+   "poses": "bird_poses.npz"
+  },
+  {
+   "item": "bird_shoulder_right",
+   "position": [
+    -73.96,
+    40.065,
+    98.0255
+   ],
+   "quaternion": [
+    0.0,
+    -0.165787,
+    0.0,
+    0.986162
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "bird",
+   "path": "bird_path.json",
+   "poses": "bird_poses.npz"
+  },
+  {
+   "item": "bird_wrist_right",
+   "position": [
+    -73.7096,
+    40.077,
+    98.1122
+   ],
+   "quaternion": [
+    0.0,
+    -0.165787,
+    0.0,
+    0.986162
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "bird",
+   "path": "bird_path.json",
+   "poses": "bird_poses.npz"
+  },
+  {
+   "item": "bird_rectrix_00",
+   "position": [
+    -73.999,
+    39.893,
+    97.9961
+   ],
+   "quaternion": [
+    0.01732,
+    -0.122595,
+    0.00214,
+    0.992303
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "bird",
+   "path": "bird_path.json",
+   "poses": "bird_poses.npz"
+  },
+  {
+   "item": "bird_rectrix_01",
+   "position": [
+    -73.999,
+    39.893,
+    97.9961
+   ],
+   "quaternion": [
+    0.01732,
+    -0.122595,
+    0.00214,
+    0.992303
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "bird",
+   "path": "bird_path.json",
+   "poses": "bird_poses.npz"
+  },
+  {
+   "item": "bird_rectrix_02",
+   "position": [
+    -73.999,
+    39.893,
+    97.9961
+   ],
+   "quaternion": [
+    0.01732,
+    -0.122595,
+    0.00214,
+    0.992303
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "bird",
+   "path": "bird_path.json",
+   "poses": "bird_poses.npz"
+  },
+  {
+   "item": "bird_rectrix_03",
+   "position": [
+    -73.999,
+    39.893,
+    97.9961
+   ],
+   "quaternion": [
+    0.01732,
+    -0.122595,
+    0.00214,
+    0.992303
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "bird",
+   "path": "bird_path.json",
+   "poses": "bird_poses.npz"
+  },
+  {
+   "item": "bird_rectrix_04",
+   "position": [
+    -73.999,
+    39.893,
+    97.9961
+   ],
+   "quaternion": [
+    0.01732,
+    -0.122595,
+    0.00214,
+    0.992303
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "bird",
+   "path": "bird_path.json",
+   "poses": "bird_poses.npz"
+  },
+  {
+   "item": "bird_rectrix_05",
+   "position": [
+    -73.999,
+    39.893,
+    97.9961
+   ],
+   "quaternion": [
+    0.01732,
+    -0.122595,
+    0.00214,
+    0.992303
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "bird",
+   "path": "bird_path.json",
+   "poses": "bird_poses.npz"
+  },
+  {
+   "item": "bird_rectrix_06",
+   "position": [
+    -73.999,
+    39.893,
+    97.9961
+   ],
+   "quaternion": [
+    0.01732,
+    -0.122595,
+    0.00214,
+    0.992303
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "bird",
+   "path": "bird_path.json",
+   "poses": "bird_poses.npz"
+  },
+  {
+   "item": "bird_rectrix_07",
+   "position": [
+    -73.999,
+    39.893,
+    97.9961
+   ],
+   "quaternion": [
+    0.01732,
+    -0.122595,
+    0.00214,
+    0.992303
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "bird",
+   "path": "bird_path.json",
+   "poses": "bird_poses.npz"
+  },
+  {
+   "item": "bird_rectrix_08",
+   "position": [
+    -73.999,
+    39.893,
+    97.9961
+   ],
+   "quaternion": [
+    0.01732,
+    -0.122595,
+    0.00214,
+    0.992303
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "bird",
+   "path": "bird_path.json",
+   "poses": "bird_poses.npz"
+  },
+  {
+   "item": "bird_rectrix_09",
+   "position": [
+    -73.999,
+    39.893,
+    97.9961
+   ],
+   "quaternion": [
+    0.01732,
+    -0.122595,
+    0.00214,
+    0.992303
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "bird",
+   "path": "bird_path.json",
+   "poses": "bird_poses.npz"
+  },
+  {
+   "item": "bird_rectrix_10",
+   "position": [
+    -73.999,
+    39.893,
+    97.9961
+   ],
+   "quaternion": [
+    0.01732,
+    -0.122595,
+    0.00214,
+    0.992303
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "bird",
+   "path": "bird_path.json",
+   "poses": "bird_poses.npz"
+  },
+  {
+   "item": "bird_rectrix_11",
+   "position": [
+    -73.999,
+    39.893,
+    97.9961
+   ],
+   "quaternion": [
+    0.01732,
+    -0.122595,
+    0.00214,
+    0.992303
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "mover": "bird",
+   "path": "bird_path.json",
+   "poses": "bird_poses.npz"
+  }
+ ]
+}

@@ -1,0 +1,3 @@
+newmtl grass_01_02_b2
+Kd 1 1 1
+map_Kd grass_atlas.png

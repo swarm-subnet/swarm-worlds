@@ -1,0 +1,3 @@
+newmtl full_table_glass
+Kd 1 1 1
+map_Kd cell_grid.png

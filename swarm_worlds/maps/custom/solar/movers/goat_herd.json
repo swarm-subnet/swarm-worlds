@@ -1,0 +1,86 @@
+{
+ "cycle_frames": 20,
+ "cycle_fps": 24,
+ "stride_m": 0.5503,
+ "centre": [
+  -140.0,
+  -120.0
+ ],
+ "seed": 7,
+ "obj_vertices": 8780,
+ "render_vertices": 52392,
+ "poses": "goat_poses.npz",
+ "motion": "a 20-frame walk cycle at 24 fps, stored as vertex poses in goat_poses.npz and played at the stride's own speed",
+ "goats": [
+  {
+   "index": 0,
+   "start": [
+    -140.9161,
+    -121.0458,
+    27.25
+   ],
+   "heading_rad": 0.211308,
+   "turn_rad_s": -0.260862,
+   "phase": 17,
+   "pace": 0.9188,
+   "pose_fps": 22.0518,
+   "speed_m_s": 0.6068
+  },
+  {
+   "index": 1,
+   "start": [
+    -139.5695,
+    -117.2515,
+    27.2927
+   ],
+   "heading_rad": -0.399423,
+   "turn_rad_s": 0.264753,
+   "phase": 13,
+   "pace": 0.914,
+   "pose_fps": 21.9353,
+   "speed_m_s": 0.6036
+  },
+  {
+   "index": 2,
+   "start": [
+    -142.1283,
+    -119.6774,
+    27.6089
+   ],
+   "heading_rad": 0.457593,
+   "turn_rad_s": -0.275655,
+   "phase": 7,
+   "pace": 1.0261,
+   "pose_fps": 24.627,
+   "speed_m_s": 0.6776
+  },
+  {
+   "index": 3,
+   "start": [
+    -139.5684,
+    -121.4907,
+    26.9387
+   ],
+   "heading_rad": 0.119758,
+   "turn_rad_s": 0.254282,
+   "phase": 7,
+   "pace": 0.9093,
+   "pose_fps": 21.8236,
+   "speed_m_s": 0.6005
+  },
+  {
+   "index": 4,
+   "start": [
+    -138.136,
+    -120.352,
+    26.734
+   ],
+   "heading_rad": -0.498043,
+   "turn_rad_s": -0.273924,
+   "phase": 9,
+   "pace": 1.0121,
+   "pose_fps": 24.2892,
+   "speed_m_s": 0.6683
+  }
+ ]
+}
