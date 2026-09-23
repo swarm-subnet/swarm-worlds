@@ -1,0 +1,3 @@
+newmtl half_table_frame
+Kd 1 1 1
+map_Kd half_table_frame.png

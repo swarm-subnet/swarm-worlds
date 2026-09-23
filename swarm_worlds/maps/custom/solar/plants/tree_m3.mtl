@@ -1,0 +1,3 @@
+newmtl tree_m3
+Kd 1 1 1
+map_Kd tree_m3_leaves.png

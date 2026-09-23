@@ -42,6 +42,7 @@ EXPECTED_MAP_DIRS = {
     "custom/office",
     "custom/people/lost_person_characters",
     "custom/people/open_mannequin_raw/split",
+    "custom/solar",
     "custom/warehouse_shell",
     "forest/quaternius_ultimate_nature",
     "forest/textures",
@@ -102,6 +103,20 @@ def test_sky_manifest_points_at_real_equirectangular_files():
         bit_depth, colour_type = head[24], head[25]
         assert (width, height) == (2048, 1024), sky["file"]
         assert (bit_depth, colour_type) == (8, 2), sky["file"]
+
+
+def test_solar_manifest_points_at_real_files():
+    """Every solar item names files that ship, every placement names an item, and the forest's table and meshes ship."""
+    solar = MAPS / "custom" / "solar"
+    manifest = json.loads((solar / "manifest.json").read_text(encoding="utf-8"))
+    items = manifest["items"]
+    for name, item in items.items():
+        for key in ("obj", "texture"):
+            assert (solar / item["folder"] / item[key]).is_file(), f"{name}: {item[key]}"
+    assert {place["item"] for place in manifest["placements"]} <= set(items)
+    forest = manifest["forest"]
+    for name in [forest["table"]] + forest["meshes"]:
+        assert (solar / forest["folder"] / name).is_file(), name
 
 
 def test_lost_person_manifest_points_at_real_files():

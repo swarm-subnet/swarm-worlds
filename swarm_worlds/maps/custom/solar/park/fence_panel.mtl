@@ -1,0 +1,3 @@
+newmtl fence_panel
+Kd 1 1 1
+map_Kd fence_panel.png

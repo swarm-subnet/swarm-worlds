@@ -1,0 +1,3 @@
+newmtl tree_m16
+Kd 1 1 1
+map_Kd tree_m16_leaves.png

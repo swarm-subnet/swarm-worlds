@@ -1,0 +1,3 @@
+newmtl tree_m4
+Kd 1 1 1
+map_Kd tree_m4_leaves.png

@@ -1,0 +1,3 @@
+newmtl fence_post
+Kd 1 1 1
+map_Kd fence_post.png

@@ -1,0 +1,3 @@
+newmtl pickup_body
+Kd 1 1 1
+map_Kd pickup_body.png

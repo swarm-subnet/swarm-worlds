@@ -1,0 +1,9859 @@
+{
+ "group": "terrain",
+ "source": "manolas_phase6f.blend",
+ "source_sha256_prefix": "cfa4b147f93d085c",
+ "frame": 1501,
+ "written": "2026-09-22 07:36:52",
+ "notes": "229 tiles of 229, 345600 placed triangles, ray misses 0, skirt crest from 120 m, run 150 m, far colour (0.0324, 0.0475, 0.0181)",
+ "items": [
+  {
+   "name": "terrain_core_00_00",
+   "obj": "terrain_core_00_00.obj",
+   "texture": "terrain_core_00_00.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -3.2757
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    3.756
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_01_00",
+   "obj": "terrain_core_01_00.obj",
+   "texture": "terrain_core_01_00.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -3.5853
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    2.7634
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_02_00",
+   "obj": "terrain_core_02_00.obj",
+   "texture": "terrain_core_02_00.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -2.4718
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    3.1168
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_03_00",
+   "obj": "terrain_core_03_00.obj",
+   "texture": "terrain_core_03_00.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -3.7415
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    3.0284
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_04_00",
+   "obj": "terrain_core_04_00.obj",
+   "texture": "terrain_core_04_00.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -5.8179
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    5.518
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_05_00",
+   "obj": "terrain_core_05_00.obj",
+   "texture": "terrain_core_05_00.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -8.7475
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    7.7881
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_06_00",
+   "obj": "terrain_core_06_00.obj",
+   "texture": "terrain_core_06_00.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -9.6672
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    8.3311
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_07_00",
+   "obj": "terrain_core_07_00.obj",
+   "texture": "terrain_core_07_00.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -6.9834
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    7.5924
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_00_01",
+   "obj": "terrain_core_00_01.obj",
+   "texture": "terrain_core_00_01.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -2.4582
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    3.1343
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_01_01",
+   "obj": "terrain_core_01_01.obj",
+   "texture": "terrain_core_01_01.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -3.1136
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    3.472
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_02_01",
+   "obj": "terrain_core_02_01.obj",
+   "texture": "terrain_core_02_01.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -3.2655
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    4.2454
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_03_01",
+   "obj": "terrain_core_03_01.obj",
+   "texture": "terrain_core_03_01.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -3.555
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    3.5225
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_04_01",
+   "obj": "terrain_core_04_01.obj",
+   "texture": "terrain_core_04_01.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -6.2586
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    5.2082
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_05_01",
+   "obj": "terrain_core_05_01.obj",
+   "texture": "terrain_core_05_01.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -9.1514
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    7.0399
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_06_01",
+   "obj": "terrain_core_06_01.obj",
+   "texture": "terrain_core_06_01.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -8.3587
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    8.2683
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_07_01",
+   "obj": "terrain_core_07_01.obj",
+   "texture": "terrain_core_07_01.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -6.1168
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    5.5607
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_00_02",
+   "obj": "terrain_core_00_02.obj",
+   "texture": "terrain_core_00_02.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -3.7051
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    5.314
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_01_02",
+   "obj": "terrain_core_01_02.obj",
+   "texture": "terrain_core_01_02.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -4.4403
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    4.8667
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_02_02",
+   "obj": "terrain_core_02_02.obj",
+   "texture": "terrain_core_02_02.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -4.4517
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    4.6022
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_03_02",
+   "obj": "terrain_core_03_02.obj",
+   "texture": "terrain_core_03_02.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -3.3889
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    3.6715
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_04_02",
+   "obj": "terrain_core_04_02.obj",
+   "texture": "terrain_core_04_02.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -6.2923
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    4.6007
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_05_02",
+   "obj": "terrain_core_05_02.obj",
+   "texture": "terrain_core_05_02.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -7.7979
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    7.3192
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_06_02",
+   "obj": "terrain_core_06_02.obj",
+   "texture": "terrain_core_06_02.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -7.6484
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    7.3884
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_07_02",
+   "obj": "terrain_core_07_02.obj",
+   "texture": "terrain_core_07_02.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -4.3902
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    5.2394
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_00_03",
+   "obj": "terrain_core_00_03.obj",
+   "texture": "terrain_core_00_03.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -6.4718
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    6.3026
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_01_03",
+   "obj": "terrain_core_01_03.obj",
+   "texture": "terrain_core_01_03.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -5.1816
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    5.5302
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_02_03",
+   "obj": "terrain_core_02_03.obj",
+   "texture": "terrain_core_02_03.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -4.6705
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    5.8079
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_03_03",
+   "obj": "terrain_core_03_03.obj",
+   "texture": "terrain_core_03_03.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -3.7594
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    4.8216
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_04_03",
+   "obj": "terrain_core_04_03.obj",
+   "texture": "terrain_core_04_03.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -5.1137
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    4.1304
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_05_03",
+   "obj": "terrain_core_05_03.obj",
+   "texture": "terrain_core_05_03.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -7.8825
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    7.0921
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_06_03",
+   "obj": "terrain_core_06_03.obj",
+   "texture": "terrain_core_06_03.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -6.9202
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    8.0011
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_07_03",
+   "obj": "terrain_core_07_03.obj",
+   "texture": "terrain_core_07_03.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -4.5578
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    5.7454
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_00_04",
+   "obj": "terrain_core_00_04.obj",
+   "texture": "terrain_core_00_04.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -7.0793
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    6.2945
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_01_04",
+   "obj": "terrain_core_01_04.obj",
+   "texture": "terrain_core_01_04.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -6.0087
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    6.4897
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_02_04",
+   "obj": "terrain_core_02_04.obj",
+   "texture": "terrain_core_02_04.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -6.401
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    7.3231
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_03_04",
+   "obj": "terrain_core_03_04.obj",
+   "texture": "terrain_core_03_04.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -5.234
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    7.0277
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_04_04",
+   "obj": "terrain_core_04_04.obj",
+   "texture": "terrain_core_04_04.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -5.0495
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    5.5443
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_05_04",
+   "obj": "terrain_core_05_04.obj",
+   "texture": "terrain_core_05_04.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -8.2225
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    6.6671
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_06_04",
+   "obj": "terrain_core_06_04.obj",
+   "texture": "terrain_core_06_04.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -7.6818
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    9.1101
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_07_04",
+   "obj": "terrain_core_07_04.obj",
+   "texture": "terrain_core_07_04.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -5.6201
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    7.2019
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_00_05",
+   "obj": "terrain_core_00_05.obj",
+   "texture": "terrain_core_00_05.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -6.5265
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    6.7907
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_01_05",
+   "obj": "terrain_core_01_05.obj",
+   "texture": "terrain_core_01_05.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -7.1982
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    7.2559
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_02_05",
+   "obj": "terrain_core_02_05.obj",
+   "texture": "terrain_core_02_05.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -8.2033
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    8.5698
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_03_05",
+   "obj": "terrain_core_03_05.obj",
+   "texture": "terrain_core_03_05.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -7.6963
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    9.0981
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_04_05",
+   "obj": "terrain_core_04_05.obj",
+   "texture": "terrain_core_04_05.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -5.7476
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    7.4017
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_05_05",
+   "obj": "terrain_core_05_05.obj",
+   "texture": "terrain_core_05_05.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -7.4863
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    5.2912
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_06_05",
+   "obj": "terrain_core_06_05.obj",
+   "texture": "terrain_core_06_05.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -9.2028
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    8.8487
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_07_05",
+   "obj": "terrain_core_07_05.obj",
+   "texture": "terrain_core_07_05.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -7.0044
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    8.4384
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_00_06",
+   "obj": "terrain_core_00_06.obj",
+   "texture": "terrain_core_00_06.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -7.0052
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    7.3931
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_01_06",
+   "obj": "terrain_core_01_06.obj",
+   "texture": "terrain_core_01_06.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -7.4324
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    7.3899
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_02_06",
+   "obj": "terrain_core_02_06.obj",
+   "texture": "terrain_core_02_06.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -8.6101
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    7.9715
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_03_06",
+   "obj": "terrain_core_03_06.obj",
+   "texture": "terrain_core_03_06.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -9.2245
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    9.1379
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_04_06",
+   "obj": "terrain_core_04_06.obj",
+   "texture": "terrain_core_04_06.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -6.7759
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    8.4282
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_05_06",
+   "obj": "terrain_core_05_06.obj",
+   "texture": "terrain_core_05_06.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -5.8206
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    4.7984
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_06_06",
+   "obj": "terrain_core_06_06.obj",
+   "texture": "terrain_core_06_06.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -9.4834
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    7.0182
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_07_06",
+   "obj": "terrain_core_07_06.obj",
+   "texture": "terrain_core_07_06.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -8.1196
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    8.7956
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_00_07",
+   "obj": "terrain_core_00_07.obj",
+   "texture": "terrain_core_00_07.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -7.6852
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    8.0063
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_01_07",
+   "obj": "terrain_core_01_07.obj",
+   "texture": "terrain_core_01_07.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -7.5735
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    8.2352
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_02_07",
+   "obj": "terrain_core_02_07.obj",
+   "texture": "terrain_core_02_07.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -8.0783
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    7.9164
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_03_07",
+   "obj": "terrain_core_03_07.obj",
+   "texture": "terrain_core_03_07.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -9.9958
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    8.9029
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_04_07",
+   "obj": "terrain_core_04_07.obj",
+   "texture": "terrain_core_04_07.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -8.6753
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    9.7982
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_05_07",
+   "obj": "terrain_core_05_07.obj",
+   "texture": "terrain_core_05_07.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -6.3125
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    7.3243
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_06_07",
+   "obj": "terrain_core_06_07.obj",
+   "texture": "terrain_core_06_07.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -8.2054
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    7.3061
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_core_07_07",
+   "obj": "terrain_core_07_07.obj",
+   "texture": "terrain_core_07_07.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -16.0,
+    -16.0,
+    -8.237
+   ],
+   "bounds_max": [
+    16.0,
+    16.0,
+    8.5898
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_00_00",
+   "obj": "terrain_near_00_00.obj",
+   "texture": "terrain_near_00_00.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -8.1862
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    7.1035
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_01_00",
+   "obj": "terrain_near_01_00.obj",
+   "texture": "terrain_near_01_00.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -9.2405
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    7.8385
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_02_00",
+   "obj": "terrain_near_02_00.obj",
+   "texture": "terrain_near_02_00.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -7.5571
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    6.0219
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_03_00",
+   "obj": "terrain_near_03_00.obj",
+   "texture": "terrain_near_03_00.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -5.1397
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    6.0317
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_04_00",
+   "obj": "terrain_near_04_00.obj",
+   "texture": "terrain_near_04_00.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -2.7499
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    1.2885
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_05_00",
+   "obj": "terrain_near_05_00.obj",
+   "texture": "terrain_near_05_00.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -2.4119
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    1.8841
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_06_00",
+   "obj": "terrain_near_06_00.obj",
+   "texture": "terrain_near_06_00.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -7.0127
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    3.3446
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_07_00",
+   "obj": "terrain_near_07_00.obj",
+   "texture": "terrain_near_07_00.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -12.1034
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    10.5147
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_08_00",
+   "obj": "terrain_near_08_00.obj",
+   "texture": "terrain_near_08_00.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -11.4787
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    12.7427
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_09_00",
+   "obj": "terrain_near_09_00.obj",
+   "texture": "terrain_near_09_00.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -4.2386
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    5.5252
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_00_01",
+   "obj": "terrain_near_00_01.obj",
+   "texture": "terrain_near_00_01.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -6.9068
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    6.2283
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_01_01",
+   "obj": "terrain_near_01_01.obj",
+   "texture": "terrain_near_01_01.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -7.333
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    6.6821
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_02_01",
+   "obj": "terrain_near_02_01.obj",
+   "texture": "terrain_near_02_01.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -6.6772
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    7.8561
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_03_01",
+   "obj": "terrain_near_03_01.obj",
+   "texture": "terrain_near_03_01.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -4.4136
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    7.0705
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_04_01",
+   "obj": "terrain_near_04_01.obj",
+   "texture": "terrain_near_04_01.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -3.4204
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    4.4136
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_05_01",
+   "obj": "terrain_near_05_01.obj",
+   "texture": "terrain_near_05_01.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -8.1039
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    3.697
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_06_01",
+   "obj": "terrain_near_06_01.obj",
+   "texture": "terrain_near_06_01.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -13.3128
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    5.2046
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_07_01",
+   "obj": "terrain_near_07_01.obj",
+   "texture": "terrain_near_07_01.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -18.5968
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    15.3669
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_08_01",
+   "obj": "terrain_near_08_01.obj",
+   "texture": "terrain_near_08_01.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -7.5619
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    14.4632
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_09_01",
+   "obj": "terrain_near_09_01.obj",
+   "texture": "terrain_near_09_01.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -6.0839
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    8.071
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_00_02",
+   "obj": "terrain_near_00_02.obj",
+   "texture": "terrain_near_00_02.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -9.0565
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    9.7766
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_01_02",
+   "obj": "terrain_near_01_02.obj",
+   "texture": "terrain_near_01_02.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -7.9569
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    9.9233
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_02_02",
+   "obj": "terrain_near_02_02.obj",
+   "texture": "terrain_near_02_02.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -7.9998
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    9.4606
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_03_02",
+   "obj": "terrain_near_03_02.obj",
+   "texture": "terrain_near_03_02.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -6.2531
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    7.9768
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_04_02",
+   "obj": "terrain_near_04_02.obj",
+   "texture": "terrain_near_04_02.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -5.9009
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    4.2087
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_05_02",
+   "obj": "terrain_near_05_02.obj",
+   "texture": "terrain_near_05_02.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -11.0658
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    10.9907
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_06_02",
+   "obj": "terrain_near_06_02.obj",
+   "texture": "terrain_near_06_02.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -10.5731
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    12.4923
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_07_02",
+   "obj": "terrain_near_07_02.obj",
+   "texture": "terrain_near_07_02.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -7.6267
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    13.4905
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_08_02",
+   "obj": "terrain_near_08_02.obj",
+   "texture": "terrain_near_08_02.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -7.2022
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    10.0326
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_09_02",
+   "obj": "terrain_near_09_02.obj",
+   "texture": "terrain_near_09_02.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -9.6819
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    7.8652
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_00_03",
+   "obj": "terrain_near_00_03.obj",
+   "texture": "terrain_near_00_03.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -11.6475
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    13.899
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_01_03",
+   "obj": "terrain_near_01_03.obj",
+   "texture": "terrain_near_01_03.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -10.2561
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    11.892
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_02_03",
+   "obj": "terrain_near_02_03.obj",
+   "texture": "terrain_near_02_03.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -8.4674
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    9.8264
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_07_03",
+   "obj": "terrain_near_07_03.obj",
+   "texture": "terrain_near_07_03.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -9.9669
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    8.936
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_08_03",
+   "obj": "terrain_near_08_03.obj",
+   "texture": "terrain_near_08_03.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -6.1127
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    6.8741
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_09_03",
+   "obj": "terrain_near_09_03.obj",
+   "texture": "terrain_near_09_03.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -3.0753
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    1.8533
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_00_04",
+   "obj": "terrain_near_00_04.obj",
+   "texture": "terrain_near_00_04.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -10.7778
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    10.7108
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_01_04",
+   "obj": "terrain_near_01_04.obj",
+   "texture": "terrain_near_01_04.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -13.2098
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    11.7281
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_02_04",
+   "obj": "terrain_near_02_04.obj",
+   "texture": "terrain_near_02_04.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -7.7214
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    9.0598
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_07_04",
+   "obj": "terrain_near_07_04.obj",
+   "texture": "terrain_near_07_04.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -8.5478
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    8.2092
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_08_04",
+   "obj": "terrain_near_08_04.obj",
+   "texture": "terrain_near_08_04.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -7.5927
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    10.9579
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_09_04",
+   "obj": "terrain_near_09_04.obj",
+   "texture": "terrain_near_09_04.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -5.2113
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    9.7026
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_00_05",
+   "obj": "terrain_near_00_05.obj",
+   "texture": "terrain_near_00_05.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -14.4837
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    15.2268
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_01_05",
+   "obj": "terrain_near_01_05.obj",
+   "texture": "terrain_near_01_05.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -10.2281
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    13.0152
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_02_05",
+   "obj": "terrain_near_02_05.obj",
+   "texture": "terrain_near_02_05.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -14.4501
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    15.974
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_07_05",
+   "obj": "terrain_near_07_05.obj",
+   "texture": "terrain_near_07_05.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -10.0641
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    8.5642
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_08_05",
+   "obj": "terrain_near_08_05.obj",
+   "texture": "terrain_near_08_05.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -13.5978
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    13.0355
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_09_05",
+   "obj": "terrain_near_09_05.obj",
+   "texture": "terrain_near_09_05.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -11.4628
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    15.4153
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_00_06",
+   "obj": "terrain_near_00_06.obj",
+   "texture": "terrain_near_00_06.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -9.3801
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    16.2069
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_01_06",
+   "obj": "terrain_near_01_06.obj",
+   "texture": "terrain_near_01_06.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -17.6481
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    20.7203
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_02_06",
+   "obj": "terrain_near_02_06.obj",
+   "texture": "terrain_near_02_06.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -18.5769
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    14.4288
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_07_06",
+   "obj": "terrain_near_07_06.obj",
+   "texture": "terrain_near_07_06.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -9.2349
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    12.7617
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_08_06",
+   "obj": "terrain_near_08_06.obj",
+   "texture": "terrain_near_08_06.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -13.2381
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    12.3103
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_09_06",
+   "obj": "terrain_near_09_06.obj",
+   "texture": "terrain_near_09_06.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -16.5245
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    15.4892
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_00_07",
+   "obj": "terrain_near_00_07.obj",
+   "texture": "terrain_near_00_07.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -17.7208
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    19.4167
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_01_07",
+   "obj": "terrain_near_01_07.obj",
+   "texture": "terrain_near_01_07.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -19.5654
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    18.3169
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_02_07",
+   "obj": "terrain_near_02_07.obj",
+   "texture": "terrain_near_02_07.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -15.3183
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    12.8618
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_03_07",
+   "obj": "terrain_near_03_07.obj",
+   "texture": "terrain_near_03_07.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -16.8318
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    16.2179
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_04_07",
+   "obj": "terrain_near_04_07.obj",
+   "texture": "terrain_near_04_07.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -18.4221
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    15.9311
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_05_07",
+   "obj": "terrain_near_05_07.obj",
+   "texture": "terrain_near_05_07.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -17.2179
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    15.8558
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_06_07",
+   "obj": "terrain_near_06_07.obj",
+   "texture": "terrain_near_06_07.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -15.2601
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    17.861
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_07_07",
+   "obj": "terrain_near_07_07.obj",
+   "texture": "terrain_near_07_07.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -10.0752
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    13.5498
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_08_07",
+   "obj": "terrain_near_08_07.obj",
+   "texture": "terrain_near_08_07.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -14.6284
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    10.3285
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_09_07",
+   "obj": "terrain_near_09_07.obj",
+   "texture": "terrain_near_09_07.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -17.1638
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    16.8003
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_00_08",
+   "obj": "terrain_near_00_08.obj",
+   "texture": "terrain_near_00_08.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -18.3438
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    17.3049
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_01_08",
+   "obj": "terrain_near_01_08.obj",
+   "texture": "terrain_near_01_08.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -16.6846
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    10.36
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_02_08",
+   "obj": "terrain_near_02_08.obj",
+   "texture": "terrain_near_02_08.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -10.5959
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    5.9073
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_03_08",
+   "obj": "terrain_near_03_08.obj",
+   "texture": "terrain_near_03_08.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -14.8802
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    10.0826
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_04_08",
+   "obj": "terrain_near_04_08.obj",
+   "texture": "terrain_near_04_08.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -11.7825
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    10.5205
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_05_08",
+   "obj": "terrain_near_05_08.obj",
+   "texture": "terrain_near_05_08.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -8.0165
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    6.3695
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_06_08",
+   "obj": "terrain_near_06_08.obj",
+   "texture": "terrain_near_06_08.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -14.8502
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    10.7887
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_07_08",
+   "obj": "terrain_near_07_08.obj",
+   "texture": "terrain_near_07_08.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -9.307
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    11.1289
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_08_08",
+   "obj": "terrain_near_08_08.obj",
+   "texture": "terrain_near_08_08.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -10.1702
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    5.4524
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_09_08",
+   "obj": "terrain_near_09_08.obj",
+   "texture": "terrain_near_09_08.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -15.9796
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    14.2296
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_00_09",
+   "obj": "terrain_near_00_09.obj",
+   "texture": "terrain_near_00_09.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -16.1217
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    13.0878
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_01_09",
+   "obj": "terrain_near_01_09.obj",
+   "texture": "terrain_near_01_09.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -9.713
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    3.9101
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_02_09",
+   "obj": "terrain_near_02_09.obj",
+   "texture": "terrain_near_02_09.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -19.2085
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    12.7798
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_03_09",
+   "obj": "terrain_near_03_09.obj",
+   "texture": "terrain_near_03_09.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -18.9639
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    18.571
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_04_09",
+   "obj": "terrain_near_04_09.obj",
+   "texture": "terrain_near_04_09.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -13.1017
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    16.8834
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_05_09",
+   "obj": "terrain_near_05_09.obj",
+   "texture": "terrain_near_05_09.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -8.2218
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    10.9353
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_06_09",
+   "obj": "terrain_near_06_09.obj",
+   "texture": "terrain_near_06_09.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -8.4948
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    11.7231
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_07_09",
+   "obj": "terrain_near_07_09.obj",
+   "texture": "terrain_near_07_09.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -7.6639
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    8.1016
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_08_09",
+   "obj": "terrain_near_08_09.obj",
+   "texture": "terrain_near_08_09.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -7.464
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    3.9353
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_near_09_09",
+   "obj": "terrain_near_09_09.obj",
+   "texture": "terrain_near_09_09.png",
+   "triangles": 2048,
+   "bounds_min": [
+    -32.0,
+    -32.0,
+    -12.3157
+   ],
+   "bounds_max": [
+    32.0,
+    32.0,
+    10.7314
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_00_00",
+   "obj": "terrain_mid_00_00.obj",
+   "texture": "terrain_mid_00_00.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -55.0461
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    32.859
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_01_00",
+   "obj": "terrain_mid_01_00.obj",
+   "texture": "terrain_mid_01_00.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -20.3344
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    19.219
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_02_00",
+   "obj": "terrain_mid_02_00.obj",
+   "texture": "terrain_mid_02_00.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -42.7968
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    52.3855
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_03_00",
+   "obj": "terrain_mid_03_00.obj",
+   "texture": "terrain_mid_03_00.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -23.1018
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    46.5233
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_04_00",
+   "obj": "terrain_mid_04_00.obj",
+   "texture": "terrain_mid_04_00.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -36.5922
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    21.4515
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_05_00",
+   "obj": "terrain_mid_05_00.obj",
+   "texture": "terrain_mid_05_00.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -32.0915
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    21.4424
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_06_00",
+   "obj": "terrain_mid_06_00.obj",
+   "texture": "terrain_mid_06_00.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -27.5165
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    17.2542
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_07_00",
+   "obj": "terrain_mid_07_00.obj",
+   "texture": "terrain_mid_07_00.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -35.2486
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    30.8702
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_00_01",
+   "obj": "terrain_mid_00_01.obj",
+   "texture": "terrain_mid_00_01.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -56.4478
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    70.5402
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_01_01",
+   "obj": "terrain_mid_01_01.obj",
+   "texture": "terrain_mid_01_01.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -33.5859
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    32.2121
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_02_01",
+   "obj": "terrain_mid_02_01.obj",
+   "texture": "terrain_mid_02_01.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -19.8612
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    28.682
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_03_01",
+   "obj": "terrain_mid_03_01.obj",
+   "texture": "terrain_mid_03_01.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -42.9375
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    26.9463
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_04_01",
+   "obj": "terrain_mid_04_01.obj",
+   "texture": "terrain_mid_04_01.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -36.0745
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    27.6749
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_05_01",
+   "obj": "terrain_mid_05_01.obj",
+   "texture": "terrain_mid_05_01.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -32.5833
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    32.4407
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_06_01",
+   "obj": "terrain_mid_06_01.obj",
+   "texture": "terrain_mid_06_01.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -38.4353
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    34.1097
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_07_01",
+   "obj": "terrain_mid_07_01.obj",
+   "texture": "terrain_mid_07_01.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -29.3091
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    41.1761
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_00_02",
+   "obj": "terrain_mid_00_02.obj",
+   "texture": "terrain_mid_00_02.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -75.6609
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    80.4087
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_01_02",
+   "obj": "terrain_mid_01_02.obj",
+   "texture": "terrain_mid_01_02.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -50.1796
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    56.5745
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_02_02",
+   "obj": "terrain_mid_02_02.obj",
+   "texture": "terrain_mid_02_02.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -34.5042
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    40.4879
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_03_02",
+   "obj": "terrain_mid_03_02.obj",
+   "texture": "terrain_mid_03_02.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -39.0052
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    38.7101
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_04_02",
+   "obj": "terrain_mid_04_02.obj",
+   "texture": "terrain_mid_04_02.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -45.6695
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    39.4216
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_05_02",
+   "obj": "terrain_mid_05_02.obj",
+   "texture": "terrain_mid_05_02.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -38.2044
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    47.6651
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_06_02",
+   "obj": "terrain_mid_06_02.obj",
+   "texture": "terrain_mid_06_02.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -48.2134
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    61.7504
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_07_02",
+   "obj": "terrain_mid_07_02.obj",
+   "texture": "terrain_mid_07_02.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -34.4193
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    32.7982
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_00_03",
+   "obj": "terrain_mid_00_03.obj",
+   "texture": "terrain_mid_00_03.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -75.5223
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    46.2023
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_01_03",
+   "obj": "terrain_mid_01_03.obj",
+   "texture": "terrain_mid_01_03.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -68.5048
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    45.4583
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_02_03",
+   "obj": "terrain_mid_02_03.obj",
+   "texture": "terrain_mid_02_03.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -51.1312
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    63.2672
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_05_03",
+   "obj": "terrain_mid_05_03.obj",
+   "texture": "terrain_mid_05_03.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -54.1379
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    42.713
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_06_03",
+   "obj": "terrain_mid_06_03.obj",
+   "texture": "terrain_mid_06_03.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -57.1573
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    70.2092
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_07_03",
+   "obj": "terrain_mid_07_03.obj",
+   "texture": "terrain_mid_07_03.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -45.8909
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    78.4016
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_00_04",
+   "obj": "terrain_mid_00_04.obj",
+   "texture": "terrain_mid_00_04.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -36.6521
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    23.6751
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_01_04",
+   "obj": "terrain_mid_01_04.obj",
+   "texture": "terrain_mid_01_04.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -52.7005
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    30.4152
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_02_04",
+   "obj": "terrain_mid_02_04.obj",
+   "texture": "terrain_mid_02_04.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -28.9004
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    46.1434
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_05_04",
+   "obj": "terrain_mid_05_04.obj",
+   "texture": "terrain_mid_05_04.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -54.4633
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    59.5353
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_06_04",
+   "obj": "terrain_mid_06_04.obj",
+   "texture": "terrain_mid_06_04.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -102.8893
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    73.9826
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_07_04",
+   "obj": "terrain_mid_07_04.obj",
+   "texture": "terrain_mid_07_04.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -50.0724
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    72.8836
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_00_05",
+   "obj": "terrain_mid_00_05.obj",
+   "texture": "terrain_mid_00_05.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -25.1902
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    49.4832
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_01_05",
+   "obj": "terrain_mid_01_05.obj",
+   "texture": "terrain_mid_01_05.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -48.0532
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    37.9609
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_02_05",
+   "obj": "terrain_mid_02_05.obj",
+   "texture": "terrain_mid_02_05.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -60.5322
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    25.1359
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_03_05",
+   "obj": "terrain_mid_03_05.obj",
+   "texture": "terrain_mid_03_05.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -45.9217
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    52.2759
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_04_05",
+   "obj": "terrain_mid_04_05.obj",
+   "texture": "terrain_mid_04_05.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -56.334
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    36.8405
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_05_05",
+   "obj": "terrain_mid_05_05.obj",
+   "texture": "terrain_mid_05_05.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -41.1227
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    69.5991
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_06_05",
+   "obj": "terrain_mid_06_05.obj",
+   "texture": "terrain_mid_06_05.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -37.787
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    58.4282
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_07_05",
+   "obj": "terrain_mid_07_05.obj",
+   "texture": "terrain_mid_07_05.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -65.7655
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    69.0891
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_00_06",
+   "obj": "terrain_mid_00_06.obj",
+   "texture": "terrain_mid_00_06.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -62.6734
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    55.4285
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_01_06",
+   "obj": "terrain_mid_01_06.obj",
+   "texture": "terrain_mid_01_06.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -83.5135
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    47.6886
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_02_06",
+   "obj": "terrain_mid_02_06.obj",
+   "texture": "terrain_mid_02_06.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -64.9501
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    81.7718
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_03_06",
+   "obj": "terrain_mid_03_06.obj",
+   "texture": "terrain_mid_03_06.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -51.995
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    44.4875
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_04_06",
+   "obj": "terrain_mid_04_06.obj",
+   "texture": "terrain_mid_04_06.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -58.5015
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    51.657
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_05_06",
+   "obj": "terrain_mid_05_06.obj",
+   "texture": "terrain_mid_05_06.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -46.0789
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    23.8056
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_06_06",
+   "obj": "terrain_mid_06_06.obj",
+   "texture": "terrain_mid_06_06.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -37.5783
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    39.329
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_07_06",
+   "obj": "terrain_mid_07_06.obj",
+   "texture": "terrain_mid_07_06.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -38.6063
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    64.5336
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_00_07",
+   "obj": "terrain_mid_00_07.obj",
+   "texture": "terrain_mid_00_07.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -61.8902
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    52.3517
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_01_07",
+   "obj": "terrain_mid_01_07.obj",
+   "texture": "terrain_mid_01_07.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -64.4922
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    39.2239
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_02_07",
+   "obj": "terrain_mid_02_07.obj",
+   "texture": "terrain_mid_02_07.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -47.5742
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    58.3886
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_03_07",
+   "obj": "terrain_mid_03_07.obj",
+   "texture": "terrain_mid_03_07.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -37.2561
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    45.871
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_04_07",
+   "obj": "terrain_mid_04_07.obj",
+   "texture": "terrain_mid_04_07.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -48.838
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    36.6381
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_05_07",
+   "obj": "terrain_mid_05_07.obj",
+   "texture": "terrain_mid_05_07.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -27.3109
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    47.0315
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_06_07",
+   "obj": "terrain_mid_06_07.obj",
+   "texture": "terrain_mid_06_07.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -54.8957
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    57.4265
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_mid_07_07",
+   "obj": "terrain_mid_07_07.obj",
+   "texture": "terrain_mid_07_07.png",
+   "triangles": 512,
+   "bounds_min": [
+    -160.0,
+    -160.0,
+    -53.1254
+   ],
+   "bounds_max": [
+    160.0,
+    160.0,
+    60.473
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_far_00_00",
+   "obj": "terrain_far_00_00.obj",
+   "texture": "terrain_far_00_00.png",
+   "triangles": 512,
+   "bounds_min": [
+    -320.0,
+    -320.0,
+    -59.5465
+   ],
+   "bounds_max": [
+    320.0,
+    320.0,
+    92.8978
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_far_01_00",
+   "obj": "terrain_far_01_00.obj",
+   "texture": "terrain_far_01_00.png",
+   "triangles": 512,
+   "bounds_min": [
+    -320.0,
+    -320.0,
+    -98.6604
+   ],
+   "bounds_max": [
+    320.0,
+    320.0,
+    80.895
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_far_02_00",
+   "obj": "terrain_far_02_00.obj",
+   "texture": "terrain_far_02_00.png",
+   "triangles": 512,
+   "bounds_min": [
+    -320.0,
+    -320.0,
+    -68.5418
+   ],
+   "bounds_max": [
+    320.0,
+    320.0,
+    52.7763
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_far_03_00",
+   "obj": "terrain_far_03_00.obj",
+   "texture": "terrain_far_03_00.png",
+   "triangles": 512,
+   "bounds_min": [
+    -320.0,
+    -320.0,
+    -38.5753
+   ],
+   "bounds_max": [
+    320.0,
+    320.0,
+    28.2928
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_far_04_00",
+   "obj": "terrain_far_04_00.obj",
+   "texture": "terrain_far_04_00.png",
+   "triangles": 512,
+   "bounds_min": [
+    -320.0,
+    -320.0,
+    -57.1955
+   ],
+   "bounds_max": [
+    320.0,
+    320.0,
+    45.6275
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_far_05_00",
+   "obj": "terrain_far_05_00.obj",
+   "texture": "terrain_far_05_00.png",
+   "triangles": 512,
+   "bounds_min": [
+    -320.0,
+    -320.0,
+    -69.9409
+   ],
+   "bounds_max": [
+    320.0,
+    320.0,
+    68.638
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_far_00_01",
+   "obj": "terrain_far_00_01.obj",
+   "texture": "terrain_far_00_01.png",
+   "triangles": 512,
+   "bounds_min": [
+    -320.0,
+    -320.0,
+    -79.3811
+   ],
+   "bounds_max": [
+    320.0,
+    320.0,
+    90.417
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_far_05_01",
+   "obj": "terrain_far_05_01.obj",
+   "texture": "terrain_far_05_01.png",
+   "triangles": 512,
+   "bounds_min": [
+    -320.0,
+    -320.0,
+    -53.8221
+   ],
+   "bounds_max": [
+    320.0,
+    320.0,
+    76.4811
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_far_00_02",
+   "obj": "terrain_far_00_02.obj",
+   "texture": "terrain_far_00_02.png",
+   "triangles": 512,
+   "bounds_min": [
+    -320.0,
+    -320.0,
+    -96.044
+   ],
+   "bounds_max": [
+    320.0,
+    320.0,
+    118.787
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_far_05_02",
+   "obj": "terrain_far_05_02.obj",
+   "texture": "terrain_far_05_02.png",
+   "triangles": 512,
+   "bounds_min": [
+    -320.0,
+    -320.0,
+    -53.2066
+   ],
+   "bounds_max": [
+    320.0,
+    320.0,
+    113.034
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_far_00_03",
+   "obj": "terrain_far_00_03.obj",
+   "texture": "terrain_far_00_03.png",
+   "triangles": 512,
+   "bounds_min": [
+    -320.0,
+    -320.0,
+    -98.521
+   ],
+   "bounds_max": [
+    320.0,
+    320.0,
+    54.6581
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_far_05_03",
+   "obj": "terrain_far_05_03.obj",
+   "texture": "terrain_far_05_03.png",
+   "triangles": 512,
+   "bounds_min": [
+    -320.0,
+    -320.0,
+    -124.886
+   ],
+   "bounds_max": [
+    320.0,
+    320.0,
+    179.1385
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_far_00_04",
+   "obj": "terrain_far_00_04.obj",
+   "texture": "terrain_far_00_04.png",
+   "triangles": 512,
+   "bounds_min": [
+    -320.0,
+    -320.0,
+    -69.4879
+   ],
+   "bounds_max": [
+    320.0,
+    320.0,
+    73.5168
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_far_05_04",
+   "obj": "terrain_far_05_04.obj",
+   "texture": "terrain_far_05_04.png",
+   "triangles": 512,
+   "bounds_min": [
+    -320.0,
+    -320.0,
+    -132.3518
+   ],
+   "bounds_max": [
+    320.0,
+    320.0,
+    148.9397
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_far_00_05",
+   "obj": "terrain_far_00_05.obj",
+   "texture": "terrain_far_00_05.png",
+   "triangles": 512,
+   "bounds_min": [
+    -320.0,
+    -320.0,
+    -55.4857
+   ],
+   "bounds_max": [
+    320.0,
+    320.0,
+    51.3161
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_far_01_05",
+   "obj": "terrain_far_01_05.obj",
+   "texture": "terrain_far_01_05.png",
+   "triangles": 512,
+   "bounds_min": [
+    -320.0,
+    -320.0,
+    -93.7195
+   ],
+   "bounds_max": [
+    320.0,
+    320.0,
+    102.194
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_far_02_05",
+   "obj": "terrain_far_02_05.obj",
+   "texture": "terrain_far_02_05.png",
+   "triangles": 512,
+   "bounds_min": [
+    -320.0,
+    -320.0,
+    -76.2122
+   ],
+   "bounds_max": [
+    320.0,
+    320.0,
+    99.9772
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_far_03_05",
+   "obj": "terrain_far_03_05.obj",
+   "texture": "terrain_far_03_05.png",
+   "triangles": 512,
+   "bounds_min": [
+    -320.0,
+    -320.0,
+    -79.5139
+   ],
+   "bounds_max": [
+    320.0,
+    320.0,
+    95.8472
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_far_04_05",
+   "obj": "terrain_far_04_05.obj",
+   "texture": "terrain_far_04_05.png",
+   "triangles": 512,
+   "bounds_min": [
+    -320.0,
+    -320.0,
+    -93.6182
+   ],
+   "bounds_max": [
+    320.0,
+    320.0,
+    97.5016
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_far_05_05",
+   "obj": "terrain_far_05_05.obj",
+   "texture": "terrain_far_05_05.png",
+   "triangles": 512,
+   "bounds_min": [
+    -320.0,
+    -320.0,
+    -94.1861
+   ],
+   "bounds_max": [
+    320.0,
+    320.0,
+    172.1724
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "terrain_skirt",
+   "obj": "terrain_skirt.obj",
+   "texture": "terrain_skirt.png",
+   "triangles": 1536,
+   "bounds_min": [
+    -3270.0,
+    -3270.0,
+    -236.8527
+   ],
+   "bounds_max": [
+    3270.0,
+    3270.0,
+    299.7732
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [
+    "tree_cache"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  }
+ ],
+ "placements": [
+  {
+   "item": "terrain_core_00_00",
+   "position": [
+    -112.0,
+    -117.0,
+    21.1258
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_01_00",
+   "position": [
+    -80.0,
+    -117.0,
+    15.4503
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_02_00",
+   "position": [
+    -48.0,
+    -117.0,
+    13.4114
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_03_00",
+   "position": [
+    -16.0,
+    -117.0,
+    14.078
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_04_00",
+   "position": [
+    16.0,
+    -117.0,
+    11.373
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_05_00",
+   "position": [
+    48.0,
+    -117.0,
+    3.9107
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_06_00",
+   "position": [
+    80.0,
+    -117.0,
+    -7.4012
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_07_00",
+   "position": [
+    112.0,
+    -117.0,
+    -16.3827
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_00_01",
+   "position": [
+    -112.0,
+    -85.0,
+    20.6513
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_01_01",
+   "position": [
+    -80.0,
+    -85.0,
+    18.6718
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_02_01",
+   "position": [
+    -48.0,
+    -85.0,
+    18.8523
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_03_01",
+   "position": [
+    -16.0,
+    -85.0,
+    20.0832
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_04_01",
+   "position": [
+    16.0,
+    -85.0,
+    17.9574
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_05_01",
+   "position": [
+    48.0,
+    -85.0,
+    10.0812
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_06_01",
+   "position": [
+    80.0,
+    -85.0,
+    -0.4316
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_07_01",
+   "position": [
+    112.0,
+    -85.0,
+    -7.8455
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_00_02",
+   "position": [
+    -112.0,
+    -53.0,
+    25.846
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_01_02",
+   "position": [
+    -80.0,
+    -53.0,
+    26.4929
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_02_02",
+   "position": [
+    -48.0,
+    -53.0,
+    26.5955
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_03_02",
+   "position": [
+    -16.0,
+    -53.0,
+    26.4866
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_04_02",
+   "position": [
+    16.0,
+    -53.0,
+    23.4134
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_05_02",
+   "position": [
+    48.0,
+    -53.0,
+    15.6346
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_06_02",
+   "position": [
+    80.0,
+    -53.0,
+    5.3636
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_07_02",
+   "position": [
+    112.0,
+    -53.0,
+    -1.1094
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_00_03",
+   "position": [
+    -112.0,
+    -21.0,
+    35.4533
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_01_03",
+   "position": [
+    -80.0,
+    -21.0,
+    36.3416
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_02_03",
+   "position": [
+    -48.0,
+    -21.0,
+    34.8286
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_03_03",
+   "position": [
+    -16.0,
+    -21.0,
+    31.7735
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_04_03",
+   "position": [
+    16.0,
+    -21.0,
+    28.0674
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_05_03",
+   "position": [
+    48.0,
+    -21.0,
+    20.6345
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_06_03",
+   "position": [
+    80.0,
+    -21.0,
+    11.0502
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_07_03",
+   "position": [
+    112.0,
+    -21.0,
+    5.2685
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_00_04",
+   "position": [
+    -112.0,
+    11.0,
+    47.1115
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_01_04",
+   "position": [
+    -80.0,
+    11.0,
+    46.6452
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_02_04",
+   "position": [
+    -48.0,
+    11.0,
+    42.9961
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_03_04",
+   "position": [
+    -16.0,
+    11.0,
+    37.4319
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_04_04",
+   "position": [
+    16.0,
+    11.0,
+    32.7761
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_05_04",
+   "position": [
+    48.0,
+    11.0,
+    27.2737
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_06_04",
+   "position": [
+    80.0,
+    11.0,
+    18.6957
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_07_04",
+   "position": [
+    112.0,
+    11.0,
+    11.1221
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_00_05",
+   "position": [
+    -112.0,
+    43.0,
+    59.417
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_01_05",
+   "position": [
+    -80.0,
+    43.0,
+    57.5173
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_02_05",
+   "position": [
+    -48.0,
+    43.0,
+    52.6628
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_03_05",
+   "position": [
+    -16.0,
+    43.0,
+    46.0167
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_04_05",
+   "position": [
+    16.0,
+    43.0,
+    39.6885
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_05_05",
+   "position": [
+    48.0,
+    43.0,
+    35.2921
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_06_05",
+   "position": [
+    80.0,
+    43.0,
+    27.5268
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_07_05",
+   "position": [
+    112.0,
+    43.0,
+    17.9833
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_00_06",
+   "position": [
+    -112.0,
+    75.0,
+    71.7784
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_01_06",
+   "position": [
+    -80.0,
+    75.0,
+    68.6651
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_02_06",
+   "position": [
+    -48.0,
+    75.0,
+    63.7249
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_03_06",
+   "position": [
+    -16.0,
+    75.0,
+    56.3147
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_04_06",
+   "position": [
+    16.0,
+    75.0,
+    47.3591
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_05_06",
+   "position": [
+    48.0,
+    75.0,
+    42.1961
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_06_06",
+   "position": [
+    80.0,
+    75.0,
+    35.905
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_07_06",
+   "position": [
+    112.0,
+    75.0,
+    26.7098
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_00_07",
+   "position": [
+    -112.0,
+    107.0,
+    83.7402
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_01_07",
+   "position": [
+    -80.0,
+    107.0,
+    79.2699
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_02_07",
+   "position": [
+    -48.0,
+    107.0,
+    73.5309
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_03_07",
+   "position": [
+    -16.0,
+    107.0,
+    65.7831
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_04_07",
+   "position": [
+    16.0,
+    107.0,
+    55.6698
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_05_07",
+   "position": [
+    48.0,
+    107.0,
+    49.2357
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_06_07",
+   "position": [
+    80.0,
+    107.0,
+    43.7109
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_core_07_07",
+   "position": [
+    112.0,
+    107.0,
+    36.7844
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "core"
+  },
+  {
+   "item": "terrain_near_00_00",
+   "position": [
+    -288.0,
+    -293.0,
+    23.051
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_01_00",
+   "position": [
+    -224.0,
+    -293.0,
+    12.5774
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_02_00",
+   "position": [
+    -160.0,
+    -293.0,
+    5.6674
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_03_00",
+   "position": [
+    -96.0,
+    -293.0,
+    3.3783
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_04_00",
+   "position": [
+    -32.0,
+    -293.0,
+    4.6947
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_05_00",
+   "position": [
+    32.0,
+    -293.0,
+    2.9096
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_06_00",
+   "position": [
+    96.0,
+    -293.0,
+    0.2125
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_07_00",
+   "position": [
+    160.0,
+    -293.0,
+    -11.0086
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_08_00",
+   "position": [
+    224.0,
+    -293.0,
+    -33.9164
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_09_00",
+   "position": [
+    288.0,
+    -293.0,
+    -49.2534
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_00_01",
+   "position": [
+    -288.0,
+    -229.0,
+    26.1676
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_01_01",
+   "position": [
+    -224.0,
+    -229.0,
+    18.3866
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_02_01",
+   "position": [
+    -160.0,
+    -229.0,
+    16.0872
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_03_01",
+   "position": [
+    -96.0,
+    -229.0,
+    10.3968
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_04_01",
+   "position": [
+    -32.0,
+    -229.0,
+    5.1799
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_05_01",
+   "position": [
+    32.0,
+    -229.0,
+    0.3393
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_06_01",
+   "position": [
+    96.0,
+    -229.0,
+    -1.8568
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_07_01",
+   "position": [
+    160.0,
+    -229.0,
+    -15.7513
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_08_01",
+   "position": [
+    224.0,
+    -229.0,
+    -36.7822
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_09_01",
+   "position": [
+    288.0,
+    -229.0,
+    -43.2525
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_00_02",
+   "position": [
+    -288.0,
+    -165.0,
+    32.9763
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_01_02",
+   "position": [
+    -224.0,
+    -165.0,
+    31.895
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_02_02",
+   "position": [
+    -160.0,
+    -165.0,
+    25.467
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_03_02",
+   "position": [
+    -96.0,
+    -165.0,
+    15.8467
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_04_02",
+   "position": [
+    -32.0,
+    -165.0,
+    7.7333
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_05_02",
+   "position": [
+    32.0,
+    -165.0,
+    -0.6542
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_06_02",
+   "position": [
+    96.0,
+    -165.0,
+    -17.3291
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_07_02",
+   "position": [
+    160.0,
+    -165.0,
+    -28.6601
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_08_02",
+   "position": [
+    224.0,
+    -165.0,
+    -31.3628
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_09_02",
+   "position": [
+    288.0,
+    -165.0,
+    -27.2828
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_00_03",
+   "position": [
+    -288.0,
+    -101.0,
+    53.4659
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_01_03",
+   "position": [
+    -224.0,
+    -101.0,
+    45.1836
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_02_03",
+   "position": [
+    -160.0,
+    -101.0,
+    30.9682
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_07_03",
+   "position": [
+    160.0,
+    -101.0,
+    -14.4357
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_08_03",
+   "position": [
+    224.0,
+    -101.0,
+    -18.1291
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_09_03",
+   "position": [
+    288.0,
+    -101.0,
+    -18.2549
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_00_04",
+   "position": [
+    -288.0,
+    -37.0,
+    67.8534
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_01_04",
+   "position": [
+    -224.0,
+    -37.0,
+    48.0868
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_02_04",
+   "position": [
+    -160.0,
+    -37.0,
+    31.1503
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_07_04",
+   "position": [
+    160.0,
+    -37.0,
+    -2.7072
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_08_04",
+   "position": [
+    224.0,
+    -37.0,
+    -10.6402
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_09_04",
+   "position": [
+    288.0,
+    -37.0,
+    -19.962
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_00_05",
+   "position": [
+    -288.0,
+    27.0,
+    63.2824
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_01_05",
+   "position": [
+    -224.0,
+    27.0,
+    47.0219
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_02_05",
+   "position": [
+    -160.0,
+    27.0,
+    50.4038
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_07_05",
+   "position": [
+    160.0,
+    27.0,
+    10.3818
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_08_05",
+   "position": [
+    224.0,
+    27.0,
+    3.3384
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_09_05",
+   "position": [
+    288.0,
+    27.0,
+    -13.7791
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_00_06",
+   "position": [
+    -288.0,
+    91.0,
+    60.6149
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_01_06",
+   "position": [
+    -224.0,
+    91.0,
+    68.8481
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_02_06",
+   "position": [
+    -160.0,
+    91.0,
+    78.614
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_07_06",
+   "position": [
+    160.0,
+    91.0,
+    25.6088
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_08_06",
+   "position": [
+    224.0,
+    91.0,
+    14.8742
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_09_06",
+   "position": [
+    288.0,
+    91.0,
+    -2.739
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_00_07",
+   "position": [
+    -288.0,
+    155.0,
+    80.5083
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_01_07",
+   "position": [
+    -224.0,
+    155.0,
+    96.3873
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_02_07",
+   "position": [
+    -160.0,
+    155.0,
+    104.8867
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_03_07",
+   "position": [
+    -96.0,
+    155.0,
+    98.279
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_04_07",
+   "position": [
+    -32.0,
+    155.0,
+    83.8901
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_05_07",
+   "position": [
+    32.0,
+    155.0,
+    68.2349
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_06_07",
+   "position": [
+    96.0,
+    155.0,
+    53.6306
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_07_07",
+   "position": [
+    160.0,
+    155.0,
+    37.2597
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_08_07",
+   "position": [
+    224.0,
+    155.0,
+    27.3785
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_09_07",
+   "position": [
+    288.0,
+    155.0,
+    13.7079
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_00_08",
+   "position": [
+    -288.0,
+    219.0,
+    99.4827
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_01_08",
+   "position": [
+    -224.0,
+    219.0,
+    116.6095
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_02_08",
+   "position": [
+    -160.0,
+    219.0,
+    120.3258
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_03_08",
+   "position": [
+    -96.0,
+    219.0,
+    106.4794
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_04_08",
+   "position": [
+    -32.0,
+    219.0,
+    90.7754
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_05_08",
+   "position": [
+    32.0,
+    219.0,
+    79.508
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_06_08",
+   "position": [
+    96.0,
+    219.0,
+    65.6596
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_07_08",
+   "position": [
+    160.0,
+    219.0,
+    47.014
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_08_08",
+   "position": [
+    224.0,
+    219.0,
+    40.6783
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_09_08",
+   "position": [
+    288.0,
+    219.0,
+    25.0321
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_00_09",
+   "position": [
+    -288.0,
+    283.0,
+    115.9318
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_01_09",
+   "position": [
+    -224.0,
+    283.0,
+    126.5006
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_02_09",
+   "position": [
+    -160.0,
+    283.0,
+    113.7272
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_03_09",
+   "position": [
+    -96.0,
+    283.0,
+    91.1589
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_04_09",
+   "position": [
+    -32.0,
+    283.0,
+    74.7158
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_05_09",
+   "position": [
+    32.0,
+    283.0,
+    68.0576
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_06_09",
+   "position": [
+    96.0,
+    283.0,
+    62.1612
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_07_09",
+   "position": [
+    160.0,
+    283.0,
+    50.1426
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_08_09",
+   "position": [
+    224.0,
+    283.0,
+    42.437
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_near_09_09",
+   "position": [
+    288.0,
+    283.0,
+    29.158
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "near"
+  },
+  {
+   "item": "terrain_mid_00_00",
+   "position": [
+    -1120.0,
+    -1125.0,
+    -61.4318
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_01_00",
+   "position": [
+    -800.0,
+    -1125.0,
+    -14.6638
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_02_00",
+   "position": [
+    -480.0,
+    -1125.0,
+    -12.8494
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_03_00",
+   "position": [
+    -160.0,
+    -1125.0,
+    -55.5304
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_04_00",
+   "position": [
+    160.0,
+    -1125.0,
+    -72.4026
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_05_00",
+   "position": [
+    480.0,
+    -1125.0,
+    -91.3059
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_06_00",
+   "position": [
+    800.0,
+    -1125.0,
+    -83.9402
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_07_00",
+   "position": [
+    1120.0,
+    -1125.0,
+    -123.5794
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_00_01",
+   "position": [
+    -1120.0,
+    -805.0,
+    -44.6297
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_01_01",
+   "position": [
+    -800.0,
+    -805.0,
+    -5.6676
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_02_01",
+   "position": [
+    -480.0,
+    -805.0,
+    10.8541
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_03_01",
+   "position": [
+    -160.0,
+    -805.0,
+    -29.2377
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_04_01",
+   "position": [
+    160.0,
+    -805.0,
+    -68.0063
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_05_01",
+   "position": [
+    480.0,
+    -805.0,
+    -103.3557
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_06_01",
+   "position": [
+    800.0,
+    -805.0,
+    -125.0545
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_07_01",
+   "position": [
+    1120.0,
+    -805.0,
+    -152.6328
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_00_02",
+   "position": [
+    -1120.0,
+    -485.0,
+    28.8694
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_01_02",
+   "position": [
+    -800.0,
+    -485.0,
+    57.5708
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_02_02",
+   "position": [
+    -480.0,
+    -485.0,
+    25.069
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_03_02",
+   "position": [
+    -160.0,
+    -485.0,
+    -13.556
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_04_02",
+   "position": [
+    160.0,
+    -485.0,
+    -35.7699
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_05_02",
+   "position": [
+    480.0,
+    -485.0,
+    -55.6716
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_06_02",
+   "position": [
+    800.0,
+    -485.0,
+    -91.0726
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_07_02",
+   "position": [
+    1120.0,
+    -485.0,
+    -129.4817
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_00_03",
+   "position": [
+    -1120.0,
+    -165.0,
+    124.8419
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_01_03",
+   "position": [
+    -800.0,
+    -165.0,
+    133.2898
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_02_03",
+   "position": [
+    -480.0,
+    -165.0,
+    76.2853
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_05_03",
+   "position": [
+    480.0,
+    -165.0,
+    4.4151
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_06_03",
+   "position": [
+    800.0,
+    -165.0,
+    -46.1936
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_07_03",
+   "position": [
+    1120.0,
+    -165.0,
+    -135.162
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_00_04",
+   "position": [
+    -1120.0,
+    155.0,
+    147.1684
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_01_04",
+   "position": [
+    -800.0,
+    155.0,
+    148.3559
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_02_04",
+   "position": [
+    -480.0,
+    155.0,
+    89.247
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_05_04",
+   "position": [
+    480.0,
+    155.0,
+    -12.3063
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_06_04",
+   "position": [
+    800.0,
+    155.0,
+    -38.9142
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_07_04",
+   "position": [
+    1120.0,
+    155.0,
+    -120.71
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_00_05",
+   "position": [
+    -1120.0,
+    475.0,
+    125.792
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_01_05",
+   "position": [
+    -800.0,
+    475.0,
+    130.4038
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_02_05",
+   "position": [
+    -480.0,
+    475.0,
+    111.9022
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_03_05",
+   "position": [
+    -160.0,
+    475.0,
+    82.7584
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_04_05",
+   "position": [
+    160.0,
+    475.0,
+    24.7736
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_05_05",
+   "position": [
+    480.0,
+    475.0,
+    -52.0241
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_06_05",
+   "position": [
+    800.0,
+    475.0,
+    -103.9844
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_07_05",
+   "position": [
+    1120.0,
+    475.0,
+    -82.1017
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_00_06",
+   "position": [
+    -1120.0,
+    795.0,
+    196.2076
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_01_06",
+   "position": [
+    -800.0,
+    795.0,
+    148.3157
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_02_06",
+   "position": [
+    -480.0,
+    795.0,
+    79.6505
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_03_06",
+   "position": [
+    -160.0,
+    795.0,
+    15.1751
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_04_06",
+   "position": [
+    160.0,
+    795.0,
+    -12.8912
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_05_06",
+   "position": [
+    480.0,
+    795.0,
+    -40.7103
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_06_06",
+   "position": [
+    800.0,
+    795.0,
+    -94.5927
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_07_06",
+   "position": [
+    1120.0,
+    795.0,
+    -88.2827
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_00_07",
+   "position": [
+    -1120.0,
+    1115.0,
+    212.8794
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_01_07",
+   "position": [
+    -800.0,
+    1115.0,
+    140.5061
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_02_07",
+   "position": [
+    -480.0,
+    1115.0,
+    79.374
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_03_07",
+   "position": [
+    -160.0,
+    1115.0,
+    13.7429
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_04_07",
+   "position": [
+    160.0,
+    1115.0,
+    -45.5915
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_05_07",
+   "position": [
+    480.0,
+    1115.0,
+    -77.9529
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_06_07",
+   "position": [
+    800.0,
+    1115.0,
+    -57.6441
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_mid_07_07",
+   "position": [
+    1120.0,
+    1115.0,
+    -52.0293
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "mid"
+  },
+  {
+   "item": "terrain_far_00_00",
+   "position": [
+    -1600.0,
+    -1605.0,
+    -161.6009
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "far"
+  },
+  {
+   "item": "terrain_far_01_00",
+   "position": [
+    -960.0,
+    -1605.0,
+    -93.1241
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "far"
+  },
+  {
+   "item": "terrain_far_02_00",
+   "position": [
+    -320.0,
+    -1605.0,
+    -68.6561
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "far"
+  },
+  {
+   "item": "terrain_far_03_00",
+   "position": [
+    320.0,
+    -1605.0,
+    -80.918
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "far"
+  },
+  {
+   "item": "terrain_far_04_00",
+   "position": [
+    960.0,
+    -1605.0,
+    -114.5679
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "far"
+  },
+  {
+   "item": "terrain_far_05_00",
+   "position": [
+    1600.0,
+    -1605.0,
+    -170.9344
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "far"
+  },
+  {
+   "item": "terrain_far_00_01",
+   "position": [
+    -1600.0,
+    -965.0,
+    -88.8617
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "far"
+  },
+  {
+   "item": "terrain_far_05_01",
+   "position": [
+    1600.0,
+    -965.0,
+    -168.1797
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "far"
+  },
+  {
+   "item": "terrain_far_00_02",
+   "position": [
+    -1600.0,
+    -325.0,
+    33.0163
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "far"
+  },
+  {
+   "item": "terrain_far_05_02",
+   "position": [
+    1600.0,
+    -325.0,
+    -147.8992
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "far"
+  },
+  {
+   "item": "terrain_far_00_03",
+   "position": [
+    -1600.0,
+    315.0,
+    130.2497
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "far"
+  },
+  {
+   "item": "terrain_far_05_03",
+   "position": [
+    1600.0,
+    315.0,
+    -33.9304
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "far"
+  },
+  {
+   "item": "terrain_far_00_04",
+   "position": [
+    -1600.0,
+    955.0,
+    201.8217
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "far"
+  },
+  {
+   "item": "terrain_far_05_04",
+   "position": [
+    1600.0,
+    955.0,
+    35.5992
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "far"
+  },
+  {
+   "item": "terrain_far_00_05",
+   "position": [
+    -1600.0,
+    1595.0,
+    208.1783
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "far"
+  },
+  {
+   "item": "terrain_far_01_05",
+   "position": [
+    -960.0,
+    1595.0,
+    149.9242
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "far"
+  },
+  {
+   "item": "terrain_far_02_05",
+   "position": [
+    -320.0,
+    1595.0,
+    23.0147
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "far"
+  },
+  {
+   "item": "terrain_far_03_05",
+   "position": [
+    320.0,
+    1595.0,
+    -10.2804
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "far"
+  },
+  {
+   "item": "terrain_far_04_05",
+   "position": [
+    960.0,
+    1595.0,
+    44.638
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "far"
+  },
+  {
+   "item": "terrain_far_05_05",
+   "position": [
+    1600.0,
+    1595.0,
+    12.3666
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "far"
+  },
+  {
+   "item": "terrain_skirt",
+   "position": [
+    0.0,
+    -5.0,
+    -4.0227
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ring": "skirt"
+  }
+ ]
+}

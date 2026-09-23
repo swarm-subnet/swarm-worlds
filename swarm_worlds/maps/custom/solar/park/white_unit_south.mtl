@@ -1,0 +1,3 @@
+newmtl white_unit_south
+Kd 1 1 1
+map_Kd white_unit_south.png
