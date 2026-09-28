@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+The MIT License (MIT)
+Copyright © 2026 Swarm
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+documentation files (the “Software”), to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software,
+and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of
+the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+-->
+<robot name="dock3_pad">
+  <link name="base_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0" />
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+    </inertial>
+    <visual name="pad_black">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/pad_black.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_black">
+        <color rgba="0.0941 0.098 0.1059 1" />
+      </material>
+    </visual>
+    <visual name="pad_marker">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/pad_marker.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_marker">
+        <color rgba="0.9569 0.9569 0.949 1" />
+      </material>
+    </visual>
+    <visual name="pad_ramp">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/pad_ramp.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_ramp">
+        <color rgba="0.4196 0.4314 0.451 1" />
+      </material>
+    </visual>
+    <visual name="pad_strip">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/pad_strip.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_strip">
+        <color rgba="0.1725 0.1804 0.1922 1" />
+      </material>
+    </visual>
+    <collision concave="yes">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/pad_ramp.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision concave="yes">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/pad_strip.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

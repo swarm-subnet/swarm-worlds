@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+The MIT License (MIT)
+Copyright © 2026 Swarm
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+documentation files (the “Software”), to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software,
+and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of
+the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+-->
+<robot name="dock3">
+  <link name="base_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0" />
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+    </inertial>
+    <visual name="body_black">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/body_black.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_black">
+        <color rgba="0.0941 0.098 0.1059 1" />
+      </material>
+    </visual>
+    <visual name="body_charcoal">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/body_charcoal.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_charcoal">
+        <color rgba="0.2314 0.2392 0.2549 1" />
+      </material>
+    </visual>
+    <visual name="body_red">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/body_red.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_red">
+        <color rgba="0.7843 0.0784 0.1059 1" />
+      </material>
+    </visual>
+    <visual name="body_skirt">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/body_skirt.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_skirt">
+        <color rgba="0.8118 0.8235 0.8392 1" />
+      </material>
+    </visual>
+    <visual name="body_smoked">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/body_smoked.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_smoked">
+        <color rgba="0.1686 0.1843 0.2 1" />
+      </material>
+    </visual>
+    <visual name="body_white">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/body_white.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_white">
+        <color rgba="0.9255 0.9333 0.9412 1" />
+      </material>
+    </visual>
+    <visual name="body_yellow">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/body_yellow.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_yellow">
+        <color rgba="0.949 0.7608 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0.15" />
+      <geometry>
+        <box size="0.558 0.585 0.3" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0.077" />
+      <geometry>
+        <box size="0.6 0.585 0.038" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 -0.267 0.3905" />
+      <geometry>
+        <box size="0.558 0.051 0.181" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0.267 0.3905" />
+      <geometry>
+        <box size="0.558 0.051 0.181" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.27775 0 0.3905" />
+      <geometry>
+        <box size="0.0025 0.483 0.181" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.27775 0 0.3905" />
+      <geometry>
+        <box size="0.0025 0.483 0.181" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 -0.36675 0.349" />
+      <geometry>
+        <box size="0.132 0.1485 0.034" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="lid_left">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0" />
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+    </inertial>
+    <visual name="lid_left_black">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/lid_left_black.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_black">
+        <color rgba="0.0941 0.098 0.1059 1" />
+      </material>
+    </visual>
+    <visual name="lid_left_charcoal">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/lid_left_charcoal.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_charcoal">
+        <color rgba="0.2314 0.2392 0.2549 1" />
+      </material>
+    </visual>
+    <visual name="lid_left_marker">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/lid_left_marker.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_marker">
+        <color rgba="0.9569 0.9569 0.949 1" />
+      </material>
+    </visual>
+    <visual name="lid_left_metal">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/lid_left_metal.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_metal">
+        <color rgba="0.7216 0.7333 0.749 1" />
+      </material>
+    </visual>
+    <visual name="lid_left_smoked">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/lid_left_smoked.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_smoked">
+        <color rgba="0.1686 0.1843 0.2 1" />
+      </material>
+    </visual>
+    <visual name="lid_left_white">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/lid_left_white.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_white">
+        <color rgba="0.9255 0.9333 0.9412 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.1395 0 0.48" />
+      <geometry>
+        <box size="0.286 0.608 0.022" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.0075 0 0.2265" />
+      <geometry>
+        <box size="0.022 0.608 0.529" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.0315 -0.293 0.2265" />
+      <geometry>
+        <box size="0.07 0.022 0.529" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.1745 -0.293 0.355" />
+      <geometry>
+        <box size="0.216 0.022 0.272" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.0315 0.293 0.2265" />
+      <geometry>
+        <box size="0.07 0.022 0.529" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.1745 0.293 0.355" />
+      <geometry>
+        <box size="0.216 0.022 0.272" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="lid_left_hinge" type="revolute">
+    <parent link="base_link" />
+    <child link="lid_left" />
+    <origin rpy="0 0 0" xyz="-0.3165 0 0.134" />
+    <axis xyz="0 -1 0" />
+    <limit effort="0" lower="0" upper="1.5708" velocity="1" />
+  </joint>
+  <link name="lid_right">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0" />
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+    </inertial>
+    <visual name="lid_right_black">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/lid_right_black.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_black">
+        <color rgba="0.0941 0.098 0.1059 1" />
+      </material>
+    </visual>
+    <visual name="lid_right_charcoal">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/lid_right_charcoal.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_charcoal">
+        <color rgba="0.2314 0.2392 0.2549 1" />
+      </material>
+    </visual>
+    <visual name="lid_right_lens">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/lid_right_lens.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_lens">
+        <color rgba="0.0431 0.0471 0.0549 1" />
+      </material>
+    </visual>
+    <visual name="lid_right_marker">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/lid_right_marker.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_marker">
+        <color rgba="0.9569 0.9569 0.949 1" />
+      </material>
+    </visual>
+    <visual name="lid_right_metal">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/lid_right_metal.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_metal">
+        <color rgba="0.7216 0.7333 0.749 1" />
+      </material>
+    </visual>
+    <visual name="lid_right_skirt">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/lid_right_skirt.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_skirt">
+        <color rgba="0.8118 0.8235 0.8392 1" />
+      </material>
+    </visual>
+    <visual name="lid_right_smoked">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/lid_right_smoked.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_smoked">
+        <color rgba="0.1686 0.1843 0.2 1" />
+      </material>
+    </visual>
+    <visual name="lid_right_white">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./dock3/lid_right_white.obj" scale="1 1 1" />
+      </geometry>
+      <material name="dock3_dock_white">
+        <color rgba="0.9255 0.9333 0.9412 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.1735 0 0.48" />
+      <geometry>
+        <box size="0.354 0.608 0.022" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0075 0 0.2265" />
+      <geometry>
+        <box size="0.022 0.608 0.529" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0315 -0.293 0.2265" />
+      <geometry>
+        <box size="0.07 0.022 0.529" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.2085 -0.293 0.355" />
+      <geometry>
+        <box size="0.284 0.022 0.272" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0315 0.293 0.2265" />
+      <geometry>
+        <box size="0.07 0.022 0.529" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.2085 0.293 0.355" />
+      <geometry>
+        <box size="0.284 0.022 0.272" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="lid_right_hinge" type="revolute">
+    <parent link="base_link" />
+    <child link="lid_right" />
+    <origin rpy="0 0 0" xyz="0.3165 0 0.134" />
+    <axis xyz="0 1 0" />
+    <limit effort="0" lower="0" upper="1.5708" velocity="1" />
+  </joint>
+</robot>
