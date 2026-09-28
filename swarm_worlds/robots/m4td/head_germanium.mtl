@@ -1,0 +1,12 @@
+# Blender 5.1.1 MTL File: 'm4td_build.blend'
+# www.blender.org
+
+newmtl germanium
+Ns 722.500000
+Ka 0.600000 0.600000 0.600000
+Kd 0.043735 0.045186 0.051269
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3

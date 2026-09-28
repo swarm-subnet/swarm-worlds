@@ -155,6 +155,14 @@ def test_robots_contain_the_two_swarm_drones():
     assert (ROBOTS / "tello").is_dir()
 
 
+def test_robots_contain_the_patrol_hardware():
+    """The DJI Matrice 4TD (flying body and moving parts) and the Dock 3 (body with lids, and its pad) are shipped."""
+    for name in ("m4td.urdf", "m4td_moving.urdf", "dock3.urdf", "dock3_pad.urdf"):
+        assert (ROBOTS / name).is_file()
+    assert (ROBOTS / "m4td").is_dir()
+    assert (ROBOTS / "dock3").is_dir()
+
+
 def test_no_file_exceeds_github_limit():
     """No shipped file is above the size GitHub refuses."""
     too_big = [p for root in (MAPS, ROBOTS, TEXTURES, SKIES) for p in _all_files(root) if p.stat().st_size > MAX_FILE_BYTES]
