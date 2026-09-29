@@ -1,0 +1,3 @@
+newmtl dog_shepherd
+Kd 1 1 1
+map_Kd dog_shepherd_black_tan.png

@@ -17,10 +17,12 @@
 
 """Checks that every asset root, manifest entry, robot description, material library and sky the package ships resolves."""
 
+import ast
 import json
 import os
 import re
 import xml.etree.ElementTree as ET
+import zipfile
 from pathlib import Path
 
 import pytest
@@ -118,6 +120,35 @@ def test_solar_manifest_points_at_real_files():
     forest = manifest["forest"]
     for name in [forest["table"]] + forest["meshes"]:
         assert (solar / forest["folder"] / name).is_file(), name
+
+
+def _npy_shape(archive, member):
+    """Shape of one array in an npz, read from its header so the check needs no numpy."""
+    with archive.open(member) as handle:
+        head = handle.read(10)
+        size = int.from_bytes(head[8:10], "little")
+        return ast.literal_eval(handle.read(size).decode("latin1"))["shape"]
+
+
+def test_solar_dogs_point_at_real_files():
+    """Every dog body names files that ship, its pose table fits its mesh and covers every clip, and no dog is a threat."""
+    dogs = MAPS / "custom" / "solar" / "dogs"
+    table = json.loads((dogs / "dogs.json").read_text(encoding="utf-8"))
+    assert (table["class"], table["threat"], table["decoy"]) == ("dog", False, True)
+    assert table["bodies"]
+    for name, body in table["bodies"].items():
+        for file in [body["obj"], body["poses"], body["heat_map"], *body["coats"].values()]:
+            assert (dogs / file).is_file(), f"{name}: {file}"
+        lines = (dogs / body["obj"]).read_text(encoding="utf-8").splitlines()
+        vertices = sum(line.startswith("v ") for line in lines)
+        triangles = sum(line.startswith("f ") for line in lines)
+        with zipfile.ZipFile(dogs / body["poses"]) as archive:
+            frames, welded, axes = _npy_shape(archive, "poses.npy")
+            (corners,) = _npy_shape(archive, "corners.npy")
+        assert (welded, axes, corners) == (vertices, 3, 3 * triangles), name
+        for clip, spec in body["clips"].items():
+            assert spec["start"] + spec["frames"] <= frames, f"{name}: {clip}"
+            assert spec.get("then", clip) in body["clips"], f"{name}: {clip}"
 
 
 def test_lost_person_manifest_points_at_real_files():
