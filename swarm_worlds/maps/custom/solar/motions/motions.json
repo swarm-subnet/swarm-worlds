@@ -1,0 +1,2729 @@
+{
+ "format": 1,
+ "fps": 30,
+ "source": "NVIDIA kimodo-soma-rp-v1.1, 100 denoising steps, generated offline",
+ "frame": "Kimodo SOMA frame: y up, metres; every block starts with its root at x = z = 0 facing +z",
+ "rotations": "rotations[first:first + frames] are local xyzw rotations of the 30 joints below, in that order",
+ "joints": [
+  "Hips",
+  "Spine1",
+  "Spine2",
+  "Chest",
+  "Neck1",
+  "Neck2",
+  "Head",
+  "Jaw",
+  "LeftEye",
+  "RightEye",
+  "LeftShoulder",
+  "LeftArm",
+  "LeftForeArm",
+  "LeftHand",
+  "LeftHandThumbEnd",
+  "LeftHandMiddleEnd",
+  "RightShoulder",
+  "RightArm",
+  "RightForeArm",
+  "RightHand",
+  "RightHandThumbEnd",
+  "RightHandMiddleEnd",
+  "LeftLeg",
+  "LeftShin",
+  "LeftFoot",
+  "LeftToeBase",
+  "RightLeg",
+  "RightShin",
+  "RightFoot",
+  "RightToeBase"
+ ],
+ "mirror": {
+  "pairs": [
+   [
+    8,
+    9
+   ],
+   [
+    10,
+    16
+   ],
+   [
+    11,
+    17
+   ],
+   [
+    12,
+    18
+   ],
+   [
+    13,
+    19
+   ],
+   [
+    14,
+    20
+   ],
+   [
+    15,
+    21
+   ],
+   [
+    22,
+    26
+   ],
+   [
+    23,
+    27
+   ],
+   [
+    24,
+    28
+   ],
+   [
+    25,
+    29
+   ]
+  ],
+  "rotation": "(x, y, z, w) -> (x, -y, -z, w), then swap each pair",
+  "root": "x -> -x",
+  "travel": "x -> -x, turn -> -turn"
+ },
+ "chaining": "a block may follow another when its start equals the other's next; a loop repeats itself, each cycle placed at travel (x, z, turn) from the previous one; start {'hub': h} follows any block whose next is {'hub': h}; next null means hold the last frame",
+ "pin_frames": 3,
+ "gates": {
+  "seam_m": 0.03,
+  "loop_m": 0.06,
+  "slide_cm_s": 6.0,
+  "jitter_m_s3": 400.0,
+  "tmr_rank": 5,
+  "legs_cm": 0.5
+ },
+ "sprint_gates": {
+  "slide_cm_s": 13.0,
+  "jitter_m_s3": 3600.0
+ },
+ "blocks": {
+  "carry.0": {
+   "kind": "carry",
+   "stage": "theft",
+   "loop": true,
+   "first": 0,
+   "frames": 33,
+   "start": {
+    "loop": "carry.0"
+   },
+   "next": {
+    "loop": "carry.0"
+   },
+   "travel": {
+    "x": 0.031063421691837956,
+    "z": 1.3304483893692036,
+    "turn": 0.0
+   },
+   "prompt": "A person walks forward carrying a heavy load on the right shoulder, holding it steady with one hand.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.4322,
+    "jitter_m_s3": 231.7042,
+    "loop_m": 0.032,
+    "tmr": 0.9679,
+    "tmr_rank": 1.0,
+    "legs_cm": 2.49,
+    "nearest_m": 0.593
+   }
+  },
+  "carry.1": {
+   "kind": "carry",
+   "stage": "theft",
+   "loop": true,
+   "first": 33,
+   "frames": 60,
+   "start": {
+    "loop": "carry.1"
+   },
+   "next": {
+    "loop": "carry.1"
+   },
+   "travel": {
+    "x": -0.013292402371053669,
+    "z": 2.4376739789318775,
+    "turn": 0.0
+   },
+   "prompt": "A person walks forward carrying a heavy load on the right shoulder, holding it steady with one hand.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 3.4735,
+    "jitter_m_s3": 169.1461,
+    "loop_m": 0.0357,
+    "tmr": 0.8582,
+    "tmr_rank": 1.0,
+    "legs_cm": 1.9559,
+    "nearest_m": 0.593
+   }
+  },
+  "carry_freeze.0": {
+   "kind": "carry_freeze",
+   "stage": "reaction",
+   "loop": false,
+   "first": 93,
+   "frames": 105,
+   "start": {
+    "loop": "carry.0"
+   },
+   "next": null,
+   "travel": null,
+   "prompt": "A person walking with a load on the shoulder stops dead, looks up and stands completely still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.9942,
+    "jitter_m_s3": 138.3728,
+    "tmr": 0.807,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  },
+  "carry_freeze.1": {
+   "kind": "carry_freeze",
+   "stage": "reaction",
+   "loop": false,
+   "first": 198,
+   "frames": 105,
+   "start": {
+    "loop": "carry.1"
+   },
+   "next": null,
+   "travel": null,
+   "prompt": "A person walking with a load on the shoulder stops dead, looks up and stands completely still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.3988,
+    "jitter_m_s3": 140.5825,
+    "tmr": 0.8247,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  },
+  "carry_to_run.0": {
+   "kind": "carry_to_run",
+   "stage": "reaction",
+   "loop": false,
+   "first": 303,
+   "frames": 57,
+   "start": {
+    "loop": "carry.0"
+   },
+   "next": {
+    "loop": "run.0"
+   },
+   "travel": {
+    "x": 0.4878087020941415,
+    "z": 5.125053590083853,
+    "turn": -0.06297874450683594
+   },
+   "prompt": "A person walking with a load on the shoulder suddenly breaks into a fast run.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 5.1274,
+    "jitter_m_s3": 1566.2424,
+    "tmr": 0.8246,
+    "tmr_rank": 4.0,
+    "seam_m": 0.0
+   }
+  },
+  "carry_to_run.1": {
+   "kind": "carry_to_run",
+   "stage": "reaction",
+   "loop": false,
+   "first": 360,
+   "frames": 57,
+   "start": {
+    "loop": "carry.1"
+   },
+   "next": {
+    "loop": "run.1"
+   },
+   "travel": {
+    "x": -0.019024711401016983,
+    "z": 7.247025544587713,
+    "turn": 0.0639486312866211
+   },
+   "prompt": "A person walking with a load on the shoulder suddenly breaks into a fast run.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 6.7102,
+    "jitter_m_s3": 1080.0375,
+    "tmr": 0.8562,
+    "tmr_rank": 4.0,
+    "seam_m": 0.0
+   }
+  },
+  "crawl.0": {
+   "kind": "crawl",
+   "stage": "reaction",
+   "loop": true,
+   "first": 417,
+   "frames": 43,
+   "start": {
+    "loop": "crawl.0"
+   },
+   "next": {
+    "loop": "crawl.0"
+   },
+   "travel": {
+    "x": 0.0014331540840473167,
+    "z": 0.49491356406997844,
+    "turn": 0.0
+   },
+   "prompt": "A person crawls forward on the hands and knees, keeping the head and back low.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 4.4697,
+    "jitter_m_s3": 115.2133,
+    "loop_m": 0.0167,
+    "tmr": 0.969,
+    "tmr_rank": 1.0,
+    "nearest_m": 0.2618
+   }
+  },
+  "crawl.1": {
+   "kind": "crawl",
+   "stage": "reaction",
+   "loop": true,
+   "first": 460,
+   "frames": 73,
+   "start": {
+    "loop": "crawl.1"
+   },
+   "next": {
+    "loop": "crawl.1"
+   },
+   "travel": {
+    "x": -0.02614319493536177,
+    "z": 0.8974999711875167,
+    "turn": 0.0
+   },
+   "prompt": "A person crawls forward on the hands and knees, keeping the head and back low.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 5.8916,
+    "jitter_m_s3": 92.2202,
+    "loop_m": 0.0268,
+    "tmr": 0.98,
+    "tmr_rank": 1.0,
+    "nearest_m": 0.2618
+   }
+  },
+  "crawl_to_prone.0": {
+   "kind": "crawl_to_prone",
+   "stage": "reaction",
+   "loop": false,
+   "first": 533,
+   "frames": 72,
+   "start": {
+    "loop": "crawl.0"
+   },
+   "next": {
+    "hub": "prone"
+   },
+   "travel": {
+    "x": -0.07863570967469188,
+    "z": 0.482906948692616,
+    "turn": -0.06813192367553711
+   },
+   "prompt": "A person crawling on the hands and knees lowers down flat onto the stomach and lies still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 5.9696,
+    "jitter_m_s3": 229.4392,
+    "tmr": 0.9441,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "crawl_to_prone.1": {
+   "kind": "crawl_to_prone",
+   "stage": "reaction",
+   "loop": false,
+   "first": 605,
+   "frames": 72,
+   "start": {
+    "loop": "crawl.1"
+   },
+   "next": {
+    "hub": "prone"
+   },
+   "travel": {
+    "x": 0.15182705017210185,
+    "z": 0.36285208769681,
+    "turn": 0.03643512725830078
+   },
+   "prompt": "A person crawling on the hands and knees lowers down flat onto the stomach and lies still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 3.2443,
+    "jitter_m_s3": 144.7951,
+    "tmr": 0.9184,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "crouch_to_sneak.0": {
+   "kind": "crouch_to_sneak",
+   "stage": "arrival",
+   "loop": false,
+   "first": 677,
+   "frames": 72,
+   "start": {
+    "hub": "crouch"
+   },
+   "next": {
+    "loop": "sneak.0"
+   },
+   "travel": {
+    "x": 0.07692249119281769,
+    "z": 1.2373075485229492,
+    "turn": -0.12012052536010742
+   },
+   "prompt": "A person crouching low starts walking forward slowly in a fully crouched position, taking careful steps.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.6616,
+    "jitter_m_s3": 160.3024,
+    "tmr": 0.8133,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  },
+  "crouch_to_stand.0": {
+   "kind": "crouch_to_stand",
+   "stage": "reaction",
+   "loop": false,
+   "first": 749,
+   "frames": 87,
+   "start": {
+    "hub": "crouch"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": -0.011609062552452087,
+    "z": -0.014165007509291172,
+    "turn": 0.07376837730407715
+   },
+   "prompt": "A person squatting low slowly stands up and looks around.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.5055,
+    "jitter_m_s3": 68.5622,
+    "tmr": 0.9286,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "crouch_to_stand.1": {
+   "kind": "crouch_to_stand",
+   "stage": "reaction",
+   "loop": false,
+   "first": 836,
+   "frames": 87,
+   "start": {
+    "hub": "crouch"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.001545109087601304,
+    "z": -0.01536619383841753,
+    "turn": 0.07569026947021484
+   },
+   "prompt": "A person squatting low slowly stands up and looks around.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.9342,
+    "jitter_m_s3": 131.2132,
+    "tmr": 0.9242,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "crouch_watch.0": {
+   "kind": "crouch_watch",
+   "stage": "reaction",
+   "loop": true,
+   "first": 923,
+   "frames": 82,
+   "start": {
+    "loop": "crouch_watch.0"
+   },
+   "next": {
+    "loop": "crouch_watch.0"
+   },
+   "travel": {
+    "x": 0.0021033990501422048,
+    "z": -0.0005547046407154781,
+    "turn": 0.0
+   },
+   "prompt": "A person squatting low stays frozen and slowly turns the head to look up and around.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.1034,
+    "jitter_m_s3": 9.9792,
+    "loop_m": 0.0041,
+    "tmr": 0.819,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  },
+  "crouch_watch.0.in": {
+   "kind": "crouch_watch_in",
+   "stage": "reaction",
+   "loop": false,
+   "first": 1005,
+   "frames": 186,
+   "start": {
+    "hub": "crouch"
+   },
+   "next": {
+    "loop": "crouch_watch.0"
+   },
+   "travel": {
+    "x": 0.0011346905957907438,
+    "z": -0.0035540552344173193,
+    "turn": 0.026338815689086914
+   },
+   "prompt": "A person squatting low stays frozen and slowly turns the head to look up and around.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "crouch_watch_to_prone.0": {
+   "kind": "crouch_watch_to_prone",
+   "stage": "reaction",
+   "loop": false,
+   "first": 1191,
+   "frames": 72,
+   "start": {
+    "loop": "crouch_watch.0"
+   },
+   "next": {
+    "hub": "prone"
+   },
+   "travel": {
+    "x": 0.1547885686159134,
+    "z": 0.1712508350610733,
+    "turn": 0.10089278221130371
+   },
+   "prompt": "A person squatting low drops flat onto the stomach and lies still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 4.1382,
+    "jitter_m_s3": 320.8503,
+    "tmr": 0.9342,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "crouch_watch_to_run.0": {
+   "kind": "crouch_watch_to_run",
+   "stage": "reaction",
+   "loop": false,
+   "first": 1263,
+   "frames": 72,
+   "start": {
+    "loop": "crouch_watch.0"
+   },
+   "next": {
+    "loop": "run.0"
+   },
+   "travel": {
+    "x": 0.02261999435722828,
+    "z": -0.9624736309051514,
+    "turn": 0.06857466697692871
+   },
+   "prompt": "A person squatting low springs up and sprints away as fast as possible.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.9089,
+    "jitter_m_s3": 406.1925,
+    "tmr": 0.8274,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "cut_cable.0": {
+   "kind": "cut_cable",
+   "stage": "theft",
+   "loop": true,
+   "first": 1335,
+   "frames": 49,
+   "start": {
+    "loop": "cut_cable.0"
+   },
+   "next": {
+    "loop": "cut_cable.0"
+   },
+   "travel": {
+    "x": -0.0033653886064247823,
+    "z": 0.0014012320814288173,
+    "turn": 0.0
+   },
+   "prompt": "A person kneeling on one knee hammers repeatedly at something on the ground in front of them with both hands.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.3611,
+    "jitter_m_s3": 14.0041,
+    "loop_m": 0.0134,
+    "tmr": 0.8919,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0,
+    "nearest_m": 0.0429
+   }
+  },
+  "cut_cable.0.in": {
+   "kind": "cut_cable_in",
+   "stage": "theft",
+   "loop": false,
+   "first": 1384,
+   "frames": 55,
+   "start": {
+    "hub": "kneel"
+   },
+   "next": {
+    "loop": "cut_cable.0"
+   },
+   "travel": {
+    "x": -0.012695568671455023,
+    "z": 0.0015571371134940558,
+    "turn": -0.03791046142578125
+   },
+   "prompt": "A person kneeling on one knee hammers repeatedly at something on the ground in front of them with both hands.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "cut_cable.1": {
+   "kind": "cut_cable",
+   "stage": "theft",
+   "loop": true,
+   "first": 1439,
+   "frames": 85,
+   "start": {
+    "loop": "cut_cable.1"
+   },
+   "next": {
+    "loop": "cut_cable.1"
+   },
+   "travel": {
+    "x": 0.005315424867815111,
+    "z": 0.005155479540247684,
+    "turn": 0.0
+   },
+   "prompt": "A person kneeling on one knee hammers repeatedly at something on the ground in front of them with both hands.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.8225,
+    "jitter_m_s3": 52.6425,
+    "loop_m": 0.0178,
+    "tmr": 0.8652,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0,
+    "nearest_m": 0.0429
+   }
+  },
+  "cut_cable.1.in": {
+   "kind": "cut_cable_in",
+   "stage": "theft",
+   "loop": false,
+   "first": 1524,
+   "frames": 134,
+   "start": {
+    "hub": "kneel"
+   },
+   "next": {
+    "loop": "cut_cable.1"
+   },
+   "travel": {
+    "x": -0.015064475496042295,
+    "z": 0.009962901845696485,
+    "turn": 0.018637418746948242
+   },
+   "prompt": "A person kneeling on one knee hammers repeatedly at something on the ground in front of them with both hands.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "cut_cable_freeze.0": {
+   "kind": "cut_cable_freeze",
+   "stage": "reaction",
+   "loop": false,
+   "first": 1658,
+   "frames": 105,
+   "start": {
+    "loop": "cut_cable.0"
+   },
+   "next": null,
+   "travel": null,
+   "prompt": "A person kneeling and working near the ground stops, looks up at the sky and stays completely still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.8469,
+    "jitter_m_s3": 20.5453,
+    "tmr": 0.854,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "cut_cable_freeze.1": {
+   "kind": "cut_cable_freeze",
+   "stage": "reaction",
+   "loop": false,
+   "first": 1763,
+   "frames": 105,
+   "start": {
+    "loop": "cut_cable.1"
+   },
+   "next": null,
+   "travel": null,
+   "prompt": "A person kneeling and working near the ground stops, looks up at the sky and stays completely still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.0082,
+    "jitter_m_s3": 20.3882,
+    "tmr": 0.8546,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "cut_cable_to_prone.0": {
+   "kind": "cut_cable_to_prone",
+   "stage": "reaction",
+   "loop": false,
+   "first": 1868,
+   "frames": 87,
+   "start": {
+    "loop": "cut_cable.0"
+   },
+   "next": {
+    "hub": "prone"
+   },
+   "travel": {
+    "x": -0.019807398332344725,
+    "z": -0.04987007452992097,
+    "turn": -0.012094259262084961
+   },
+   "prompt": "A person kneeling on one knee drops flat onto the stomach and lies still, head down.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.0615,
+    "jitter_m_s3": 131.6659,
+    "tmr": 0.8714,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  },
+  "cut_cable_to_prone.1": {
+   "kind": "cut_cable_to_prone",
+   "stage": "reaction",
+   "loop": false,
+   "first": 1955,
+   "frames": 87,
+   "start": {
+    "loop": "cut_cable.1"
+   },
+   "next": {
+    "hub": "prone"
+   },
+   "travel": {
+    "x": -0.0028820923178630906,
+    "z": 0.017194546437190174,
+    "turn": -0.003058910369873047
+   },
+   "prompt": "A person kneeling on one knee drops flat onto the stomach and lies still, head down.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 5.0831,
+    "jitter_m_s3": 176.5888,
+    "tmr": 0.8971,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  },
+  "cut_cable_to_run.0": {
+   "kind": "cut_cable_to_run",
+   "stage": "reaction",
+   "loop": false,
+   "first": 2042,
+   "frames": 72,
+   "start": {
+    "loop": "cut_cable.0"
+   },
+   "next": {
+    "loop": "run.0"
+   },
+   "travel": {
+    "x": 0.5758551460275044,
+    "z": 2.9416954730933487,
+    "turn": 0.3963141441345215
+   },
+   "prompt": "A person kneeling on one knee springs up and sprints away as fast as possible.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 3.0578,
+    "jitter_m_s3": 1022.6078,
+    "tmr": 0.9289,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "cut_cable_to_run.1": {
+   "kind": "cut_cable_to_run",
+   "stage": "reaction",
+   "loop": false,
+   "first": 2114,
+   "frames": 72,
+   "start": {
+    "loop": "cut_cable.1"
+   },
+   "next": {
+    "loop": "run.1"
+   },
+   "travel": {
+    "x": 0.3975936192209307,
+    "z": 2.6520445790956955,
+    "turn": 0.014211416244506836
+   },
+   "prompt": "A person kneeling on one knee springs up and sprints away as fast as possible.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.9313,
+    "jitter_m_s3": 849.5935,
+    "tmr": 0.9022,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "cut_cable_to_stand.0": {
+   "kind": "cut_cable_to_stand",
+   "stage": "theft",
+   "loop": false,
+   "first": 2186,
+   "frames": 87,
+   "start": {
+    "loop": "cut_cable.0"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": -0.06264067258295733,
+    "z": -0.04932402306654156,
+    "turn": -0.10610699653625488
+   },
+   "prompt": "A person kneeling and working near the ground stops and stands up.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 4.8667,
+    "jitter_m_s3": 256.988,
+    "tmr": 0.9065,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "cut_cable_to_stand.1": {
+   "kind": "cut_cable_to_stand",
+   "stage": "theft",
+   "loop": false,
+   "first": 2273,
+   "frames": 87,
+   "start": {
+    "loop": "cut_cable.1"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": -0.0037144116497332897,
+    "z": 0.04076921898358779,
+    "turn": -0.023051977157592773
+   },
+   "prompt": "A person kneeling and working near the ground stops and stands up.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.6897,
+    "jitter_m_s3": 151.1717,
+    "tmr": 0.9438,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "cut_fence.0": {
+   "kind": "cut_fence",
+   "stage": "entry",
+   "loop": true,
+   "first": 2360,
+   "frames": 50,
+   "start": {
+    "loop": "cut_fence.0"
+   },
+   "next": {
+    "loop": "cut_fence.0"
+   },
+   "travel": {
+    "x": -0.005377776547816877,
+    "z": -0.0001989998193010628,
+    "turn": 0.0
+   },
+   "prompt": "A person stands facing forward and squeezes a long tool with both hands at chest height, cutting again and again.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.378,
+    "jitter_m_s3": 9.8037,
+    "loop_m": 0.0074,
+    "tmr": 0.8088,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0,
+    "nearest_m": 0.1261
+   }
+  },
+  "cut_fence.0.in": {
+   "kind": "cut_fence_in",
+   "stage": "entry",
+   "loop": false,
+   "first": 2410,
+   "frames": 135,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "loop": "cut_fence.0"
+   },
+   "travel": {
+    "x": 0.005637550244691708,
+    "z": 0.00019391261339875583,
+    "turn": -0.06209206581115723
+   },
+   "prompt": "A person stands facing forward and squeezes a long tool with both hands at chest height, cutting again and again.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "cut_fence.1": {
+   "kind": "cut_fence",
+   "stage": "entry",
+   "loop": true,
+   "first": 2545,
+   "frames": 50,
+   "start": {
+    "loop": "cut_fence.1"
+   },
+   "next": {
+    "loop": "cut_fence.1"
+   },
+   "travel": {
+    "x": -0.0022426717133678907,
+    "z": 0.00263351132780109,
+    "turn": 0.0
+   },
+   "prompt": "A person stands facing forward and squeezes a long tool with both hands at chest height, cutting again and again.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.4168,
+    "jitter_m_s3": 6.8082,
+    "loop_m": 0.0045,
+    "tmr": 0.7186,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0,
+    "nearest_m": 0.1261
+   }
+  },
+  "cut_fence.1.in": {
+   "kind": "cut_fence_in",
+   "stage": "entry",
+   "loop": false,
+   "first": 2595,
+   "frames": 246,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "loop": "cut_fence.1"
+   },
+   "travel": {
+    "x": -0.00324972873834696,
+    "z": 0.0018195474602734636,
+    "turn": 0.01927781105041504
+   },
+   "prompt": "A person stands facing forward and squeezes a long tool with both hands at chest height, cutting again and again.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "cut_fence_freeze.0": {
+   "kind": "cut_fence_freeze",
+   "stage": "reaction",
+   "loop": false,
+   "first": 2841,
+   "frames": 105,
+   "start": {
+    "loop": "cut_fence.0"
+   },
+   "next": null,
+   "travel": null,
+   "prompt": "A person working with both hands at chest height stops, looks up at the sky and stays completely still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.745,
+    "jitter_m_s3": 14.0508,
+    "tmr": 0.7346,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "cut_fence_freeze.1": {
+   "kind": "cut_fence_freeze",
+   "stage": "reaction",
+   "loop": false,
+   "first": 2946,
+   "frames": 105,
+   "start": {
+    "loop": "cut_fence.1"
+   },
+   "next": null,
+   "travel": null,
+   "prompt": "A person working with both hands at chest height stops, looks up at the sky and stays completely still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.6371,
+    "jitter_m_s3": 18.8191,
+    "tmr": 0.6716,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  },
+  "cut_fence_to_run.0": {
+   "kind": "cut_fence_to_run",
+   "stage": "reaction",
+   "loop": false,
+   "first": 3051,
+   "frames": 72,
+   "start": {
+    "loop": "cut_fence.0"
+   },
+   "next": {
+    "loop": "run.0"
+   },
+   "travel": {
+    "x": -0.08971580093596417,
+    "z": -1.6201732175298498,
+    "turn": -2.8913495540618896
+   },
+   "prompt": "A person working with both hands at chest height turns around and sprints away fast.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 8.2367,
+    "jitter_m_s3": 856.0731,
+    "tmr": 0.82,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "cut_fence_to_run.1": {
+   "kind": "cut_fence_to_run",
+   "stage": "reaction",
+   "loop": false,
+   "first": 3123,
+   "frames": 72,
+   "start": {
+    "loop": "cut_fence.1"
+   },
+   "next": {
+    "loop": "run.1"
+   },
+   "travel": {
+    "x": -0.06667308933120435,
+    "z": -2.181278229996646,
+    "turn": -3.119595527648926
+   },
+   "prompt": "A person working with both hands at chest height turns around and sprints away fast.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 12.0321,
+    "jitter_m_s3": 603.2991,
+    "tmr": 0.8139,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "cut_fence_to_stand.0": {
+   "kind": "cut_fence_to_stand",
+   "stage": "entry",
+   "loop": false,
+   "first": 3195,
+   "frames": 72,
+   "start": {
+    "loop": "cut_fence.0"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.005568921700757441,
+    "z": 0.017844010247746594,
+    "turn": 0.042054176330566406
+   },
+   "prompt": "A person lowers both arms to the sides and stands upright and still, relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.1536,
+    "jitter_m_s3": 32.9294,
+    "tmr": 0.8204,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "cut_fence_to_walk.0": {
+   "kind": "cut_fence_to_walk",
+   "stage": "entry",
+   "loop": false,
+   "first": 3267,
+   "frames": 102,
+   "start": {
+    "loop": "cut_fence.0"
+   },
+   "next": {
+    "loop": "walk.0"
+   },
+   "travel": {
+    "x": 0.20102702539917872,
+    "z": 1.3596909083453135,
+    "turn": -0.07322931289672852
+   },
+   "prompt": "A person working at chest height ducks the head and steps forward through a narrow gap, then walks on.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.6827,
+    "jitter_m_s3": 196.1157,
+    "tmr": 0.7986,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "cut_fence_to_walk.1": {
+   "kind": "cut_fence_to_walk",
+   "stage": "entry",
+   "loop": false,
+   "first": 3369,
+   "frames": 102,
+   "start": {
+    "loop": "cut_fence.1"
+   },
+   "next": {
+    "loop": "walk.1"
+   },
+   "travel": {
+    "x": 0.0038804396052610096,
+    "z": 0.712888479304776,
+    "turn": -0.04684162139892578
+   },
+   "prompt": "A person working at chest height ducks the head and steps forward through a narrow gap, then walks on.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 3.7703,
+    "jitter_m_s3": 125.3587,
+    "tmr": 0.7749,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "kneel_to_stand.0": {
+   "kind": "kneel_to_stand",
+   "stage": "theft",
+   "loop": false,
+   "first": 3471,
+   "frames": 87,
+   "start": {
+    "hub": "kneel"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.029846194824869388,
+    "z": -0.041956565167309376,
+    "turn": 0.015041589736938477
+   },
+   "prompt": "A person kneeling on one knee stands up and looks around carefully.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 5.4768,
+    "jitter_m_s3": 141.4684,
+    "tmr": 0.8758,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  },
+  "kneel_to_stand.1": {
+   "kind": "kneel_to_stand",
+   "stage": "theft",
+   "loop": false,
+   "first": 3558,
+   "frames": 87,
+   "start": {
+    "hub": "kneel"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": -0.013193889581475797,
+    "z": -0.048596855742281356,
+    "turn": -0.12032508850097656
+   },
+   "prompt": "A person kneeling on one knee stands up and looks around carefully.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 3.2719,
+    "jitter_m_s3": 264.7583,
+    "tmr": 0.8901,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  },
+  "look_around.0": {
+   "kind": "look_around",
+   "stage": "arrival",
+   "loop": true,
+   "first": 3645,
+   "frames": 110,
+   "start": {
+    "loop": "look_around.0"
+   },
+   "next": {
+    "loop": "look_around.0"
+   },
+   "travel": {
+    "x": -0.012852407406051423,
+    "z": 0.002216269578187154,
+    "turn": 0.0
+   },
+   "prompt": "A person stands in place and looks around nervously, turning the head and upper body left and right.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.2156,
+    "jitter_m_s3": 20.4066,
+    "loop_m": 0.0199,
+    "tmr": 0.8183,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0,
+    "nearest_m": 0.0344
+   }
+  },
+  "look_around.0.in": {
+   "kind": "look_around_in",
+   "stage": "arrival",
+   "loop": false,
+   "first": 3755,
+   "frames": 56,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "loop": "look_around.0"
+   },
+   "travel": {
+    "x": 0.0031749259072762956,
+    "z": 0.002960696848528147,
+    "turn": -0.0030982494354248047
+   },
+   "prompt": "A person stands in place and looks around nervously, turning the head and upper body left and right.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "look_around.1": {
+   "kind": "look_around",
+   "stage": "arrival",
+   "loop": true,
+   "first": 3811,
+   "frames": 60,
+   "start": {
+    "loop": "look_around.1"
+   },
+   "next": {
+    "loop": "look_around.1"
+   },
+   "travel": {
+    "x": -0.0003461409890354577,
+    "z": -0.0005969805813450845,
+    "turn": 0.0
+   },
+   "prompt": "A person stands in place and looks around nervously, turning the head and upper body left and right.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.1209,
+    "jitter_m_s3": 6.7839,
+    "loop_m": 0.005,
+    "tmr": 0.5942,
+    "tmr_rank": 3.0,
+    "seam_m": 0.0,
+    "nearest_m": 0.0344
+   }
+  },
+  "look_around.1.in": {
+   "kind": "look_around_in",
+   "stage": "arrival",
+   "loop": false,
+   "first": 3871,
+   "frames": 122,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "loop": "look_around.1"
+   },
+   "travel": {
+    "x": 0.006070802290395151,
+    "z": 0.001959625206793236,
+    "turn": -0.0030241012573242188
+   },
+   "prompt": "A person stands in place and looks around nervously, turning the head and upper body left and right.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "look_around_freeze.0": {
+   "kind": "look_around_freeze",
+   "stage": "reaction",
+   "loop": false,
+   "first": 3993,
+   "frames": 90,
+   "start": {
+    "loop": "look_around.0"
+   },
+   "next": null,
+   "travel": null,
+   "prompt": "A person standing suddenly stops moving, raises the head to look upward and stays completely still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.2412,
+    "jitter_m_s3": 12.6548,
+    "tmr": 0.8926,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "look_around_freeze.1": {
+   "kind": "look_around_freeze",
+   "stage": "reaction",
+   "loop": false,
+   "first": 4083,
+   "frames": 90,
+   "start": {
+    "loop": "look_around.1"
+   },
+   "next": null,
+   "travel": null,
+   "prompt": "A person standing suddenly stops moving, raises the head to look upward and stays completely still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.414,
+    "jitter_m_s3": 15.96,
+    "tmr": 0.9657,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "look_around_to_run.0": {
+   "kind": "look_around_to_run",
+   "stage": "reaction",
+   "loop": false,
+   "first": 4173,
+   "frames": 72,
+   "start": {
+    "loop": "look_around.0"
+   },
+   "next": {
+    "loop": "run.0"
+   },
+   "travel": {
+    "x": 0.07276455514621034,
+    "z": -7.1174564138955745,
+    "turn": -3.116342544555664
+   },
+   "prompt": "A person looking around nervously suddenly turns and sprints away fast.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 4.3459,
+    "jitter_m_s3": 2022.0046,
+    "tmr": 0.7997,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "look_around_to_run.1": {
+   "kind": "look_around_to_run",
+   "stage": "reaction",
+   "loop": false,
+   "first": 4245,
+   "frames": 72,
+   "start": {
+    "loop": "look_around.1"
+   },
+   "next": {
+    "loop": "run.1"
+   },
+   "travel": {
+    "x": 0.6360114552892859,
+    "z": -8.077408731623196,
+    "turn": 3.053415536880493
+   },
+   "prompt": "A person looking around nervously suddenly turns and sprints away fast.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 6.0855,
+    "jitter_m_s3": 2064.166,
+    "tmr": 0.8222,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "prone_still.0": {
+   "kind": "prone_still",
+   "stage": "reaction",
+   "loop": true,
+   "first": 4317,
+   "frames": 60,
+   "start": {
+    "loop": "prone_still.0"
+   },
+   "next": {
+    "loop": "prone_still.0"
+   },
+   "travel": {
+    "x": -8.388251196780362e-05,
+    "z": 0.00030885567263890293,
+    "turn": 0.0
+   },
+   "prompt": "A person lying face down on the ground stays completely still with the head down.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.3025,
+    "jitter_m_s3": 7.1709,
+    "loop_m": 0.0022,
+    "tmr": 0.8682,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  },
+  "prone_still.0.in": {
+   "kind": "prone_still_in",
+   "stage": "reaction",
+   "loop": false,
+   "first": 4377,
+   "frames": 120,
+   "start": {
+    "hub": "prone"
+   },
+   "next": {
+    "loop": "prone_still.0"
+   },
+   "travel": {
+    "x": -0.00037056797722839595,
+    "z": -0.004454193581702296,
+    "turn": -0.01968097686767578
+   },
+   "prompt": "A person lying face down on the ground stays completely still with the head down.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "prone_to_run.0": {
+   "kind": "prone_to_run",
+   "stage": "reaction",
+   "loop": false,
+   "first": 4497,
+   "frames": 87,
+   "start": {
+    "hub": "prone"
+   },
+   "next": {
+    "loop": "run.0"
+   },
+   "travel": {
+    "x": -0.027203094406300896,
+    "z": -0.038892067651285604,
+    "turn": 0.01819467544555664
+   },
+   "prompt": "A person lying face down jumps up to the feet and starts running away fast.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 4.7041,
+    "jitter_m_s3": 764.4365,
+    "tmr": 0.8878,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "pull_cable.0": {
+   "kind": "pull_cable",
+   "stage": "theft",
+   "loop": true,
+   "first": 4584,
+   "frames": 48,
+   "start": {
+    "loop": "pull_cable.0"
+   },
+   "next": {
+    "loop": "pull_cable.0"
+   },
+   "travel": {
+    "x": -0.05397392687253144,
+    "z": -0.33740798222519164,
+    "turn": 0.0
+   },
+   "prompt": "A person bent forward pulls something up from the ground hand over hand, stepping slowly backward.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.4423,
+    "jitter_m_s3": 65.9974,
+    "loop_m": 0.0513,
+    "tmr": 0.7006,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0,
+    "nearest_m": 1.0641
+   }
+  },
+  "pull_cable.0.in": {
+   "kind": "pull_cable_in",
+   "stage": "theft",
+   "loop": false,
+   "first": 4632,
+   "frames": 250,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "loop": "pull_cable.0"
+   },
+   "travel": {
+    "x": -0.0023900732048721426,
+    "z": -1.6679683925715696,
+    "turn": -0.0170595645904541
+   },
+   "prompt": "A person bent forward pulls something up from the ground hand over hand, stepping slowly backward.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "pull_cable.1": {
+   "kind": "pull_cable",
+   "stage": "theft",
+   "loop": true,
+   "first": 4882,
+   "frames": 149,
+   "start": {
+    "loop": "pull_cable.1"
+   },
+   "next": {
+    "loop": "pull_cable.1"
+   },
+   "travel": {
+    "x": 0.3637707536042418,
+    "z": -2.5325939268723796,
+    "turn": 0.0
+   },
+   "prompt": "A person bent forward pulls something up from the ground hand over hand, stepping slowly backward.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.0867,
+    "jitter_m_s3": 129.1592,
+    "loop_m": 0.0455,
+    "tmr": 0.6515,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0,
+    "nearest_m": 1.0641
+   }
+  },
+  "pull_cable.1.in": {
+   "kind": "pull_cable_in",
+   "stage": "theft",
+   "loop": false,
+   "first": 5031,
+   "frames": 128,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "loop": "pull_cable.1"
+   },
+   "travel": {
+    "x": -0.0547702487779853,
+    "z": -0.682826940814974,
+    "turn": 0.19494199752807617
+   },
+   "prompt": "A person bent forward pulls something up from the ground hand over hand, stepping slowly backward.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "pull_cable_freeze.0": {
+   "kind": "pull_cable_freeze",
+   "stage": "reaction",
+   "loop": false,
+   "first": 5159,
+   "frames": 105,
+   "start": {
+    "loop": "pull_cable.0"
+   },
+   "next": null,
+   "travel": null,
+   "prompt": "A person bent forward pulling something stops, looks up at the sky and stays completely still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.5075,
+    "jitter_m_s3": 24.4092,
+    "tmr": 0.6174,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  },
+  "pull_cable_freeze.1": {
+   "kind": "pull_cable_freeze",
+   "stage": "reaction",
+   "loop": false,
+   "first": 5264,
+   "frames": 105,
+   "start": {
+    "loop": "pull_cable.1"
+   },
+   "next": null,
+   "travel": null,
+   "prompt": "A person bent forward pulling something stops, looks up at the sky and stays completely still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.6726,
+    "jitter_m_s3": 86.2409,
+    "tmr": 0.8213,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "pull_cable_to_carry.0": {
+   "kind": "pull_cable_to_carry",
+   "stage": "theft",
+   "loop": false,
+   "first": 5369,
+   "frames": 102,
+   "start": {
+    "loop": "pull_cable.0"
+   },
+   "next": {
+    "loop": "carry.0"
+   },
+   "travel": {
+    "x": -0.17352821457729925,
+    "z": 1.1142444996932785,
+    "turn": -0.23783159255981445
+   },
+   "prompt": "A person bent forward lifts a heavy load onto the right shoulder and starts walking forward.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.0624,
+    "jitter_m_s3": 135.3982,
+    "tmr": 0.65,
+    "tmr_rank": 5.0,
+    "seam_m": 0.0
+   }
+  },
+  "pull_cable_to_carry.1": {
+   "kind": "pull_cable_to_carry",
+   "stage": "theft",
+   "loop": false,
+   "first": 5471,
+   "frames": 102,
+   "start": {
+    "loop": "pull_cable.1"
+   },
+   "next": {
+    "loop": "carry.1"
+   },
+   "travel": {
+    "x": -0.16868198115512015,
+    "z": 2.0992546175744033,
+    "turn": -0.3779611587524414
+   },
+   "prompt": "A person bent forward lifts a heavy load onto the right shoulder and starts walking forward.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 3.7609,
+    "jitter_m_s3": 276.1133,
+    "tmr": 0.6869,
+    "tmr_rank": 4.0,
+    "seam_m": 0.0
+   }
+  },
+  "pull_cable_to_run.0": {
+   "kind": "pull_cable_to_run",
+   "stage": "reaction",
+   "loop": false,
+   "first": 5573,
+   "frames": 72,
+   "start": {
+    "loop": "pull_cable.0"
+   },
+   "next": {
+    "loop": "run.0"
+   },
+   "travel": {
+    "x": -1.3225976664913013,
+    "z": -7.156702224005443,
+    "turn": -3.1296370029449463
+   },
+   "prompt": "A person bent forward pulling something drops it, turns and sprints away fast.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 5.6584,
+    "jitter_m_s3": 1824.1306,
+    "tmr": 0.7471,
+    "tmr_rank": 4.0,
+    "seam_m": 0.0
+   }
+  },
+  "pull_cable_to_run.1": {
+   "kind": "pull_cable_to_run",
+   "stage": "reaction",
+   "loop": false,
+   "first": 5645,
+   "frames": 72,
+   "start": {
+    "loop": "pull_cable.1"
+   },
+   "next": {
+    "loop": "run.1"
+   },
+   "travel": {
+    "x": -0.42315210507845336,
+    "z": -7.756997084828431,
+    "turn": -2.96445894241333
+   },
+   "prompt": "A person bent forward pulling something drops it, turns and sprints away fast.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 6.1477,
+    "jitter_m_s3": 1248.6654,
+    "tmr": 0.7331,
+    "tmr_rank": 3.0,
+    "seam_m": 0.0
+   }
+  },
+  "pull_cable_to_stand.0": {
+   "kind": "pull_cable_to_stand",
+   "stage": "theft",
+   "loop": false,
+   "first": 5717,
+   "frames": 72,
+   "start": {
+    "loop": "pull_cable.0"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.031582158451801914,
+    "z": 0.0017648463371833347,
+    "turn": 0.12563776969909668
+   },
+   "prompt": "A person bent forward pulling something stops, straightens up and stands still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.6066,
+    "jitter_m_s3": 127.6613,
+    "tmr": 0.8382,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "pull_cable_to_stand.1": {
+   "kind": "pull_cable_to_stand",
+   "stage": "theft",
+   "loop": false,
+   "first": 5789,
+   "frames": 72,
+   "start": {
+    "loop": "pull_cable.1"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.0318620509938067,
+    "z": 0.2126373481838423,
+    "turn": -1.0224359035491943
+   },
+   "prompt": "A person bent forward pulling something stops, straightens up and stands still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 4.234,
+    "jitter_m_s3": 118.6365,
+    "tmr": 0.8595,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "run.0": {
+   "kind": "run",
+   "stage": "reaction",
+   "loop": true,
+   "first": 5861,
+   "frames": 19,
+   "start": {
+    "loop": "run.0"
+   },
+   "next": {
+    "loop": "run.0"
+   },
+   "travel": {
+    "x": -0.018862598170769185,
+    "z": 2.8585222283199756,
+    "turn": 0.0
+   },
+   "prompt": "A person sprints forward as fast as possible with the arms pumping hard.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 6.5183,
+    "jitter_m_s3": 1747.2001,
+    "loop_m": 0.0412,
+    "tmr": 0.9051,
+    "tmr_rank": 1.0,
+    "legs_cm": 6.9342,
+    "nearest_m": 1.3215
+   }
+  },
+  "run.1": {
+   "kind": "run",
+   "stage": "reaction",
+   "loop": true,
+   "first": 5880,
+   "frames": 36,
+   "start": {
+    "loop": "run.1"
+   },
+   "next": {
+    "loop": "run.1"
+   },
+   "travel": {
+    "x": -0.03333145631261647,
+    "z": 5.377348585148332,
+    "turn": 0.0
+   },
+   "prompt": "A person sprints forward as fast as possible with the arms pumping hard.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 5.1219,
+    "jitter_m_s3": 919.8237,
+    "loop_m": 0.0451,
+    "tmr": 0.8428,
+    "tmr_rank": 2.0,
+    "legs_cm": 5.2238,
+    "nearest_m": 1.3215
+   }
+  },
+  "sneak.0": {
+   "kind": "sneak",
+   "stage": "arrival",
+   "loop": true,
+   "first": 5916,
+   "frames": 44,
+   "start": {
+    "loop": "sneak.0"
+   },
+   "next": {
+    "loop": "sneak.0"
+   },
+   "travel": {
+    "x": 0.018525213986044564,
+    "z": 0.8877566598686278,
+    "turn": 0.0
+   },
+   "prompt": "A person sneaks forward in a low crouch, taking slow careful steps and staying quiet.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 3.3042,
+    "jitter_m_s3": 54.1584,
+    "loop_m": 0.0237,
+    "tmr": 0.9722,
+    "tmr_rank": 1.0,
+    "legs_cm": 1.7318,
+    "nearest_m": 0.1916
+   }
+  },
+  "sneak.1": {
+   "kind": "sneak",
+   "stage": "arrival",
+   "loop": true,
+   "first": 5960,
+   "frames": 54,
+   "start": {
+    "loop": "sneak.1"
+   },
+   "next": {
+    "loop": "sneak.1"
+   },
+   "travel": {
+    "x": 0.04669073111481015,
+    "z": 1.025520593051863,
+    "turn": 0.0
+   },
+   "prompt": "A person sneaks forward in a low crouch, taking slow careful steps and staying quiet.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.9637,
+    "jitter_m_s3": 53.2238,
+    "loop_m": 0.015,
+    "tmr": 0.9425,
+    "tmr_rank": 2.0,
+    "legs_cm": 1.631,
+    "nearest_m": 0.1916
+   }
+  },
+  "sneak_to_crouch.0": {
+   "kind": "sneak_to_crouch",
+   "stage": "reaction",
+   "loop": false,
+   "first": 6014,
+   "frames": 72,
+   "start": {
+    "loop": "sneak.0"
+   },
+   "next": {
+    "hub": "crouch"
+   },
+   "travel": {
+    "x": -0.01544519219333111,
+    "z": 0.4559802716739506,
+    "turn": -0.012261629104614258
+   },
+   "prompt": "A person sneaking forward in a crouch stops and squats low, staying still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.0877,
+    "jitter_m_s3": 80.0238,
+    "tmr": 0.8317,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "sneak_to_crouch.1": {
+   "kind": "sneak_to_crouch",
+   "stage": "reaction",
+   "loop": false,
+   "first": 6086,
+   "frames": 72,
+   "start": {
+    "loop": "sneak.1"
+   },
+   "next": {
+    "hub": "crouch"
+   },
+   "travel": {
+    "x": 0.09487524511709587,
+    "z": 1.1963049757771307,
+    "turn": -0.10202860832214355
+   },
+   "prompt": "A person sneaking forward in a crouch stops and squats low, staying still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.2715,
+    "jitter_m_s3": 111.43,
+    "tmr": 0.9016,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "sneak_to_prone.0": {
+   "kind": "sneak_to_prone",
+   "stage": "reaction",
+   "loop": false,
+   "first": 6158,
+   "frames": 87,
+   "start": {
+    "loop": "sneak.0"
+   },
+   "next": {
+    "hub": "prone"
+   },
+   "travel": {
+    "x": -0.14014720145353238,
+    "z": 1.0113341860307858,
+    "turn": -0.08481383323669434
+   },
+   "prompt": "A person sneaking forward in a crouch drops flat onto the stomach and lies still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 5.5264,
+    "jitter_m_s3": 269.5704,
+    "tmr": 0.8777,
+    "tmr_rank": 4.0,
+    "seam_m": 0.0
+   }
+  },
+  "sneak_to_prone.1": {
+   "kind": "sneak_to_prone",
+   "stage": "reaction",
+   "loop": false,
+   "first": 6245,
+   "frames": 87,
+   "start": {
+    "loop": "sneak.1"
+   },
+   "next": {
+    "hub": "prone"
+   },
+   "travel": {
+    "x": 0.15257817435991305,
+    "z": 1.2319221711407682,
+    "turn": 0.16855812072753906
+   },
+   "prompt": "A person sneaking forward in a crouch drops flat onto the stomach and lies still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 4.3362,
+    "jitter_m_s3": 307.4268,
+    "tmr": 0.8765,
+    "tmr_rank": 4.0,
+    "seam_m": 0.0
+   }
+  },
+  "sneak_to_run.0": {
+   "kind": "sneak_to_run",
+   "stage": "reaction",
+   "loop": false,
+   "first": 6332,
+   "frames": 72,
+   "start": {
+    "loop": "sneak.0"
+   },
+   "next": {
+    "loop": "run.0"
+   },
+   "travel": {
+    "x": 0.14415484561542596,
+    "z": 3.1851694530417443,
+    "turn": -0.3146092891693115
+   },
+   "prompt": "A person sneaking forward in a crouch jumps up and sprints away fast.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.1982,
+    "jitter_m_s3": 1167.7389,
+    "tmr": 0.8882,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "sneak_to_run.1": {
+   "kind": "sneak_to_run",
+   "stage": "reaction",
+   "loop": false,
+   "first": 6404,
+   "frames": 72,
+   "start": {
+    "loop": "sneak.1"
+   },
+   "next": {
+    "loop": "run.1"
+   },
+   "travel": {
+    "x": 0.6992627848054556,
+    "z": 3.9811845115312736,
+    "turn": 0.3319065570831299
+   },
+   "prompt": "A person sneaking forward in a crouch jumps up and sprints away fast.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 4.3316,
+    "jitter_m_s3": 658.8604,
+    "tmr": 0.8899,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "stand_to_crouch.0": {
+   "kind": "stand_to_crouch",
+   "stage": "reaction",
+   "loop": false,
+   "first": 6476,
+   "frames": 72,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "hub": "crouch"
+   },
+   "travel": {
+    "x": 0.007760529994539024,
+    "z": -0.10192304039813135,
+    "turn": 0.039287567138671875
+   },
+   "prompt": "A person standing quickly squats down low and stays still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.2813,
+    "jitter_m_s3": 74.8926,
+    "tmr": 0.94,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "stand_to_crouch.1": {
+   "kind": "stand_to_crouch",
+   "stage": "reaction",
+   "loop": false,
+   "first": 6548,
+   "frames": 72,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "hub": "crouch"
+   },
+   "travel": {
+    "x": 0.006575851608097677,
+    "z": -0.06027324070302143,
+    "turn": 0.15288209915161133
+   },
+   "prompt": "A person standing quickly squats down low and stays still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.3368,
+    "jitter_m_s3": 108.7252,
+    "tmr": 0.9399,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "stand_to_kneel.0": {
+   "kind": "stand_to_kneel",
+   "stage": "theft",
+   "loop": false,
+   "first": 6620,
+   "frames": 87,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "hub": "kneel"
+   },
+   "travel": {
+    "x": -0.046729931501718024,
+    "z": -0.11288832517960444,
+    "turn": 0.2899782657623291
+   },
+   "prompt": "A person standing kneels down on the right knee and reaches toward the ground with both hands.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.5736,
+    "jitter_m_s3": 148.3922,
+    "tmr": 0.9007,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "stand_to_kneel.1": {
+   "kind": "stand_to_kneel",
+   "stage": "theft",
+   "loop": false,
+   "first": 6707,
+   "frames": 87,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "hub": "kneel"
+   },
+   "travel": {
+    "x": -0.04960514271410019,
+    "z": -0.0846318569446456,
+    "turn": 0.12153911590576172
+   },
+   "prompt": "A person standing kneels down on the right knee and reaches toward the ground with both hands.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 3.122,
+    "jitter_m_s3": 163.6097,
+    "tmr": 0.8994,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "stand_to_walk.0": {
+   "kind": "stand_to_walk",
+   "stage": "arrival",
+   "loop": false,
+   "first": 6794,
+   "frames": 72,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "loop": "walk.0"
+   },
+   "travel": {
+    "x": -0.05457389062705155,
+    "z": 1.3490484907390523,
+    "turn": 0.10219216346740723
+   },
+   "prompt": "A person standing still starts walking forward at a normal pace.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.1668,
+    "jitter_m_s3": 153.8748,
+    "tmr": 0.9704,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "stand_to_walk_wary.0": {
+   "kind": "stand_to_walk_wary",
+   "stage": "arrival",
+   "loop": false,
+   "first": 6866,
+   "frames": 72,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "loop": "walk_wary.0"
+   },
+   "travel": {
+    "x": 0.04975910754087624,
+    "z": 0.682070795873226,
+    "turn": 0.14059805870056152
+   },
+   "prompt": "A person standing still starts walking forward slowly and cautiously, looking left and right.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.1114,
+    "jitter_m_s3": 83.7161,
+    "tmr": 0.8854,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk.0": {
+   "kind": "walk",
+   "stage": "arrival",
+   "loop": true,
+   "first": 6938,
+   "frames": 33,
+   "start": {
+    "loop": "walk.0"
+   },
+   "next": {
+    "loop": "walk.0"
+   },
+   "travel": {
+    "x": 0.04860455346347736,
+    "z": 1.5173625816373097,
+    "turn": 0.0
+   },
+   "prompt": "A person walks forward at a steady normal pace with the arms swinging naturally.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.5019,
+    "jitter_m_s3": 233.2754,
+    "loop_m": 0.0191,
+    "tmr": 0.9302,
+    "tmr_rank": 1.0,
+    "legs_cm": 2.6457,
+    "nearest_m": 0.7275
+   }
+  },
+  "walk.1": {
+   "kind": "walk",
+   "stage": "arrival",
+   "loop": true,
+   "first": 6971,
+   "frames": 64,
+   "start": {
+    "loop": "walk.1"
+   },
+   "next": {
+    "loop": "walk.1"
+   },
+   "travel": {
+    "x": -0.03553269378914878,
+    "z": 2.9169294003101753,
+    "turn": 0.0
+   },
+   "prompt": "A person walks forward at a steady normal pace with the arms swinging naturally.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.6311,
+    "jitter_m_s3": 214.6879,
+    "loop_m": 0.0196,
+    "tmr": 0.9224,
+    "tmr_rank": 1.0,
+    "legs_cm": 2.8259,
+    "nearest_m": 0.7275
+   }
+  },
+  "walk_freeze.0": {
+   "kind": "walk_freeze",
+   "stage": "reaction",
+   "loop": false,
+   "first": 7035,
+   "frames": 105,
+   "start": {
+    "loop": "walk.0"
+   },
+   "next": null,
+   "travel": null,
+   "prompt": "A person walking forward stops dead, looks up at the sky and stands completely still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.5375,
+    "jitter_m_s3": 183.6211,
+    "tmr": 0.9619,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk_freeze.1": {
+   "kind": "walk_freeze",
+   "stage": "reaction",
+   "loop": false,
+   "first": 7140,
+   "frames": 105,
+   "start": {
+    "loop": "walk.1"
+   },
+   "next": null,
+   "travel": null,
+   "prompt": "A person walking forward stops dead, looks up at the sky and stands completely still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.7404,
+    "jitter_m_s3": 175.9326,
+    "tmr": 0.9495,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk_to_kneel.0": {
+   "kind": "walk_to_kneel",
+   "stage": "theft",
+   "loop": false,
+   "first": 7245,
+   "frames": 102,
+   "start": {
+    "loop": "walk.0"
+   },
+   "next": {
+    "hub": "kneel"
+   },
+   "travel": {
+    "x": -0.19998041901032954,
+    "z": 2.7600807530999067,
+    "turn": 0.08492326736450195
+   },
+   "prompt": "A person walking forward stops and kneels down on the right knee, reaching toward the ground.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 3.6519,
+    "jitter_m_s3": 351.4025,
+    "tmr": 0.8263,
+    "tmr_rank": 4.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk_to_kneel.1": {
+   "kind": "walk_to_kneel",
+   "stage": "theft",
+   "loop": false,
+   "first": 7347,
+   "frames": 102,
+   "start": {
+    "loop": "walk.1"
+   },
+   "next": {
+    "hub": "kneel"
+   },
+   "travel": {
+    "x": 0.2521909735087576,
+    "z": 2.9991656004508034,
+    "turn": 0.10603928565979004
+   },
+   "prompt": "A person walking forward stops and kneels down on the right knee, reaching toward the ground.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 3.0882,
+    "jitter_m_s3": 274.2042,
+    "tmr": 0.8246,
+    "tmr_rank": 4.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk_to_prone.0": {
+   "kind": "walk_to_prone",
+   "stage": "reaction",
+   "loop": false,
+   "first": 7449,
+   "frames": 87,
+   "start": {
+    "loop": "walk.0"
+   },
+   "next": {
+    "hub": "prone"
+   },
+   "travel": {
+    "x": -0.2468088346069453,
+    "z": 1.4843603808594907,
+    "turn": 0.06665444374084473
+   },
+   "prompt": "A person walking forward suddenly drops to the ground and lies flat on the stomach.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 3.4261,
+    "jitter_m_s3": 332.1702,
+    "tmr": 0.9517,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk_to_prone.1": {
+   "kind": "walk_to_prone",
+   "stage": "reaction",
+   "loop": false,
+   "first": 7536,
+   "frames": 87,
+   "start": {
+    "loop": "walk.1"
+   },
+   "next": {
+    "hub": "prone"
+   },
+   "travel": {
+    "x": -0.2487994584213566,
+    "z": 1.7228458473828887,
+    "turn": -0.04458427429199219
+   },
+   "prompt": "A person walking forward suddenly drops to the ground and lies flat on the stomach.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 4.3872,
+    "jitter_m_s3": 342.795,
+    "tmr": 0.947,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk_to_run.0": {
+   "kind": "walk_to_run",
+   "stage": "reaction",
+   "loop": false,
+   "first": 7623,
+   "frames": 57,
+   "start": {
+    "loop": "walk.0"
+   },
+   "next": {
+    "loop": "run.0"
+   },
+   "travel": {
+    "x": -0.3373687550290966,
+    "z": 6.805058375960306,
+    "turn": -0.09111642837524414
+   },
+   "prompt": "A person walking forward suddenly breaks into a fast sprint.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 9.9842,
+    "jitter_m_s3": 2251.979,
+    "tmr": 0.925,
+    "tmr_rank": 3.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk_to_run.1": {
+   "kind": "walk_to_run",
+   "stage": "reaction",
+   "loop": false,
+   "first": 7680,
+   "frames": 57,
+   "start": {
+    "loop": "walk.1"
+   },
+   "next": {
+    "loop": "run.1"
+   },
+   "travel": {
+    "x": -0.904915704012902,
+    "z": 6.709917310371793,
+    "turn": 0.023236751556396484
+   },
+   "prompt": "A person walking forward suddenly breaks into a fast sprint.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.6399,
+    "jitter_m_s3": 1513.9928,
+    "tmr": 0.8712,
+    "tmr_rank": 3.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk_to_stand.0": {
+   "kind": "walk_to_stand",
+   "stage": "arrival",
+   "loop": false,
+   "first": 7737,
+   "frames": 72,
+   "start": {
+    "loop": "walk.0"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": -0.010634904708226403,
+    "z": 1.6416259971466194,
+    "turn": 0.042616844177246094
+   },
+   "prompt": "A person walking forward slows down and comes to a stop, standing still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.945,
+    "jitter_m_s3": 191.1818,
+    "tmr": 0.9788,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk_to_stand.1": {
+   "kind": "walk_to_stand",
+   "stage": "arrival",
+   "loop": false,
+   "first": 7809,
+   "frames": 72,
+   "start": {
+    "loop": "walk.1"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.09088120500817626,
+    "z": 2.0129368541166546,
+    "turn": 0.06801414489746094
+   },
+   "prompt": "A person walking forward slows down and comes to a stop, standing still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.4573,
+    "jitter_m_s3": 261.077,
+    "tmr": 0.9643,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk_wary.0": {
+   "kind": "walk_wary",
+   "stage": "arrival",
+   "loop": true,
+   "first": 7881,
+   "frames": 46,
+   "start": {
+    "loop": "walk_wary.0"
+   },
+   "next": {
+    "loop": "walk_wary.0"
+   },
+   "travel": {
+    "x": -0.0051676376227961784,
+    "z": 1.3777124888304695,
+    "turn": 0.0
+   },
+   "prompt": "A person walks forward slowly and cautiously, turning the head to look left and right.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.7926,
+    "jitter_m_s3": 79.7305,
+    "loop_m": 0.0265,
+    "tmr": 0.9692,
+    "tmr_rank": 1.0,
+    "legs_cm": 2.4774,
+    "nearest_m": 0.2895
+   }
+  },
+  "walk_wary.1": {
+   "kind": "walk_wary",
+   "stage": "arrival",
+   "loop": true,
+   "first": 7927,
+   "frames": 30,
+   "start": {
+    "loop": "walk_wary.1"
+   },
+   "next": {
+    "loop": "walk_wary.1"
+   },
+   "travel": {
+    "x": 0.019363893429415358,
+    "z": 0.9145749924319072,
+    "turn": 0.0
+   },
+   "prompt": "A person walks forward slowly and cautiously, turning the head to look left and right.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.076,
+    "jitter_m_s3": 163.1117,
+    "loop_m": 0.0329,
+    "tmr": 0.8088,
+    "tmr_rank": 2.0,
+    "legs_cm": 1.6669,
+    "nearest_m": 0.2895
+   }
+  },
+  "walk_wary_freeze.0": {
+   "kind": "walk_wary_freeze",
+   "stage": "reaction",
+   "loop": false,
+   "first": 7957,
+   "frames": 105,
+   "start": {
+    "loop": "walk_wary.0"
+   },
+   "next": null,
+   "travel": null,
+   "prompt": "A person walking cautiously stops dead, looks up at the sky and stands completely still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.9583,
+    "jitter_m_s3": 108.1275,
+    "tmr": 0.8766,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk_wary_freeze.1": {
+   "kind": "walk_wary_freeze",
+   "stage": "reaction",
+   "loop": false,
+   "first": 8062,
+   "frames": 105,
+   "start": {
+    "loop": "walk_wary.1"
+   },
+   "next": null,
+   "travel": null,
+   "prompt": "A person walking cautiously stops dead, looks up at the sky and stands completely still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.5733,
+    "jitter_m_s3": 47.9844,
+    "tmr": 0.8639,
+    "tmr_rank": 4.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk_wary_to_run.0": {
+   "kind": "walk_wary_to_run",
+   "stage": "reaction",
+   "loop": false,
+   "first": 8167,
+   "frames": 57,
+   "start": {
+    "loop": "walk_wary.0"
+   },
+   "next": {
+    "loop": "run.0"
+   },
+   "travel": {
+    "x": 0.10153555775769825,
+    "z": 4.56966685307255,
+    "turn": 0.05479168891906738
+   },
+   "prompt": "A person walking cautiously suddenly breaks into a fast sprint.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 8.5495,
+    "jitter_m_s3": 1282.1769,
+    "tmr": 0.9188,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk_wary_to_run.1": {
+   "kind": "walk_wary_to_run",
+   "stage": "reaction",
+   "loop": false,
+   "first": 8224,
+   "frames": 57,
+   "start": {
+    "loop": "walk_wary.1"
+   },
+   "next": {
+    "loop": "run.1"
+   },
+   "travel": {
+    "x": 0.6599135874800329,
+    "z": 5.678914693815054,
+    "turn": 0.03472709655761719
+   },
+   "prompt": "A person walking cautiously suddenly breaks into a fast sprint.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 4.3635,
+    "jitter_m_s3": 1024.8055,
+    "tmr": 0.9369,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk_wary_to_stand.0": {
+   "kind": "walk_wary_to_stand",
+   "stage": "arrival",
+   "loop": false,
+   "first": 8281,
+   "frames": 72,
+   "start": {
+    "loop": "walk_wary.0"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.09644822694595918,
+    "z": 1.1964067131252578,
+    "turn": 0.10538792610168457
+   },
+   "prompt": "A person walking cautiously slows down and stops, standing still and looking around.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.9069,
+    "jitter_m_s3": 122.2762,
+    "tmr": 0.9063,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk_wary_to_stand.1": {
+   "kind": "walk_wary_to_stand",
+   "stage": "arrival",
+   "loop": false,
+   "first": 8353,
+   "frames": 72,
+   "start": {
+    "loop": "walk_wary.1"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.001556694741095879,
+    "z": 0.882555723536757,
+    "turn": 0.04335618019104004
+   },
+   "prompt": "A person walking cautiously slows down and stops, standing still and looking around.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.3699,
+    "jitter_m_s3": 73.7847,
+    "tmr": 0.9196,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  }
+ }
+}
