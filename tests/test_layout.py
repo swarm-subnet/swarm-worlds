@@ -43,6 +43,7 @@ EXPECTED_MAP_DIRS = {
     "custom/people/lost_person_characters",
     "custom/people/open_mannequin_raw/split",
     "custom/solar",
+    "custom/solar/intruders",
     "custom/warehouse_shell",
     "forest/quaternius_ultimate_nature",
     "forest/textures",

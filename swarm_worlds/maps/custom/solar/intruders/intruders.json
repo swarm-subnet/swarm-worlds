@@ -1,0 +1,1375 @@
+{
+ "format": 1,
+ "frame": "OBJ files: z up, metres, each piece on its own origin (add its offset); rig.npz: the SOMA frame, y up",
+ "builds": {
+  "standard": 1.761,
+  "tall": 1.857,
+  "heavy": 1.744,
+  "stocky": 1.663,
+  "tall_heavy": 1.824,
+  "slim": 1.734
+ },
+ "body": {
+  "obj": "body.obj",
+  "rig": "rig.npz",
+  "skin_temperature_c": 33.5,
+  "undershirt_temperature_c": 30.0,
+  "skin_tones": [
+   [
+    0.87,
+    0.7,
+    0.58
+   ],
+   [
+    0.78,
+    0.6,
+    0.46
+   ],
+   [
+    0.66,
+    0.48,
+    0.34
+   ],
+   [
+    0.52,
+    0.37,
+    0.25
+   ],
+   [
+    0.38,
+    0.26,
+    0.18
+   ],
+   [
+    0.27,
+    0.18,
+    0.13
+   ]
+  ],
+  "undershirt_colours": [
+   [
+    0.08,
+    0.08,
+    0.09
+   ],
+   [
+    0.2,
+    0.2,
+    0.21
+   ],
+   [
+    0.45,
+    0.45,
+    0.46
+   ],
+   [
+    0.12,
+    0.14,
+    0.22
+   ]
+  ],
+  "undershirt_joints": [
+   "Spine1",
+   "Spine2",
+   "Chest",
+   "LeftShoulder",
+   "RightShoulder",
+   "LeftArm",
+   "RightArm"
+  ]
+ },
+ "garments": {
+  "tshirt": {
+   "slot": "top",
+   "hides": [],
+   "pieces": [
+    {
+     "file": "pieces/tshirt_main",
+     "role": "main",
+     "offset": [
+      -0.000214,
+      0.045078,
+      0.93859
+     ],
+     "colours": [
+      [
+       0.85,
+       0.85,
+       0.83
+      ],
+      [
+       0.45,
+       0.46,
+       0.47
+      ],
+      [
+       0.08,
+       0.08,
+       0.09
+      ],
+      [
+       0.12,
+       0.15,
+       0.25
+      ],
+      [
+       0.3,
+       0.32,
+       0.22
+      ],
+      [
+       0.5,
+       0.12,
+       0.12
+      ]
+     ],
+     "temperature_c": 30.0
+    }
+   ]
+  },
+  "hoodie": {
+   "slot": "top",
+   "hides": [],
+   "pieces": [
+    {
+     "file": "pieces/hoodie_main",
+     "role": "main",
+     "offset": [
+      0.000243,
+      0.060061,
+      0.917524
+     ],
+     "colours": [
+      [
+       0.05,
+       0.05,
+       0.06
+      ],
+      [
+       0.12,
+       0.12,
+       0.13
+      ],
+      [
+       0.2,
+       0.21,
+       0.22
+      ],
+      [
+       0.1,
+       0.13,
+       0.2
+      ],
+      [
+       0.16,
+       0.18,
+       0.12
+      ],
+      [
+       0.35,
+       0.1,
+       0.1
+      ],
+      [
+       0.4,
+       0.4,
+       0.41
+      ]
+     ],
+     "temperature_c": 27.0
+    },
+    {
+     "file": "pieces/hoodie_trim",
+     "role": "trim",
+     "offset": [
+      0.0,
+      -0.07209,
+      1.26
+     ],
+     "colours": [
+      [
+       0.85,
+       0.85,
+       0.83
+      ],
+      [
+       0.05,
+       0.05,
+       0.06
+      ]
+     ],
+     "temperature_c": 25.5
+    }
+   ]
+  },
+  "hoodie_up": {
+   "slot": "top",
+   "hides": [],
+   "pieces": [
+    {
+     "file": "pieces/hoodie_up_main",
+     "role": "main",
+     "offset": [
+      0.00016,
+      0.040223,
+      0.91756
+     ],
+     "colours": [
+      [
+       0.05,
+       0.05,
+       0.06
+      ],
+      [
+       0.12,
+       0.12,
+       0.13
+      ],
+      [
+       0.2,
+       0.21,
+       0.22
+      ],
+      [
+       0.1,
+       0.13,
+       0.2
+      ],
+      [
+       0.16,
+       0.18,
+       0.12
+      ],
+      [
+       0.35,
+       0.1,
+       0.1
+      ],
+      [
+       0.4,
+       0.4,
+       0.41
+      ]
+     ],
+     "temperature_c": 27.0
+    },
+    {
+     "file": "pieces/hoodie_up_trim",
+     "role": "trim",
+     "offset": [
+      0.0,
+      -0.07209,
+      1.26
+     ],
+     "colours": [
+      [
+       0.85,
+       0.85,
+       0.83
+      ],
+      [
+       0.05,
+       0.05,
+       0.06
+      ]
+     ],
+     "temperature_c": 25.5
+    }
+   ]
+  },
+  "work_jacket": {
+   "slot": "top",
+   "hides": [],
+   "pieces": [
+    {
+     "file": "pieces/work_jacket_main",
+     "role": "main",
+     "offset": [
+      4.9e-05,
+      0.047936,
+      0.889091
+     ],
+     "colours": [
+      [
+       0.42,
+       0.32,
+       0.19
+      ],
+      [
+       0.3,
+       0.31,
+       0.2
+      ],
+      [
+       0.11,
+       0.13,
+       0.2
+      ],
+      [
+       0.08,
+       0.08,
+       0.09
+      ],
+      [
+       0.18,
+       0.22,
+       0.16
+      ]
+     ],
+     "temperature_c": 25.0
+    },
+    {
+     "file": "pieces/work_jacket_trim",
+     "role": "trim",
+     "offset": [
+      -1.9e-05,
+      -0.085069,
+      0.916827
+     ],
+     "colours": [
+      [
+       0.07,
+       0.07,
+       0.07
+      ]
+     ],
+     "temperature_c": 24.0
+    }
+   ]
+  },
+  "puffer": {
+   "slot": "top",
+   "hides": [],
+   "pieces": [
+    {
+     "file": "pieces/puffer_main",
+     "role": "main",
+     "offset": [
+      0.000266,
+      0.041995,
+      0.929607
+     ],
+     "colours": [
+      [
+       0.05,
+       0.05,
+       0.06
+      ],
+      [
+       0.12,
+       0.12,
+       0.13
+      ],
+      [
+       0.2,
+       0.21,
+       0.22
+      ],
+      [
+       0.1,
+       0.13,
+       0.2
+      ],
+      [
+       0.16,
+       0.18,
+       0.12
+      ],
+      [
+       0.35,
+       0.08,
+       0.08
+      ]
+     ],
+     "temperature_c": 23.5
+    },
+    {
+     "file": "pieces/puffer_trim",
+     "role": "trim",
+     "offset": [
+      -0.000212,
+      -0.12207,
+      0.94435
+     ],
+     "colours": [
+      [
+       0.05,
+       0.05,
+       0.05
+      ]
+     ],
+     "temperature_c": 23.5
+    }
+   ]
+  },
+  "work_trousers": {
+   "slot": "bottom",
+   "hides": [],
+   "pieces": [
+    {
+     "file": "pieces/work_trousers_main",
+     "role": "main",
+     "offset": [
+      -0.000366,
+      0.046662,
+      0.092117
+     ],
+     "colours": [
+      [
+       0.25,
+       0.26,
+       0.24
+      ],
+      [
+       0.08,
+       0.08,
+       0.09
+      ],
+      [
+       0.4,
+       0.36,
+       0.26
+      ],
+      [
+       0.11,
+       0.13,
+       0.2
+      ]
+     ],
+     "temperature_c": 27.0
+    },
+    {
+     "file": "pieces/work_trousers_trim",
+     "role": "trim",
+     "offset": [
+      -0.000288,
+      -0.0505,
+      0.427649
+     ],
+     "colours": [
+      [
+       0.06,
+       0.06,
+       0.06
+      ]
+     ],
+     "temperature_c": 25.0
+    }
+   ]
+  },
+  "jeans": {
+   "slot": "bottom",
+   "hides": [],
+   "pieces": [
+    {
+     "file": "pieces/jeans_main",
+     "role": "main",
+     "offset": [
+      -0.000274,
+      0.048031,
+      0.062311
+     ],
+     "colours": [
+      [
+       0.14,
+       0.2,
+       0.34
+      ],
+      [
+       0.2,
+       0.27,
+       0.4
+      ],
+      [
+       0.09,
+       0.1,
+       0.14
+      ],
+      [
+       0.3,
+       0.31,
+       0.33
+      ]
+     ],
+     "temperature_c": 27.5
+    },
+    {
+     "file": "pieces/jeans_trim",
+     "role": "trim",
+     "offset": [
+      0.000431,
+      0.043529,
+      0.994659
+     ],
+     "colours": [
+      [
+       0.14,
+       0.09,
+       0.06
+      ],
+      [
+       0.05,
+       0.05,
+       0.05
+      ]
+     ],
+     "temperature_c": 26.0
+    }
+   ]
+  },
+  "cargo": {
+   "slot": "bottom",
+   "hides": [],
+   "pieces": [
+    {
+     "file": "pieces/cargo_main",
+     "role": "main",
+     "offset": [
+      -0.000293,
+      0.045972,
+      0.063198
+     ],
+     "colours": [
+      [
+       0.3,
+       0.32,
+       0.22
+      ],
+      [
+       0.4,
+       0.36,
+       0.26
+      ],
+      [
+       0.08,
+       0.08,
+       0.09
+      ],
+      [
+       0.25,
+       0.26,
+       0.24
+      ]
+     ],
+     "temperature_c": 26.5
+    }
+   ]
+  },
+  "balaclava": {
+   "slot": "face",
+   "hides": [],
+   "pieces": [
+    {
+     "file": "pieces/balaclava_main",
+     "role": "main",
+     "offset": [
+      -0.001589,
+      0.005844,
+      1.448653
+     ],
+     "colours": [
+      [
+       0.04,
+       0.04,
+       0.05
+      ],
+      [
+       0.1,
+       0.1,
+       0.11
+      ],
+      [
+       0.08,
+       0.1,
+       0.16
+      ]
+     ],
+     "temperature_c": 29.0
+    }
+   ]
+  },
+  "balaclava3": {
+   "slot": "face",
+   "hides": [],
+   "pieces": [
+    {
+     "file": "pieces/balaclava3_main",
+     "role": "main",
+     "offset": [
+      -0.001589,
+      0.005853,
+      1.448653
+     ],
+     "colours": [
+      [
+       0.04,
+       0.04,
+       0.05
+      ],
+      [
+       0.1,
+       0.1,
+       0.11
+      ],
+      [
+       0.08,
+       0.1,
+       0.16
+      ]
+     ],
+     "temperature_c": 29.0
+    }
+   ]
+  },
+  "gaiter": {
+   "slot": "face",
+   "hides": [],
+   "pieces": [
+    {
+     "file": "pieces/gaiter_main",
+     "role": "main",
+     "offset": [
+      0.000518,
+      -0.007918,
+      1.4307
+     ],
+     "colours": [
+      [
+       0.05,
+       0.05,
+       0.06
+      ],
+      [
+       0.18,
+       0.2,
+       0.15
+      ],
+      [
+       0.25,
+       0.25,
+       0.26
+      ],
+      [
+       0.1,
+       0.12,
+       0.18
+      ]
+     ],
+     "temperature_c": 28.0
+    }
+   ]
+  },
+  "cap": {
+   "slot": "head",
+   "hides": [],
+   "pieces": [
+    {
+     "file": "pieces/cap_main",
+     "role": "main",
+     "offset": [
+      0.000108,
+      -0.028936,
+      1.652964
+     ],
+     "colours": [
+      [
+       0.05,
+       0.05,
+       0.06
+      ],
+      [
+       0.1,
+       0.12,
+       0.2
+      ],
+      [
+       0.2,
+       0.21,
+       0.22
+      ],
+      [
+       0.18,
+       0.2,
+       0.14
+      ],
+      [
+       0.45,
+       0.1,
+       0.1
+      ]
+     ],
+     "temperature_c": 26.0
+    }
+   ]
+  },
+  "beanie": {
+   "slot": "head",
+   "hides": [],
+   "pieces": [
+    {
+     "file": "pieces/beanie_main",
+     "role": "main",
+     "offset": [
+      0.00029,
+      0.007969,
+      1.610656
+     ],
+     "colours": [
+      [
+       0.05,
+       0.05,
+       0.06
+      ],
+      [
+       0.22,
+       0.22,
+       0.23
+      ],
+      [
+       0.1,
+       0.12,
+       0.2
+      ],
+      [
+       0.4,
+       0.1,
+       0.1
+      ],
+      [
+       0.7,
+       0.3,
+       0.05
+      ]
+     ],
+     "temperature_c": 26.5
+    }
+   ]
+  },
+  "hair_short": {
+   "slot": "head",
+   "hides": [],
+   "pieces": [
+    {
+     "file": "pieces/hair_short_main",
+     "role": "main",
+     "offset": [
+      0.000202,
+      0.011907,
+      1.581103
+     ],
+     "colours": [
+      [
+       0.04,
+       0.03,
+       0.03
+      ],
+      [
+       0.1,
+       0.07,
+       0.05
+      ],
+      [
+       0.2,
+       0.14,
+       0.09
+      ],
+      [
+       0.35,
+       0.27,
+       0.16
+      ]
+     ],
+     "temperature_c": 29.5
+    }
+   ]
+  },
+  "gloves": {
+   "slot": "hands",
+   "hides": [
+    "LeftHand",
+    "LeftHandThumb1",
+    "LeftHandThumb2",
+    "LeftHandThumb3",
+    "LeftHandThumbEnd",
+    "LeftHandIndex1",
+    "LeftHandIndex2",
+    "LeftHandIndex3",
+    "LeftHandIndex4",
+    "LeftHandIndexEnd",
+    "LeftHandMiddle1",
+    "LeftHandMiddle2",
+    "LeftHandMiddle3",
+    "LeftHandMiddle4",
+    "LeftHandMiddleEnd",
+    "LeftHandRing1",
+    "LeftHandRing2",
+    "LeftHandRing3",
+    "LeftHandRing4",
+    "LeftHandRingEnd",
+    "LeftHandPinky1",
+    "LeftHandPinky2",
+    "LeftHandPinky3",
+    "LeftHandPinky4",
+    "LeftHandPinkyEnd",
+    "RightHand",
+    "RightHandThumb1",
+    "RightHandThumb2",
+    "RightHandThumb3",
+    "RightHandThumbEnd",
+    "RightHandIndex1",
+    "RightHandIndex2",
+    "RightHandIndex3",
+    "RightHandIndex4",
+    "RightHandIndexEnd",
+    "RightHandMiddle1",
+    "RightHandMiddle2",
+    "RightHandMiddle3",
+    "RightHandMiddle4",
+    "RightHandMiddleEnd",
+    "RightHandRing1",
+    "RightHandRing2",
+    "RightHandRing3",
+    "RightHandRing4",
+    "RightHandRingEnd",
+    "RightHandPinky1",
+    "RightHandPinky2",
+    "RightHandPinky3",
+    "RightHandPinky4",
+    "RightHandPinkyEnd"
+   ],
+   "pieces": [
+    {
+     "file": "pieces/gloves_main",
+     "role": "main",
+     "offset": [
+      -7.1e-05,
+      -0.100428,
+      0.868265
+     ],
+     "colours": [
+      [
+       0.45,
+       0.35,
+       0.22
+      ],
+      [
+       0.06,
+       0.06,
+       0.06
+      ],
+      [
+       0.3,
+       0.3,
+       0.31
+      ],
+      [
+       0.65,
+       0.55,
+       0.15
+      ]
+     ],
+     "temperature_c": 28.0
+    }
+   ]
+  },
+  "work_boots": {
+   "slot": "feet",
+   "hides": [
+    "LeftFoot",
+    "LeftToeBase",
+    "LeftToeEnd",
+    "RightFoot",
+    "RightToeBase",
+    "RightToeEnd"
+   ],
+   "pieces": [
+    {
+     "file": "pieces/work_boots_main",
+     "role": "main",
+     "offset": [
+      0.000254,
+      0.028455,
+      -0.012051
+     ],
+     "colours": [
+      [
+       0.28,
+       0.18,
+       0.1
+      ],
+      [
+       0.06,
+       0.05,
+       0.05
+      ],
+      [
+       0.45,
+       0.33,
+       0.2
+      ]
+     ],
+     "temperature_c": 24.0
+    },
+    {
+     "file": "pieces/work_boots_sole",
+     "role": "sole",
+     "offset": [
+      0.000459,
+      0.028456,
+      -0.014914
+     ],
+     "colours": [
+      [
+       0.06,
+       0.05,
+       0.05
+      ]
+     ],
+     "temperature_c": 22.0
+    }
+   ]
+  },
+  "trainers": {
+   "slot": "feet",
+   "hides": [
+    "LeftFoot",
+    "LeftToeBase",
+    "LeftToeEnd",
+    "RightFoot",
+    "RightToeBase",
+    "RightToeEnd"
+   ],
+   "pieces": [
+    {
+     "file": "pieces/trainers_main",
+     "role": "main",
+     "offset": [
+      0.000302,
+      0.027973,
+      -0.012
+     ],
+     "colours": [
+      [
+       0.88,
+       0.88,
+       0.86
+      ],
+      [
+       0.08,
+       0.08,
+       0.09
+      ],
+      [
+       0.35,
+       0.35,
+       0.37
+      ]
+     ],
+     "temperature_c": 25.0
+    },
+    {
+     "file": "pieces/trainers_sole",
+     "role": "sole",
+     "offset": [
+      0.000522,
+      0.027901,
+      -0.014923
+     ],
+     "colours": [
+      [
+       0.92,
+       0.92,
+       0.9
+      ],
+      [
+       0.06,
+       0.06,
+       0.06
+      ]
+     ],
+     "temperature_c": 23.0
+    }
+   ]
+  },
+  "backpack_thin": {
+   "slot": "back",
+   "hides": [],
+   "pieces": [
+    {
+     "file": "pieces/backpack_thin_main",
+     "role": "main",
+     "offset": [
+      0.0,
+      0.259998,
+      0.978644
+     ],
+     "colours": [
+      [
+       0.06,
+       0.06,
+       0.07
+      ],
+      [
+       0.1,
+       0.12,
+       0.2
+      ],
+      [
+       0.25,
+       0.26,
+       0.27
+      ],
+      [
+       0.2,
+       0.22,
+       0.15
+      ]
+     ],
+     "temperature_c": null
+    },
+    {
+     "file": "pieces/backpack_thin_sole",
+     "role": "sole",
+     "offset": [
+      -0.000296,
+      0.047228,
+      1.071605
+     ],
+     "colours": [
+      [
+       0.04,
+       0.04,
+       0.04
+      ]
+     ],
+     "temperature_c": 26.0
+    }
+   ]
+  },
+  "backpack": {
+   "slot": "back",
+   "hides": [],
+   "pieces": [
+    {
+     "file": "pieces/backpack_main",
+     "role": "main",
+     "offset": [
+      0.0,
+      0.289998,
+      0.978651
+     ],
+     "colours": [
+      [
+       0.06,
+       0.06,
+       0.07
+      ],
+      [
+       0.1,
+       0.12,
+       0.2
+      ],
+      [
+       0.25,
+       0.26,
+       0.27
+      ],
+      [
+       0.2,
+       0.22,
+       0.15
+      ]
+     ],
+     "temperature_c": null
+    },
+    {
+     "file": "pieces/backpack_sole",
+     "role": "sole",
+     "offset": [
+      -0.000588,
+      0.047196,
+      1.074112
+     ],
+     "colours": [
+      [
+       0.04,
+       0.04,
+       0.04
+      ]
+     ],
+     "temperature_c": 25.0
+    }
+   ]
+  },
+  "backpack_puffer": {
+   "slot": "back",
+   "hides": [],
+   "pieces": [
+    {
+     "file": "pieces/backpack_puffer_main",
+     "role": "main",
+     "offset": [
+      0.0,
+      0.31323,
+      0.978651
+     ],
+     "colours": [
+      [
+       0.06,
+       0.06,
+       0.07
+      ],
+      [
+       0.1,
+       0.12,
+       0.2
+      ],
+      [
+       0.25,
+       0.26,
+       0.27
+      ],
+      [
+       0.2,
+       0.22,
+       0.15
+      ]
+     ],
+     "temperature_c": null
+    },
+    {
+     "file": "pieces/backpack_puffer_sole",
+     "role": "sole",
+     "offset": [
+      -0.000812,
+      0.047171,
+      1.074182
+     ],
+     "colours": [
+      [
+       0.04,
+       0.04,
+       0.04
+      ]
+     ],
+     "temperature_c": 24.0
+    }
+   ]
+  },
+  "bolt_cutters": {
+   "slot": "hand_tool",
+   "hides": [],
+   "pieces": [
+    {
+     "file": "pieces/bolt_cutters_main",
+     "role": "main",
+     "offset": [
+      -0.54686,
+      -0.096009,
+      0.894533
+     ],
+     "colours": [
+      [
+       0.7,
+       0.08,
+       0.06
+      ],
+      [
+       0.08,
+       0.08,
+       0.08
+      ],
+      [
+       0.8,
+       0.62,
+       0.05
+      ]
+     ],
+     "temperature_c": null
+    },
+    {
+     "file": "pieces/bolt_cutters_trim",
+     "role": "trim",
+     "offset": [
+      -0.595327,
+      -0.369152,
+      0.721087
+     ],
+     "colours": [
+      [
+       0.3,
+       0.31,
+       0.33
+      ]
+     ],
+     "temperature_c": null
+    }
+   ]
+  },
+  "cable_coil_thin": {
+   "slot": "shoulder",
+   "hides": [],
+   "pieces": [
+    {
+     "file": "pieces/cable_coil_thin_main",
+     "role": "main",
+     "offset": [
+      0.11,
+      0.05,
+      1.125809
+     ],
+     "colours": [
+      [
+       0.05,
+       0.05,
+       0.05
+      ],
+      [
+       0.45,
+       0.06,
+       0.05
+      ]
+     ],
+     "temperature_c": null
+    },
+    {
+     "file": "pieces/cable_coil_thin_trim",
+     "role": "trim",
+     "offset": [
+      0.11,
+      0.053602,
+      1.163887
+     ],
+     "colours": [
+      [
+       0.05,
+       0.05,
+       0.05
+      ],
+      [
+       0.8,
+       0.65,
+       0.05
+      ],
+      [
+       0.6,
+       0.08,
+       0.06
+      ]
+     ],
+     "temperature_c": null
+    }
+   ]
+  },
+  "cable_coil": {
+   "slot": "shoulder",
+   "hides": [],
+   "pieces": [
+    {
+     "file": "pieces/cable_coil_main",
+     "role": "main",
+     "offset": [
+      0.11,
+      0.05,
+      1.135809
+     ],
+     "colours": [
+      [
+       0.05,
+       0.05,
+       0.05
+      ],
+      [
+       0.45,
+       0.06,
+       0.05
+      ]
+     ],
+     "temperature_c": null
+    },
+    {
+     "file": "pieces/cable_coil_trim",
+     "role": "trim",
+     "offset": [
+      0.11,
+      0.053762,
+      1.175851
+     ],
+     "colours": [
+      [
+       0.05,
+       0.05,
+       0.05
+      ],
+      [
+       0.8,
+       0.65,
+       0.05
+      ],
+      [
+       0.6,
+       0.08,
+       0.06
+      ]
+     ],
+     "temperature_c": null
+    }
+   ]
+  },
+  "cable_coil_puffer": {
+   "slot": "shoulder",
+   "hides": [],
+   "pieces": [
+    {
+     "file": "pieces/cable_coil_puffer_main",
+     "role": "main",
+     "offset": [
+      0.11,
+      0.05,
+      1.105809
+     ],
+     "colours": [
+      [
+       0.05,
+       0.05,
+       0.05
+      ],
+      [
+       0.45,
+       0.06,
+       0.05
+      ]
+     ],
+     "temperature_c": null
+    },
+    {
+     "file": "pieces/cable_coil_puffer_trim",
+     "role": "trim",
+     "offset": [
+      0.11,
+      0.054242,
+      1.151746
+     ],
+     "colours": [
+      [
+       0.05,
+       0.05,
+       0.05
+      ],
+      [
+       0.8,
+       0.65,
+       0.05
+      ],
+      [
+       0.6,
+       0.08,
+       0.06
+      ]
+     ],
+     "temperature_c": null
+    }
+   ]
+  }
+ }
+}
