@@ -27,8 +27,8 @@ LOOPS = {
     "run": ("reaction", "A person sprints forward as fast as possible with the arms pumping hard.", None, 4.5, 2),
     "crawl": ("reaction", "A person crawls forward on the hands and knees, keeping the head and back low.", None, 0.35, 2),
     "carry": ("theft", "A person walks forward carrying a heavy load on the right shoulder, holding it steady with one hand.", None, 1.2, 2),
-    "cut_fence": ("entry", "A person stands facing forward and squeezes a long tool with both hands at chest height, cutting again and again.", "stand", None, 2),
-    "cut_cable": ("theft", "A person kneeling on one knee hammers repeatedly at something on the ground in front of them with both hands.", "kneel", None, 2),
+    "cut_fence": ("entry", "A person stands and saws back and forth with both hands in front of the chest, pushing and pulling hard, again and again.", "stand", None, 2),
+    "cut_cable": ("theft", "A person stoops over and saws back and forth with both hands low in front of the body, pushing and pulling hard, again and again.", "stand", None, 2),
     "pull_cable": ("theft", "A person bent forward pulls something up from the ground hand over hand, stepping slowly backward.", "stand", None, 2),
     "look_around": ("arrival", "A person stands in place and looks around nervously, turning the head and upper body left and right.", "stand", None, 2),
     "crouch_watch": ("reaction", "A person squatting low stays frozen and slowly turns the head to look up and around.", "crouch", None, 1),
@@ -68,10 +68,10 @@ MOVES = {
     "cut_fence_to_walk": ("entry", "A person working at chest height ducks the head and steps forward through a narrow gap, then walks on.", ("loop", "cut_fence"), ("loop", "walk"), 105),
     "cut_fence_freeze": ("reaction", "A person working with both hands at chest height stops, looks up at the sky and stays completely still.", ("loop", "cut_fence"), None, 105),
     "cut_fence_to_run": ("reaction", "A person working with both hands at chest height turns around and sprints away fast.", ("loop", "cut_fence"), ("loop", "run"), 75),
-    "cut_cable_to_stand": ("theft", "A person kneeling and working near the ground stops and stands up.", ("loop", "cut_cable"), "stand", 90),
-    "cut_cable_freeze": ("reaction", "A person kneeling and working near the ground stops, looks up at the sky and stays completely still.", ("loop", "cut_cable"), None, 105),
-    "cut_cable_to_prone": ("reaction", "A person kneeling on one knee drops flat onto the stomach and lies still, head down.", ("loop", "cut_cable"), "prone", 90),
-    "cut_cable_to_run": ("reaction", "A person kneeling on one knee springs up and sprints away as fast as possible.", ("loop", "cut_cable"), ("loop", "run"), 75),
+    "cut_cable_to_stand": ("theft", "A person stooped over working low in front stops and straightens up, standing still.", ("loop", "cut_cable"), "stand", 90),
+    "cut_cable_freeze": ("reaction", "A person stooped over working low in front stops, looks up at the sky and stays completely still.", ("loop", "cut_cable"), None, 105),
+    "cut_cable_to_prone": ("reaction", "A person stooped over working low drops flat onto the stomach and lies still, head down.", ("loop", "cut_cable"), "prone", 90),
+    "cut_cable_to_run": ("reaction", "A person stooped over working low straightens up, turns and sprints away as fast as possible.", ("loop", "cut_cable"), ("loop", "run"), 75),
     "pull_cable_to_stand": ("theft", "A person bent forward pulling something stops, straightens up and stands still.", ("loop", "pull_cable"), "stand", 75),
     "pull_cable_to_carry": ("theft", "A person bent forward lifts a heavy load onto the right shoulder and starts walking forward.", ("loop", "pull_cable"), ("loop", "carry"), 105),
     "pull_cable_freeze": ("reaction", "A person bent forward pulling something stops, looks up at the sky and stays completely still.", ("loop", "pull_cable"), None, 105),
@@ -80,13 +80,13 @@ MOVES = {
     "look_around_to_run": ("reaction", "A person looking around nervously suddenly turns and sprints away fast.", ("loop", "look_around"), ("loop", "run"), 75),
     "crouch_watch_to_run": ("reaction", "A person squatting low springs up and sprints away as fast as possible.", ("loop", "crouch_watch"), ("loop", "run"), 75),
     "crouch_watch_to_prone": ("reaction", "A person squatting low drops flat onto the stomach and lies still.", ("loop", "crouch_watch"), "prone", 75),
-    # a way out that starts with a step back, so a thief can work right at a panel's edge and still leave it
-    "cut_cable_back_away": ("reaction", "A person kneeling on one knee stands up and walks backward a few steps.", ("loop", "cut_cable"), "stand", 90),
+    # a way out that starts with a step back, so a thief can work right under a panel's edge and still leave it
+    "cut_cable_back_away": ("reaction", "A person stooped over working low straightens up and walks backward a few steps.", ("loop", "cut_cable"), "stand", 90),
     "stand_to_run": ("reaction", "A person standing still suddenly turns around and sprints away as fast as possible.", "stand", ("loop", "run"), 75),
     # a freeze that is not the end: back to work, or off at a run
-    "cut_cable_freeze_resume": ("reaction", "A person kneeling and working near the ground freezes and looks up at the sky for a moment, then goes back to working near the ground.", ("loop", "cut_cable"), ("loop", "cut_cable"), 150),
-    "cut_cable_freeze_run": ("reaction", "A person kneeling and working near the ground freezes and looks up at the sky, then springs up and sprints away fast.", ("loop", "cut_cable"), ("loop", "run"), 150),
-    "cut_fence_freeze_resume": ("reaction", "A person working with both hands at chest height freezes and looks up at the sky for a moment, then goes back to working with both hands.", ("loop", "cut_fence"), ("loop", "cut_fence"), 150),
+    "cut_cable_freeze_resume": ("reaction", "A person stooped over working low freezes and looks up at the sky for a moment, then goes back to working low in front.", ("loop", "cut_cable"), ("loop", "cut_cable"), 150),
+    "cut_cable_freeze_run": ("reaction", "A person stooped over working low freezes and looks up at the sky, then turns and sprints away fast.", ("loop", "cut_cable"), ("loop", "run"), 150),
+    "cut_fence_freeze_resume": ("reaction", "A person sawing at chest height freezes and looks up at the sky for a moment, then goes back to sawing back and forth.", ("loop", "cut_fence"), ("loop", "cut_fence"), 150),
     "cut_fence_freeze_run": ("reaction", "A person working with both hands at chest height freezes and looks up at the sky, then turns around and sprints away fast.", ("loop", "cut_fence"), ("loop", "run"), 150),
     "pull_cable_freeze_resume": ("reaction", "A person bent forward pulling something freezes and looks up at the sky for a moment, then goes back to pulling hand over hand.", ("loop", "pull_cable"), ("loop", "pull_cable"), 150),
     "pull_cable_freeze_run": ("reaction", "A person bent forward pulling something freezes and looks up at the sky, then drops it, turns and sprints away fast.", ("loop", "pull_cable"), ("loop", "run"), 150),
@@ -97,15 +97,18 @@ MOVES = {
 # Candidates generated per kept result: loops draw this many takes and keep the most distinct passing ones; every
 # other move draws this many per start and keeps the best passing one.
 LOOP_CANDIDATES = 6
+LOOP_CANDIDATES_BY_NAME = {"cut_fence": 12, "cut_cable": 12}  # few takes keep cutting for a whole cycle
 HUB_CANDIDATES = 4
 MOVE_CANDIDATES = 6
-# Moves that failed their checks at six takes draw twelve.
+# Moves that failed their checks at six takes draw twelve, and at twelve draw twenty-four.
 MOVE_CANDIDATES_BY_NAME = {"cut_fence_freeze": 12, "cut_fence_to_stand": 12, "sneak_to_prone": 12, "walk_to_prone": 12,
-                           "cut_cable_back_away": 12, "stand_to_run": 12, "cut_cable_freeze_resume": 12,
-                           "cut_cable_freeze_run": 12, "cut_fence_freeze_resume": 12, "cut_fence_freeze_run": 12,
+                           "cut_cable_back_away": 12, "stand_to_run": 12, "cut_cable_to_stand": 12, "cut_cable_freeze": 12,
+                           "cut_cable_to_prone": 24, "cut_cable_to_run": 12, "cut_cable_freeze_resume": 12,
+                           "cut_cable_freeze_run": 12, "cut_fence_freeze_resume": 24, "cut_fence_freeze_run": 12,
                            "pull_cable_freeze_resume": 12, "pull_cable_freeze_run": 12, "walk_freeze_resume": 12,
                            "walk_freeze_run": 12}
 LOOP_FRAMES = 300
 LOOP_FRAMES_BY_NAME = {"run": 180}  # a sprint held longer than about 6 s freezes into a glide
 STEPPING = {"walk", "walk_wary", "sneak", "run", "carry"}  # upright gaits whose feet must lift; a crawl drags its toes
+WORKING = {"cut_fence", "cut_cable", "pull_cable"}  # work loops whose hands must keep working
 HUB_FRAMES = 120

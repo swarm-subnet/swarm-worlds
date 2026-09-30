@@ -247,6 +247,21 @@ def test_mirror_rule_reflects_the_pose():
             assert math.dist((-expected[0], expected[1], expected[2]), got) < 0.01, (name, MANIFEST["joints"][j])
 
 
+def test_work_loops_keep_their_hands_working():
+    """Every cutting and pulling loop moves its hands all the way through, measured on the shipped frames: a loop
+    standing with its arms down moves them 1 to 4 cm/s, well under half the gate."""
+    offsets = _rest_offsets()
+    hands = [MANIFEST["joints"].index(n) for n in ("LeftHand", "RightHand")]
+    floor = MANIFEST["gates"]["hands_cm_s"] / 2
+    for name, block in BLOCKS.items():
+        if not block["loop"] or block["kind"] not in ("cut_fence", "cut_cable", "pull_cable"):
+            continue
+        assert block["measures"]["hands_cm_s"] >= MANIFEST["gates"]["hands_cm_s"], name
+        poses = [_fk([_quat(f, j) for j in range(30)], offsets) for f in range(block["first"], _last(block) + 1)]
+        path = sum(math.dist(a[h], b[h]) for a, b in zip(poses, poses[1:]) for h in hands)
+        assert path / 2 / (len(poses) - 1) * MANIFEST["fps"] * 100 >= floor, name
+
+
 @pytest.mark.parametrize("name", sorted(BLOCKS))
 def test_block_passed_its_checks(name):
     """Every shipped block passed the generation gates: text match, seams, foot slide and jitter."""

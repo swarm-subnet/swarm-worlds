@@ -96,7 +96,8 @@
   "slide_cm_s": 6.0,
   "jitter_m_s3": 400.0,
   "tmr_rank": 5,
-  "legs_cm": 0.5
+  "legs_cm": 0.5,
+  "hands_cm_s": 20.0
  },
  "sprint_gates": {
   "slide_cm_s": 13.0,
@@ -126,7 +127,7 @@
     "slide_cm_s": 2.4322,
     "jitter_m_s3": 231.7042,
     "loop_m": 0.032,
-    "tmr": 0.9679,
+    "tmr": 0.9681,
     "tmr_rank": 1.0,
     "legs_cm": 2.49,
     "nearest_m": 0.593
@@ -155,7 +156,7 @@
     "slide_cm_s": 3.4735,
     "jitter_m_s3": 169.1461,
     "loop_m": 0.0357,
-    "tmr": 0.8584,
+    "tmr": 0.8578,
     "tmr_rank": 1.0,
     "legs_cm": 1.9559,
     "nearest_m": 0.593
@@ -177,7 +178,7 @@
    "measures": {
     "slide_cm_s": 1.6551,
     "jitter_m_s3": 148.5437,
-    "tmr": 0.8286,
+    "tmr": 0.8271,
     "tmr_rank": 2.0,
     "seam_m": 0.0
    }
@@ -198,7 +199,7 @@
    "measures": {
     "slide_cm_s": 2.6595,
     "jitter_m_s3": 217.1403,
-    "tmr": 0.8288,
+    "tmr": 0.8277,
     "tmr_rank": 2.0,
     "seam_m": 0.0
    }
@@ -225,7 +226,7 @@
    "measures": {
     "slide_cm_s": 5.0976,
     "jitter_m_s3": 2138.6399,
-    "tmr": 0.8048,
+    "tmr": 0.8029,
     "tmr_rank": 5.0,
     "seam_m": 0.0
    }
@@ -252,7 +253,7 @@
    "measures": {
     "slide_cm_s": 5.5072,
     "jitter_m_s3": 1251.8152,
-    "tmr": 0.8249,
+    "tmr": 0.8229,
     "tmr_rank": 4.0,
     "seam_m": 0.0
    }
@@ -280,7 +281,7 @@
     "slide_cm_s": 4.4697,
     "jitter_m_s3": 115.2133,
     "loop_m": 0.0167,
-    "tmr": 0.969,
+    "tmr": 0.9691,
     "tmr_rank": 1.0,
     "nearest_m": 0.2618
    }
@@ -335,7 +336,7 @@
    "measures": {
     "slide_cm_s": 4.4848,
     "jitter_m_s3": 160.9712,
-    "tmr": 0.9419,
+    "tmr": 0.9414,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -362,7 +363,7 @@
    "measures": {
     "slide_cm_s": 5.5705,
     "jitter_m_s3": 220.3011,
-    "tmr": 0.9419,
+    "tmr": 0.9411,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -389,7 +390,7 @@
    "measures": {
     "slide_cm_s": 2.8576,
     "jitter_m_s3": 138.3986,
-    "tmr": 0.8053,
+    "tmr": 0.8052,
     "tmr_rank": 4.0,
     "seam_m": 0.0
    }
@@ -443,7 +444,7 @@
    "measures": {
     "slide_cm_s": 0.9808,
     "jitter_m_s3": 76.8205,
-    "tmr": 0.9215,
+    "tmr": 0.9216,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -471,7 +472,7 @@
     "slide_cm_s": 0.0981,
     "jitter_m_s3": 10.6561,
     "loop_m": 0.0055,
-    "tmr": 0.8184,
+    "tmr": 0.8163,
     "tmr_rank": 2.0,
     "seam_m": 0.0
    }
@@ -519,7 +520,7 @@
    "measures": {
     "slide_cm_s": 2.9943,
     "jitter_m_s3": 332.8135,
-    "tmr": 0.9293,
+    "tmr": 0.9292,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -546,7 +547,7 @@
    "measures": {
     "slide_cm_s": 1.8837,
     "jitter_m_s3": 665.108,
-    "tmr": 0.8874,
+    "tmr": 0.8861,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -556,7 +557,7 @@
    "stage": "theft",
    "loop": true,
    "first": 1287,
-   "frames": 45,
+   "frames": 97,
    "start": {
     "loop": "cut_cable.0"
    },
@@ -564,40 +565,41 @@
     "loop": "cut_cable.0"
    },
    "travel": {
-    "x": -0.006971294891604855,
-    "z": -0.008492054982809428,
+    "x": -0.013825704989151921,
+    "z": -0.00398725093673602,
     "turn": 0.0
    },
-   "prompt": "A person kneeling on one knee hammers repeatedly at something on the ground in front of them with both hands.",
+   "prompt": "A person stoops over and saws back and forth with both hands low in front of the body, pushing and pulling hard, again and again.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 0.2744,
-    "jitter_m_s3": 10.7005,
-    "loop_m": 0.0091,
-    "tmr": 0.8727,
-    "tmr_rank": 1.0,
+    "slide_cm_s": 0.9867,
+    "jitter_m_s3": 117.3704,
+    "loop_m": 0.0232,
+    "tmr": 0.9306,
+    "tmr_rank": 2.0,
+    "hands_cm_s": 97.4398,
     "seam_m": 0.0,
-    "nearest_m": 0.0534
+    "nearest_m": 0.1976
    }
   },
   "cut_cable.0.in": {
    "kind": "cut_cable_in",
    "stage": "theft",
    "loop": false,
-   "first": 1332,
-   "frames": 55,
+   "first": 1384,
+   "frames": 196,
    "start": {
-    "hub": "kneel"
+    "hub": "stand"
    },
    "next": {
     "loop": "cut_cable.0"
    },
    "travel": {
-    "x": -0.003913634717123837,
-    "z": 0.007022440288363666,
-    "turn": 0.006712913513183594
+    "x": 0.08356030085541331,
+    "z": 0.11324069601146462,
+    "turn": -0.08405399322509766
    },
-   "prompt": "A person kneeling on one knee hammers repeatedly at something on the ground in front of them with both hands.",
+   "prompt": "A person stoops over and saws back and forth with both hands low in front of the body, pushing and pulling hard, again and again.",
    "checks_failed": [],
    "measures": {}
   },
@@ -605,8 +607,8 @@
    "kind": "cut_cable",
    "stage": "theft",
    "loop": true,
-   "first": 1387,
-   "frames": 63,
+   "first": 1580,
+   "frames": 126,
    "start": {
     "loop": "cut_cable.1"
    },
@@ -614,40 +616,41 @@
     "loop": "cut_cable.1"
    },
    "travel": {
-    "x": -0.0021977890633310543,
-    "z": -0.01639269858303516,
+    "x": -0.009495198181349918,
+    "z": 0.008741102641880771,
     "turn": 0.0
    },
-   "prompt": "A person kneeling on one knee hammers repeatedly at something on the ground in front of them with both hands.",
+   "prompt": "A person stoops over and saws back and forth with both hands low in front of the body, pushing and pulling hard, again and again.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 0.686,
-    "jitter_m_s3": 56.2263,
-    "loop_m": 0.0298,
-    "tmr": 0.8613,
+    "slide_cm_s": 3.5603,
+    "jitter_m_s3": 145.511,
+    "loop_m": 0.0271,
+    "tmr": 0.8794,
     "tmr_rank": 1.0,
+    "hands_cm_s": 113.958,
     "seam_m": 0.0,
-    "nearest_m": 0.0534
+    "nearest_m": 0.1976
    }
   },
   "cut_cable.1.in": {
    "kind": "cut_cable_in",
    "stage": "theft",
    "loop": false,
-   "first": 1450,
-   "frames": 233,
+   "first": 1706,
+   "frames": 166,
    "start": {
-    "hub": "kneel"
+    "hub": "stand"
    },
    "next": {
     "loop": "cut_cable.1"
    },
    "travel": {
-    "x": -0.019197274105840084,
-    "z": 0.002868718919868256,
-    "turn": -0.012364625930786133
+    "x": 0.017985540814309434,
+    "z": -0.0156216476006713,
+    "turn": -0.6183931827545166
    },
-   "prompt": "A person kneeling on one knee hammers repeatedly at something on the ground in front of them with both hands.",
+   "prompt": "A person stoops over and saws back and forth with both hands low in front of the body, pushing and pulling hard, again and again.",
    "checks_failed": [],
    "measures": {}
   },
@@ -655,7 +658,7 @@
    "kind": "cut_cable_back_away",
    "stage": "reaction",
    "loop": false,
-   "first": 1683,
+   "first": 1872,
    "frames": 87,
    "start": {
     "loop": "cut_cable.0"
@@ -664,17 +667,17 @@
     "hub": "stand"
    },
    "travel": {
-    "x": 0.021443961188197136,
-    "z": -0.3678828477859497,
-    "turn": 0.013428211212158203
+    "x": -0.17359497271758048,
+    "z": -0.935567619033339,
+    "turn": -0.04306316375732422
    },
-   "prompt": "A person kneeling on one knee stands up and walks backward a few steps.",
+   "prompt": "A person stooped over working low straightens up and walks backward a few steps.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 3.3462,
-    "jitter_m_s3": 173.1348,
-    "tmr": 0.7987,
-    "tmr_rank": 5.0,
+    "slide_cm_s": 2.0454,
+    "jitter_m_s3": 114.196,
+    "tmr": 0.7181,
+    "tmr_rank": 1.0,
     "seam_m": 0.0
    }
   },
@@ -682,7 +685,7 @@
    "kind": "cut_cable_back_away",
    "stage": "reaction",
    "loop": false,
-   "first": 1770,
+   "first": 1959,
    "frames": 87,
    "start": {
     "loop": "cut_cable.1"
@@ -691,17 +694,17 @@
     "hub": "stand"
    },
    "travel": {
-    "x": 0.2757834067880923,
-    "z": -1.711102635752408,
-    "turn": -0.08697080612182617
+    "x": 0.02201273576714812,
+    "z": -0.8123641585652999,
+    "turn": -0.17574095726013184
    },
-   "prompt": "A person kneeling on one knee stands up and walks backward a few steps.",
+   "prompt": "A person stooped over working low straightens up and walks backward a few steps.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 5.0811,
-    "jitter_m_s3": 370.8631,
-    "tmr": 0.8806,
-    "tmr_rank": 1.0,
+    "slide_cm_s": 2.8776,
+    "jitter_m_s3": 130.8366,
+    "tmr": 0.6863,
+    "tmr_rank": 2.0,
     "seam_m": 0.0
    }
   },
@@ -709,20 +712,20 @@
    "kind": "cut_cable_freeze",
    "stage": "reaction",
    "loop": false,
-   "first": 1857,
+   "first": 2046,
    "frames": 105,
    "start": {
     "loop": "cut_cable.0"
    },
    "next": null,
    "travel": null,
-   "prompt": "A person kneeling and working near the ground stops, looks up at the sky and stays completely still.",
+   "prompt": "A person stooped over working low in front stops, looks up at the sky and stays completely still.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 0.7286,
-    "jitter_m_s3": 29.4195,
-    "tmr": 0.856,
-    "tmr_rank": 1.0,
+    "slide_cm_s": 1.261,
+    "jitter_m_s3": 94.8581,
+    "tmr": 0.6974,
+    "tmr_rank": 5.0,
     "seam_m": 0.0
    }
   },
@@ -730,20 +733,20 @@
    "kind": "cut_cable_freeze",
    "stage": "reaction",
    "loop": false,
-   "first": 1962,
+   "first": 2151,
    "frames": 105,
    "start": {
     "loop": "cut_cable.1"
    },
    "next": null,
    "travel": null,
-   "prompt": "A person kneeling and working near the ground stops, looks up at the sky and stays completely still.",
+   "prompt": "A person stooped over working low in front stops, looks up at the sky and stays completely still.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 0.6924,
-    "jitter_m_s3": 47.2163,
-    "tmr": 0.8791,
-    "tmr_rank": 1.0,
+    "slide_cm_s": 0.5392,
+    "jitter_m_s3": 32.2526,
+    "tmr": 0.7455,
+    "tmr_rank": 3.0,
     "seam_m": 0.0
    }
   },
@@ -751,7 +754,7 @@
    "kind": "cut_cable_freeze_resume",
    "stage": "reaction",
    "loop": false,
-   "first": 2067,
+   "first": 2256,
    "frames": 147,
    "start": {
     "loop": "cut_cable.0"
@@ -760,17 +763,17 @@
     "loop": "cut_cable.0"
    },
    "travel": {
-    "x": 0.027986451983451843,
-    "z": 0.06719236075878143,
-    "turn": -0.04857373237609863
+    "x": 0.0017151573866291193,
+    "z": -0.02207351101827436,
+    "turn": 0.1337430477142334
    },
-   "prompt": "A person kneeling and working near the ground freezes and looks up at the sky for a moment, then goes back to working near the ground.",
+   "prompt": "A person stooped over working low freezes and looks up at the sky for a moment, then goes back to working low in front.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 2.6899,
-    "jitter_m_s3": 27.5568,
-    "tmr": 0.8006,
-    "tmr_rank": 5.0,
+    "slide_cm_s": 1.7219,
+    "jitter_m_s3": 110.1606,
+    "tmr": 0.6991,
+    "tmr_rank": 4.0,
     "seam_m": 0.0
    }
   },
@@ -778,7 +781,7 @@
    "kind": "cut_cable_freeze_resume",
    "stage": "reaction",
    "loop": false,
-   "first": 2214,
+   "first": 2403,
    "frames": 147,
    "start": {
     "loop": "cut_cable.1"
@@ -787,17 +790,17 @@
     "loop": "cut_cable.1"
    },
    "travel": {
-    "x": -0.0046341092280922916,
-    "z": 0.009187351499934594,
-    "turn": -0.0025670528411865234
+    "x": 0.05846179046884779,
+    "z": -0.012825936093479014,
+    "turn": 0.10518026351928711
    },
-   "prompt": "A person kneeling and working near the ground freezes and looks up at the sky for a moment, then goes back to working near the ground.",
+   "prompt": "A person stooped over working low freezes and looks up at the sky for a moment, then goes back to working low in front.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 1.5117,
-    "jitter_m_s3": 34.1283,
-    "tmr": 0.8191,
-    "tmr_rank": 5.0,
+    "slide_cm_s": 1.7435,
+    "jitter_m_s3": 43.9149,
+    "tmr": 0.6671,
+    "tmr_rank": 3.0,
     "seam_m": 0.0
    }
   },
@@ -805,7 +808,7 @@
    "kind": "cut_cable_freeze_run",
    "stage": "reaction",
    "loop": false,
-   "first": 2361,
+   "first": 2550,
    "frames": 147,
    "start": {
     "loop": "cut_cable.0"
@@ -814,17 +817,17 @@
     "loop": "run.0"
    },
    "travel": {
-    "x": 0.03833741694688797,
-    "z": -0.28966376185417175,
-    "turn": -0.04656505584716797
+    "x": -0.16321405763840818,
+    "z": -8.003761293024171,
+    "turn": 3.094428300857544
    },
-   "prompt": "A person kneeling and working near the ground freezes and looks up at the sky, then springs up and sprints away fast.",
+   "prompt": "A person stooped over working low freezes and looks up at the sky, then turns and sprints away fast.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 1.7446,
-    "jitter_m_s3": 345.1154,
-    "tmr": 0.8414,
-    "tmr_rank": 2.0,
+    "slide_cm_s": 2.0235,
+    "jitter_m_s3": 1122.0989,
+    "tmr": 0.7777,
+    "tmr_rank": 3.0,
     "seam_m": 0.0
    }
   },
@@ -832,7 +835,7 @@
    "kind": "cut_cable_freeze_run",
    "stage": "reaction",
    "loop": false,
-   "first": 2508,
+   "first": 2697,
    "frames": 147,
    "start": {
     "loop": "cut_cable.1"
@@ -841,17 +844,17 @@
     "loop": "run.1"
    },
    "travel": {
-    "x": 0.058831238464489455,
-    "z": -0.15552919271837568,
-    "turn": 0.18535852432250977
+    "x": -0.9831452557467287,
+    "z": -9.473754038528854,
+    "turn": -2.8898966312408447
    },
-   "prompt": "A person kneeling and working near the ground freezes and looks up at the sky, then springs up and sprints away fast.",
+   "prompt": "A person stooped over working low freezes and looks up at the sky, then turns and sprints away fast.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 3.4228,
-    "jitter_m_s3": 293.1135,
-    "tmr": 0.8687,
-    "tmr_rank": 1.0,
+    "slide_cm_s": 4.0512,
+    "jitter_m_s3": 1567.3776,
+    "tmr": 0.7568,
+    "tmr_rank": 5.0,
     "seam_m": 0.0
    }
   },
@@ -859,7 +862,7 @@
    "kind": "cut_cable_to_prone",
    "stage": "reaction",
    "loop": false,
-   "first": 2655,
+   "first": 2844,
    "frames": 87,
    "start": {
     "loop": "cut_cable.0"
@@ -868,17 +871,17 @@
     "hub": "prone"
    },
    "travel": {
-    "x": 0.005873189773410559,
-    "z": -0.0022321336437016726,
-    "turn": -0.053199052810668945
+    "x": 0.20278373952605008,
+    "z": 0.9642398972326175,
+    "turn": 0.2607748508453369
    },
-   "prompt": "A person kneeling on one knee drops flat onto the stomach and lies still, head down.",
+   "prompt": "A person stooped over working low drops flat onto the stomach and lies still, head down.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 4.4774,
-    "jitter_m_s3": 146.2143,
-    "tmr": 0.8956,
-    "tmr_rank": 2.0,
+    "slide_cm_s": 3.4116,
+    "jitter_m_s3": 384.261,
+    "tmr": 0.9063,
+    "tmr_rank": 3.0,
     "seam_m": 0.0
    }
   },
@@ -886,7 +889,7 @@
    "kind": "cut_cable_to_prone",
    "stage": "reaction",
    "loop": false,
-   "first": 2742,
+   "first": 2931,
    "frames": 87,
    "start": {
     "loop": "cut_cable.1"
@@ -895,17 +898,17 @@
     "hub": "prone"
    },
    "travel": {
-    "x": 0.018342296317813915,
-    "z": -0.010771911782891629,
-    "turn": -0.013536930084228516
+    "x": 0.19966592293630084,
+    "z": 0.7676828725768908,
+    "turn": 0.07866334915161133
    },
-   "prompt": "A person kneeling on one knee drops flat onto the stomach and lies still, head down.",
+   "prompt": "A person stooped over working low drops flat onto the stomach and lies still, head down.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 5.6652,
-    "jitter_m_s3": 190.1625,
-    "tmr": 0.8872,
-    "tmr_rank": 2.0,
+    "slide_cm_s": 4.0578,
+    "jitter_m_s3": 313.1072,
+    "tmr": 0.8644,
+    "tmr_rank": 3.0,
     "seam_m": 0.0
    }
   },
@@ -913,7 +916,7 @@
    "kind": "cut_cable_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 2829,
+   "first": 3018,
    "frames": 72,
    "start": {
     "loop": "cut_cable.0"
@@ -922,17 +925,17 @@
     "loop": "run.0"
    },
    "travel": {
-    "x": 0.19126702845096588,
-    "z": 2.4555294513702393,
-    "turn": 0.2027721405029297
+    "x": 0.28610004874151546,
+    "z": -5.2174849483543975,
+    "turn": -2.8433334827423096
    },
-   "prompt": "A person kneeling on one knee springs up and sprints away as fast as possible.",
+   "prompt": "A person stooped over working low straightens up, turns and sprints away as fast as possible.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 2.0546,
-    "jitter_m_s3": 1275.5984,
-    "tmr": 0.9229,
-    "tmr_rank": 1.0,
+    "slide_cm_s": 5.5304,
+    "jitter_m_s3": 1639.7855,
+    "tmr": 0.7061,
+    "tmr_rank": 5.0,
     "seam_m": 0.0
    }
   },
@@ -940,7 +943,7 @@
    "kind": "cut_cable_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 2901,
+   "first": 3090,
    "frames": 72,
    "start": {
     "loop": "cut_cable.1"
@@ -949,17 +952,17 @@
     "loop": "run.1"
    },
    "travel": {
-    "x": 0.23591448730922765,
-    "z": 3.6249315474466037,
-    "turn": 0.04918527603149414
+    "x": -0.26715221861785327,
+    "z": -4.833777934235493,
+    "turn": 2.976750612258911
    },
-   "prompt": "A person kneeling on one knee springs up and sprints away as fast as possible.",
+   "prompt": "A person stooped over working low straightens up, turns and sprints away as fast as possible.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 2.4625,
-    "jitter_m_s3": 834.0287,
-    "tmr": 0.901,
-    "tmr_rank": 1.0,
+    "slide_cm_s": 5.5091,
+    "jitter_m_s3": 1821.8663,
+    "tmr": 0.7016,
+    "tmr_rank": 4.0,
     "seam_m": 0.0
    }
   },
@@ -967,7 +970,7 @@
    "kind": "cut_cable_to_stand",
    "stage": "theft",
    "loop": false,
-   "first": 2973,
+   "first": 3162,
    "frames": 87,
    "start": {
     "loop": "cut_cable.0"
@@ -976,17 +979,17 @@
     "hub": "stand"
    },
    "travel": {
-    "x": -0.015703968703746796,
-    "z": 0.036103587597608566,
-    "turn": -0.03608345985412598
+    "x": -0.04892786683094452,
+    "z": 0.09753499879562517,
+    "turn": 0.06423497200012207
    },
-   "prompt": "A person kneeling and working near the ground stops and stands up.",
+   "prompt": "A person stooped over working low in front stops and straightens up, standing still.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 4.5537,
-    "jitter_m_s3": 372.7014,
-    "tmr": 0.9252,
-    "tmr_rank": 1.0,
+    "slide_cm_s": 2.3338,
+    "jitter_m_s3": 101.7415,
+    "tmr": 0.7803,
+    "tmr_rank": 2.0,
     "seam_m": 0.0
    }
   },
@@ -994,7 +997,7 @@
    "kind": "cut_cable_to_stand",
    "stage": "theft",
    "loop": false,
-   "first": 3060,
+   "first": 3249,
    "frames": 87,
    "start": {
     "loop": "cut_cable.1"
@@ -1003,17 +1006,17 @@
     "hub": "stand"
    },
    "travel": {
-    "x": 0.03436226404346463,
-    "z": 0.0005887458616035129,
-    "turn": 0.06525087356567383
+    "x": -0.02931451275849051,
+    "z": -0.013400987258395483,
+    "turn": 0.1316518783569336
    },
-   "prompt": "A person kneeling and working near the ground stops and stands up.",
+   "prompt": "A person stooped over working low in front stops and straightens up, standing still.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 4.5381,
-    "jitter_m_s3": 186.2496,
-    "tmr": 0.9191,
-    "tmr_rank": 1.0,
+    "slide_cm_s": 4.3516,
+    "jitter_m_s3": 62.0185,
+    "tmr": 0.7695,
+    "tmr_rank": 3.0,
     "seam_m": 0.0
    }
   },
@@ -1021,8 +1024,8 @@
    "kind": "cut_fence",
    "stage": "entry",
    "loop": true,
-   "first": 3147,
-   "frames": 51,
+   "first": 3336,
+   "frames": 67,
    "start": {
     "loop": "cut_fence.0"
    },
@@ -1030,28 +1033,29 @@
     "loop": "cut_fence.0"
    },
    "travel": {
-    "x": -0.00037569545403345417,
-    "z": 0.00033055486125163126,
+    "x": -0.013013738878051295,
+    "z": 0.010048207824275013,
     "turn": 0.0
    },
-   "prompt": "A person stands facing forward and squeezes a long tool with both hands at chest height, cutting again and again.",
+   "prompt": "A person stands and saws back and forth with both hands in front of the chest, pushing and pulling hard, again and again.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 0.5123,
-    "jitter_m_s3": 7.5782,
-    "loop_m": 0.0065,
-    "tmr": 0.8009,
-    "tmr_rank": 1.0,
+    "slide_cm_s": 0.9115,
+    "jitter_m_s3": 113.6918,
+    "loop_m": 0.037,
+    "tmr": 0.9161,
+    "tmr_rank": 2.0,
+    "hands_cm_s": 96.7647,
     "seam_m": 0.0,
-    "nearest_m": 0.1662
+    "nearest_m": 0.1955
    }
   },
   "cut_fence.0.in": {
    "kind": "cut_fence_in",
    "stage": "entry",
    "loop": false,
-   "first": 3198,
-   "frames": 246,
+   "first": 3403,
+   "frames": 148,
    "start": {
     "hub": "stand"
    },
@@ -1059,11 +1063,11 @@
     "loop": "cut_fence.0"
    },
    "travel": {
-    "x": -0.00365988204318868,
-    "z": 0.007485872294848754,
-    "turn": 0.009816646575927734
+    "x": 0.07144813475386243,
+    "z": 0.061031768472138384,
+    "turn": 0.09417557716369629
    },
-   "prompt": "A person stands facing forward and squeezes a long tool with both hands at chest height, cutting again and again.",
+   "prompt": "A person stands and saws back and forth with both hands in front of the chest, pushing and pulling hard, again and again.",
    "checks_failed": [],
    "measures": {}
   },
@@ -1071,8 +1075,8 @@
    "kind": "cut_fence",
    "stage": "entry",
    "loop": true,
-   "first": 3444,
-   "frames": 45,
+   "first": 3551,
+   "frames": 48,
    "start": {
     "loop": "cut_fence.1"
    },
@@ -1080,28 +1084,29 @@
     "loop": "cut_fence.1"
    },
    "travel": {
-    "x": -0.006292084415137164,
-    "z": 0.005722104732553926,
+    "x": -0.014421927224971862,
+    "z": -0.02746803495448403,
     "turn": 0.0
    },
-   "prompt": "A person stands facing forward and squeezes a long tool with both hands at chest height, cutting again and again.",
+   "prompt": "A person stands and saws back and forth with both hands in front of the chest, pushing and pulling hard, again and again.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 0.4384,
-    "jitter_m_s3": 14.8646,
-    "loop_m": 0.0127,
-    "tmr": 0.7673,
+    "slide_cm_s": 2.1671,
+    "jitter_m_s3": 55.0463,
+    "loop_m": 0.0444,
+    "tmr": 0.792,
     "tmr_rank": 1.0,
+    "hands_cm_s": 30.782,
     "seam_m": 0.0,
-    "nearest_m": 0.1662
+    "nearest_m": 0.1955
    }
   },
   "cut_fence.1.in": {
    "kind": "cut_fence_in",
    "stage": "entry",
    "loop": false,
-   "first": 3489,
-   "frames": 167,
+   "first": 3599,
+   "frames": 90,
    "start": {
     "hub": "stand"
    },
@@ -1109,11 +1114,11 @@
     "loop": "cut_fence.1"
    },
    "travel": {
-    "x": 0.0076884228324701365,
-    "z": -0.001739203870459241,
-    "turn": -0.0948939323425293
+    "x": -0.021417314496761562,
+    "z": 0.003716093796462427,
+    "turn": 0.029934406280517578
    },
-   "prompt": "A person stands facing forward and squeezes a long tool with both hands at chest height, cutting again and again.",
+   "prompt": "A person stands and saws back and forth with both hands in front of the chest, pushing and pulling hard, again and again.",
    "checks_failed": [],
    "measures": {}
   },
@@ -1121,7 +1126,7 @@
    "kind": "cut_fence_freeze",
    "stage": "reaction",
    "loop": false,
-   "first": 3656,
+   "first": 3689,
    "frames": 105,
    "start": {
     "loop": "cut_fence.0"
@@ -1131,10 +1136,10 @@
    "prompt": "A person working with both hands at chest height stops, looks up at the sky and stays completely still.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 0.3901,
-    "jitter_m_s3": 13.6718,
-    "tmr": 0.6782,
-    "tmr_rank": 3.0,
+    "slide_cm_s": 0.9636,
+    "jitter_m_s3": 47.1058,
+    "tmr": 0.5858,
+    "tmr_rank": 5.0,
     "seam_m": 0.0
    }
   },
@@ -1142,7 +1147,7 @@
    "kind": "cut_fence_freeze",
    "stage": "reaction",
    "loop": false,
-   "first": 3761,
+   "first": 3794,
    "frames": 105,
    "start": {
     "loop": "cut_fence.1"
@@ -1152,10 +1157,10 @@
    "prompt": "A person working with both hands at chest height stops, looks up at the sky and stays completely still.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 0.9538,
-    "jitter_m_s3": 22.3223,
-    "tmr": 0.717,
-    "tmr_rank": 2.0,
+    "slide_cm_s": 0.7121,
+    "jitter_m_s3": 29.7045,
+    "tmr": 0.7086,
+    "tmr_rank": 3.0,
     "seam_m": 0.0
    }
   },
@@ -1163,7 +1168,7 @@
    "kind": "cut_fence_freeze_resume",
    "stage": "reaction",
    "loop": false,
-   "first": 3866,
+   "first": 3899,
    "frames": 147,
    "start": {
     "loop": "cut_fence.0"
@@ -1172,17 +1177,17 @@
     "loop": "cut_fence.0"
    },
    "travel": {
-    "x": -0.005500883389686299,
-    "z": 0.003236177973860985,
-    "turn": 0.03349614143371582
+    "x": 0.007668004973029816,
+    "z": -0.005873845712437062,
+    "turn": 0.006407260894775391
    },
-   "prompt": "A person working with both hands at chest height freezes and looks up at the sky for a moment, then goes back to working with both hands.",
+   "prompt": "A person sawing at chest height freezes and looks up at the sky for a moment, then goes back to sawing back and forth.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 0.7738,
-    "jitter_m_s3": 69.1678,
-    "tmr": 0.7639,
-    "tmr_rank": 1.0,
+    "slide_cm_s": 1.5156,
+    "jitter_m_s3": 142.9368,
+    "tmr": 0.7998,
+    "tmr_rank": 3.0,
     "seam_m": 0.0
    }
   },
@@ -1190,7 +1195,7 @@
    "kind": "cut_fence_freeze_resume",
    "stage": "reaction",
    "loop": false,
-   "first": 4013,
+   "first": 4046,
    "frames": 147,
    "start": {
     "loop": "cut_fence.1"
@@ -1199,17 +1204,17 @@
     "loop": "cut_fence.1"
    },
    "travel": {
-    "x": 0.00037674434133805335,
-    "z": 0.0129570122808218,
-    "turn": -0.0009462833404541016
+    "x": 0.01203818884360357,
+    "z": 0.0038524879881937997,
+    "turn": -0.019279003143310547
    },
-   "prompt": "A person working with both hands at chest height freezes and looks up at the sky for a moment, then goes back to working with both hands.",
+   "prompt": "A person sawing at chest height freezes and looks up at the sky for a moment, then goes back to sawing back and forth.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 0.8768,
-    "jitter_m_s3": 18.8968,
-    "tmr": 0.6621,
-    "tmr_rank": 3.0,
+    "slide_cm_s": 1.4922,
+    "jitter_m_s3": 166.4647,
+    "tmr": 0.8381,
+    "tmr_rank": 1.0,
     "seam_m": 0.0
    }
   },
@@ -1217,7 +1222,7 @@
    "kind": "cut_fence_freeze_run",
    "stage": "reaction",
    "loop": false,
-   "first": 4160,
+   "first": 4193,
    "frames": 147,
    "start": {
     "loop": "cut_fence.0"
@@ -1226,16 +1231,16 @@
     "loop": "run.0"
    },
    "travel": {
-    "x": 0.05955737948744189,
-    "z": -5.687946318475373,
-    "turn": 0.02455282211303711
+    "x": -0.08554823715849261,
+    "z": -6.0993194599906335,
+    "turn": -0.019375324249267578
    },
    "prompt": "A person working with both hands at chest height freezes and looks up at the sky, then turns around and sprints away fast.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 6.7258,
-    "jitter_m_s3": 744.8799,
-    "tmr": 0.8309,
+    "slide_cm_s": 3.2438,
+    "jitter_m_s3": 731.2447,
+    "tmr": 0.8373,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -1244,7 +1249,7 @@
    "kind": "cut_fence_freeze_run",
    "stage": "reaction",
    "loop": false,
-   "first": 4307,
+   "first": 4340,
    "frames": 147,
    "start": {
     "loop": "cut_fence.1"
@@ -1253,16 +1258,16 @@
     "loop": "run.1"
    },
    "travel": {
-    "x": -0.5674968361854553,
-    "z": -5.74803352355957,
-    "turn": 0.16342711448669434
+    "x": 0.17568533665578595,
+    "z": -3.762541287582288,
+    "turn": 0.14679765701293945
    },
    "prompt": "A person working with both hands at chest height freezes and looks up at the sky, then turns around and sprints away fast.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 4.4543,
-    "jitter_m_s3": 624.8763,
-    "tmr": 0.8394,
+    "slide_cm_s": 5.871,
+    "jitter_m_s3": 693.5628,
+    "tmr": 0.8487,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -1271,7 +1276,7 @@
    "kind": "cut_fence_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 4454,
+   "first": 4487,
    "frames": 72,
    "start": {
     "loop": "cut_fence.0"
@@ -1280,16 +1285,16 @@
     "loop": "run.0"
    },
    "travel": {
-    "x": -0.15826667477339032,
-    "z": -1.8050639658720284,
-    "turn": -2.9719886779785156
+    "x": -0.1386349122501796,
+    "z": -0.9824591907208792,
+    "turn": 3.111747980117798
    },
    "prompt": "A person working with both hands at chest height turns around and sprints away fast.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 6.8062,
-    "jitter_m_s3": 867.999,
-    "tmr": 0.8112,
+    "slide_cm_s": 6.1425,
+    "jitter_m_s3": 531.0361,
+    "tmr": 0.8447,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -1298,7 +1303,7 @@
    "kind": "cut_fence_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 4526,
+   "first": 4559,
    "frames": 72,
    "start": {
     "loop": "cut_fence.1"
@@ -1307,16 +1312,16 @@
     "loop": "run.1"
    },
    "travel": {
-    "x": 0.12393926829099655,
-    "z": -1.3854281902313232,
-    "turn": -2.662395477294922
+    "x": -0.11003904294043071,
+    "z": -3.347970728186842,
+    "turn": -2.9661190509796143
    },
    "prompt": "A person working with both hands at chest height turns around and sprints away fast.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 6.5011,
-    "jitter_m_s3": 684.4768,
-    "tmr": 0.8554,
+    "slide_cm_s": 5.6638,
+    "jitter_m_s3": 654.9761,
+    "tmr": 0.812,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -1325,7 +1330,7 @@
    "kind": "cut_fence_to_stand",
    "stage": "entry",
    "loop": false,
-   "first": 4598,
+   "first": 4631,
    "frames": 72,
    "start": {
     "loop": "cut_fence.0"
@@ -1334,17 +1339,17 @@
     "hub": "stand"
    },
    "travel": {
-    "x": 0.0039095931314940225,
-    "z": -0.008039009684822447,
-    "turn": -0.013921260833740234
+    "x": -0.011591792613537039,
+    "z": 0.06205216023280814,
+    "turn": -0.03273630142211914
    },
    "prompt": "A person lowers both arms to the sides and stands upright and still, relaxed.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 0.8954,
-    "jitter_m_s3": 29.1488,
-    "tmr": 0.5943,
-    "tmr_rank": 2.0,
+    "slide_cm_s": 2.5549,
+    "jitter_m_s3": 131.4193,
+    "tmr": 0.717,
+    "tmr_rank": 1.0,
     "seam_m": 0.0
    }
   },
@@ -1352,7 +1357,7 @@
    "kind": "cut_fence_to_stand",
    "stage": "entry",
    "loop": false,
-   "first": 4670,
+   "first": 4703,
    "frames": 72,
    "start": {
     "loop": "cut_fence.1"
@@ -1361,17 +1366,17 @@
     "hub": "stand"
    },
    "travel": {
-    "x": 0.011617433279752731,
-    "z": 0.005857468117028475,
-    "turn": -0.012028694152832031
+    "x": 0.014076836695299213,
+    "z": 0.017343285084295803,
+    "turn": 0.06546783447265625
    },
    "prompt": "A person lowers both arms to the sides and stands upright and still, relaxed.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 1.543,
-    "jitter_m_s3": 26.5146,
-    "tmr": 0.7089,
-    "tmr_rank": 1.0,
+    "slide_cm_s": 2.0599,
+    "jitter_m_s3": 64.0513,
+    "tmr": 0.634,
+    "tmr_rank": 5.0,
     "seam_m": 0.0
    }
   },
@@ -1379,7 +1384,7 @@
    "kind": "cut_fence_to_walk",
    "stage": "entry",
    "loop": false,
-   "first": 4742,
+   "first": 4775,
    "frames": 102,
    "start": {
     "loop": "cut_fence.0"
@@ -1388,17 +1393,17 @@
     "loop": "walk.0"
    },
    "travel": {
-    "x": -0.022685023441933568,
-    "z": 1.227531313475404,
-    "turn": -0.15653204917907715
+    "x": 0.1456050167492473,
+    "z": 1.1143235001933438,
+    "turn": 0.06404566764831543
    },
    "prompt": "A person working at chest height ducks the head and steps forward through a narrow gap, then walks on.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 3.2597,
-    "jitter_m_s3": 108.6137,
-    "tmr": 0.7838,
-    "tmr_rank": 2.0,
+    "slide_cm_s": 1.4258,
+    "jitter_m_s3": 160.6766,
+    "tmr": 0.8003,
+    "tmr_rank": 1.0,
     "seam_m": 0.0
    }
   },
@@ -1406,7 +1411,7 @@
    "kind": "cut_fence_to_walk",
    "stage": "entry",
    "loop": false,
-   "first": 4844,
+   "first": 4877,
    "frames": 102,
    "start": {
     "loop": "cut_fence.1"
@@ -1415,16 +1420,16 @@
     "loop": "walk.1"
    },
    "travel": {
-    "x": -0.2624906003475189,
-    "z": 1.5061672925949097,
-    "turn": -0.10138297080993652
+    "x": 0.38891020149283834,
+    "z": 1.6794072533837265,
+    "turn": 0.21530508995056152
    },
    "prompt": "A person working at chest height ducks the head and steps forward through a narrow gap, then walks on.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 2.7248,
-    "jitter_m_s3": 157.1897,
-    "tmr": 0.751,
+    "slide_cm_s": 2.2382,
+    "jitter_m_s3": 187.3673,
+    "tmr": 0.7902,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -1433,7 +1438,7 @@
    "kind": "kneel_to_stand",
    "stage": "theft",
    "loop": false,
-   "first": 4946,
+   "first": 4979,
    "frames": 87,
    "start": {
     "hub": "kneel"
@@ -1451,8 +1456,8 @@
    "measures": {
     "slide_cm_s": 4.1623,
     "jitter_m_s3": 229.5056,
-    "tmr": 0.8773,
-    "tmr_rank": 2.0,
+    "tmr": 0.878,
+    "tmr_rank": 1.0,
     "seam_m": 0.0
    }
   },
@@ -1460,7 +1465,7 @@
    "kind": "kneel_to_stand",
    "stage": "theft",
    "loop": false,
-   "first": 5033,
+   "first": 5066,
    "frames": 87,
    "start": {
     "hub": "kneel"
@@ -1478,8 +1483,8 @@
    "measures": {
     "slide_cm_s": 4.8867,
     "jitter_m_s3": 211.8893,
-    "tmr": 0.8994,
-    "tmr_rank": 2.0,
+    "tmr": 0.9001,
+    "tmr_rank": 1.0,
     "seam_m": 0.0
    }
   },
@@ -1487,7 +1492,7 @@
    "kind": "look_around",
    "stage": "arrival",
    "loop": true,
-   "first": 5120,
+   "first": 5153,
    "frames": 60,
    "start": {
     "loop": "look_around.0"
@@ -1516,7 +1521,7 @@
    "kind": "look_around_in",
    "stage": "arrival",
    "loop": false,
-   "first": 5180,
+   "first": 5213,
    "frames": 209,
    "start": {
     "hub": "stand"
@@ -1537,7 +1542,7 @@
    "kind": "look_around_freeze",
    "stage": "reaction",
    "loop": false,
-   "first": 5389,
+   "first": 5422,
    "frames": 90,
    "start": {
     "loop": "look_around.0"
@@ -1549,7 +1554,7 @@
    "measures": {
     "slide_cm_s": 0.4673,
     "jitter_m_s3": 10.4763,
-    "tmr": 0.9242,
+    "tmr": 0.924,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -1558,7 +1563,7 @@
    "kind": "look_around_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 5479,
+   "first": 5512,
    "frames": 72,
    "start": {
     "loop": "look_around.0"
@@ -1576,7 +1581,7 @@
    "measures": {
     "slide_cm_s": 6.9747,
     "jitter_m_s3": 1519.1925,
-    "tmr": 0.8004,
+    "tmr": 0.8011,
     "tmr_rank": 2.0,
     "seam_m": 0.0
    }
@@ -1585,7 +1590,7 @@
    "kind": "prone_still",
    "stage": "reaction",
    "loop": true,
-   "first": 5551,
+   "first": 5584,
    "frames": 60,
    "start": {
     "loop": "prone_still.0"
@@ -1604,7 +1609,7 @@
     "slide_cm_s": 0.2081,
     "jitter_m_s3": 6.9286,
     "loop_m": 0.0025,
-    "tmr": 0.8632,
+    "tmr": 0.8638,
     "tmr_rank": 2.0,
     "seam_m": 0.0
    }
@@ -1613,7 +1618,7 @@
    "kind": "prone_still_in",
    "stage": "reaction",
    "loop": false,
-   "first": 5611,
+   "first": 5644,
    "frames": 116,
    "start": {
     "hub": "prone"
@@ -1634,7 +1639,7 @@
    "kind": "prone_to_crawl",
    "stage": "reaction",
    "loop": false,
-   "first": 5727,
+   "first": 5760,
    "frames": 87,
    "start": {
     "hub": "prone"
@@ -1652,8 +1657,8 @@
    "measures": {
     "slide_cm_s": 5.5355,
     "jitter_m_s3": 117.4957,
-    "tmr": 0.8218,
-    "tmr_rank": 3.0,
+    "tmr": 0.8214,
+    "tmr_rank": 4.0,
     "seam_m": 0.0
    }
   },
@@ -1661,7 +1666,7 @@
    "kind": "prone_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 5814,
+   "first": 5847,
    "frames": 87,
    "start": {
     "hub": "prone"
@@ -1679,7 +1684,7 @@
    "measures": {
     "slide_cm_s": 4.6398,
     "jitter_m_s3": 275.9945,
-    "tmr": 0.899,
+    "tmr": 0.898,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -1688,7 +1693,7 @@
    "kind": "pull_cable",
    "stage": "theft",
    "loop": true,
-   "first": 5901,
+   "first": 5934,
    "frames": 141,
    "start": {
     "loop": "pull_cable.0"
@@ -1709,15 +1714,16 @@
     "loop_m": 0.023,
     "tmr": 0.7231,
     "tmr_rank": 1.0,
+    "hands_cm_s": 37.6502,
     "seam_m": 0.0,
-    "nearest_m": 0.9541
+    "nearest_m": 0.7242
    }
   },
   "pull_cable.0.in": {
    "kind": "pull_cable_in",
    "stage": "theft",
    "loop": false,
-   "first": 6042,
+   "first": 6075,
    "frames": 105,
    "start": {
     "hub": "stand"
@@ -1738,8 +1744,8 @@
    "kind": "pull_cable",
    "stage": "theft",
    "loop": true,
-   "first": 6147,
-   "frames": 45,
+   "first": 6180,
+   "frames": 62,
    "start": {
     "loop": "pull_cable.1"
    },
@@ -1747,28 +1753,29 @@
     "loop": "pull_cable.1"
    },
    "travel": {
-    "x": -0.01143119703900864,
-    "z": -0.01751066097913976,
+    "x": 0.04990649777256273,
+    "z": -0.5440539453021809,
     "turn": 0.0
    },
    "prompt": "A person bent forward pulls something up from the ground hand over hand, stepping slowly backward.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 0.7323,
-    "jitter_m_s3": 14.6362,
-    "loop_m": 0.015,
-    "tmr": 0.6214,
-    "tmr_rank": 4.0,
+    "slide_cm_s": 3.1258,
+    "jitter_m_s3": 73.6244,
+    "loop_m": 0.0361,
+    "tmr": 0.6506,
+    "tmr_rank": 2.0,
+    "hands_cm_s": 64.1274,
     "seam_m": 0.0,
-    "nearest_m": 0.9541
+    "nearest_m": 0.7242
    }
   },
   "pull_cable.1.in": {
    "kind": "pull_cable_in",
    "stage": "theft",
    "loop": false,
-   "first": 6192,
-   "frames": 45,
+   "first": 6242,
+   "frames": 142,
    "start": {
     "hub": "stand"
    },
@@ -1776,9 +1783,9 @@
     "loop": "pull_cable.1"
    },
    "travel": {
-    "x": -0.0006486801003701161,
-    "z": 0.01274284715008289,
-    "turn": -0.0072443485260009766
+    "x": -0.09433781371702409,
+    "z": -1.1588835794962682,
+    "turn": 0.20931577682495117
    },
    "prompt": "A person bent forward pulls something up from the ground hand over hand, stepping slowly backward.",
    "checks_failed": [],
@@ -1788,7 +1795,7 @@
    "kind": "pull_cable_freeze",
    "stage": "reaction",
    "loop": false,
-   "first": 6237,
+   "first": 6384,
    "frames": 105,
    "start": {
     "loop": "pull_cable.0"
@@ -1800,7 +1807,7 @@
    "measures": {
     "slide_cm_s": 2.1053,
     "jitter_m_s3": 74.1285,
-    "tmr": 0.6868,
+    "tmr": 0.687,
     "tmr_rank": 4.0,
     "seam_m": 0.0
    }
@@ -1809,7 +1816,7 @@
    "kind": "pull_cable_freeze",
    "stage": "reaction",
    "loop": false,
-   "first": 6342,
+   "first": 6489,
    "frames": 105,
    "start": {
     "loop": "pull_cable.1"
@@ -1819,10 +1826,10 @@
    "prompt": "A person bent forward pulling something stops, looks up at the sky and stays completely still.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 0.2456,
-    "jitter_m_s3": 13.2708,
-    "tmr": 0.6829,
-    "tmr_rank": 2.0,
+    "slide_cm_s": 2.0297,
+    "jitter_m_s3": 52.9897,
+    "tmr": 0.7924,
+    "tmr_rank": 1.0,
     "seam_m": 0.0
    }
   },
@@ -1830,7 +1837,7 @@
    "kind": "pull_cable_freeze_resume",
    "stage": "reaction",
    "loop": false,
-   "first": 6447,
+   "first": 6594,
    "frames": 147,
    "start": {
     "loop": "pull_cable.0"
@@ -1848,7 +1855,7 @@
    "measures": {
     "slide_cm_s": 2.7437,
     "jitter_m_s3": 191.188,
-    "tmr": 0.7356,
+    "tmr": 0.7359,
     "tmr_rank": 2.0,
     "seam_m": 0.0
    }
@@ -1857,7 +1864,7 @@
    "kind": "pull_cable_freeze_resume",
    "stage": "reaction",
    "loop": false,
-   "first": 6594,
+   "first": 6741,
    "frames": 147,
    "start": {
     "loop": "pull_cable.1"
@@ -1866,16 +1873,16 @@
     "loop": "pull_cable.1"
    },
    "travel": {
-    "x": 0.005552286077779039,
-    "z": -0.012862876474167504,
-    "turn": 0.17819428443908691
+    "x": 0.006344681668032754,
+    "z": -0.003357067353558184,
+    "turn": -0.806868314743042
    },
    "prompt": "A person bent forward pulling something freezes and looks up at the sky for a moment, then goes back to pulling hand over hand.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 1.7401,
-    "jitter_m_s3": 337.0609,
-    "tmr": 0.8056,
+    "slide_cm_s": 2.8081,
+    "jitter_m_s3": 325.8925,
+    "tmr": 0.7717,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -1884,7 +1891,7 @@
    "kind": "pull_cable_freeze_run",
    "stage": "reaction",
    "loop": false,
-   "first": 6741,
+   "first": 6888,
    "frames": 147,
    "start": {
     "loop": "pull_cable.0"
@@ -1902,7 +1909,7 @@
    "measures": {
     "slide_cm_s": 7.0242,
     "jitter_m_s3": 568.3192,
-    "tmr": 0.858,
+    "tmr": 0.8599,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -1911,7 +1918,7 @@
    "kind": "pull_cable_freeze_run",
    "stage": "reaction",
    "loop": false,
-   "first": 6888,
+   "first": 7035,
    "frames": 147,
    "start": {
     "loop": "pull_cable.1"
@@ -1920,16 +1927,16 @@
     "loop": "run.1"
    },
    "travel": {
-    "x": -0.197485123856951,
-    "z": -3.002422589492103,
-    "turn": 0.0058400630950927734
+    "x": -0.2809055545714433,
+    "z": -1.076479201764488,
+    "turn": -0.1269679069519043
    },
    "prompt": "A person bent forward pulling something freezes and looks up at the sky, then drops it, turns and sprints away fast.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 1.5348,
-    "jitter_m_s3": 313.6126,
-    "tmr": 0.8019,
+    "slide_cm_s": 5.2688,
+    "jitter_m_s3": 474.0883,
+    "tmr": 0.8676,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -1938,7 +1945,7 @@
    "kind": "pull_cable_to_carry",
    "stage": "theft",
    "loop": false,
-   "first": 7035,
+   "first": 7182,
    "frames": 102,
    "start": {
     "loop": "pull_cable.0"
@@ -1956,7 +1963,7 @@
    "measures": {
     "slide_cm_s": 3.3623,
     "jitter_m_s3": 197.6976,
-    "tmr": 0.7299,
+    "tmr": 0.7307,
     "tmr_rank": 2.0,
     "seam_m": 0.0
    }
@@ -1965,7 +1972,7 @@
    "kind": "pull_cable_to_carry",
    "stage": "theft",
    "loop": false,
-   "first": 7137,
+   "first": 7284,
    "frames": 102,
    "start": {
     "loop": "pull_cable.1"
@@ -1974,16 +1981,16 @@
     "loop": "carry.1"
    },
    "travel": {
-    "x": -0.3275567213508721,
-    "z": 1.8427240544847325,
-    "turn": -0.16076278686523438
+    "x": -0.5724496356047964,
+    "z": 0.5959721697369225,
+    "turn": -1.008577823638916
    },
    "prompt": "A person bent forward lifts a heavy load onto the right shoulder and starts walking forward.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 1.9547,
-    "jitter_m_s3": 149.565,
-    "tmr": 0.7405,
+    "slide_cm_s": 4.19,
+    "jitter_m_s3": 108.4314,
+    "tmr": 0.7281,
     "tmr_rank": 2.0,
     "seam_m": 0.0
    }
@@ -1992,7 +1999,7 @@
    "kind": "pull_cable_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 7239,
+   "first": 7386,
    "frames": 72,
    "start": {
     "loop": "pull_cable.0"
@@ -2001,17 +2008,17 @@
     "loop": "run.0"
    },
    "travel": {
-    "x": 0.6582103841969644,
-    "z": -6.866857632730886,
-    "turn": 2.9708588123321533
+    "x": -0.29493469069318606,
+    "z": -8.30002970801816,
+    "turn": -3.1055736541748047
    },
    "prompt": "A person bent forward pulling something drops it, turns and sprints away fast.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 7.3054,
-    "jitter_m_s3": 1863.4293,
-    "tmr": 0.7056,
-    "tmr_rank": 5.0,
+    "slide_cm_s": 12.0032,
+    "jitter_m_s3": 2028.3799,
+    "tmr": 0.7241,
+    "tmr_rank": 4.0,
     "seam_m": 0.0
    }
   },
@@ -2019,7 +2026,7 @@
    "kind": "pull_cable_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 7311,
+   "first": 7458,
    "frames": 72,
    "start": {
     "loop": "pull_cable.1"
@@ -2028,16 +2035,16 @@
     "loop": "run.1"
    },
    "travel": {
-    "x": -0.09595151067319736,
-    "z": -6.608753690079059,
-    "turn": 3.0891330242156982
+    "x": -1.5903131788611453,
+    "z": -7.352752715076782,
+    "turn": -2.756150722503662
    },
    "prompt": "A person bent forward pulling something drops it, turns and sprints away fast.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 6.2057,
-    "jitter_m_s3": 1406.7018,
-    "tmr": 0.6982,
+    "slide_cm_s": 4.8462,
+    "jitter_m_s3": 1650.4304,
+    "tmr": 0.7055,
     "tmr_rank": 4.0,
     "seam_m": 0.0
    }
@@ -2046,7 +2053,7 @@
    "kind": "pull_cable_to_stand",
    "stage": "theft",
    "loop": false,
-   "first": 7383,
+   "first": 7530,
    "frames": 72,
    "start": {
     "loop": "pull_cable.0"
@@ -2064,7 +2071,7 @@
    "measures": {
     "slide_cm_s": 5.7291,
     "jitter_m_s3": 110.2654,
-    "tmr": 0.7665,
+    "tmr": 0.767,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -2073,7 +2080,7 @@
    "kind": "pull_cable_to_stand",
    "stage": "theft",
    "loop": false,
-   "first": 7455,
+   "first": 7602,
    "frames": 72,
    "start": {
     "loop": "pull_cable.1"
@@ -2082,17 +2089,17 @@
     "hub": "stand"
    },
    "travel": {
-    "x": 0.002052440989753622,
-    "z": -0.017397858012165587,
-    "turn": -0.04342961311340332
+    "x": 0.006773869610572128,
+    "z": -0.030654888474329678,
+    "turn": -0.6610152721405029
    },
    "prompt": "A person bent forward pulling something stops, straightens up and stands still.",
    "checks_failed": [],
    "measures": {
-    "slide_cm_s": 1.1787,
-    "jitter_m_s3": 19.2785,
-    "tmr": 0.5824,
-    "tmr_rank": 3.0,
+    "slide_cm_s": 3.1332,
+    "jitter_m_s3": 60.333,
+    "tmr": 0.7052,
+    "tmr_rank": 1.0,
     "seam_m": 0.0
    }
   },
@@ -2100,7 +2107,7 @@
    "kind": "run",
    "stage": "reaction",
    "loop": true,
-   "first": 7527,
+   "first": 7674,
    "frames": 19,
    "start": {
     "loop": "run.0"
@@ -2119,7 +2126,7 @@
     "slide_cm_s": 6.5183,
     "jitter_m_s3": 1747.2001,
     "loop_m": 0.0412,
-    "tmr": 0.9045,
+    "tmr": 0.9052,
     "tmr_rank": 1.0,
     "legs_cm": 6.9342,
     "nearest_m": 1.3215
@@ -2129,7 +2136,7 @@
    "kind": "run",
    "stage": "reaction",
    "loop": true,
-   "first": 7546,
+   "first": 7693,
    "frames": 36,
    "start": {
     "loop": "run.1"
@@ -2148,7 +2155,7 @@
     "slide_cm_s": 5.1219,
     "jitter_m_s3": 919.8237,
     "loop_m": 0.0451,
-    "tmr": 0.8425,
+    "tmr": 0.8426,
     "tmr_rank": 2.0,
     "legs_cm": 5.2238,
     "nearest_m": 1.3215
@@ -2158,7 +2165,7 @@
    "kind": "sneak",
    "stage": "arrival",
    "loop": true,
-   "first": 7582,
+   "first": 7729,
    "frames": 44,
    "start": {
     "loop": "sneak.0"
@@ -2187,7 +2194,7 @@
    "kind": "sneak",
    "stage": "arrival",
    "loop": true,
-   "first": 7626,
+   "first": 7773,
    "frames": 54,
    "start": {
     "loop": "sneak.1"
@@ -2206,7 +2213,7 @@
     "slide_cm_s": 2.9637,
     "jitter_m_s3": 53.2238,
     "loop_m": 0.015,
-    "tmr": 0.9419,
+    "tmr": 0.942,
     "tmr_rank": 2.0,
     "legs_cm": 1.631,
     "nearest_m": 0.1916
@@ -2216,7 +2223,7 @@
    "kind": "sneak_to_crouch",
    "stage": "reaction",
    "loop": false,
-   "first": 7680,
+   "first": 7827,
    "frames": 72,
    "start": {
     "loop": "sneak.0"
@@ -2234,7 +2241,7 @@
    "measures": {
     "slide_cm_s": 1.6776,
     "jitter_m_s3": 97.6199,
-    "tmr": 0.8503,
+    "tmr": 0.8505,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -2243,7 +2250,7 @@
    "kind": "sneak_to_crouch",
    "stage": "reaction",
    "loop": false,
-   "first": 7752,
+   "first": 7899,
    "frames": 72,
    "start": {
     "loop": "sneak.1"
@@ -2261,7 +2268,7 @@
    "measures": {
     "slide_cm_s": 1.5507,
     "jitter_m_s3": 103.3861,
-    "tmr": 0.892,
+    "tmr": 0.8921,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -2270,7 +2277,7 @@
    "kind": "sneak_to_prone",
    "stage": "reaction",
    "loop": false,
-   "first": 7824,
+   "first": 7971,
    "frames": 87,
    "start": {
     "loop": "sneak.0"
@@ -2288,7 +2295,7 @@
    "measures": {
     "slide_cm_s": 5.369,
     "jitter_m_s3": 388.525,
-    "tmr": 0.863,
+    "tmr": 0.8625,
     "tmr_rank": 4.0,
     "seam_m": 0.0
    }
@@ -2297,7 +2304,7 @@
    "kind": "sneak_to_prone",
    "stage": "reaction",
    "loop": false,
-   "first": 7911,
+   "first": 8058,
    "frames": 87,
    "start": {
     "loop": "sneak.1"
@@ -2315,7 +2322,7 @@
    "measures": {
     "slide_cm_s": 3.194,
     "jitter_m_s3": 356.3937,
-    "tmr": 0.8623,
+    "tmr": 0.8619,
     "tmr_rank": 4.0,
     "seam_m": 0.0
    }
@@ -2324,7 +2331,7 @@
    "kind": "sneak_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 7998,
+   "first": 8145,
    "frames": 72,
    "start": {
     "loop": "sneak.0"
@@ -2342,7 +2349,7 @@
    "measures": {
     "slide_cm_s": 2.9627,
     "jitter_m_s3": 909.2444,
-    "tmr": 0.8767,
+    "tmr": 0.8772,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -2351,7 +2358,7 @@
    "kind": "sneak_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 8070,
+   "first": 8217,
    "frames": 72,
    "start": {
     "loop": "sneak.1"
@@ -2378,7 +2385,7 @@
    "kind": "stand_to_crouch",
    "stage": "reaction",
    "loop": false,
-   "first": 8142,
+   "first": 8289,
    "frames": 72,
    "start": {
     "hub": "stand"
@@ -2396,7 +2403,7 @@
    "measures": {
     "slide_cm_s": 3.2956,
     "jitter_m_s3": 118.639,
-    "tmr": 0.9443,
+    "tmr": 0.9439,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -2405,7 +2412,7 @@
    "kind": "stand_to_crouch",
    "stage": "reaction",
    "loop": false,
-   "first": 8214,
+   "first": 8361,
    "frames": 72,
    "start": {
     "hub": "stand"
@@ -2423,7 +2430,7 @@
    "measures": {
     "slide_cm_s": 2.9367,
     "jitter_m_s3": 63.3246,
-    "tmr": 0.9377,
+    "tmr": 0.9371,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -2432,7 +2439,7 @@
    "kind": "stand_to_kneel",
    "stage": "theft",
    "loop": false,
-   "first": 8286,
+   "first": 8433,
    "frames": 87,
    "start": {
     "hub": "stand"
@@ -2450,7 +2457,7 @@
    "measures": {
     "slide_cm_s": 2.6457,
     "jitter_m_s3": 198.4102,
-    "tmr": 0.9023,
+    "tmr": 0.9015,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -2459,7 +2466,7 @@
    "kind": "stand_to_kneel",
    "stage": "theft",
    "loop": false,
-   "first": 8373,
+   "first": 8520,
    "frames": 87,
    "start": {
     "hub": "stand"
@@ -2477,7 +2484,7 @@
    "measures": {
     "slide_cm_s": 2.6076,
     "jitter_m_s3": 171.1182,
-    "tmr": 0.9087,
+    "tmr": 0.9077,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -2486,7 +2493,7 @@
    "kind": "stand_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 8460,
+   "first": 8607,
    "frames": 72,
    "start": {
     "hub": "stand"
@@ -2504,7 +2511,7 @@
    "measures": {
     "slide_cm_s": 5.4105,
     "jitter_m_s3": 2206.4404,
-    "tmr": 0.9162,
+    "tmr": 0.9176,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -2513,7 +2520,7 @@
    "kind": "stand_to_walk",
    "stage": "arrival",
    "loop": false,
-   "first": 8532,
+   "first": 8679,
    "frames": 72,
    "start": {
     "hub": "stand"
@@ -2540,7 +2547,7 @@
    "kind": "stand_to_walk_wary",
    "stage": "arrival",
    "loop": false,
-   "first": 8604,
+   "first": 8751,
    "frames": 72,
    "start": {
     "hub": "stand"
@@ -2558,7 +2565,7 @@
    "measures": {
     "slide_cm_s": 1.9548,
     "jitter_m_s3": 92.5662,
-    "tmr": 0.8659,
+    "tmr": 0.8645,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -2567,7 +2574,7 @@
    "kind": "walk",
    "stage": "arrival",
    "loop": true,
-   "first": 8676,
+   "first": 8823,
    "frames": 33,
    "start": {
     "loop": "walk.0"
@@ -2586,7 +2593,7 @@
     "slide_cm_s": 2.5019,
     "jitter_m_s3": 233.2754,
     "loop_m": 0.0191,
-    "tmr": 0.9296,
+    "tmr": 0.9297,
     "tmr_rank": 1.0,
     "legs_cm": 2.6457,
     "nearest_m": 0.7275
@@ -2596,7 +2603,7 @@
    "kind": "walk",
    "stage": "arrival",
    "loop": true,
-   "first": 8709,
+   "first": 8856,
    "frames": 64,
    "start": {
     "loop": "walk.1"
@@ -2625,7 +2632,7 @@
    "kind": "walk_freeze",
    "stage": "reaction",
    "loop": false,
-   "first": 8773,
+   "first": 8920,
    "frames": 105,
    "start": {
     "loop": "walk.0"
@@ -2637,7 +2644,7 @@
    "measures": {
     "slide_cm_s": 1.3741,
     "jitter_m_s3": 179.0288,
-    "tmr": 0.9295,
+    "tmr": 0.9287,
     "tmr_rank": 2.0,
     "seam_m": 0.0
    }
@@ -2646,7 +2653,7 @@
    "kind": "walk_freeze",
    "stage": "reaction",
    "loop": false,
-   "first": 8878,
+   "first": 9025,
    "frames": 105,
    "start": {
     "loop": "walk.1"
@@ -2658,7 +2665,7 @@
    "measures": {
     "slide_cm_s": 1.9286,
     "jitter_m_s3": 168.0894,
-    "tmr": 0.9595,
+    "tmr": 0.9586,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -2667,7 +2674,7 @@
    "kind": "walk_freeze_resume",
    "stage": "reaction",
    "loop": false,
-   "first": 8983,
+   "first": 9130,
    "frames": 147,
    "start": {
     "loop": "walk.0"
@@ -2685,7 +2692,7 @@
    "measures": {
     "slide_cm_s": 3.4539,
     "jitter_m_s3": 320.193,
-    "tmr": 0.7994,
+    "tmr": 0.8001,
     "tmr_rank": 2.0,
     "seam_m": 0.0
    }
@@ -2694,7 +2701,7 @@
    "kind": "walk_freeze_resume",
    "stage": "reaction",
    "loop": false,
-   "first": 9130,
+   "first": 9277,
    "frames": 147,
    "start": {
     "loop": "walk.1"
@@ -2712,7 +2719,7 @@
    "measures": {
     "slide_cm_s": 4.0137,
     "jitter_m_s3": 316.8821,
-    "tmr": 0.7467,
+    "tmr": 0.7476,
     "tmr_rank": 3.0,
     "seam_m": 0.0
    }
@@ -2721,7 +2728,7 @@
    "kind": "walk_freeze_run",
    "stage": "reaction",
    "loop": false,
-   "first": 9277,
+   "first": 9424,
    "frames": 147,
    "start": {
     "loop": "walk.0"
@@ -2739,7 +2746,7 @@
    "measures": {
     "slide_cm_s": 2.7236,
     "jitter_m_s3": 1544.9585,
-    "tmr": 0.929,
+    "tmr": 0.9288,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -2748,7 +2755,7 @@
    "kind": "walk_freeze_run",
    "stage": "reaction",
    "loop": false,
-   "first": 9424,
+   "first": 9571,
    "frames": 147,
    "start": {
     "loop": "walk.1"
@@ -2766,7 +2773,7 @@
    "measures": {
     "slide_cm_s": 3.8754,
     "jitter_m_s3": 1482.3457,
-    "tmr": 0.9447,
+    "tmr": 0.9444,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -2775,7 +2782,7 @@
    "kind": "walk_to_kneel",
    "stage": "theft",
    "loop": false,
-   "first": 9571,
+   "first": 9718,
    "frames": 102,
    "start": {
     "loop": "walk.0"
@@ -2793,7 +2800,7 @@
    "measures": {
     "slide_cm_s": 4.7134,
     "jitter_m_s3": 319.7573,
-    "tmr": 0.8534,
+    "tmr": 0.8539,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -2802,7 +2809,7 @@
    "kind": "walk_to_kneel",
    "stage": "theft",
    "loop": false,
-   "first": 9673,
+   "first": 9820,
    "frames": 102,
    "start": {
     "loop": "walk.1"
@@ -2820,8 +2827,8 @@
    "measures": {
     "slide_cm_s": 3.3198,
     "jitter_m_s3": 359.572,
-    "tmr": 0.8115,
-    "tmr_rank": 4.0,
+    "tmr": 0.8122,
+    "tmr_rank": 3.0,
     "seam_m": 0.0
    }
   },
@@ -2829,7 +2836,7 @@
    "kind": "walk_to_prone",
    "stage": "reaction",
    "loop": false,
-   "first": 9775,
+   "first": 9922,
    "frames": 87,
    "start": {
     "loop": "walk.0"
@@ -2847,7 +2854,7 @@
    "measures": {
     "slide_cm_s": 5.9446,
     "jitter_m_s3": 373.1046,
-    "tmr": 0.9515,
+    "tmr": 0.9514,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -2856,7 +2863,7 @@
    "kind": "walk_to_prone",
    "stage": "reaction",
    "loop": false,
-   "first": 9862,
+   "first": 10009,
    "frames": 87,
    "start": {
     "loop": "walk.1"
@@ -2874,7 +2881,7 @@
    "measures": {
     "slide_cm_s": 5.278,
     "jitter_m_s3": 267.631,
-    "tmr": 0.94,
+    "tmr": 0.9401,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -2883,7 +2890,7 @@
    "kind": "walk_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 9949,
+   "first": 10096,
    "frames": 57,
    "start": {
     "loop": "walk.0"
@@ -2901,7 +2908,7 @@
    "measures": {
     "slide_cm_s": 9.9718,
     "jitter_m_s3": 2247.1458,
-    "tmr": 0.9248,
+    "tmr": 0.9256,
     "tmr_rank": 3.0,
     "seam_m": 0.0
    }
@@ -2910,7 +2917,7 @@
    "kind": "walk_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 10006,
+   "first": 10153,
    "frames": 57,
    "start": {
     "loop": "walk.1"
@@ -2928,7 +2935,7 @@
    "measures": {
     "slide_cm_s": 2.8324,
     "jitter_m_s3": 1386.0719,
-    "tmr": 0.874,
+    "tmr": 0.8751,
     "tmr_rank": 3.0,
     "seam_m": 0.0
    }
@@ -2937,7 +2944,7 @@
    "kind": "walk_to_stand",
    "stage": "arrival",
    "loop": false,
-   "first": 10063,
+   "first": 10210,
    "frames": 72,
    "start": {
     "loop": "walk.0"
@@ -2955,7 +2962,7 @@
    "measures": {
     "slide_cm_s": 2.5033,
     "jitter_m_s3": 286.5796,
-    "tmr": 0.9746,
+    "tmr": 0.9745,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -2964,7 +2971,7 @@
    "kind": "walk_to_stand",
    "stage": "arrival",
    "loop": false,
-   "first": 10135,
+   "first": 10282,
    "frames": 72,
    "start": {
     "loop": "walk.1"
@@ -2982,7 +2989,7 @@
    "measures": {
     "slide_cm_s": 4.1402,
     "jitter_m_s3": 223.4111,
-    "tmr": 0.954,
+    "tmr": 0.9536,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -2991,7 +2998,7 @@
    "kind": "walk_wary",
    "stage": "arrival",
    "loop": true,
-   "first": 10207,
+   "first": 10354,
    "frames": 46,
    "start": {
     "loop": "walk_wary.0"
@@ -3020,7 +3027,7 @@
    "kind": "walk_wary",
    "stage": "arrival",
    "loop": true,
-   "first": 10253,
+   "first": 10400,
    "frames": 30,
    "start": {
     "loop": "walk_wary.1"
@@ -3039,7 +3046,7 @@
     "slide_cm_s": 2.076,
     "jitter_m_s3": 163.1117,
     "loop_m": 0.0329,
-    "tmr": 0.8086,
+    "tmr": 0.8084,
     "tmr_rank": 2.0,
     "legs_cm": 1.6669,
     "nearest_m": 0.2895
@@ -3049,7 +3056,7 @@
    "kind": "walk_wary_freeze",
    "stage": "reaction",
    "loop": false,
-   "first": 10283,
+   "first": 10430,
    "frames": 105,
    "start": {
     "loop": "walk_wary.0"
@@ -3061,7 +3068,7 @@
    "measures": {
     "slide_cm_s": 0.4981,
     "jitter_m_s3": 64.1898,
-    "tmr": 0.87,
+    "tmr": 0.8703,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -3070,7 +3077,7 @@
    "kind": "walk_wary_freeze",
    "stage": "reaction",
    "loop": false,
-   "first": 10388,
+   "first": 10535,
    "frames": 105,
    "start": {
     "loop": "walk_wary.1"
@@ -3082,7 +3089,7 @@
    "measures": {
     "slide_cm_s": 0.6818,
     "jitter_m_s3": 64.151,
-    "tmr": 0.8654,
+    "tmr": 0.8659,
     "tmr_rank": 3.0,
     "seam_m": 0.0
    }
@@ -3091,7 +3098,7 @@
    "kind": "walk_wary_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 10493,
+   "first": 10640,
    "frames": 57,
    "start": {
     "loop": "walk_wary.0"
@@ -3109,7 +3116,7 @@
    "measures": {
     "slide_cm_s": 6.0597,
     "jitter_m_s3": 1493.4722,
-    "tmr": 0.9002,
+    "tmr": 0.9005,
     "tmr_rank": 2.0,
     "seam_m": 0.0
    }
@@ -3118,7 +3125,7 @@
    "kind": "walk_wary_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 10550,
+   "first": 10697,
    "frames": 57,
    "start": {
     "loop": "walk_wary.1"
@@ -3136,8 +3143,8 @@
    "measures": {
     "slide_cm_s": 2.6736,
     "jitter_m_s3": 1462.4561,
-    "tmr": 0.917,
-    "tmr_rank": 1.0,
+    "tmr": 0.9166,
+    "tmr_rank": 2.0,
     "seam_m": 0.0
    }
   },
@@ -3145,7 +3152,7 @@
    "kind": "walk_wary_to_stand",
    "stage": "arrival",
    "loop": false,
-   "first": 10607,
+   "first": 10754,
    "frames": 72,
    "start": {
     "loop": "walk_wary.0"
@@ -3163,7 +3170,7 @@
    "measures": {
     "slide_cm_s": 2.0758,
     "jitter_m_s3": 116.068,
-    "tmr": 0.9187,
+    "tmr": 0.9189,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }
@@ -3172,7 +3179,7 @@
    "kind": "walk_wary_to_stand",
    "stage": "arrival",
    "loop": false,
-   "first": 10679,
+   "first": 10826,
    "frames": 72,
    "start": {
     "loop": "walk_wary.1"
@@ -3190,7 +3197,7 @@
    "measures": {
     "slide_cm_s": 1.7355,
     "jitter_m_s3": 128.1175,
-    "tmr": 0.8523,
+    "tmr": 0.8529,
     "tmr_rank": 1.0,
     "seam_m": 0.0
    }

@@ -37,6 +37,7 @@ GATES = {
     "jitter_m_s3": 400.0,  # no pops
     "tmr_rank": 5,         # its own prompt is among the 5 best matching prompts of the catalogue
     "legs_cm": 0.5,        # a walk or run lifts its feet (at least 0.5 cm of spread); a gliding statue does not
+    "hands_cm_s": 20.0,    # a work loop's hands keep working; one standing with its arms down moves them 1 to 4 cm/s
 }
 # A sprint is jerkier than a walk by nature: its own steady loop measures about 1,800 m/s^3 and 6.5 cm/s, so sprint
 # moves are held to twice that instead of to the walking limits.
@@ -162,6 +163,7 @@ class Generator:
         self.sk77 = self.model.skeleton.somaskel77
         names = list(self.sk77.bone_order_names)
         self.hips = (names.index("RightLeg"), names.index("LeftLeg"))
+        self.hands = [names.index("LeftHand"), names.index("RightHand")]
         self.feet = [(names.index("LeftFoot"), 0), (names.index("LeftToeBase"), 1),
                      (names.index("RightFoot"), 3), (names.index("RightToeBase"), 4)]
         self.body = [names.index(n) for n, _ in self.model.skeleton.bone_order_names_with_parents]
@@ -188,9 +190,10 @@ class Generator:
 
         The GPU draws batch k + 1 while the CPU pool cleans the feet of batch k.
         """
-        # A take is stored under its id and what it was pinned to, so a changed pin is drawn again, never reused.
+        # A take is stored under its id, what it was pinned to and its prompt, so a changed pin or prompt is drawn again.
         for r in requests:
-            r["key"] = f"{r['id']}.{zlib.crc32(json.dumps(r['pins']).encode()):08x}"
+            r["key"] = (f"{r['id']}.{zlib.crc32(json.dumps(r['pins']).encode()):08x}"
+                        f".{zlib.crc32(r['prompt'].encode()):08x}")
         todo = [r for r in requests if not os.path.exists(self._raw(r["key"]))]
         todo.sort(key=lambda r: r["frames"])
         pending = None
@@ -321,7 +324,7 @@ class Generator:
             pins = [pin(hubs[start]["local"], hubs[start]["root"], 0)] if start else []
             if speed:
                 pins.append(straight_path(frames, speed))
-            for k in range(cat.LOOP_CANDIDATES):
+            for k in range(cat.LOOP_CANDIDATES_BY_NAME.get(name, cat.LOOP_CANDIDATES)):
                 requests.append({"id": f"loop.{name}.{k}", "prompt": prompt, "frames": frames, "pins": pins,
                                  "meta": {"kind": name}})
         got = self.generate(requests)
@@ -330,21 +333,32 @@ class Generator:
             span = (0.6, 3.0, 1.0) if speed else ((1.5, 5.0, 1.5) if name in ("cut_fence", "cut_cable", "pull_cable")
                                                   else (2.0, 6.0, 1.5))
             takes = []
-            for k in range(cat.LOOP_CANDIDATES):
+            for k in range(cat.LOOP_CANDIDATES_BY_NAME.get(name, cat.LOOP_CANDIDATES)):
                 c = got[f"loop.{name}.{k}"]
                 heading = self.heading(c["joints"])
                 feat = ml.canonical_features(c["joints"][:, self.body], c["root"], heading)
-                # A walk or run is searched only where its feet really step: a take that stops stepping glides.
-                lo, hi = self.stepping(c["joints"]) if name in cat.STEPPING else (0, len(feat))
+                # A walk or run is searched only where its feet really step, and work only where its hands really
+                # work: standing still repeats best, so an unguarded search settles on a take's idle stretch.
+                if name in cat.STEPPING:
+                    lo, hi = self.lively(c["joints"], self.leg_lift, GATES["legs_cm"])
+                elif name in cat.WORKING:
+                    lo, hi = self.lively(c["joints"], self.hand_speed, GATES["hands_cm_s"])
+                else:
+                    lo, hi = 0, len(feat)
+                if hi - lo <= span[0] * cat.FPS:
+                    lo, hi = 0, len(feat)  # never lively for a whole cycle: searched throughout, and fails its gate
                 i, j, cost = ml.find_loop(feat[lo:hi], cat.FPS, span[0], span[1], max(0.0, span[2] - lo / cat.FPS))
                 if i is None:
-                    i, j, cost = lo, min(hi, lo + int(span[0] * cat.FPS) + 1), float("inf")
+                    i = max(lo, int(span[2] * cat.FPS))  # past the lead-in, which a loop's way in needs
+                    j, cost = min(len(feat) - 1, i + int(span[0] * cat.FPS) + 1), float("inf")
                 else:
                     i, j = i + lo, j + lo
                 m = self.measure(c, i, j)
                 m.update(loop_m=cost, tmr=c["meta"]["tmr"], tmr_rank=c["meta"]["tmr_rank"])
                 if name in cat.STEPPING:
                     m["legs_cm"] = self.leg_lift(c["joints"][i:j])
+                if name in cat.WORKING:
+                    m["hands_cm_s"] = self.hand_speed(c["joints"][i:j])
                 if start:
                     m["seam_m"] = self.seam(c["joints"][:PIN], hubs[start]["local"], hubs[start]["root"])
                 takes.append({"c": c, "i": i, "j": j, "m": m, "pass": self._passes(m, name),
@@ -358,10 +372,15 @@ class Generator:
         height = joints[:, toes, 1] - joints[:, :, 1].min(1)[:, None]
         return float(height.std(0).min() * 100)
 
-    def stepping(self, joints: np.ndarray) -> tuple:
-        """The longest stretch [lo, hi) where every second of the take still lifts both feet."""
+    def hand_speed(self, joints: np.ndarray) -> float:
+        """Mean speed of both hands relative to the hips, in cm/s: near zero means the hands rest."""
+        rel = joints[:, self.hands] - joints[:, :1]
+        return float(np.linalg.norm(np.diff(rel, axis=0), axis=-1).mean() * cat.FPS * 100)
+
+    def lively(self, joints: np.ndarray, measure, limit: float) -> tuple:
+        """The longest stretch [lo, hi) where every second of the take measures above limit."""
         second = cat.FPS
-        alive = np.array([self.leg_lift(joints[max(0, t - second // 2):t + second // 2]) > GATES["legs_cm"]
+        alive = np.array([measure(joints[max(0, t - second // 2):t + second // 2]) > limit
                           for t in range(len(joints))])
         best, run = (0, 0), None
         for t, ok in enumerate(np.append(alive, False)):
@@ -380,6 +399,8 @@ class Generator:
             failed.append("tmr_rank")
         if m.get("legs_cm", GATES["legs_cm"]) < GATES["legs_cm"]:
             failed.append("legs_cm")
+        if m.get("hands_cm_s", GATES["hands_cm_s"]) < GATES["hands_cm_s"]:
+            failed.append("hands_cm_s")
         return failed
 
     def _pick(self, takes: list, keep: int) -> list:
