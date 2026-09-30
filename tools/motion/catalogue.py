@@ -80,6 +80,18 @@ MOVES = {
     "look_around_to_run": ("reaction", "A person looking around nervously suddenly turns and sprints away fast.", ("loop", "look_around"), ("loop", "run"), 75),
     "crouch_watch_to_run": ("reaction", "A person squatting low springs up and sprints away as fast as possible.", ("loop", "crouch_watch"), ("loop", "run"), 75),
     "crouch_watch_to_prone": ("reaction", "A person squatting low drops flat onto the stomach and lies still.", ("loop", "crouch_watch"), "prone", 75),
+    # a way out that starts with a step back, so a thief can work right at a panel's edge and still leave it
+    "cut_cable_back_away": ("reaction", "A person kneeling on one knee stands up and walks backward a few steps.", ("loop", "cut_cable"), "stand", 90),
+    "stand_to_run": ("reaction", "A person standing still suddenly turns around and sprints away as fast as possible.", "stand", ("loop", "run"), 75),
+    # a freeze that is not the end: back to work, or off at a run
+    "cut_cable_freeze_resume": ("reaction", "A person kneeling and working near the ground freezes and looks up at the sky for a moment, then goes back to working near the ground.", ("loop", "cut_cable"), ("loop", "cut_cable"), 150),
+    "cut_cable_freeze_run": ("reaction", "A person kneeling and working near the ground freezes and looks up at the sky, then springs up and sprints away fast.", ("loop", "cut_cable"), ("loop", "run"), 150),
+    "cut_fence_freeze_resume": ("reaction", "A person working with both hands at chest height freezes and looks up at the sky for a moment, then goes back to working with both hands.", ("loop", "cut_fence"), ("loop", "cut_fence"), 150),
+    "cut_fence_freeze_run": ("reaction", "A person working with both hands at chest height freezes and looks up at the sky, then turns around and sprints away fast.", ("loop", "cut_fence"), ("loop", "run"), 150),
+    "pull_cable_freeze_resume": ("reaction", "A person bent forward pulling something freezes and looks up at the sky for a moment, then goes back to pulling hand over hand.", ("loop", "pull_cable"), ("loop", "pull_cable"), 150),
+    "pull_cable_freeze_run": ("reaction", "A person bent forward pulling something freezes and looks up at the sky, then drops it, turns and sprints away fast.", ("loop", "pull_cable"), ("loop", "run"), 150),
+    "walk_freeze_resume": ("reaction", "A person walking forward stops and looks up at the sky for a moment, then walks on.", ("loop", "walk"), ("loop", "walk"), 150),
+    "walk_freeze_run": ("reaction", "A person walking forward stops and looks up at the sky, then suddenly sprints away fast.", ("loop", "walk"), ("loop", "run"), 150),
 }
 
 # Candidates generated per kept result: loops draw this many takes and keep the most distinct passing ones; every
@@ -88,7 +100,11 @@ LOOP_CANDIDATES = 6
 HUB_CANDIDATES = 4
 MOVE_CANDIDATES = 6
 # Moves that failed their checks at six takes draw twelve.
-MOVE_CANDIDATES_BY_NAME = {"cut_fence_freeze": 12, "cut_fence_to_stand": 12, "sneak_to_prone": 12, "walk_to_prone": 12}
+MOVE_CANDIDATES_BY_NAME = {"cut_fence_freeze": 12, "cut_fence_to_stand": 12, "sneak_to_prone": 12, "walk_to_prone": 12,
+                           "cut_cable_back_away": 12, "stand_to_run": 12, "cut_cable_freeze_resume": 12,
+                           "cut_cable_freeze_run": 12, "cut_fence_freeze_resume": 12, "cut_fence_freeze_run": 12,
+                           "pull_cable_freeze_resume": 12, "pull_cable_freeze_run": 12, "walk_freeze_resume": 12,
+                           "walk_freeze_run": 12}
 LOOP_FRAMES = 300
 LOOP_FRAMES_BY_NAME = {"run": 180}  # a sprint held longer than about 6 s freezes into a glide
 STEPPING = {"walk", "walk_wary", "sneak", "run", "carry"}  # upright gaits whose feet must lift; a crawl drags its toes

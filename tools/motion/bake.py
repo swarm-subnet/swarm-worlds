@@ -40,12 +40,20 @@ def main() -> None:
     with open(os.path.join(args.run, "library.json"), encoding="utf-8") as handle:
         run = json.load(handle)
     names30, slots = soma30_slots(args.rig)
-    rotations, roots, blocks, skipped = [], [], {}, []
+    rotations, roots, blocks = [], [], {}
+    skipped = {block_id for block_id, entry in run["blocks"].items() if entry.get("failed")}
+    # A block that starts on or leads into a left-out loop goes too, so no link points at nothing.
+    while True:
+        gone = {loop for loop in skipped if run["blocks"][loop]["loop"]}
+        more = {block_id for block_id, entry in run["blocks"].items() if block_id not in skipped
+                and any(link and link.get("loop") in gone for link in (entry["start"], entry["next"]))}
+        if not more:
+            break
+        skipped |= more
     first = 0
     for block_id in sorted(run["blocks"]):
         entry = run["blocks"][block_id]
-        if entry.get("failed"):
-            skipped.append(block_id)
+        if block_id in skipped:
             continue
         with np.load(os.path.join(args.run, "blocks", block_id + ".npz")) as data:
             local, root = data["local"][:, slots], data["root"]
@@ -82,7 +90,8 @@ def main() -> None:
     }
     with open(os.path.join(args.dest, "motions.json"), "w", encoding="utf-8") as handle:
         json.dump(manifest, handle, indent=1)
-    print(f"baked {len(blocks)} blocks, {first} frames; left out after failing a check: {', '.join(skipped) or 'none'}")
+    print(f"baked {len(blocks)} blocks, {first} frames; left out after failing a check or depending on one that did: "
+          f"{', '.join(sorted(skipped)) or 'none'}")
 
 
 if __name__ == "__main__":

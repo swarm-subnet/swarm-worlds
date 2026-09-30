@@ -201,7 +201,20 @@ class Generator:
             pending = drawn
         if pending:
             self._finish(*pending)
-        return {r["id"]: self.load(r["key"]) for r in requests}
+        got = {r["id"]: self.load(r["key"]) for r in requests}
+        self._rescore(got.values())
+        return got
+
+    def _rescore(self, candidates) -> None:
+        """Rank every candidate's text match against the whole current catalogue, so takes drawn before a prompt was
+        added are held to the same list as the ones drawn after."""
+        for c in candidates:
+            emb = self.tmr.encode_motion(torch.as_tensor(c["joints"][None], device=self.device),
+                                         original_skeleton=self.sk77, unit_vector=True).cpu().numpy().reshape(-1)
+            scores = self.text_emb @ emb
+            own = self.all_texts.index(c["meta"]["prompt"])
+            c["meta"]["tmr"] = float(scores[own] / 2 + 0.5)
+            c["meta"]["tmr_rank"] = int((scores > scores[own]).sum()) + 1
 
     def _raw(self, cid: str) -> str:
         """Path of one candidate's file."""
@@ -361,7 +374,7 @@ class Generator:
 
     def _passes(self, m: dict, kind: str = "") -> list:
         """Names of the gates a candidate fails; sprint moves are held to the sprint limits."""
-        gates = dict(GATES, **SPRINT_GATES) if kind == "run" or kind.endswith("_to_run") else GATES
+        gates = dict(GATES, **SPRINT_GATES) if kind == "run" or kind.endswith("_run") else GATES
         failed = [k for k in ("seam_m", "loop_m", "slide_cm_s", "jitter_m_s3") if k in m and m[k] > gates[k]]
         if m["tmr_rank"] > GATES["tmr_rank"]:
             failed.append("tmr_rank")

@@ -141,12 +141,18 @@ def test_every_link_points_at_something_real():
 
 
 def test_work_and_walks_can_react():
-    """Every take of the work and walking loops can freeze and can run: the reactions the story needs."""
+    """Every take of the work and walking loops can freeze and can run; the walk and the work can also freeze and then
+    go back to it or run, and cable cutting can back away from the panel it works under."""
     for loop, block in BLOCKS.items():
-        if not block["loop"] or block["kind"] not in ("walk", "walk_wary", "cut_fence", "cut_cable", "pull_cable"):
+        kind = block["kind"]
+        if not block["loop"] or kind not in ("walk", "walk_wary", "cut_fence", "cut_cable", "pull_cable"):
             continue
         exits = {b["kind"] for b in BLOCKS.values() if b["start"] == {"loop": loop} and not b["loop"]}
         assert any(k.endswith("freeze") for k in exits) and any(k.endswith("to_run") for k in exits), loop
+        if kind != "walk_wary":
+            assert {f"{kind}_freeze_resume", f"{kind}_freeze_run"} <= exits, loop
+        if kind == "cut_cable":
+            assert "cut_cable_back_away" in exits, loop
 
 
 def test_loops_close_on_themselves():
