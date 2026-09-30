@@ -83,6 +83,8 @@ def main() -> None:
         "chaining": ("a block may follow another when its start equals the other's next; a loop repeats itself, "
                      "each cycle placed at travel (x, z, turn) from the previous one; start {'hub': h} follows any "
                      "block whose next is {'hub': h}; next null means hold the last frame"),
+        "travel": ("where the block that follows starts, relative to this block's first frame, in the standard "
+                   "build's metres: scale x and z by the build's root scale, as the root already is when posed"),
         "pin_frames": run["pin_frames"],
         "gates": run["gates"],
         "sprint_gates": run["sprint_gates"],
