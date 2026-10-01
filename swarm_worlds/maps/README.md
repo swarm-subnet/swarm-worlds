@@ -20,7 +20,7 @@ move; everything else stays where the real park has it.
 - `manifest.json`: every piece, its placements, and the forest entry.
 - `park/`, `terrain/`, `grass/`, `movers/`: the pieces, one folder per group.
 - `plants/`: the forest table and the tree meshes it names.
-- `intruders/`: the thieves, dressed and posed by the Solar Patrol family's `intruders.py`.
+- `intruders/`: the thieves, dressed and posed by the Swarm Sentinel family's `intruders.py`.
 
 ### Intruders
 
