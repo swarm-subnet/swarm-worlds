@@ -19,6 +19,7 @@
 
 import ast
 import json
+import math
 import os
 import re
 import xml.etree.ElementTree as ET
@@ -149,6 +150,29 @@ def test_solar_dogs_point_at_real_files():
         for clip, spec in body["clips"].items():
             assert spec["start"] + spec["frames"] <= frames, f"{name}: {clip}"
             assert spec.get("then", clip) in body["clips"], f"{name}: {clip}"
+
+
+def test_solar_public_road_is_a_drivable_route_into_the_yard_and_out():
+    """Both arms end on the same yard samples, no bend is tighter than a pickup turns, every pose is a unit rotation,
+    and the turn starts and ends on yard samples facing in and then out."""
+    road = json.loads((MAPS / "custom" / "solar" / "movers" / "public_road.json").read_text(encoding="utf-8"))
+    north, east, turn = road["lines"]["north"], road["lines"]["east"], road["turn"]
+    shared = road["yard_samples"]
+    assert north[-shared:] == east[-shared:]
+    assert 0 < road["turn_from"] < road["turn_to"] <= shared or 0 < road["turn_to"] < road["turn_from"] <= shared
+    tightest = 1.0 / max(abs(row[2]) for line in (north, east) for row in line)
+    assert tightest > road["wheelbase_m"] * 1.5
+    for row in north + east:
+        assert len(row) == 19
+        for pose in (row[6:10], row[14:18]):
+            assert math.isclose(math.hypot(*pose), 1.0, abs_tol=1e-4)
+    start, end = north[len(north) - road["turn_from"]], north[len(north) - road["turn_to"]]
+    assert turn[0][:2] == start[:2]
+    assert math.dist(turn[-1][:2], end[:2]) < 1e-3
+    assert {row[2] for row in turn} == {1.0, -1.0}
+    for line in (north, east):
+        steps = [math.dist(a[:2], b[:2]) for a, b in zip(line, line[1:])]
+        assert max(steps) <= road["spacing_m"] * 1.5
 
 
 def test_lost_person_manifest_points_at_real_files():
