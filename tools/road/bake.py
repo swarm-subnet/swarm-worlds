@@ -14,11 +14,13 @@ import argparse
 import json
 import math
 import os
+from typing import Optional
 
 import numpy as np
 from scipy.interpolate import PchipInterpolator
 from scipy.ndimage import gaussian_filter1d
 from scipy.optimize import least_squares
+from scipy.spatial import cKDTree
 
 # The public road's centre line, surveyed from aerial imagery and registered to the park's rows (map metres, east and
 # north), from the north end, down the park's east side to the fork, and out along the east arm.
@@ -35,12 +37,19 @@ STEM = [[4.0, -129.4], [0.0, -128.8], [-4.0, -127.6], [-8.0, -125.6], [-12.0, -1
         [-19.2, -116.5], [-22.2, -112.5], [-22.6, -108.5], [-22.3, -104.5]]
 
 STEM_BLUR = 8.0            # the traced stem has few points, so its corners are eased harder than the survey's
+TURN_SPACING_M = 0.1      # a turn swings the truck over steep road edges, so it is posed more closely
 SPACING_M = 0.5            # distance between samples along every line
 DENSE_M = 0.05             # step of the dense curves samples are cut from
 ROAD_RADIUS_M = 8.0        # tightest bend a join between an arm and the stem may have
 TURN_RADIUS_M = 5.5        # rear axle radius at full lock, a pickup's turning circle of about 12.5 m
 FENCE_CLEAR_M = 1.0        # the truck's outline keeps this far outside the fence
-TREE_CLEAR_M = 0.3         # and this far from any tree crown while it turns in the yard
+TREE_CLEAR_M = 0.3         # and this far from any tree crown while it turns round
+SPOT_FROM_M = 40.0         # a farmer turns no nearer the road's end than this, where the patrol can see him
+SPOT_GAP_M = 40.0          # places to turn along an arm stand at least this far apart
+TURN_SPAN_M = 6.0          # a turn sweeps about this far along the line either side of where it starts
+CORNER_M = 40.0            # a truck swings from one arm onto the other within this far of the yard
+NEAR_ROAD_M = 25.0         # trees further than this from the road are never checked against the truck
+TURN_ROOM_M = 6.0          # less room than this across the road and no turn is even tried
 
 
 def _ring(posts: np.ndarray) -> np.ndarray:
@@ -147,29 +156,33 @@ class Pickup:
         axle point and heading.
 
         The body takes the plane fitted through the ground under its four wheels; its origin sits on the axles' line,
-        a wheel radius above that plane. Four points never lie on one plane on rough ground, and what the plane misses
-        is the same height at every wheel, up at the front left and rear right and down at the other two: the twist,
-        which the suspension takes by moving each wheel that much along the body's vertical.
+        a wheel radius above that plane. The ground is read again under where the tilted body puts each wheel until the
+        pose settles. Four points never lie on one plane on rough ground, and what the plane misses is the same height
+        at every wheel, up at the front left and rear right and down at the other two: the twist, which the suspension
+        takes by moving each wheel that much along the body's vertical.
         """
         c, s = np.cos(heading), np.sin(heading)
-        corners = [(self.front, self.track), (self.front, -self.track), (self.rear, self.track), (self.rear, -self.track)]
-        contact = np.stack([np.stack([rear[:, 0] + c * (lx - self.rear) - s * ly,
-                                      rear[:, 1] + s * (lx - self.rear) + c * ly], axis=1) for lx, ly in corners], axis=1)
-        z = terrain.height(contact.reshape(-1, 2)).reshape(-1, 4)
-        # The plane z = a + b x + c y through the four contacts, least squares in the body's own axes.
         lx = np.array([self.front, self.front, self.rear, self.rear])
         ly = np.array([self.track, -self.track, self.track, -self.track])
-        design = np.stack([np.ones(4), lx, ly], axis=1)
-        a, b, cc = (np.linalg.pinv(design) @ z.T)
-        forward = np.stack([c, s, b], axis=1)
-        side = np.stack([-s, c, cc], axis=1)
-        forward /= np.linalg.norm(forward, axis=1, keepdims=True)
-        up = np.cross(forward, side)
-        up /= np.linalg.norm(up, axis=1, keepdims=True)
-        side = np.cross(up, forward)
-        origin = np.stack([rear[:, 0] - c * self.rear, rear[:, 1] - s * self.rear, a], axis=1)
-        origin += up * (self.radius - self.axle_z)
-        twist = (z[:, 0] - z[:, 1] - z[:, 2] + z[:, 3]) / 4.0
+        fit = np.linalg.pinv(np.stack([np.ones(4), lx, ly], axis=1))
+        centre = np.stack([rear[:, 0] - c * self.rear, rear[:, 1] - s * self.rear], axis=1)
+        contact = centre[:, None, :] + lx[None, :, None] * np.stack([c, s], axis=1)[:, None, :] \
+            + ly[None, :, None] * np.stack([-s, c], axis=1)[:, None, :]
+        for _ in range(4):
+            z = terrain.height(contact.reshape(-1, 2)).reshape(-1, 4)
+            a, b, cc = fit @ z.T
+            forward = np.stack([c, s, b], axis=1)
+            side = np.stack([-s, c, cc], axis=1)
+            forward /= np.linalg.norm(forward, axis=1, keepdims=True)
+            up = np.cross(forward, side)
+            up /= np.linalg.norm(up, axis=1, keepdims=True)
+            side = np.cross(up, forward)
+            origin = np.concatenate([centre, a[:, None]], axis=1) + up * (self.radius - self.axle_z)
+            # Where the tilted body puts each wheel's lowest point, read the ground there next time round.
+            bottom = origin[:, None, :] + lx[None, :, None] * forward[:, None, :] + ly[None, :, None] * side[:, None, :] \
+                + (self.axle_z - self.radius) * up[:, None, :]
+            contact = bottom[:, :, :2]
+        twist = (z[:, 0] - z[:, 1] - z[:, 2] + z[:, 3]) / 4.0 / up[:, 2]
         return np.concatenate([origin, _quaternions(np.stack([forward, side, up], axis=2)), twist[:, None]], axis=1)
 
 
@@ -282,51 +295,165 @@ def _ends(x: float, y: float, h: float, side: float, radius: float, lengths) -> 
     return x, y, h
 
 
-def _turn(tail: np.ndarray, blocked) -> tuple:
-    """Three moves that turn the pickup round in the yard: forward on full lock, back on the other lock, forward
-    again, ending on a sample of the yard's line facing out.
+def _turn_at(line: np.ndarray, heading: np.ndarray, start: int, blocked, onto: Optional[np.ndarray] = None,
+             onto_heading: Optional[np.ndarray] = None) -> Optional[tuple]:
+    """The shortest clear way to turn the pickup round from one sample of a line onto a sample of a line, the same one
+    unless another is given, facing back along it: three moves on full lock (forward, back, forward), or five where the
+    road is too narrow for three.
 
-    Returns the tail samples the turn starts and ends on and the dense rear axle path as rows of (x, y, heading,
-    gear, curvature). Of all turns whose outline stays clear, the shortest.
+    Returns the turn's length, the sample it ends on and the dense rear axle path as rows of (x, y, heading, gear,
+    curvature), or None where no turn stays clear.
     """
-    heading = np.unwrap(_heading(tail))
+    target = line if onto is None else onto
+    aim = heading if onto_heading is None else onto_heading
     r, top = TURN_RADIUS_M, math.pi * TURN_RADIUS_M
+    x0, y0, h0 = float(line[start, 0]), float(line[start, 1]), float(heading[start])
     best = None
-    for start in range(len(tail) // 3, len(tail), 2):
-        x0, y0, h0 = float(tail[start, 0]), float(tail[start, 1]), float(heading[start])
+    for moves in (3, 5):
         for side in (1.0, -1.0):
-            for first in np.arange(1.0, 0.75 * top, 1.0):
+            for lead in np.arange(1.0, 0.75 * top / (moves - 2), 1.0):
+                signs = [1.0 if k % 2 == 0 else -1.0 for k in range(moves)]
+
+                def landing(v: np.ndarray) -> tuple:
+                    """Where the last two moves of these lengths end, after the lead moves."""
+                    lengths = [lead] * (moves - 2) + list(v)
+                    return _ends(x0, y0, h0, side, r, [s * abs(x) for s, x in zip(signs, lengths)])
 
                 def across(v: np.ndarray) -> list:
-                    """How far the end lies off the yard's line and how far it heads off facing back along it."""
-                    x, y, h = _ends(x0, y0, h0, side, r, (first, -v[0], v[1]))
-                    k = int(np.argmin(np.hypot(tail[:, 0] - x, tail[:, 1] - y)))
-                    off = (x - tail[k, 0]) * -math.sin(heading[k]) + (y - tail[k, 1]) * math.cos(heading[k])
-                    return [off, _wrap(h - heading[k] - math.pi) * r]
+                    """How far the end lies off the line and how far it heads off facing back along it."""
+                    x, y, h = landing(v)
+                    k = int(np.argmin(np.hypot(target[:, 0] - x, target[:, 1] - y)))
+                    off = (x - target[k, 0]) * -math.sin(aim[k]) + (y - target[k, 1]) * math.cos(aim[k])
+                    return [off, _wrap(h - aim[k] - math.pi) * r]
 
-                rough = least_squares(across, [top / 3, top / 3], bounds=([0.1, 0.1], [top, top]))
+                rough = least_squares(across, [top / moves, top / moves], bounds=([0.1, 0.1], [top, top]))
                 if max(map(abs, rough.fun)) > 0.05:
                     continue
-                x, y, _ = _ends(x0, y0, h0, side, r, (first, -rough.x[0], rough.x[1]))
-                end = int(np.argmin(np.hypot(tail[:, 0] - x, tail[:, 1] - y)))
+                x, y, _ = landing(rough.x)
+                end = int(np.argmin(np.hypot(target[:, 0] - x, target[:, 1] - y)))
 
                 def onto(v: np.ndarray) -> list:
                     """How far the end lies from the chosen sample and how far it heads off facing back there."""
-                    x, y, h = _ends(x0, y0, h0, side, r, (v[0], -v[1], v[2]))
-                    return [x - tail[end, 0], y - tail[end, 1], _wrap(h - heading[end] - math.pi) * r]
+                    lengths = [lead] * (moves - 3) + list(v)
+                    x, y, h = _ends(x0, y0, h0, side, r, [s * abs(x) for s, x in zip(signs, lengths)])
+                    return [x - target[end, 0], y - target[end, 1], _wrap(h - aim[end] - math.pi) * r]
 
-                exact = least_squares(onto, [first, *rough.x], bounds=([0.1] * 3, [top] * 3), xtol=1e-12, ftol=1e-12)
+                exact = least_squares(onto, [lead, *rough.x], bounds=([0.1] * 3, [top] * 3), xtol=1e-12, ftol=1e-12)
                 if max(map(abs, exact.fun)) > 1e-4:
                     continue
-                length = float(sum(exact.x))
-                if best is not None and length >= best[0]:
+                lengths = [lead] * (moves - 3) + list(exact.x)
+                if best is not None and sum(lengths) >= best[0]:
                     continue
-                path = _arcs((x0, y0), h0, side, r, (exact.x[0], -exact.x[1], exact.x[2]))
+                path = _arcs((x0, y0), h0, side, r, tuple(s * x for s, x in zip(signs, lengths)))
                 if not blocked(path[:, :2], path[:, 2]):
-                    best = (length, start, end, path)
-    if best is None:
+                    best = (sum(lengths), end, path)
+        if best is not None:
+            return best
+    return None
+
+
+def _yard_turn(tail: np.ndarray, blocked) -> tuple:
+    """Of every turn in the yard, from a sample in its far two thirds, the shortest: (start, end, path)."""
+    heading = np.unwrap(_heading(tail))
+    found = [(turn[0], start, turn[1], turn[2]) for start in range(len(tail) // 3, len(tail), 2)
+             if (turn := _turn_at(tail, heading, start, blocked)) is not None]
+    if not found:
         raise ValueError("the pickup cannot turn round in the yard")
-    return best[1], best[2], best[3]
+    return min(found, key=lambda f: f[0])[1:]
+
+
+def _free(line: np.ndarray, heading: np.ndarray, i: int, obstacles: np.ndarray) -> float:
+    """How much room there is across the line at a sample: from the nearest obstacle edge on one side to the nearest on
+    the other, over the few metres a turn there sweeps along the line."""
+    c, s = math.cos(heading[i]), math.sin(heading[i])
+    rel = obstacles[:, :2] - line[i]
+    along, across = rel[:, 0] * c + rel[:, 1] * s, -rel[:, 0] * s + rel[:, 1] * c
+    near = np.abs(along) < TURN_SPAN_M
+    left = across[near & (across > 0)] - obstacles[near & (across > 0), 2]
+    right = -across[near & (across < 0)] - obstacles[near & (across < 0), 2]
+    return float((left.min() if len(left) else 20.0) + (right.min() if len(right) else 20.0))
+
+
+def _templates() -> list:
+    """Every way to turn round on a straight road on full lock, three moves or five, shortest first: (signed lengths,
+    side, the dense rear axle path from the origin heading along x)."""
+    r, top = TURN_RADIUS_M, math.pi * TURN_RADIUS_M
+    found = []
+    for moves in (3, 5):
+        signs = [1.0 if k % 2 == 0 else -1.0 for k in range(moves)]
+        for side in (1.0, -1.0):
+            for lead in np.arange(0.5, 0.75 * top / (moves - 2), 0.5):
+
+                def back(v: np.ndarray) -> list:
+                    """How far the end lies off the road and heads off facing back along it."""
+                    _x, y, h = _ends(0.0, 0.0, 0.0, side, r, [s * x for s, x in zip(signs, [lead] * (moves - 2) + list(v))])
+                    return [y, _wrap(h - math.pi) * r]
+
+                fit = least_squares(back, [top / moves, top / moves], bounds=([0.1, 0.1], [top, top]))
+                if max(map(abs, fit.fun)) < 1e-6:
+                    lengths = tuple(s * x for s, x in zip(signs, [lead] * (moves - 2) + list(fit.x)))
+                    found.append((lengths, side, _arcs((0.0, 0.0), 0.0, side, r, lengths)))
+    return sorted(found, key=lambda t: sum(map(abs, t[0])))
+
+
+def _settle(line: np.ndarray, heading: np.ndarray, start: int, lengths: tuple, side: float) -> Optional[tuple]:
+    """A straight-road turn fitted to the real line at one sample: its last three moves stretched so it ends exactly on
+    the nearest sample facing back; (end sample, signed lengths) or None when it lands too far off."""
+    r, top = TURN_RADIUS_M, math.pi * TURN_RADIUS_M
+    x0, y0, h0 = float(line[start, 0]), float(line[start, 1]), float(heading[start])
+    x, y, _ = _ends(x0, y0, h0, side, r, lengths)
+    end = int(np.argmin(np.hypot(line[:, 0] - x, line[:, 1] - y)))
+    signs = [1.0 if length > 0 else -1.0 for length in lengths]
+
+    def onto(v: np.ndarray) -> list:
+        """How far the end lies from the sample and how far it heads off facing back there."""
+        ex, ey, eh = _ends(x0, y0, h0, side, r, [s * abs(x) for s, x in zip(signs, list(map(abs, lengths[:-3])) + list(v))])
+        return [ex - line[end, 0], ey - line[end, 1], _wrap(eh - heading[end] - math.pi) * r]
+
+    exact = least_squares(onto, [abs(x) for x in lengths[-3:]], bounds=([0.1] * 3, [top] * 3), xtol=1e-12, ftol=1e-12)
+    if max(map(abs, exact.fun)) > 1e-4 or max(abs(a - b) for a, b in zip(exact.x, map(abs, lengths[-3:]))) > 1.0:
+        return None
+    return end, tuple(s * x for s, x in zip(signs, list(map(abs, lengths[:-3])) + list(exact.x)))
+
+
+def _verge_turns(line: np.ndarray, before: int, obstacles: np.ndarray, blocked) -> list:
+    """The places along an arm, short of the yard, where a farmer can turn round, at least SPOT_GAP_M apart: each as
+    (start, end, path), the shortest clear turn there."""
+    heading = np.unwrap(_heading(line))
+    templates = _templates()
+    spots, last = [], -1e9
+    for start in range(int(SPOT_FROM_M / SPACING_M), before, int(2.0 / SPACING_M)):
+        if (start - last) * SPACING_M < SPOT_GAP_M or _free(line, heading, start, obstacles) < TURN_ROOM_M:
+            continue
+        c, s = math.cos(heading[start]), math.sin(heading[start])
+        for lengths, side, local in templates:
+            # The straight-road turn laid on the road at this sample, a quick look before fitting it exactly.
+            rear = line[start] + np.stack([local[:, 0] * c - local[:, 1] * s, local[:, 0] * s + local[:, 1] * c], axis=1)
+            if blocked(rear[::4], local[::4, 2] + heading[start]):
+                continue
+            settled = _settle(line, heading, start, lengths, side)
+            if settled is None:
+                continue
+            path = _arcs(line[start], heading[start], side, TURN_RADIUS_M, settled[1])
+            if not blocked(path[:, :2], path[:, 2]):
+                spots.append((start, settled[0], path))
+                last = start
+                print(f"  a place to turn at {start * SPACING_M:.0f} m, {len(settled[1])} moves, "
+                      f"{sum(map(abs, settled[1])):.1f} m", flush=True)
+                break
+    return spots
+
+
+def _crossing(come: np.ndarray, go: np.ndarray, shared: int, blocked) -> Optional[tuple]:
+    """The shortest clear way to swing from one arm onto the other at the corner where they meet, short of the yard:
+    from a sample of the arm coming in, facing the corner, onto a sample of the other arm, facing away from it.
+    Returns (start, end, path) or None."""
+    heading, back_heading = np.unwrap(_heading(come)), np.unwrap(_heading(go))
+    arm = go[:len(go) - shared]
+    reach = int(CORNER_M / SPACING_M)
+    found = [(turn[0], start, turn[1], turn[2]) for start in range(len(come) - shared - reach, len(come) - shared, 2)
+             if (turn := _turn_at(come, heading, start, blocked, arm, back_heading[:len(arm)])) is not None]
+    return min(found, key=lambda f: f[0])[1:] if found else None
 
 
 def _arcs(origin, heading: float, side: float, radius: float, lengths: tuple) -> np.ndarray:
@@ -370,16 +497,18 @@ def main() -> None:
         if _inside(ring, points).any() or _ring_gap(points, ring).min() < FENCE_CLEAR_M:
             return True
         near = trees[np.min(np.linalg.norm(trees[:, None, :2] - rear[None, ::20], axis=2), axis=1) < 12.0]
-        for corners in outline:
-            centre = corners.mean(axis=0)
-            axis_x = (corners[1] - corners[0]) / np.linalg.norm(corners[1] - corners[0])
-            axis_y = np.array([-axis_x[1], axis_x[0]])
-            rel = near[:, :2] - centre
-            half = np.array([np.linalg.norm(corners[1] - corners[0]), np.linalg.norm(corners[3] - corners[0])]) / 2
-            gap = np.maximum(np.abs(np.stack([rel @ axis_x, rel @ axis_y], axis=1)) - half, 0.0)
-            if (np.linalg.norm(gap, axis=1) < near[:, 2] + margin).any():
-                return True
-        return False
+        # Each outline against every crown near the path at once: the distance from a crown's centre to the box.
+        centre = outline.mean(axis=1)
+        axis_x = outline[:, 1] - outline[:, 0]
+        length = np.linalg.norm(axis_x, axis=1)
+        axis_x = axis_x / length[:, None]
+        axis_y = np.stack([-axis_x[:, 1], axis_x[:, 0]], axis=1)
+        half = np.stack([length, np.linalg.norm(outline[:, 3] - outline[:, 0], axis=1)], axis=1) / 2
+        rel = near[None, :, :2] - centre[:, None, :]
+        lx = np.abs((rel * axis_x[:, None, :]).sum(axis=2)) - half[:, None, :1][..., 0]
+        ly = np.abs((rel * axis_y[:, None, :]).sum(axis=2)) - half[:, None, 1:][..., 0]
+        gap = np.hypot(np.maximum(lx, 0.0), np.maximum(ly, 0.0))
+        return bool((gap < near[None, :, 2] + margin).any())
 
     painted = _painted(SURVEY)
     fork = int(np.argmax(np.abs(_curvature(painted))))
@@ -388,31 +517,57 @@ def main() -> None:
     reach = int(math.ceil((pickup.high[0] - pickup.rear) / SPACING_M))
     lines = {"north": _resample(_join(painted[:fork + 1], stem), SPACING_M)[reach:],
              "east": _resample(_join(painted[fork:][::-1], stem), SPACING_M)[reach:]}
+    # Only trees near the road can meet a truck on it; the rest of the forest is left out of every check.
+    near_road = cKDTree(np.concatenate(list(lines.values()))).query(trees[:, :2], distance_upper_bound=NEAR_ROAD_M)[0]
+    trees = trees[near_road < NEAR_ROAD_M]
     # Both lines end on the same stretch of the stem; the yard is the part of it they share sample for sample.
     shared = 0
     while shared < min(map(len, lines.values())) and np.allclose(lines["north"][-1 - shared], lines["east"][-1 - shared], atol=1e-6):
         shared += 1
     tail = lines["north"][-shared:]
-    start, end, path = _turn(tail, blocked)
-    turn = _resample_turn(path)
+    start, end, path = _yard_turn(tail, blocked)
+    yard = {"into": ["north", "east"], "out": ["north", "east"], "from_end": shared - start, "to_end": shared - end,
+            "path": path}
+    # The fence as a dense row of points, each kept FENCE_CLEAR_M off, beside the crowns, to judge the room across.
+    edge = np.concatenate([np.linspace(a, b, int(np.ceil(np.linalg.norm(b - a) / 0.5)) + 1)
+                           for a, b in zip(ring, np.roll(ring, -1, axis=0))])
+    obstacles = np.concatenate([trees, np.c_[edge, np.full(len(edge), FENCE_CLEAR_M)]])
+    turns = [yard]
+    for name, line in lines.items():
+        print(f"{name} arm: looking for places to turn round", flush=True)
+        for start, end, path in _verge_turns(line, len(line) - shared, obstacles, blocked):
+            turns.append({"into": [name], "out": [name], "from_end": len(line) - start, "to_end": len(line) - end,
+                          "path": path})
+    for come, go in (("north", "east"), ("east", "north")):
+        print(f"corner: from the {come} arm onto the {go} arm", flush=True)
+        crossing = _crossing(lines[come], lines[go], shared, blocked)
+        if crossing is None:
+            raise ValueError(f"no way to swing from the {come} arm onto the {go} arm at the corner")
+        start, end, path = crossing
+        turns.append({"into": [come], "out": [go], "from_end": len(lines[come]) - start, "to_end": len(lines[go]) - end,
+                      "path": path})
     out = {"about": "the public road outside the solar park's fence, baked by tools/road/bake.py: rear axle samples "
                     f"{SPACING_M} m apart; a line row is x, y, curvature, then the pickup's body pose and suspension "
-                    "twist facing along the line, then both facing back; a turn row is x, y, gear, curvature, pose, twist",
+                    "twist facing along the line, then both facing back; a turn is where a truck turns round, from a "
+                    "sample of an arm it comes in on to a sample of an arm it leaves by, both counted from the lines' "
+                    "yard end, its rows x, y, gear, curvature, pose, twist",
            "spacing_m": SPACING_M, "wheelbase_m": round(pickup.wheelbase, 4), "wheel_radius_m": round(pickup.radius, 4),
-           "yard_samples": shared, "turn_from": shared - start, "turn_to": shared - end, "lines": {}}
+           "yard_samples": shared, "lines": {}, "turns": []}
     for name, line in lines.items():
         heading = _heading(line)
         ahead, back = pickup.poses(terrain, line, heading), pickup.poses(terrain, line, heading + math.pi)
         out["lines"][name] = np.round(np.concatenate([line, _curvature(line)[:, None], ahead, back], axis=1), 5).tolist()
-    poses = pickup.poses(terrain, turn[:, :2], turn[:, 2])
-    out["turn"] = np.round(np.concatenate([turn[:, :2], turn[:, 3:5], poses], axis=1), 5).tolist()
+    for turn in turns:
+        rows = _resample_turn(turn.pop("path"))
+        poses = pickup.poses(terrain, rows[:, :2], rows[:, 2])
+        out["turns"].append(dict(turn, rows=np.round(np.concatenate([rows[:, :2], rows[:, 3:5], poses], axis=1), 5).tolist()))
     # The first yard samples face a little differently on each arm, as a heading reads its neighbours; the yard is
-    # only the samples the two lines agree on, written once so both hold them identically, and the turn lies inside it.
+    # only the samples the two lines agree on, written once so both hold them identically, and its turn lies inside it.
     north, east = out["lines"]["north"], out["lines"]["east"]
     same = 0
     while same < shared and np.allclose(north[-1 - same], east[-1 - same], rtol=0.0, atol=1e-4):
         same += 1
-    if max(out["turn_from"], out["turn_to"]) >= same:
+    if max(yard["from_end"], yard["to_end"]) >= same:
         raise ValueError("the turn reaches samples the two arms do not share")
     east[-same:] = north[-same:]
     out["yard_samples"] = same
@@ -422,12 +577,13 @@ def main() -> None:
             raise ValueError(f"the pickup on the {name} line touches a tree crown or comes near the fence")
     with open(os.path.join(args.solar, "movers", "public_road.json"), "w", encoding="utf-8") as handle:
         json.dump(out, handle, separators=(",", ":"))
-    print({name: round(len(line) * SPACING_M, 1) for name, line in lines.items()}, "yard", shared * SPACING_M,
-          "turn", round(len(turn) * SPACING_M, 1), "m")
+    print({name: round(len(line) * SPACING_M, 1) for name, line in lines.items()}, "yard", out["yard_samples"] * SPACING_M,
+          "turns", [(t["into"], t["out"], round((len(lines[t["into"][0]]) - t["from_end"]) * SPACING_M), len(t["rows"]))
+                    for t in out["turns"]])
 
 
 def _resample_turn(path: np.ndarray) -> np.ndarray:
-    """The turn's dense rows cut every SPACING_M of travel within each move; each move keeps both its ends, and the
+    """The turn's dense rows cut every TURN_SPACING_M of travel within each move; each move keeps both its ends, and the
     point where the gear changes is kept once, as the last row of the move it ends."""
     pieces = np.split(path, np.flatnonzero(np.diff(path[:, 3]) != 0) + 1)
     rows = []
@@ -435,7 +591,7 @@ def _resample_turn(path: np.ndarray) -> np.ndarray:
         if number + 1 < len(pieces):
             piece = np.concatenate([piece, np.c_[pieces[number + 1][:1, :3], piece[-1:, 3:]]])
         along = np.r_[0.0, np.cumsum(np.linalg.norm(np.diff(piece[:, :2], axis=0), axis=1))]
-        t = np.r_[np.arange(0.0, along[-1], SPACING_M), along[-1]]
+        t = np.r_[np.arange(0.0, along[-1], TURN_SPACING_M), along[-1]]
         cut = np.stack([np.interp(t, along, piece[:, k]) for k in range(3)] + [np.full(len(t), piece[-1, 3]),
                                                                               np.full(len(t), piece[-1, 4])], axis=1)
         rows.append(cut if not rows else cut[1:])
