@@ -395,7 +395,7 @@ class Generator:
         """Names of the gates a candidate fails; sprint moves are held to the sprint limits."""
         gates = dict(GATES, **SPRINT_GATES) if kind == "run" or kind.endswith("_run") else GATES
         failed = [k for k in ("seam_m", "loop_m", "slide_cm_s", "jitter_m_s3") if k in m and m[k] > gates[k]]
-        if m["tmr_rank"] > GATES["tmr_rank"]:
+        if m["tmr_rank"] > cat.TMR_RANK_BY_NAME.get(kind, GATES["tmr_rank"]):
             failed.append("tmr_rank")
         if m.get("legs_cm", GATES["legs_cm"]) < GATES["legs_cm"]:
             failed.append("legs_cm")
