@@ -155,6 +155,20 @@ def test_work_and_walks_can_react():
             assert "cut_cable_back_away" in exits, loop
 
 
+def test_every_loop_a_thief_works_in_can_freeze_and_drop_flat():
+    """Every take of every loop a thief walks, works, carries or keeps watch in can freeze and go back to it, and can
+    drop flat; a man lying flat can stand up again."""
+    kinds = ("walk", "walk_wary", "sneak", "carry", "cut_fence", "cut_cable", "pull_cable", "look_around", "crouch_watch")
+    for loop, block in BLOCKS.items():
+        if not block["loop"] or block["kind"] not in kinds:
+            continue
+        exits = {b["kind"]: b["next"] for b in BLOCKS.values() if b["start"] == {"loop": loop} and not b["loop"]}
+        assert exits.get(f"{block['kind']}_freeze_resume") == {"loop": loop}, loop
+        assert exits.get(f"{block['kind']}_to_prone") == {"hub": "prone"}, loop
+    assert any(b["kind"] == "prone_to_stand" and b["next"] == {"hub": "stand"} for b in BLOCKS.values()
+               if b["start"] == {"hub": "prone"})
+
+
 def test_loops_close_on_themselves():
     """A loop's last frame flows into its first like any two neighbouring frames of that loop."""
     for name, block in BLOCKS.items():

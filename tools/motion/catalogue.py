@@ -92,6 +92,18 @@ MOVES = {
     "pull_cable_freeze_run": ("reaction", "A person bent forward pulling something freezes and looks up at the sky, then drops it, turns and sprints away fast.", ("loop", "pull_cable"), ("loop", "run"), 150),
     "walk_freeze_resume": ("reaction", "A person walking forward stops and looks up at the sky for a moment, then walks on.", ("loop", "walk"), ("loop", "walk"), 150),
     "walk_freeze_run": ("reaction", "A person walking forward stops and looks up at the sky, then suddenly sprints away fast.", ("loop", "walk"), ("loop", "run"), 150),
+    "walk_wary_freeze_resume": ("reaction", "A person walking slowly and cautiously halts, glances up at the sky, then carries on slowly, looking left and right.", ("loop", "walk_wary"), ("loop", "walk_wary"), 150),
+    "sneak_freeze_resume": ("reaction", "A person sneaking forward in a low crouch stops, looks up at the sky for a moment, then sneaks on.", ("loop", "sneak"), ("loop", "sneak"), 150),
+    "carry_freeze_resume": ("reaction", "A person walking with a load on the shoulder stops and looks up at the sky for a moment, then walks on.", ("loop", "carry"), ("loop", "carry"), 150),
+    "look_around_freeze_resume": ("reaction", "A person looking around nervously freezes and stares up at the sky for a moment, then looks around again.", ("loop", "look_around"), ("loop", "look_around"), 150),
+    "crouch_watch_freeze_resume": ("reaction", "A person squatting low flinches, ducks the head down and holds still for a moment, then slowly looks around again.", ("loop", "crouch_watch"), ("loop", "crouch_watch"), 150),
+    # every loop a thief can be in drops flat, and a man lying flat gets back up
+    "walk_wary_to_prone": ("reaction", "A person walking cautiously suddenly drops to the ground and lies flat on the stomach.", ("loop", "walk_wary"), "prone", 90),
+    "carry_to_prone": ("reaction", "A person walking with a load on the shoulder lets it fall and drops flat onto the stomach, lying still.", ("loop", "carry"), "prone", 90),
+    "look_around_to_prone": ("reaction", "A person standing and looking around quickly kneels down, then lies flat on the stomach and stays still.", ("loop", "look_around"), "prone", 105),
+    "cut_fence_to_prone": ("reaction", "A person sawing at chest height lowers both arms, quickly kneels, then lies flat on the stomach and stays still.", ("loop", "cut_fence"), "prone", 105),
+    "pull_cable_to_prone": ("reaction", "A person bent forward pulling something drops it and lies flat on the stomach, head down.", ("loop", "pull_cable"), "prone", 90),
+    "prone_to_stand": ("reaction", "A person lying face down pushes up with both hands, gets to the feet and stands still.", "prone", "stand", 90),
 }
 
 # Candidates generated per kept result: loops draw this many takes and keep the most distinct passing ones; every
@@ -106,7 +118,13 @@ MOVE_CANDIDATES_BY_NAME = {"cut_fence_freeze": 12, "cut_fence_to_stand": 12, "sn
                            "cut_cable_to_prone": 24, "cut_cable_to_run": 12, "cut_cable_freeze_resume": 12,
                            "cut_cable_freeze_run": 12, "cut_fence_freeze_resume": 24, "cut_fence_freeze_run": 12,
                            "pull_cable_freeze_resume": 12, "pull_cable_freeze_run": 12, "walk_freeze_resume": 12,
-                           "walk_freeze_run": 12}
+                           "walk_freeze_run": 12, "walk_wary_freeze_resume": 24, "sneak_freeze_resume": 12,
+                           "carry_freeze_resume": 12, "look_around_freeze_resume": 12, "crouch_watch_freeze_resume": 24,
+                           "walk_wary_to_prone": 12, "carry_to_prone": 12, "look_around_to_prone": 24,
+                           "cut_fence_to_prone": 96, "pull_cable_to_prone": 12, "prone_to_stand": 12}
+# Text match ranks a move's own prompt against the whole catalogue; nine drop-flat prompts now describe the same fall, so
+# a clean take of this one lands just behind its look-alikes.
+TMR_RANK_BY_NAME = {"cut_fence_to_prone": 6}
 LOOP_FRAMES = 300
 LOOP_FRAMES_BY_NAME = {"run": 180}  # a sprint held longer than about 6 s freezes into a glide
 STEPPING = {"walk", "walk_wary", "sneak", "run", "carry"}  # upright gaits whose feet must lift; a crawl drags its toes

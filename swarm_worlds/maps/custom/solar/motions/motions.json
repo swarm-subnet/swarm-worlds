@@ -204,11 +204,119 @@
     "seam_m": 0.0
    }
   },
+  "carry_freeze_resume.0": {
+   "kind": "carry_freeze_resume",
+   "stage": "reaction",
+   "loop": false,
+   "first": 303,
+   "frames": 147,
+   "start": {
+    "loop": "carry.0"
+   },
+   "next": {
+    "loop": "carry.0"
+   },
+   "travel": {
+    "x": 0.1179184390479625,
+    "z": 6.55275456199304,
+    "turn": 0.4315342903137207
+   },
+   "prompt": "A person walking with a load on the shoulder stops and looks up at the sky for a moment, then walks on.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 3.238,
+    "jitter_m_s3": 337.9137,
+    "tmr": 0.8439,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  },
+  "carry_freeze_resume.1": {
+   "kind": "carry_freeze_resume",
+   "stage": "reaction",
+   "loop": false,
+   "first": 450,
+   "frames": 147,
+   "start": {
+    "loop": "carry.1"
+   },
+   "next": {
+    "loop": "carry.1"
+   },
+   "travel": {
+    "x": -0.973531955351921,
+    "z": 6.136049686657253,
+    "turn": -0.13498425483703613
+   },
+   "prompt": "A person walking with a load on the shoulder stops and looks up at the sky for a moment, then walks on.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 4.2685,
+    "jitter_m_s3": 181.2681,
+    "tmr": 0.8583,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  },
+  "carry_to_prone.0": {
+   "kind": "carry_to_prone",
+   "stage": "reaction",
+   "loop": false,
+   "first": 597,
+   "frames": 87,
+   "start": {
+    "loop": "carry.0"
+   },
+   "next": {
+    "hub": "prone"
+   },
+   "travel": {
+    "x": 0.16754121649203096,
+    "z": 1.927179086790656,
+    "turn": -0.008880376815795898
+   },
+   "prompt": "A person walking with a load on the shoulder lets it fall and drops flat onto the stomach, lying still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 3.5382,
+    "jitter_m_s3": 395.0105,
+    "tmr": 0.8597,
+    "tmr_rank": 5.0,
+    "seam_m": 0.0
+   }
+  },
+  "carry_to_prone.1": {
+   "kind": "carry_to_prone",
+   "stage": "reaction",
+   "loop": false,
+   "first": 684,
+   "frames": 87,
+   "start": {
+    "loop": "carry.1"
+   },
+   "next": {
+    "hub": "prone"
+   },
+   "travel": {
+    "x": -0.3854903552195847,
+    "z": 2.3736778856885365,
+    "turn": 0.04961514472961426
+   },
+   "prompt": "A person walking with a load on the shoulder lets it fall and drops flat onto the stomach, lying still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 4.6399,
+    "jitter_m_s3": 363.7897,
+    "tmr": 0.869,
+    "tmr_rank": 3.0,
+    "seam_m": 0.0
+   }
+  },
   "carry_to_run.0": {
    "kind": "carry_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 303,
+   "first": 771,
    "frames": 57,
    "start": {
     "loop": "carry.0"
@@ -235,7 +343,7 @@
    "kind": "carry_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 360,
+   "first": 828,
    "frames": 57,
    "start": {
     "loop": "carry.1"
@@ -262,7 +370,7 @@
    "kind": "crawl",
    "stage": "reaction",
    "loop": true,
-   "first": 417,
+   "first": 885,
    "frames": 43,
    "start": {
     "loop": "crawl.0"
@@ -290,7 +398,7 @@
    "kind": "crawl",
    "stage": "reaction",
    "loop": true,
-   "first": 460,
+   "first": 928,
    "frames": 73,
    "start": {
     "loop": "crawl.1"
@@ -318,7 +426,7 @@
    "kind": "crawl_to_prone",
    "stage": "reaction",
    "loop": false,
-   "first": 533,
+   "first": 1001,
    "frames": 72,
    "start": {
     "loop": "crawl.0"
@@ -345,7 +453,7 @@
    "kind": "crawl_to_prone",
    "stage": "reaction",
    "loop": false,
-   "first": 605,
+   "first": 1073,
    "frames": 72,
    "start": {
     "loop": "crawl.1"
@@ -372,7 +480,7 @@
    "kind": "crouch_to_sneak",
    "stage": "arrival",
    "loop": false,
-   "first": 677,
+   "first": 1145,
    "frames": 72,
    "start": {
     "hub": "crouch"
@@ -399,7 +507,7 @@
    "kind": "crouch_to_stand",
    "stage": "reaction",
    "loop": false,
-   "first": 749,
+   "first": 1217,
    "frames": 87,
    "start": {
     "hub": "crouch"
@@ -426,7 +534,7 @@
    "kind": "crouch_to_stand",
    "stage": "reaction",
    "loop": false,
-   "first": 836,
+   "first": 1304,
    "frames": 87,
    "start": {
     "hub": "crouch"
@@ -453,7 +561,7 @@
    "kind": "crouch_watch",
    "stage": "reaction",
    "loop": true,
-   "first": 923,
+   "first": 1391,
    "frames": 68,
    "start": {
     "loop": "crouch_watch.0"
@@ -481,7 +589,7 @@
    "kind": "crouch_watch_in",
    "stage": "reaction",
    "loop": false,
-   "first": 991,
+   "first": 1459,
    "frames": 152,
    "start": {
     "hub": "crouch"
@@ -498,11 +606,38 @@
    "checks_failed": [],
    "measures": {}
   },
+  "crouch_watch_freeze_resume.0": {
+   "kind": "crouch_watch_freeze_resume",
+   "stage": "reaction",
+   "loop": false,
+   "first": 1611,
+   "frames": 147,
+   "start": {
+    "loop": "crouch_watch.0"
+   },
+   "next": {
+    "loop": "crouch_watch.0"
+   },
+   "travel": {
+    "x": 0.01587258516531292,
+    "z": -0.01372421473951563,
+    "turn": 0.052822113037109375
+   },
+   "prompt": "A person squatting low flinches, ducks the head down and holds still for a moment, then slowly looks around again.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.3501,
+    "jitter_m_s3": 26.4345,
+    "tmr": 0.7233,
+    "tmr_rank": 4.0,
+    "seam_m": 0.0
+   }
+  },
   "crouch_watch_to_prone.0": {
    "kind": "crouch_watch_to_prone",
    "stage": "reaction",
    "loop": false,
-   "first": 1143,
+   "first": 1758,
    "frames": 72,
    "start": {
     "loop": "crouch_watch.0"
@@ -529,7 +664,7 @@
    "kind": "crouch_watch_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 1215,
+   "first": 1830,
    "frames": 72,
    "start": {
     "loop": "crouch_watch.0"
@@ -556,7 +691,7 @@
    "kind": "cut_cable",
    "stage": "theft",
    "loop": true,
-   "first": 1287,
+   "first": 1902,
    "frames": 97,
    "start": {
     "loop": "cut_cable.0"
@@ -586,7 +721,7 @@
    "kind": "cut_cable_in",
    "stage": "theft",
    "loop": false,
-   "first": 1384,
+   "first": 1999,
    "frames": 196,
    "start": {
     "hub": "stand"
@@ -607,7 +742,7 @@
    "kind": "cut_cable",
    "stage": "theft",
    "loop": true,
-   "first": 1580,
+   "first": 2195,
    "frames": 126,
    "start": {
     "loop": "cut_cable.1"
@@ -637,7 +772,7 @@
    "kind": "cut_cable_in",
    "stage": "theft",
    "loop": false,
-   "first": 1706,
+   "first": 2321,
    "frames": 166,
    "start": {
     "hub": "stand"
@@ -658,7 +793,7 @@
    "kind": "cut_cable_back_away",
    "stage": "reaction",
    "loop": false,
-   "first": 1872,
+   "first": 2487,
    "frames": 87,
    "start": {
     "loop": "cut_cable.0"
@@ -685,7 +820,7 @@
    "kind": "cut_cable_back_away",
    "stage": "reaction",
    "loop": false,
-   "first": 1959,
+   "first": 2574,
    "frames": 87,
    "start": {
     "loop": "cut_cable.1"
@@ -712,7 +847,7 @@
    "kind": "cut_cable_freeze",
    "stage": "reaction",
    "loop": false,
-   "first": 2046,
+   "first": 2661,
    "frames": 105,
    "start": {
     "loop": "cut_cable.0"
@@ -733,7 +868,7 @@
    "kind": "cut_cable_freeze",
    "stage": "reaction",
    "loop": false,
-   "first": 2151,
+   "first": 2766,
    "frames": 105,
    "start": {
     "loop": "cut_cable.1"
@@ -754,7 +889,7 @@
    "kind": "cut_cable_freeze_resume",
    "stage": "reaction",
    "loop": false,
-   "first": 2256,
+   "first": 2871,
    "frames": 147,
    "start": {
     "loop": "cut_cable.0"
@@ -781,7 +916,7 @@
    "kind": "cut_cable_freeze_resume",
    "stage": "reaction",
    "loop": false,
-   "first": 2403,
+   "first": 3018,
    "frames": 147,
    "start": {
     "loop": "cut_cable.1"
@@ -808,7 +943,7 @@
    "kind": "cut_cable_freeze_run",
    "stage": "reaction",
    "loop": false,
-   "first": 2550,
+   "first": 3165,
    "frames": 147,
    "start": {
     "loop": "cut_cable.0"
@@ -835,7 +970,7 @@
    "kind": "cut_cable_freeze_run",
    "stage": "reaction",
    "loop": false,
-   "first": 2697,
+   "first": 3312,
    "frames": 147,
    "start": {
     "loop": "cut_cable.1"
@@ -862,7 +997,7 @@
    "kind": "cut_cable_to_prone",
    "stage": "reaction",
    "loop": false,
-   "first": 2844,
+   "first": 3459,
    "frames": 87,
    "start": {
     "loop": "cut_cable.0"
@@ -889,7 +1024,7 @@
    "kind": "cut_cable_to_prone",
    "stage": "reaction",
    "loop": false,
-   "first": 2931,
+   "first": 3546,
    "frames": 87,
    "start": {
     "loop": "cut_cable.1"
@@ -916,7 +1051,7 @@
    "kind": "cut_cable_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 3018,
+   "first": 3633,
    "frames": 72,
    "start": {
     "loop": "cut_cable.0"
@@ -943,7 +1078,7 @@
    "kind": "cut_cable_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 3090,
+   "first": 3705,
    "frames": 72,
    "start": {
     "loop": "cut_cable.1"
@@ -970,7 +1105,7 @@
    "kind": "cut_cable_to_stand",
    "stage": "theft",
    "loop": false,
-   "first": 3162,
+   "first": 3777,
    "frames": 87,
    "start": {
     "loop": "cut_cable.0"
@@ -997,7 +1132,7 @@
    "kind": "cut_cable_to_stand",
    "stage": "theft",
    "loop": false,
-   "first": 3249,
+   "first": 3864,
    "frames": 87,
    "start": {
     "loop": "cut_cable.1"
@@ -1024,7 +1159,7 @@
    "kind": "cut_fence",
    "stage": "entry",
    "loop": true,
-   "first": 3336,
+   "first": 3951,
    "frames": 67,
    "start": {
     "loop": "cut_fence.0"
@@ -1054,7 +1189,7 @@
    "kind": "cut_fence_in",
    "stage": "entry",
    "loop": false,
-   "first": 3403,
+   "first": 4018,
    "frames": 148,
    "start": {
     "hub": "stand"
@@ -1075,7 +1210,7 @@
    "kind": "cut_fence",
    "stage": "entry",
    "loop": true,
-   "first": 3551,
+   "first": 4166,
    "frames": 48,
    "start": {
     "loop": "cut_fence.1"
@@ -1105,7 +1240,7 @@
    "kind": "cut_fence_in",
    "stage": "entry",
    "loop": false,
-   "first": 3599,
+   "first": 4214,
    "frames": 90,
    "start": {
     "hub": "stand"
@@ -1126,7 +1261,7 @@
    "kind": "cut_fence_freeze",
    "stage": "reaction",
    "loop": false,
-   "first": 3689,
+   "first": 4304,
    "frames": 105,
    "start": {
     "loop": "cut_fence.0"
@@ -1147,7 +1282,7 @@
    "kind": "cut_fence_freeze",
    "stage": "reaction",
    "loop": false,
-   "first": 3794,
+   "first": 4409,
    "frames": 105,
    "start": {
     "loop": "cut_fence.1"
@@ -1168,7 +1303,7 @@
    "kind": "cut_fence_freeze_resume",
    "stage": "reaction",
    "loop": false,
-   "first": 3899,
+   "first": 4514,
    "frames": 147,
    "start": {
     "loop": "cut_fence.0"
@@ -1195,7 +1330,7 @@
    "kind": "cut_fence_freeze_resume",
    "stage": "reaction",
    "loop": false,
-   "first": 4046,
+   "first": 4661,
    "frames": 147,
    "start": {
     "loop": "cut_fence.1"
@@ -1222,7 +1357,7 @@
    "kind": "cut_fence_freeze_run",
    "stage": "reaction",
    "loop": false,
-   "first": 4193,
+   "first": 4808,
    "frames": 147,
    "start": {
     "loop": "cut_fence.0"
@@ -1249,7 +1384,7 @@
    "kind": "cut_fence_freeze_run",
    "stage": "reaction",
    "loop": false,
-   "first": 4340,
+   "first": 4955,
    "frames": 147,
    "start": {
     "loop": "cut_fence.1"
@@ -1272,11 +1407,65 @@
     "seam_m": 0.0
    }
   },
+  "cut_fence_to_prone.0": {
+   "kind": "cut_fence_to_prone",
+   "stage": "reaction",
+   "loop": false,
+   "first": 5102,
+   "frames": 102,
+   "start": {
+    "loop": "cut_fence.0"
+   },
+   "next": {
+    "hub": "prone"
+   },
+   "travel": {
+    "x": -0.15869109434590312,
+    "z": 1.3298345767433415,
+    "turn": -0.0718696117401123
+   },
+   "prompt": "A person sawing at chest height lowers both arms, quickly kneels, then lies flat on the stomach and stays still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 5.2296,
+    "jitter_m_s3": 394.7823,
+    "tmr": 0.8399,
+    "tmr_rank": 5.0,
+    "seam_m": 0.0
+   }
+  },
+  "cut_fence_to_prone.1": {
+   "kind": "cut_fence_to_prone",
+   "stage": "reaction",
+   "loop": false,
+   "first": 5204,
+   "frames": 102,
+   "start": {
+    "loop": "cut_fence.1"
+   },
+   "next": {
+    "hub": "prone"
+   },
+   "travel": {
+    "x": 0.12472387900407096,
+    "z": 1.2722158478263024,
+    "turn": 0.09578275680541992
+   },
+   "prompt": "A person sawing at chest height lowers both arms, quickly kneels, then lies flat on the stomach and stays still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 4.402,
+    "jitter_m_s3": 393.0298,
+    "tmr": 0.8599,
+    "tmr_rank": 6.0,
+    "seam_m": 0.0
+   }
+  },
   "cut_fence_to_run.0": {
    "kind": "cut_fence_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 4487,
+   "first": 5306,
    "frames": 72,
    "start": {
     "loop": "cut_fence.0"
@@ -1303,7 +1492,7 @@
    "kind": "cut_fence_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 4559,
+   "first": 5378,
    "frames": 72,
    "start": {
     "loop": "cut_fence.1"
@@ -1330,7 +1519,7 @@
    "kind": "cut_fence_to_stand",
    "stage": "entry",
    "loop": false,
-   "first": 4631,
+   "first": 5450,
    "frames": 72,
    "start": {
     "loop": "cut_fence.0"
@@ -1357,7 +1546,7 @@
    "kind": "cut_fence_to_stand",
    "stage": "entry",
    "loop": false,
-   "first": 4703,
+   "first": 5522,
    "frames": 72,
    "start": {
     "loop": "cut_fence.1"
@@ -1384,7 +1573,7 @@
    "kind": "cut_fence_to_walk",
    "stage": "entry",
    "loop": false,
-   "first": 4775,
+   "first": 5594,
    "frames": 102,
    "start": {
     "loop": "cut_fence.0"
@@ -1411,7 +1600,7 @@
    "kind": "cut_fence_to_walk",
    "stage": "entry",
    "loop": false,
-   "first": 4877,
+   "first": 5696,
    "frames": 102,
    "start": {
     "loop": "cut_fence.1"
@@ -1438,7 +1627,7 @@
    "kind": "kneel_to_stand",
    "stage": "theft",
    "loop": false,
-   "first": 4979,
+   "first": 5798,
    "frames": 87,
    "start": {
     "hub": "kneel"
@@ -1465,7 +1654,7 @@
    "kind": "kneel_to_stand",
    "stage": "theft",
    "loop": false,
-   "first": 5066,
+   "first": 5885,
    "frames": 87,
    "start": {
     "hub": "kneel"
@@ -1492,7 +1681,7 @@
    "kind": "look_around",
    "stage": "arrival",
    "loop": true,
-   "first": 5153,
+   "first": 5972,
    "frames": 60,
    "start": {
     "loop": "look_around.0"
@@ -1521,7 +1710,7 @@
    "kind": "look_around_in",
    "stage": "arrival",
    "loop": false,
-   "first": 5213,
+   "first": 6032,
    "frames": 209,
    "start": {
     "hub": "stand"
@@ -1542,7 +1731,7 @@
    "kind": "look_around_freeze",
    "stage": "reaction",
    "loop": false,
-   "first": 5422,
+   "first": 6241,
    "frames": 90,
    "start": {
     "loop": "look_around.0"
@@ -1559,11 +1748,65 @@
     "seam_m": 0.0
    }
   },
+  "look_around_freeze_resume.0": {
+   "kind": "look_around_freeze_resume",
+   "stage": "reaction",
+   "loop": false,
+   "first": 6331,
+   "frames": 147,
+   "start": {
+    "loop": "look_around.0"
+   },
+   "next": {
+    "loop": "look_around.0"
+   },
+   "travel": {
+    "x": -0.004922733285544425,
+    "z": -0.009609538313148149,
+    "turn": 0.029680252075195312
+   },
+   "prompt": "A person looking around nervously freezes and stares up at the sky for a moment, then looks around again.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.7776,
+    "jitter_m_s3": 14.0564,
+    "tmr": 0.6827,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  },
+  "look_around_to_prone.0": {
+   "kind": "look_around_to_prone",
+   "stage": "reaction",
+   "loop": false,
+   "first": 6478,
+   "frames": 102,
+   "start": {
+    "loop": "look_around.0"
+   },
+   "next": {
+    "hub": "prone"
+   },
+   "travel": {
+    "x": -0.10554802563276064,
+    "z": 1.0430451592376448,
+    "turn": -0.1194772720336914
+   },
+   "prompt": "A person standing and looking around quickly kneels down, then lies flat on the stomach and stays still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 3.8822,
+    "jitter_m_s3": 395.8809,
+    "tmr": 0.9256,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
   "look_around_to_run.0": {
    "kind": "look_around_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 5512,
+   "first": 6580,
    "frames": 72,
    "start": {
     "loop": "look_around.0"
@@ -1590,7 +1833,7 @@
    "kind": "prone_still",
    "stage": "reaction",
    "loop": true,
-   "first": 5584,
+   "first": 6652,
    "frames": 60,
    "start": {
     "loop": "prone_still.0"
@@ -1618,7 +1861,7 @@
    "kind": "prone_still_in",
    "stage": "reaction",
    "loop": false,
-   "first": 5644,
+   "first": 6712,
    "frames": 116,
    "start": {
     "hub": "prone"
@@ -1639,7 +1882,7 @@
    "kind": "prone_to_crawl",
    "stage": "reaction",
    "loop": false,
-   "first": 5760,
+   "first": 6828,
    "frames": 87,
    "start": {
     "hub": "prone"
@@ -1666,7 +1909,7 @@
    "kind": "prone_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 5847,
+   "first": 6915,
    "frames": 87,
    "start": {
     "hub": "prone"
@@ -1689,11 +1932,65 @@
     "seam_m": 0.0
    }
   },
+  "prone_to_stand.0": {
+   "kind": "prone_to_stand",
+   "stage": "reaction",
+   "loop": false,
+   "first": 7002,
+   "frames": 87,
+   "start": {
+    "hub": "prone"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.0021001427179058343,
+    "z": -0.018344888775734352,
+    "turn": 0.009012460708618164
+   },
+   "prompt": "A person lying face down pushes up with both hands, gets to the feet and stands still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.6945,
+    "jitter_m_s3": 173.843,
+    "tmr": 0.9575,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "prone_to_stand.1": {
+   "kind": "prone_to_stand",
+   "stage": "reaction",
+   "loop": false,
+   "first": 7089,
+   "frames": 87,
+   "start": {
+    "hub": "prone"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.004404641120060403,
+    "z": -0.01948707057431177,
+    "turn": 0.007386207580566406
+   },
+   "prompt": "A person lying face down pushes up with both hands, gets to the feet and stands still.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.3036,
+    "jitter_m_s3": 298.7607,
+    "tmr": 0.96,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
   "pull_cable.0": {
    "kind": "pull_cable",
    "stage": "theft",
    "loop": true,
-   "first": 5934,
+   "first": 7176,
    "frames": 141,
    "start": {
     "loop": "pull_cable.0"
@@ -1723,7 +2020,7 @@
    "kind": "pull_cable_in",
    "stage": "theft",
    "loop": false,
-   "first": 6075,
+   "first": 7317,
    "frames": 105,
    "start": {
     "hub": "stand"
@@ -1744,7 +2041,7 @@
    "kind": "pull_cable",
    "stage": "theft",
    "loop": true,
-   "first": 6180,
+   "first": 7422,
    "frames": 62,
    "start": {
     "loop": "pull_cable.1"
@@ -1774,7 +2071,7 @@
    "kind": "pull_cable_in",
    "stage": "theft",
    "loop": false,
-   "first": 6242,
+   "first": 7484,
    "frames": 142,
    "start": {
     "hub": "stand"
@@ -1795,7 +2092,7 @@
    "kind": "pull_cable_freeze",
    "stage": "reaction",
    "loop": false,
-   "first": 6384,
+   "first": 7626,
    "frames": 105,
    "start": {
     "loop": "pull_cable.0"
@@ -1816,7 +2113,7 @@
    "kind": "pull_cable_freeze",
    "stage": "reaction",
    "loop": false,
-   "first": 6489,
+   "first": 7731,
    "frames": 105,
    "start": {
     "loop": "pull_cable.1"
@@ -1837,7 +2134,7 @@
    "kind": "pull_cable_freeze_resume",
    "stage": "reaction",
    "loop": false,
-   "first": 6594,
+   "first": 7836,
    "frames": 147,
    "start": {
     "loop": "pull_cable.0"
@@ -1864,7 +2161,7 @@
    "kind": "pull_cable_freeze_resume",
    "stage": "reaction",
    "loop": false,
-   "first": 6741,
+   "first": 7983,
    "frames": 147,
    "start": {
     "loop": "pull_cable.1"
@@ -1891,7 +2188,7 @@
    "kind": "pull_cable_freeze_run",
    "stage": "reaction",
    "loop": false,
-   "first": 6888,
+   "first": 8130,
    "frames": 147,
    "start": {
     "loop": "pull_cable.0"
@@ -1918,7 +2215,7 @@
    "kind": "pull_cable_freeze_run",
    "stage": "reaction",
    "loop": false,
-   "first": 7035,
+   "first": 8277,
    "frames": 147,
    "start": {
     "loop": "pull_cable.1"
@@ -1945,7 +2242,7 @@
    "kind": "pull_cable_to_carry",
    "stage": "theft",
    "loop": false,
-   "first": 7182,
+   "first": 8424,
    "frames": 102,
    "start": {
     "loop": "pull_cable.0"
@@ -1972,7 +2269,7 @@
    "kind": "pull_cable_to_carry",
    "stage": "theft",
    "loop": false,
-   "first": 7284,
+   "first": 8526,
    "frames": 102,
    "start": {
     "loop": "pull_cable.1"
@@ -1995,11 +2292,65 @@
     "seam_m": 0.0
    }
   },
+  "pull_cable_to_prone.0": {
+   "kind": "pull_cable_to_prone",
+   "stage": "reaction",
+   "loop": false,
+   "first": 8628,
+   "frames": 87,
+   "start": {
+    "loop": "pull_cable.0"
+   },
+   "next": {
+    "hub": "prone"
+   },
+   "travel": {
+    "x": 0.10058515470652163,
+    "z": 0.7984000276063435,
+    "turn": 0.12297511100769043
+   },
+   "prompt": "A person bent forward pulling something drops it and lies flat on the stomach, head down.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.801,
+    "jitter_m_s3": 371.2561,
+    "tmr": 0.9166,
+    "tmr_rank": 3.0,
+    "seam_m": 0.0
+   }
+  },
+  "pull_cable_to_prone.1": {
+   "kind": "pull_cable_to_prone",
+   "stage": "reaction",
+   "loop": false,
+   "first": 8715,
+   "frames": 87,
+   "start": {
+    "loop": "pull_cable.1"
+   },
+   "next": {
+    "hub": "prone"
+   },
+   "travel": {
+    "x": -0.601051166202165,
+    "z": 0.7781785018893951,
+    "turn": -0.36059069633483887
+   },
+   "prompt": "A person bent forward pulling something drops it and lies flat on the stomach, head down.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 4.5035,
+    "jitter_m_s3": 288.1259,
+    "tmr": 0.9347,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
   "pull_cable_to_run.0": {
    "kind": "pull_cable_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 7386,
+   "first": 8802,
    "frames": 72,
    "start": {
     "loop": "pull_cable.0"
@@ -2026,7 +2377,7 @@
    "kind": "pull_cable_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 7458,
+   "first": 8874,
    "frames": 72,
    "start": {
     "loop": "pull_cable.1"
@@ -2053,7 +2404,7 @@
    "kind": "pull_cable_to_stand",
    "stage": "theft",
    "loop": false,
-   "first": 7530,
+   "first": 8946,
    "frames": 72,
    "start": {
     "loop": "pull_cable.0"
@@ -2080,7 +2431,7 @@
    "kind": "pull_cable_to_stand",
    "stage": "theft",
    "loop": false,
-   "first": 7602,
+   "first": 9018,
    "frames": 72,
    "start": {
     "loop": "pull_cable.1"
@@ -2107,7 +2458,7 @@
    "kind": "run",
    "stage": "reaction",
    "loop": true,
-   "first": 7674,
+   "first": 9090,
    "frames": 19,
    "start": {
     "loop": "run.0"
@@ -2136,7 +2487,7 @@
    "kind": "run",
    "stage": "reaction",
    "loop": true,
-   "first": 7693,
+   "first": 9109,
    "frames": 36,
    "start": {
     "loop": "run.1"
@@ -2165,7 +2516,7 @@
    "kind": "sneak",
    "stage": "arrival",
    "loop": true,
-   "first": 7729,
+   "first": 9145,
    "frames": 44,
    "start": {
     "loop": "sneak.0"
@@ -2194,7 +2545,7 @@
    "kind": "sneak",
    "stage": "arrival",
    "loop": true,
-   "first": 7773,
+   "first": 9189,
    "frames": 54,
    "start": {
     "loop": "sneak.1"
@@ -2219,11 +2570,65 @@
     "nearest_m": 0.1916
    }
   },
+  "sneak_freeze_resume.0": {
+   "kind": "sneak_freeze_resume",
+   "stage": "reaction",
+   "loop": false,
+   "first": 9243,
+   "frames": 147,
+   "start": {
+    "loop": "sneak.0"
+   },
+   "next": {
+    "loop": "sneak.0"
+   },
+   "travel": {
+    "x": -0.29789351191021035,
+    "z": 2.8352306027262246,
+    "turn": -0.03496265411376953
+   },
+   "prompt": "A person sneaking forward in a low crouch stops, looks up at the sky for a moment, then sneaks on.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.2848,
+    "jitter_m_s3": 141.6047,
+    "tmr": 0.8754,
+    "tmr_rank": 3.0,
+    "seam_m": 0.0
+   }
+  },
+  "sneak_freeze_resume.1": {
+   "kind": "sneak_freeze_resume",
+   "stage": "reaction",
+   "loop": false,
+   "first": 9390,
+   "frames": 147,
+   "start": {
+    "loop": "sneak.1"
+   },
+   "next": {
+    "loop": "sneak.1"
+   },
+   "travel": {
+    "x": 0.5036743516554866,
+    "z": 3.5726515404931862,
+    "turn": 0.03889966011047363
+   },
+   "prompt": "A person sneaking forward in a low crouch stops, looks up at the sky for a moment, then sneaks on.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.7492,
+    "jitter_m_s3": 146.8982,
+    "tmr": 0.9508,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
   "sneak_to_crouch.0": {
    "kind": "sneak_to_crouch",
    "stage": "reaction",
    "loop": false,
-   "first": 7827,
+   "first": 9537,
    "frames": 72,
    "start": {
     "loop": "sneak.0"
@@ -2250,7 +2655,7 @@
    "kind": "sneak_to_crouch",
    "stage": "reaction",
    "loop": false,
-   "first": 7899,
+   "first": 9609,
    "frames": 72,
    "start": {
     "loop": "sneak.1"
@@ -2277,7 +2682,7 @@
    "kind": "sneak_to_prone",
    "stage": "reaction",
    "loop": false,
-   "first": 7971,
+   "first": 9681,
    "frames": 87,
    "start": {
     "loop": "sneak.0"
@@ -2304,7 +2709,7 @@
    "kind": "sneak_to_prone",
    "stage": "reaction",
    "loop": false,
-   "first": 8058,
+   "first": 9768,
    "frames": 87,
    "start": {
     "loop": "sneak.1"
@@ -2331,7 +2736,7 @@
    "kind": "sneak_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 8145,
+   "first": 9855,
    "frames": 72,
    "start": {
     "loop": "sneak.0"
@@ -2358,7 +2763,7 @@
    "kind": "sneak_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 8217,
+   "first": 9927,
    "frames": 72,
    "start": {
     "loop": "sneak.1"
@@ -2385,7 +2790,7 @@
    "kind": "stand_to_crouch",
    "stage": "reaction",
    "loop": false,
-   "first": 8289,
+   "first": 9999,
    "frames": 72,
    "start": {
     "hub": "stand"
@@ -2412,7 +2817,7 @@
    "kind": "stand_to_crouch",
    "stage": "reaction",
    "loop": false,
-   "first": 8361,
+   "first": 10071,
    "frames": 72,
    "start": {
     "hub": "stand"
@@ -2439,7 +2844,7 @@
    "kind": "stand_to_kneel",
    "stage": "theft",
    "loop": false,
-   "first": 8433,
+   "first": 10143,
    "frames": 87,
    "start": {
     "hub": "stand"
@@ -2466,7 +2871,7 @@
    "kind": "stand_to_kneel",
    "stage": "theft",
    "loop": false,
-   "first": 8520,
+   "first": 10230,
    "frames": 87,
    "start": {
     "hub": "stand"
@@ -2493,7 +2898,7 @@
    "kind": "stand_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 8607,
+   "first": 10317,
    "frames": 72,
    "start": {
     "hub": "stand"
@@ -2520,7 +2925,7 @@
    "kind": "stand_to_walk",
    "stage": "arrival",
    "loop": false,
-   "first": 8679,
+   "first": 10389,
    "frames": 72,
    "start": {
     "hub": "stand"
@@ -2547,7 +2952,7 @@
    "kind": "stand_to_walk_wary",
    "stage": "arrival",
    "loop": false,
-   "first": 8751,
+   "first": 10461,
    "frames": 72,
    "start": {
     "hub": "stand"
@@ -2574,7 +2979,7 @@
    "kind": "walk",
    "stage": "arrival",
    "loop": true,
-   "first": 8823,
+   "first": 10533,
    "frames": 33,
    "start": {
     "loop": "walk.0"
@@ -2603,7 +3008,7 @@
    "kind": "walk",
    "stage": "arrival",
    "loop": true,
-   "first": 8856,
+   "first": 10566,
    "frames": 64,
    "start": {
     "loop": "walk.1"
@@ -2632,7 +3037,7 @@
    "kind": "walk_freeze",
    "stage": "reaction",
    "loop": false,
-   "first": 8920,
+   "first": 10630,
    "frames": 105,
    "start": {
     "loop": "walk.0"
@@ -2653,7 +3058,7 @@
    "kind": "walk_freeze",
    "stage": "reaction",
    "loop": false,
-   "first": 9025,
+   "first": 10735,
    "frames": 105,
    "start": {
     "loop": "walk.1"
@@ -2674,7 +3079,7 @@
    "kind": "walk_freeze_resume",
    "stage": "reaction",
    "loop": false,
-   "first": 9130,
+   "first": 10840,
    "frames": 147,
    "start": {
     "loop": "walk.0"
@@ -2701,7 +3106,7 @@
    "kind": "walk_freeze_resume",
    "stage": "reaction",
    "loop": false,
-   "first": 9277,
+   "first": 10987,
    "frames": 147,
    "start": {
     "loop": "walk.1"
@@ -2728,7 +3133,7 @@
    "kind": "walk_freeze_run",
    "stage": "reaction",
    "loop": false,
-   "first": 9424,
+   "first": 11134,
    "frames": 147,
    "start": {
     "loop": "walk.0"
@@ -2755,7 +3160,7 @@
    "kind": "walk_freeze_run",
    "stage": "reaction",
    "loop": false,
-   "first": 9571,
+   "first": 11281,
    "frames": 147,
    "start": {
     "loop": "walk.1"
@@ -2782,7 +3187,7 @@
    "kind": "walk_to_kneel",
    "stage": "theft",
    "loop": false,
-   "first": 9718,
+   "first": 11428,
    "frames": 102,
    "start": {
     "loop": "walk.0"
@@ -2809,7 +3214,7 @@
    "kind": "walk_to_kneel",
    "stage": "theft",
    "loop": false,
-   "first": 9820,
+   "first": 11530,
    "frames": 102,
    "start": {
     "loop": "walk.1"
@@ -2836,7 +3241,7 @@
    "kind": "walk_to_prone",
    "stage": "reaction",
    "loop": false,
-   "first": 9922,
+   "first": 11632,
    "frames": 87,
    "start": {
     "loop": "walk.0"
@@ -2863,7 +3268,7 @@
    "kind": "walk_to_prone",
    "stage": "reaction",
    "loop": false,
-   "first": 10009,
+   "first": 11719,
    "frames": 87,
    "start": {
     "loop": "walk.1"
@@ -2890,7 +3295,7 @@
    "kind": "walk_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 10096,
+   "first": 11806,
    "frames": 57,
    "start": {
     "loop": "walk.0"
@@ -2917,7 +3322,7 @@
    "kind": "walk_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 10153,
+   "first": 11863,
    "frames": 57,
    "start": {
     "loop": "walk.1"
@@ -2944,7 +3349,7 @@
    "kind": "walk_to_stand",
    "stage": "arrival",
    "loop": false,
-   "first": 10210,
+   "first": 11920,
    "frames": 72,
    "start": {
     "loop": "walk.0"
@@ -2971,7 +3376,7 @@
    "kind": "walk_to_stand",
    "stage": "arrival",
    "loop": false,
-   "first": 10282,
+   "first": 11992,
    "frames": 72,
    "start": {
     "loop": "walk.1"
@@ -2998,7 +3403,7 @@
    "kind": "walk_wary",
    "stage": "arrival",
    "loop": true,
-   "first": 10354,
+   "first": 12064,
    "frames": 46,
    "start": {
     "loop": "walk_wary.0"
@@ -3027,7 +3432,7 @@
    "kind": "walk_wary",
    "stage": "arrival",
    "loop": true,
-   "first": 10400,
+   "first": 12110,
    "frames": 30,
    "start": {
     "loop": "walk_wary.1"
@@ -3056,7 +3461,7 @@
    "kind": "walk_wary_freeze",
    "stage": "reaction",
    "loop": false,
-   "first": 10430,
+   "first": 12140,
    "frames": 105,
    "start": {
     "loop": "walk_wary.0"
@@ -3077,7 +3482,7 @@
    "kind": "walk_wary_freeze",
    "stage": "reaction",
    "loop": false,
-   "first": 10535,
+   "first": 12245,
    "frames": 105,
    "start": {
     "loop": "walk_wary.1"
@@ -3094,11 +3499,119 @@
     "seam_m": 0.0
    }
   },
+  "walk_wary_freeze_resume.0": {
+   "kind": "walk_wary_freeze_resume",
+   "stage": "reaction",
+   "loop": false,
+   "first": 12350,
+   "frames": 147,
+   "start": {
+    "loop": "walk_wary.0"
+   },
+   "next": {
+    "loop": "walk_wary.0"
+   },
+   "travel": {
+    "x": -0.7022836752965629,
+    "z": 6.483295028958726,
+    "turn": -0.3241751194000244
+   },
+   "prompt": "A person walking slowly and cautiously halts, glances up at the sky, then carries on slowly, looking left and right.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 3.2813,
+    "jitter_m_s3": 349.3243,
+    "tmr": 0.791,
+    "tmr_rank": 4.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk_wary_freeze_resume.1": {
+   "kind": "walk_wary_freeze_resume",
+   "stage": "reaction",
+   "loop": false,
+   "first": 12497,
+   "frames": 147,
+   "start": {
+    "loop": "walk_wary.1"
+   },
+   "next": {
+    "loop": "walk_wary.1"
+   },
+   "travel": {
+    "x": 0.38651888794278894,
+    "z": 4.721976366223307,
+    "turn": 0.025212526321411133
+   },
+   "prompt": "A person walking slowly and cautiously halts, glances up at the sky, then carries on slowly, looking left and right.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.8064,
+    "jitter_m_s3": 212.4637,
+    "tmr": 0.7553,
+    "tmr_rank": 5.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk_wary_to_prone.0": {
+   "kind": "walk_wary_to_prone",
+   "stage": "reaction",
+   "loop": false,
+   "first": 12644,
+   "frames": 87,
+   "start": {
+    "loop": "walk_wary.0"
+   },
+   "next": {
+    "hub": "prone"
+   },
+   "travel": {
+    "x": 0.1424456527611326,
+    "z": 1.4363869296546465,
+    "turn": 0.051055192947387695
+   },
+   "prompt": "A person walking cautiously suddenly drops to the ground and lies flat on the stomach.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 4.6311,
+    "jitter_m_s3": 269.9438,
+    "tmr": 0.9375,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk_wary_to_prone.1": {
+   "kind": "walk_wary_to_prone",
+   "stage": "reaction",
+   "loop": false,
+   "first": 12731,
+   "frames": 87,
+   "start": {
+    "loop": "walk_wary.1"
+   },
+   "next": {
+    "hub": "prone"
+   },
+   "travel": {
+    "x": -0.29537302868607906,
+    "z": 1.2328901825703982,
+    "turn": -0.11641693115234375
+   },
+   "prompt": "A person walking cautiously suddenly drops to the ground and lies flat on the stomach.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 5.5096,
+    "jitter_m_s3": 258.4377,
+    "tmr": 0.94,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  },
   "walk_wary_to_run.0": {
    "kind": "walk_wary_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 10640,
+   "first": 12818,
    "frames": 57,
    "start": {
     "loop": "walk_wary.0"
@@ -3125,7 +3638,7 @@
    "kind": "walk_wary_to_run",
    "stage": "reaction",
    "loop": false,
-   "first": 10697,
+   "first": 12875,
    "frames": 57,
    "start": {
     "loop": "walk_wary.1"
@@ -3152,7 +3665,7 @@
    "kind": "walk_wary_to_stand",
    "stage": "arrival",
    "loop": false,
-   "first": 10754,
+   "first": 12932,
    "frames": 72,
    "start": {
     "loop": "walk_wary.0"
@@ -3179,7 +3692,7 @@
    "kind": "walk_wary_to_stand",
    "stage": "arrival",
    "loop": false,
-   "first": 10826,
+   "first": 13004,
    "frames": 72,
    "start": {
     "loop": "walk_wary.1"
