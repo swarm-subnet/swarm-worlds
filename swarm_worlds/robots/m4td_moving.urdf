@@ -1,0 +1,476 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+The MIT License (MIT)
+Copyright © 2026 Swarm
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+documentation files (the “Software”), to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software,
+and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of
+the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+-->
+<robot name="m4td_moving">
+  <link name="base_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0.001" />
+      <inertia ixx="1e-7" ixy="0" ixz="0" iyy="1e-7" iyz="0" izz="1e-7" />
+    </inertial>
+  </link>
+  <link name="gimbal_head">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0.001" />
+      <inertia ixx="1e-7" ixy="0" ixz="0" iyy="1e-7" iyz="0" izz="1e-7" />
+    </inertial>
+    <visual name="head_coated">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./m4td/head_coated.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_coated">
+        <color rgba="0.1216 0.1647 0.1098 1" />
+      </material>
+    </visual>
+    <visual name="head_dark">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./m4td/head_dark.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_dark">
+        <color rgba="0.1804 0.1882 0.2 1" />
+      </material>
+    </visual>
+    <visual name="head_germanium">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./m4td/head_germanium.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_germanium">
+        <color rgba="0.2314 0.2353 0.251 1" />
+      </material>
+    </visual>
+    <visual name="head_gimbal">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./m4td/head_gimbal.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_gimbal">
+        <color rgba="0.4235 0.4314 0.4471 1" />
+      </material>
+    </visual>
+    <visual name="head_glass">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./m4td/head_glass.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_glass">
+        <color rgba="0.0627 0.0824 0.0706 1" />
+      </material>
+    </visual>
+    <visual name="head_laser">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="./m4td/head_laser.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_laser">
+        <color rgba="0.7882 0.8 0.8157 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="gimbal_tilt" type="revolute">
+    <parent link="base_link" />
+    <child link="gimbal_head" />
+    <origin rpy="0 0 0" xyz="0.1295 0 -0.034" />
+    <axis xyz="0 -1 0" />
+    <limit effort="0" lower="-1.5708" upper="1.5708" velocity="1.7453" />
+  </joint>
+  <link name="rotor0">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0.001" />
+      <inertia ixx="1e-7" ixy="0" ixz="0" iyy="1e-7" iyz="0" izz="1e-7" />
+    </inertial>
+  </link>
+  <joint name="rotor0_spin" type="continuous">
+    <parent link="base_link" />
+    <child link="rotor0" />
+    <origin rpy="0 0 0" xyz="0.17065 -0.1915 0.1281" />
+    <axis xyz="0 0 1" />
+  </joint>
+  <link name="rotor0_blade0">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0.001" />
+      <inertia ixx="1e-7" ixy="0" ixz="0" iyy="1e-7" iyz="0" izz="1e-7" />
+    </inertial>
+    <visual name="blade_ccw_blade">
+      <origin rpy="0 0 0" xyz="-0.011 0 0" />
+      <geometry>
+        <mesh filename="./m4td/blade_ccw_blade.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_blade">
+        <color rgba="0.1804 0.1843 0.1922 1" />
+      </material>
+    </visual>
+    <visual name="blade_ccw_mark">
+      <origin rpy="0 0 0" xyz="-0.011 0 0" />
+      <geometry>
+        <mesh filename="./m4td/blade_ccw_mark.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_mark">
+        <color rgba="0.9176 0.5373 0.3647 1" />
+      </material>
+    </visual>
+    <visual name="blade_ccw_eyelet">
+      <origin rpy="0 0 0" xyz="-0.011 0 0" />
+      <geometry>
+        <mesh filename="./m4td/blade_ccw_eyelet.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_eyelet">
+        <color rgba="0.5529 0.5647 0.5804 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="rotor0_fold0" type="revolute">
+    <parent link="rotor0" />
+    <child link="rotor0_blade0" />
+    <origin rpy="0 0 0" xyz="0.011 0 0" />
+    <axis xyz="0 0 1" />
+    <limit effort="0" lower="-3.1416" upper="3.1416" velocity="100" />
+  </joint>
+  <link name="rotor0_blade1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0.001" />
+      <inertia ixx="1e-7" ixy="0" ixz="0" iyy="1e-7" iyz="0" izz="1e-7" />
+    </inertial>
+    <visual name="blade_ccw_blade">
+      <origin rpy="0 0 0" xyz="-0.011 0 0" />
+      <geometry>
+        <mesh filename="./m4td/blade_ccw_blade.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_blade">
+        <color rgba="0.1804 0.1843 0.1922 1" />
+      </material>
+    </visual>
+    <visual name="blade_ccw_mark">
+      <origin rpy="0 0 0" xyz="-0.011 0 0" />
+      <geometry>
+        <mesh filename="./m4td/blade_ccw_mark.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_mark">
+        <color rgba="0.9176 0.5373 0.3647 1" />
+      </material>
+    </visual>
+    <visual name="blade_ccw_eyelet">
+      <origin rpy="0 0 0" xyz="-0.011 0 0" />
+      <geometry>
+        <mesh filename="./m4td/blade_ccw_eyelet.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_eyelet">
+        <color rgba="0.5529 0.5647 0.5804 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="rotor0_fold1" type="revolute">
+    <parent link="rotor0" />
+    <child link="rotor0_blade1" />
+    <origin rpy="0 0 3.141593" xyz="-0.011 0 0" />
+    <axis xyz="0 0 1" />
+    <limit effort="0" lower="-3.1416" upper="3.1416" velocity="100" />
+  </joint>
+  <link name="rotor1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0.001" />
+      <inertia ixx="1e-7" ixy="0" ixz="0" iyy="1e-7" iyz="0" izz="1e-7" />
+    </inertial>
+  </link>
+  <joint name="rotor1_spin" type="continuous">
+    <parent link="base_link" />
+    <child link="rotor1" />
+    <origin rpy="0 0.16057 0" xyz="-0.168939 -0.1715 0.137862" />
+    <axis xyz="0 0 1" />
+  </joint>
+  <link name="rotor1_blade0">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0.001" />
+      <inertia ixx="1e-7" ixy="0" ixz="0" iyy="1e-7" iyz="0" izz="1e-7" />
+    </inertial>
+    <visual name="blade_cw_blade">
+      <origin rpy="0 0 0" xyz="-0.011 0 0" />
+      <geometry>
+        <mesh filename="./m4td/blade_cw_blade.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_blade">
+        <color rgba="0.1804 0.1843 0.1922 1" />
+      </material>
+    </visual>
+    <visual name="blade_cw_mark">
+      <origin rpy="0 0 0" xyz="-0.011 0 0" />
+      <geometry>
+        <mesh filename="./m4td/blade_cw_mark.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_mark">
+        <color rgba="0.9176 0.5373 0.3647 1" />
+      </material>
+    </visual>
+    <visual name="blade_cw_eyelet">
+      <origin rpy="0 0 0" xyz="-0.011 0 0" />
+      <geometry>
+        <mesh filename="./m4td/blade_cw_eyelet.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_eyelet">
+        <color rgba="0.5529 0.5647 0.5804 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="rotor1_fold0" type="revolute">
+    <parent link="rotor1" />
+    <child link="rotor1_blade0" />
+    <origin rpy="0 0 0" xyz="0.011 0 0" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0" lower="-3.1416" upper="3.1416" velocity="100" />
+  </joint>
+  <link name="rotor1_blade1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0.001" />
+      <inertia ixx="1e-7" ixy="0" ixz="0" iyy="1e-7" iyz="0" izz="1e-7" />
+    </inertial>
+    <visual name="blade_cw_blade">
+      <origin rpy="0 0 0" xyz="-0.011 0 0" />
+      <geometry>
+        <mesh filename="./m4td/blade_cw_blade.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_blade">
+        <color rgba="0.1804 0.1843 0.1922 1" />
+      </material>
+    </visual>
+    <visual name="blade_cw_mark">
+      <origin rpy="0 0 0" xyz="-0.011 0 0" />
+      <geometry>
+        <mesh filename="./m4td/blade_cw_mark.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_mark">
+        <color rgba="0.9176 0.5373 0.3647 1" />
+      </material>
+    </visual>
+    <visual name="blade_cw_eyelet">
+      <origin rpy="0 0 0" xyz="-0.011 0 0" />
+      <geometry>
+        <mesh filename="./m4td/blade_cw_eyelet.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_eyelet">
+        <color rgba="0.5529 0.5647 0.5804 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="rotor1_fold1" type="revolute">
+    <parent link="rotor1" />
+    <child link="rotor1_blade1" />
+    <origin rpy="0 0 3.141593" xyz="-0.011 0 0" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0" lower="-3.1416" upper="3.1416" velocity="100" />
+  </joint>
+  <link name="rotor2">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0.001" />
+      <inertia ixx="1e-7" ixy="0" ixz="0" iyy="1e-7" iyz="0" izz="1e-7" />
+    </inertial>
+  </link>
+  <joint name="rotor2_spin" type="continuous">
+    <parent link="base_link" />
+    <child link="rotor2" />
+    <origin rpy="0 0.16057 0" xyz="-0.168939 0.1715 0.137862" />
+    <axis xyz="0 0 1" />
+  </joint>
+  <link name="rotor2_blade0">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0.001" />
+      <inertia ixx="1e-7" ixy="0" ixz="0" iyy="1e-7" iyz="0" izz="1e-7" />
+    </inertial>
+    <visual name="blade_ccw_blade">
+      <origin rpy="0 0 0" xyz="-0.011 0 0" />
+      <geometry>
+        <mesh filename="./m4td/blade_ccw_blade.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_blade">
+        <color rgba="0.1804 0.1843 0.1922 1" />
+      </material>
+    </visual>
+    <visual name="blade_ccw_mark">
+      <origin rpy="0 0 0" xyz="-0.011 0 0" />
+      <geometry>
+        <mesh filename="./m4td/blade_ccw_mark.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_mark">
+        <color rgba="0.9176 0.5373 0.3647 1" />
+      </material>
+    </visual>
+    <visual name="blade_ccw_eyelet">
+      <origin rpy="0 0 0" xyz="-0.011 0 0" />
+      <geometry>
+        <mesh filename="./m4td/blade_ccw_eyelet.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_eyelet">
+        <color rgba="0.5529 0.5647 0.5804 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="rotor2_fold0" type="revolute">
+    <parent link="rotor2" />
+    <child link="rotor2_blade0" />
+    <origin rpy="0 0 0" xyz="0.011 0 0" />
+    <axis xyz="0 0 1" />
+    <limit effort="0" lower="-3.1416" upper="3.1416" velocity="100" />
+  </joint>
+  <link name="rotor2_blade1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0.001" />
+      <inertia ixx="1e-7" ixy="0" ixz="0" iyy="1e-7" iyz="0" izz="1e-7" />
+    </inertial>
+    <visual name="blade_ccw_blade">
+      <origin rpy="0 0 0" xyz="-0.011 0 0" />
+      <geometry>
+        <mesh filename="./m4td/blade_ccw_blade.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_blade">
+        <color rgba="0.1804 0.1843 0.1922 1" />
+      </material>
+    </visual>
+    <visual name="blade_ccw_mark">
+      <origin rpy="0 0 0" xyz="-0.011 0 0" />
+      <geometry>
+        <mesh filename="./m4td/blade_ccw_mark.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_mark">
+        <color rgba="0.9176 0.5373 0.3647 1" />
+      </material>
+    </visual>
+    <visual name="blade_ccw_eyelet">
+      <origin rpy="0 0 0" xyz="-0.011 0 0" />
+      <geometry>
+        <mesh filename="./m4td/blade_ccw_eyelet.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_eyelet">
+        <color rgba="0.5529 0.5647 0.5804 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="rotor2_fold1" type="revolute">
+    <parent link="rotor2" />
+    <child link="rotor2_blade1" />
+    <origin rpy="0 0 3.141593" xyz="-0.011 0 0" />
+    <axis xyz="0 0 1" />
+    <limit effort="0" lower="-3.1416" upper="3.1416" velocity="100" />
+  </joint>
+  <link name="rotor3">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0.001" />
+      <inertia ixx="1e-7" ixy="0" ixz="0" iyy="1e-7" iyz="0" izz="1e-7" />
+    </inertial>
+  </link>
+  <joint name="rotor3_spin" type="continuous">
+    <parent link="base_link" />
+    <child link="rotor3" />
+    <origin rpy="0 0 0" xyz="0.17065 0.1915 0.1281" />
+    <axis xyz="0 0 1" />
+  </joint>
+  <link name="rotor3_blade0">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0.001" />
+      <inertia ixx="1e-7" ixy="0" ixz="0" iyy="1e-7" iyz="0" izz="1e-7" />
+    </inertial>
+    <visual name="blade_cw_blade">
+      <origin rpy="0 0 0" xyz="-0.011 0 0" />
+      <geometry>
+        <mesh filename="./m4td/blade_cw_blade.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_blade">
+        <color rgba="0.1804 0.1843 0.1922 1" />
+      </material>
+    </visual>
+    <visual name="blade_cw_mark">
+      <origin rpy="0 0 0" xyz="-0.011 0 0" />
+      <geometry>
+        <mesh filename="./m4td/blade_cw_mark.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_mark">
+        <color rgba="0.9176 0.5373 0.3647 1" />
+      </material>
+    </visual>
+    <visual name="blade_cw_eyelet">
+      <origin rpy="0 0 0" xyz="-0.011 0 0" />
+      <geometry>
+        <mesh filename="./m4td/blade_cw_eyelet.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_eyelet">
+        <color rgba="0.5529 0.5647 0.5804 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="rotor3_fold0" type="revolute">
+    <parent link="rotor3" />
+    <child link="rotor3_blade0" />
+    <origin rpy="0 0 0" xyz="0.011 0 0" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0" lower="-3.1416" upper="3.1416" velocity="100" />
+  </joint>
+  <link name="rotor3_blade1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0.001" />
+      <inertia ixx="1e-7" ixy="0" ixz="0" iyy="1e-7" iyz="0" izz="1e-7" />
+    </inertial>
+    <visual name="blade_cw_blade">
+      <origin rpy="0 0 0" xyz="-0.011 0 0" />
+      <geometry>
+        <mesh filename="./m4td/blade_cw_blade.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_blade">
+        <color rgba="0.1804 0.1843 0.1922 1" />
+      </material>
+    </visual>
+    <visual name="blade_cw_mark">
+      <origin rpy="0 0 0" xyz="-0.011 0 0" />
+      <geometry>
+        <mesh filename="./m4td/blade_cw_mark.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_mark">
+        <color rgba="0.9176 0.5373 0.3647 1" />
+      </material>
+    </visual>
+    <visual name="blade_cw_eyelet">
+      <origin rpy="0 0 0" xyz="-0.011 0 0" />
+      <geometry>
+        <mesh filename="./m4td/blade_cw_eyelet.obj" scale="1 1 1" />
+      </geometry>
+      <material name="m4td_eyelet">
+        <color rgba="0.5529 0.5647 0.5804 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="rotor3_fold1" type="revolute">
+    <parent link="rotor3" />
+    <child link="rotor3_blade1" />
+    <origin rpy="0 0 3.141593" xyz="-0.011 0 0" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0" lower="-3.1416" upper="3.1416" velocity="100" />
+  </joint>
+</robot>

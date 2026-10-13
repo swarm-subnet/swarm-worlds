@@ -17,10 +17,13 @@
 
 """Checks that every asset root, manifest entry, robot description, material library and sky the package ships resolves."""
 
+import ast
 import json
+import math
 import os
 import re
 import xml.etree.ElementTree as ET
+import zipfile
 from pathlib import Path
 
 import pytest
@@ -43,6 +46,7 @@ EXPECTED_MAP_DIRS = {
     "custom/people/lost_person_characters",
     "custom/people/open_mannequin_raw/split",
     "custom/solar",
+    "custom/solar/intruders",
     "custom/warehouse_shell",
     "forest/quaternius_ultimate_nature",
     "forest/textures",
@@ -119,6 +123,62 @@ def test_solar_manifest_points_at_real_files():
         assert (solar / forest["folder"] / name).is_file(), name
 
 
+def _npy_shape(archive, member):
+    """Shape of one array in an npz, read from its header so the check needs no numpy."""
+    with archive.open(member) as handle:
+        head = handle.read(10)
+        size = int.from_bytes(head[8:10], "little")
+        return ast.literal_eval(handle.read(size).decode("latin1"))["shape"]
+
+
+def test_solar_dogs_point_at_real_files():
+    """Every dog body names files that ship, its pose table fits its mesh and covers every clip, and no dog is a threat."""
+    dogs = MAPS / "custom" / "solar" / "dogs"
+    table = json.loads((dogs / "dogs.json").read_text(encoding="utf-8"))
+    assert (table["class"], table["threat"], table["decoy"]) == ("dog", False, True)
+    assert table["bodies"]
+    for name, body in table["bodies"].items():
+        for file in [body["obj"], body["poses"], body["heat_map"], *body["coats"].values()]:
+            assert (dogs / file).is_file(), f"{name}: {file}"
+        lines = (dogs / body["obj"]).read_text(encoding="utf-8").splitlines()
+        vertices = sum(line.startswith("v ") for line in lines)
+        triangles = sum(line.startswith("f ") for line in lines)
+        with zipfile.ZipFile(dogs / body["poses"]) as archive:
+            frames, welded, axes = _npy_shape(archive, "poses.npy")
+            (corners,) = _npy_shape(archive, "corners.npy")
+        assert (welded, axes, corners) == (vertices, 3, 3 * triangles), name
+        for clip, spec in body["clips"].items():
+            assert spec["start"] + spec["frames"] <= frames, f"{name}: {clip}"
+            assert spec.get("then", clip) in body["clips"], f"{name}: {clip}"
+
+
+def test_solar_public_road_is_drivable_with_places_to_turn_round():
+    """Both arms end on the same yard samples, no bend is tighter than a pickup turns, every pose is a unit rotation,
+    and every turn starts on a sample of each arm it takes in and ends on one of each arm it leaves by: the yard's on
+    both, a corner's from one arm onto the other, the rest back on their own."""
+    road = json.loads((MAPS / "custom" / "solar" / "movers" / "public_road.json").read_text(encoding="utf-8"))
+    lines, shared = road["lines"], road["yard_samples"]
+    assert lines["north"][-shared:] == lines["east"][-shared:]
+    tightest = 1.0 / max(abs(row[2]) for line in lines.values() for row in line)
+    assert tightest > road["wheelbase_m"] * 1.5
+    for row in lines["north"] + lines["east"]:
+        assert len(row) == 19
+        for pose in (row[6:10], row[14:18]):
+            assert math.isclose(math.hypot(*pose), 1.0, abs_tol=1e-4)
+    yards = [turn for turn in road["turns"] if len(turn["into"]) == 2]
+    assert len(yards) == 1 and max(yards[0]["from_end"], yards[0]["to_end"]) < shared
+    assert sorted((t["into"], t["out"]) for t in road["turns"] if t["into"] != t["out"]) == [(["east"], ["north"]), (["north"], ["east"])]
+    for turn in road["turns"]:
+        assert {row[2] for row in turn["rows"]} == {1.0, -1.0}
+        for arm in turn["into"]:
+            assert turn["rows"][0][:2] == lines[arm][len(lines[arm]) - turn["from_end"]][:2]
+        for arm in turn["out"]:
+            assert math.dist(turn["rows"][-1][:2], lines[arm][len(lines[arm]) - turn["to_end"]][:2]) < 1e-3
+    for line in lines.values():
+        steps = [math.dist(a[:2], b[:2]) for a, b in zip(line, line[1:])]
+        assert max(steps) <= road["spacing_m"] * 1.5
+
+
 def test_lost_person_manifest_points_at_real_files():
     """Every lost-person character in the manifest has its model file, a scale and maps."""
     people = MAPS / "custom" / "people" / "lost_person_characters"
@@ -153,6 +213,14 @@ def test_robots_contain_the_two_swarm_drones():
     assert (ROBOTS / "tello.urdf").is_file()
     assert (ROBOTS / "interceptor_drone.urdf").is_file()
     assert (ROBOTS / "tello").is_dir()
+
+
+def test_robots_contain_the_patrol_hardware():
+    """The DJI Matrice 4TD (flying body and moving parts) and the Dock 3 (body with lids, and its pad) are shipped."""
+    for name in ("m4td.urdf", "m4td_moving.urdf", "dock3.urdf", "dock3_pad.urdf"):
+        assert (ROBOTS / name).is_file()
+    assert (ROBOTS / "m4td").is_dir()
+    assert (ROBOTS / "dock3").is_dir()
 
 
 def test_no_file_exceeds_github_limit():
