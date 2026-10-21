@@ -82,6 +82,14 @@ jobs:
             echo "kind=$kind"
           } >> "$GITHUB_OUTPUT"
 
+      - name: Assign the author
+        if: steps.gate.outputs.run == 'true' && github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ steps.app.outputs.token }}
+          PR: ${{ steps.gate.outputs.pr }}
+          AUTHOR: ${{ github.event.pull_request.user.login }}
+        run: gh api "repos/$GITHUB_REPOSITORY/issues/$PR/assignees" -f "assignees[]=$AUTHOR" --silent || echo "Could not assign $AUTHOR"
+
       - name: Check out the pull request
         if: steps.gate.outputs.run == 'true'
         uses: actions/checkout@v7
@@ -140,16 +148,34 @@ jobs:
         with:
           path: |
             ~/.local/share/uv/tools
+            ~/.local/share/claude
             ~/.local/bin
             ~/.cache/pre-commit
           key: review-tools-${{ steps.skill.outputs.tools-hash }}-${{ hashFiles('.pre-commit-config.yaml') }}
           restore-keys: review-tools-${{ steps.skill.outputs.tools-hash }}-
 
+      # A cache hit leaves every tool at its pinned version, so each install below is skipped.
       - name: Install the review tools
         if: steps.gate.outputs.run == 'true'
+        id: tools
         run: |
+          bin="$HOME/.local/bin"
+          mkdir -p "$bin"
           grep -vE '^[[:space:]]*(#|$)|^uv==' "${{ steps.skill.outputs.dir }}/config/ci-tools.txt" \
-            | while read -r tool; do uv tool install --quiet "$tool"; done
+            | while IFS='=' read -r name _ version; do
+                case "$name" in
+                  claude-code)
+                    "$bin/claude" --version 2>/dev/null | grep -q "^$version " \
+                      || curl -fsSL https://claude.ai/install.sh | bash -s "$version" ;;
+                  age)
+                    "$bin/age" --version 2>/dev/null | grep -q "^v$version$" \
+                      || curl -fsSL "https://github.com/FiloSottile/age/releases/download/v$version/age-v$version-linux-amd64.tar.gz" \
+                        | tar -xz -C "$bin" --strip-components=1 age/age ;;
+                  *)
+                    uv tool list 2>/dev/null | grep -q "^$name v$version$" || uv tool install --quiet "$name==$version" ;;
+                esac
+              done
+          echo "claude=$bin/claude" >> "$GITHUB_OUTPUT"
           if [ -n "$REVIEW_SETUP" ]; then eval "$REVIEW_SETUP"; fi
 
       - name: Review
@@ -160,6 +186,7 @@ jobs:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           github_token: ${{ steps.app.outputs.token }}
           settings: ${{ runner.temp }}/review-settings.json
+          path_to_claude_code_executable: ${{ steps.tools.outputs.claude }}
           prompt: |
             Review pull request #${{ steps.gate.outputs.pr }} in ${{ github.repository }} at commit ${{ steps.gate.outputs.sha }}.
             Use the pr-review skill and follow its CI mode (references/ci-mode.md) from start to finish.
@@ -168,6 +195,7 @@ jobs:
           claude_args: |
             --model claude-opus-5-5
             --max-turns 120
+            --add-dir ${{ steps.skill.outputs.dir }}
             --json-schema '{"type":"object","properties":{"verdict":{"type":"string","enum":["approve","approve-with-nits","request-changes"]},"risk":{"type":"string","enum":["low","medium","high"]}},"required":["verdict","risk"]}'
 
       # The vote comes from the verdict here, never from the reviewer, so PR text cannot talk it into one.
@@ -177,7 +205,6 @@ jobs:
           GH_TOKEN: ${{ steps.app.outputs.token }}
           GH_REPO: ${{ github.repository }}
           PR: ${{ steps.gate.outputs.pr }}
-          AUTHOR: ${{ github.event.pull_request.user.login }}
           VERDICT: ${{ fromJSON(steps.review.outputs.structured_output).verdict }}
         run: |
           report=/tmp/pr-review/report.md
@@ -188,7 +215,6 @@ jobs:
             *) echo "Unknown verdict: $VERDICT" >&2; exit 1 ;;
           esac
           gh pr review "$PR" "$vote" --body-file "$report"
-          gh api "repos/$GH_REPO/issues/$PR/assignees" -f "assignees[]=$AUTHOR" --silent || echo "Could not assign $AUTHOR"
 
       - name: Encrypt the transcript
         id: encrypt
@@ -198,8 +224,9 @@ jobs:
           LOG_KEY: ${{ vars.REVIEW_LOG_KEY }}
         run: |
           # Logs on a public repository are public, so the transcript is saved only encrypted.
-          sudo apt-get install -y -qq age > /dev/null
-          age -r "$LOG_KEY" -o "$RUNNER_TEMP/transcript.json.age" "$TRANSCRIPT"
+          age="$HOME/.local/bin/age"
+          [ -x "$age" ] || { sudo apt-get install -y -qq age > /dev/null; age=age; }
+          "$age" -r "$LOG_KEY" -o "$RUNNER_TEMP/transcript.json.age" "$TRANSCRIPT"
 
       - name: Save the transcript
         if: always() && steps.encrypt.outcome == 'success'
