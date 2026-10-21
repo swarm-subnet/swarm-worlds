@@ -10,9 +10,9 @@ on:
   issue_comment:
     types: [created]
 
-# A new push replaces a review still running on the same PR; comments never cancel each other.
+# A new push replaces a review still running on the same PR; each comment gets its own group.
 concurrency:
-  group: pr-review-${{ github.event.pull_request.number || github.event.issue.number }}-${{ github.event_name }}
+  group: pr-review-${{ github.event.pull_request.number || github.event.issue.number }}-${{ github.event.comment.id || 'push' }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 permissions:
@@ -52,28 +52,33 @@ jobs:
         id: gate
         env:
           GH_TOKEN: ${{ steps.app.outputs.token }}
+          # gh runs before the checkout, so it is told the repository instead of reading it from git.
+          GH_REPO: ${{ github.repository }}
           EVENT: ${{ github.event_name }}
           ACTION: ${{ github.event.action }}
           PR: ${{ github.event.pull_request.number || github.event.issue.number }}
           COMMENTER: ${{ github.event.comment.user.login }}
+          COMMENT_URL: ${{ github.event.comment.html_url }}
         run: |
           # Anyone can comment on a public PR, so a comment counts only from someone with write access.
           if [ "$EVENT" = "issue_comment" ]; then
             level=$(gh api "repos/$GITHUB_REPOSITORY/collaborators/$COMMENTER/permission" --jq .permission || echo none)
             case "$level" in admin|maintain|write) ;; *) echo "Comment from outside the team, skipping"; echo "run=false" >> "$GITHUB_OUTPUT"; exit 0 ;; esac
-            if [ "$(gh pr view "$PR" --json isCrossRepository --jq .isCrossRepository)" = "true" ]; then
-              echo "PR from a fork, skipping"; echo "run=false" >> "$GITHUB_OUTPUT"; exit 0
+            if [ "$(gh pr view "$PR" --json isCrossRepository --jq .isCrossRepository)" != "false" ]; then
+              echo "PR from a fork or unreadable, skipping"; echo "run=false" >> "$GITHUB_OUTPUT"; exit 0
             fi
-            kind="a comment that tags @swarm-reviewer: read the newest such comment with gh pr view $PR --comments and do what it asks"
+            kind="the comment at $COMMENT_URL that tags @swarm-reviewer: answer what it asks"
           elif [ "$ACTION" = "synchronize" ]; then
             kind="a new push to the pull request: run a follow-up review"
           else
             kind="the pull request being opened or marked ready: run a full review"
           fi
+          sha=$(gh pr view "$PR" --json headRefOid --jq .headRefOid)
+          if [ -z "$sha" ]; then echo "Could not read the PR head" >&2; exit 1; fi
           {
             echo "run=true"
             echo "pr=$PR"
-            echo "sha=$(gh pr view "$PR" --json headRefOid --jq .headRefOid)"
+            echo "sha=$sha"
             echo "kind=$kind"
           } >> "$GITHUB_OUTPUT"
 
