@@ -1,0 +1,317 @@
+{
+ "class": "dog",
+ "threat": false,
+ "decoy": true,
+ "frame": "x forward, z up, metres; origin at the centre of the standing footprint, paws on z = 0",
+ "poses": "poses[frame][corners] is the resetMeshData upload; frames are clip.start + i",
+ "heat": {
+  "range_c": [
+   20.0,
+   37.0
+  ],
+  "emissivity": 0.98
+ },
+ "size_spread": [
+  0.92,
+  1.08
+ ],
+ "pace_spread": [
+  0.9,
+  1.1
+ ],
+ "blend_s": 0.25,
+ "bodies": {
+  "husky": {
+   "obj": "dog_husky.obj",
+   "poses": "dog_husky_poses.npz",
+   "coats": {
+    "black_white": "dog_husky_black_white.png",
+    "grey_white": "dog_husky_grey_white.png",
+    "red_white": "dog_husky_red_white.png",
+    "agouti": "dog_husky_agouti.png"
+   },
+   "heat_map": "dog_husky_heat.png",
+   "length_m": 0.945,
+   "height_m": 0.775,
+   "triangles": 1920,
+   "vertices": 962,
+   "render_vertices": 5760,
+   "clips": {
+    "walk": {
+     "start": 0,
+     "frames": 25,
+     "fps": 30,
+     "loop": true,
+     "speed_m_s": 0.7423
+    },
+    "trot": {
+     "start": 25,
+     "frames": 12,
+     "fps": 30,
+     "loop": true,
+     "speed_m_s": 1.7233
+    },
+    "run": {
+     "start": 37,
+     "frames": 13,
+     "fps": 36,
+     "loop": true,
+     "speed_m_s": 3.7326
+    },
+    "stand": {
+     "start": 50,
+     "frames": 80,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "look": {
+     "start": 130,
+     "frames": 80,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "sniff": {
+     "start": 210,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "nose_down": {
+     "start": 306,
+     "frames": 64,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "sniff_walk": {
+     "start": 370,
+     "frames": 99,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.4494
+    },
+    "lie_down": {
+     "start": 469,
+     "frames": 41,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "lying"
+    },
+    "lying": {
+     "start": 510,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "get_up": {
+     "start": 606,
+     "frames": 29,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "stand"
+    }
+   }
+  },
+  "shiba": {
+   "obj": "dog_shiba.obj",
+   "poses": "dog_shiba_poses.npz",
+   "coats": {
+    "red": "dog_shiba_red.png",
+    "black_tan": "dog_shiba_black_tan.png",
+    "sesame": "dog_shiba_sesame.png",
+    "cream": "dog_shiba_cream.png"
+   },
+   "heat_map": "dog_shiba_heat.png",
+   "length_m": 0.672,
+   "height_m": 0.527,
+   "triangles": 1950,
+   "vertices": 977,
+   "render_vertices": 5850,
+   "clips": {
+    "walk": {
+     "start": 0,
+     "frames": 25,
+     "fps": 30,
+     "loop": true,
+     "speed_m_s": 0.5201
+    },
+    "trot": {
+     "start": 25,
+     "frames": 12,
+     "fps": 30,
+     "loop": true,
+     "speed_m_s": 1.2074
+    },
+    "run": {
+     "start": 37,
+     "frames": 13,
+     "fps": 36,
+     "loop": true,
+     "speed_m_s": 2.6152
+    },
+    "stand": {
+     "start": 50,
+     "frames": 80,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "look": {
+     "start": 130,
+     "frames": 80,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "sniff": {
+     "start": 210,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "nose_down": {
+     "start": 306,
+     "frames": 64,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "sniff_walk": {
+     "start": 370,
+     "frames": 99,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.3148
+    },
+    "lie_down": {
+     "start": 469,
+     "frames": 41,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "lying"
+    },
+    "lying": {
+     "start": 510,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "get_up": {
+     "start": 606,
+     "frames": 29,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "stand"
+    }
+   }
+  },
+  "shepherd": {
+   "obj": "dog_shepherd.obj",
+   "poses": "dog_shepherd_poses.npz",
+   "coats": {
+    "black_tan": "dog_shepherd_black_tan.png",
+    "sable": "dog_shepherd_sable.png",
+    "black": "dog_shepherd_black.png",
+    "white": "dog_shepherd_white.png",
+    "brown": "dog_shepherd_brown.png"
+   },
+   "heat_map": "dog_shepherd_heat.png",
+   "length_m": 1.474,
+   "height_m": 0.741,
+   "triangles": 1962,
+   "vertices": 983,
+   "render_vertices": 5886,
+   "clips": {
+    "walk": {
+     "start": 0,
+     "frames": 25,
+     "fps": 30,
+     "loop": true,
+     "speed_m_s": 0.8444
+    },
+    "trot": {
+     "start": 25,
+     "frames": 12,
+     "fps": 30,
+     "loop": true,
+     "speed_m_s": 1.9605
+    },
+    "run": {
+     "start": 37,
+     "frames": 13,
+     "fps": 36,
+     "loop": true,
+     "speed_m_s": 4.1498
+    },
+    "stand": {
+     "start": 50,
+     "frames": 80,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "look": {
+     "start": 130,
+     "frames": 80,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "sniff": {
+     "start": 210,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "nose_down": {
+     "start": 306,
+     "frames": 64,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "sniff_walk": {
+     "start": 370,
+     "frames": 99,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.5112
+    },
+    "lie_down": {
+     "start": 469,
+     "frames": 41,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "lying"
+    },
+    "lying": {
+     "start": 510,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "get_up": {
+     "start": 606,
+     "frames": 29,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "stand"
+    }
+   }
+  }
+ }
+}

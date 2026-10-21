@@ -1,0 +1,3 @@
+newmtl dog_husky
+Kd 1 1 1
+map_Kd dog_husky_black_white.png
