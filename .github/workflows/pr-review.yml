@@ -97,7 +97,12 @@ jobs:
           GH_TOKEN: ${{ steps.app.outputs.token }}
           GH_REPO: ${{ github.repository }}
           PR: ${{ steps.gate.outputs.pr }}
-        run: gh pr review "$PR" --comment --body "Reviewing" || echo "Could not post the start marker"
+        run: |
+          # A follow-up needs no marker: the reviewer is already in the list from its earlier review.
+          reviewed=$(gh api "repos/$GH_REPO/pulls/$PR/reviews" --jq '[.[] | select(.user.login == "swarm-reviewer[bot]")] | length' || echo 0)
+          if [ "$reviewed" = "0" ]; then
+            gh pr review "$PR" --comment --body "Reviewing" || echo "Could not post the start marker"
+          fi
 
       - name: Check out the pull request
         if: steps.gate.outputs.run == 'true'
