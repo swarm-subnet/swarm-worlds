@@ -2,7 +2,7 @@ name: PR Review
 
 # Reviews every push to a team pull request, and answers a comment that tags @swarm-reviewer.
 # The review skill and the commands it may run come from the skill repository on every run.
-# The reviewer only comments: it never approves, merges or pushes.
+# The job posts the review with a vote taken from its verdict (approve or request changes); it never merges or pushes.
 
 on:
   pull_request:
