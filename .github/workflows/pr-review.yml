@@ -170,6 +170,26 @@ jobs:
             --max-turns 120
             --json-schema '{"type":"object","properties":{"verdict":{"type":"string","enum":["approve","approve-with-nits","request-changes"]},"risk":{"type":"string","enum":["low","medium","high"]}},"required":["verdict","risk"]}'
 
+      # The vote comes from the verdict here, never from the reviewer, so PR text cannot talk it into one.
+      - name: Post the review with its vote
+        if: steps.gate.outputs.run == 'true' && github.event_name == 'pull_request' && steps.review.outputs.structured_output != ''
+        env:
+          GH_TOKEN: ${{ steps.app.outputs.token }}
+          GH_REPO: ${{ github.repository }}
+          PR: ${{ steps.gate.outputs.pr }}
+          AUTHOR: ${{ github.event.pull_request.user.login }}
+          VERDICT: ${{ fromJSON(steps.review.outputs.structured_output).verdict }}
+        run: |
+          report=/tmp/pr-review/report.md
+          if [ ! -s "$report" ]; then echo "The reviewer wrote no report" >&2; exit 1; fi
+          case "$VERDICT" in
+            approve|approve-with-nits) vote=--approve ;;
+            request-changes) vote=--request-changes ;;
+            *) echo "Unknown verdict: $VERDICT" >&2; exit 1 ;;
+          esac
+          gh pr review "$PR" "$vote" --body-file "$report"
+          gh api "repos/$GH_REPO/issues/$PR/assignees" -f "assignees[]=$AUTHOR" --silent || echo "Could not assign $AUTHOR"
+
       - name: Encrypt the transcript
         id: encrypt
         if: always() && steps.review.outputs.execution_file != '' && vars.REVIEW_LOG_KEY != ''
