@@ -90,6 +90,15 @@ jobs:
           AUTHOR: ${{ github.event.pull_request.user.login }}
         run: gh api "repos/$GITHUB_REPOSITORY/issues/$PR/assignees" -f "assignees[]=$AUTHOR" --silent || echo "Could not assign $AUTHOR"
 
+      # An app cannot be requested as a reviewer, so a one-word review puts it in the Reviewers list.
+      - name: Show the review has started
+        if: steps.gate.outputs.run == 'true' && github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ steps.app.outputs.token }}
+          GH_REPO: ${{ github.repository }}
+          PR: ${{ steps.gate.outputs.pr }}
+        run: gh pr review "$PR" --comment --body "Reviewing" || echo "Could not post the start marker"
+
       - name: Check out the pull request
         if: steps.gate.outputs.run == 'true'
         uses: actions/checkout@v7
