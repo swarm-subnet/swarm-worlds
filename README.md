@@ -8,7 +8,7 @@
 
 <p align="center">
   <b>Every world a Swarm drone flies through, in one place.</b><br/>
-  <i>The maps, the robot descriptions and the textures the simulator loads, released by tag.</i>
+  <i>The maps, the dock and the textures the simulator loads, released by tag.</i>
 </p>
 
 <p align="center">
@@ -30,8 +30,9 @@
 
 [Swarm](https://swarm124.com) is Bittensor subnet 124: an open arena where anyone can train a drone
 pilot and prove it against the world. The worlds it flies through are built from the files in this
-repository: the building kits, trees, furniture, vehicles and people the generators place, the two
-drone descriptions, and the textures the map builders apply.
+repository: the building kits, trees, furniture, vehicles and people the generators place, the dock
+the patrol drone flies from, and the textures the map builders apply. The drones themselves live in
+[swarm-description](https://github.com/swarm-subnet/swarm-description).
 
 This repository holds files, not code. The generators that turn a seed into a world live in the
 [swarm](https://github.com/swarm-subnet/swarm) repository and install this one as a Python package,
@@ -114,7 +115,7 @@ swarm_worlds/
     forest/          Quaternius nature packs and the forest ground texture
     kenney/          Kenney kits: suburban, commercial, roads, car, conveyor, furniture, holiday
     other_sources/   third-party assets kept under their original licenses
-  robots/            tello.urdf with its mesh folder, interceptor_drone.urdf
+  robots/            dock3.urdf and dock3_pad.urdf, the DJI Dock 3 with its mesh folder
   skies/             sky photographs, 2048 x 1024 equirectangular PNG, with skies.json giving each sun's heading and height
   textures/          tao.png (landing pad), Swarm.png and Swarm_2.png (wall posters)
 docs/img/            the pictures on this page

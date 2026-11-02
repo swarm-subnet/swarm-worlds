@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "swarm-worlds"
 dynamic = ["version"]
-description = "Maps, robot descriptions and textures the Swarm drone simulator loads"
+description = "Maps, the dock and textures the Swarm drone simulator loads"
 readme = { file = "README.md", content-type = "text/markdown" }
 requires-python = ">=3.11"
 license = { text = "MIT" }

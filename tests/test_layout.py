@@ -191,36 +191,24 @@ def test_lost_person_manifest_points_at_real_files():
         assert character["maps"]
 
 
-# The interceptor drone reuses the stock Crazyflie visual mesh, which the swarm
-# repository stages next to the URDF from the gym package at runtime.
-MESHES_FROM_GYM = {"cf2.dae"}
-
-
 @pytest.mark.parametrize("urdf", sorted(p.name for p in ROBOTS.glob("*.urdf")))
 def test_urdf_parses_and_meshes_resolve(urdf):
-    """Each robot description parses and every mesh it names is shipped, but for the one staged from the gym."""
+    """Each robot description parses and every mesh it names is shipped."""
     path = ROBOTS / urdf
     root = ET.parse(path).getroot()
     assert root.tag == "robot"
     for mesh in root.iter("mesh"):
         filename = mesh.get("filename", "")
-        if filename.startswith("./") and filename[2:] not in MESHES_FROM_GYM:
+        if filename.startswith("./"):
             assert (ROBOTS / filename[2:]).is_file(), filename
 
 
-def test_robots_contain_the_two_swarm_drones():
-    """The two drone descriptions and the tello mesh folder are shipped."""
-    assert (ROBOTS / "tello.urdf").is_file()
-    assert (ROBOTS / "interceptor_drone.urdf").is_file()
-    assert (ROBOTS / "tello").is_dir()
-
-
-def test_robots_contain_the_patrol_hardware():
-    """The DJI Matrice 4TD (flying body and moving parts) and the Dock 3 (body with lids, and its pad) are shipped."""
-    for name in ("m4td.urdf", "m4td_moving.urdf", "dock3.urdf", "dock3_pad.urdf"):
+def test_robots_hold_the_dock_and_no_drone():
+    """The Dock 3 (body with lids, and its pad) is shipped; the drones live in swarm-description, not here."""
+    for name in ("dock3.urdf", "dock3_pad.urdf"):
         assert (ROBOTS / name).is_file()
-    assert (ROBOTS / "m4td").is_dir()
     assert (ROBOTS / "dock3").is_dir()
+    assert sorted(p.name for p in ROBOTS.glob("*.urdf")) == ["dock3.urdf", "dock3_pad.urdf"]
 
 
 def test_no_file_exceeds_github_limit():
