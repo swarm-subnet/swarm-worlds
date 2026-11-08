@@ -15,7 +15,7 @@
 # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-"""The maps, the dock and the textures the Swarm simulator loads; the drones live in swarm-description.
+"""The maps, textures and skies the Swarm simulator loads; every URDF it spawns lives in swarm-description.
 
 The package carries files, not code. Each function below returns the absolute
 path of one asset root; everything under a root is addressed by the relative
@@ -32,11 +32,6 @@ _ROOT = files(__name__)
 def maps_dir() -> str:
     """Root of the map asset tree: custom, forest, kenney and other_sources."""
     return str(_ROOT / "maps")
-
-
-def robots_dir() -> str:
-    """Root of the DJI Dock 3's URDFs and the mesh folder they reference."""
-    return str(_ROOT / "robots")
 
 
 def textures_dir() -> str:
