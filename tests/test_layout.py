@@ -22,7 +22,6 @@ import json
 import math
 import os
 import re
-import xml.etree.ElementTree as ET
 import zipfile
 from pathlib import Path
 
@@ -31,7 +30,6 @@ import pytest
 import swarm_worlds
 
 MAPS = Path(swarm_worlds.maps_dir())
-ROBOTS = Path(swarm_worlds.robots_dir())
 TEXTURES = Path(swarm_worlds.textures_dir())
 SKIES = Path(swarm_worlds.skies_dir())
 
@@ -60,7 +58,6 @@ EXPECTED_MAP_DIRS = {
     "other_sources/factory_fence_new",
     "other_sources/loading_kit",
     "other_sources/overhead_crane",
-    "other_sources/swarm_drone",
     "other_sources/vehicles",
 }
 
@@ -72,7 +69,7 @@ def _all_files(root: Path):
 
 def test_roots_are_absolute_directories():
     """Each asset root resolves to an absolute directory."""
-    for root in (MAPS, ROBOTS, TEXTURES, SKIES):
+    for root in (MAPS, TEXTURES, SKIES):
         assert root.is_absolute()
         assert root.is_dir()
 
@@ -191,41 +188,16 @@ def test_lost_person_manifest_points_at_real_files():
         assert character["maps"]
 
 
-# The interceptor drone reuses the stock Crazyflie visual mesh, which the swarm
-# repository stages next to the URDF from the gym package at runtime.
-MESHES_FROM_GYM = {"cf2.dae"}
-
-
-@pytest.mark.parametrize("urdf", sorted(p.name for p in ROBOTS.glob("*.urdf")))
-def test_urdf_parses_and_meshes_resolve(urdf):
-    """Each robot description parses and every mesh it names is shipped, but for the one staged from the gym."""
-    path = ROBOTS / urdf
-    root = ET.parse(path).getroot()
-    assert root.tag == "robot"
-    for mesh in root.iter("mesh"):
-        filename = mesh.get("filename", "")
-        if filename.startswith("./") and filename[2:] not in MESHES_FROM_GYM:
-            assert (ROBOTS / filename[2:]).is_file(), filename
-
-
-def test_robots_contain_the_two_swarm_drones():
-    """The two drone descriptions and the tello mesh folder are shipped."""
-    assert (ROBOTS / "tello.urdf").is_file()
-    assert (ROBOTS / "interceptor_drone.urdf").is_file()
-    assert (ROBOTS / "tello").is_dir()
-
-
-def test_robots_contain_the_patrol_hardware():
-    """The DJI Matrice 4TD (flying body and moving parts) and the Dock 3 (body with lids, and its pad) are shipped."""
-    for name in ("m4td.urdf", "m4td_moving.urdf", "dock3.urdf", "dock3_pad.urdf"):
-        assert (ROBOTS / name).is_file()
-    assert (ROBOTS / "m4td").is_dir()
-    assert (ROBOTS / "dock3").is_dir()
+def test_the_package_ships_no_urdf():
+    """Every URDF the simulator spawns lives in swarm-description: no robots root here, and no URDF in any root."""
+    assert not hasattr(swarm_worlds, "robots_dir")
+    assert not (Path(swarm_worlds.__file__).parent / "robots").exists()
+    assert [p for root in (MAPS, TEXTURES, SKIES) for p in root.rglob("*.urdf")] == []
 
 
 def test_no_file_exceeds_github_limit():
     """No shipped file is above the size GitHub refuses."""
-    too_big = [p for root in (MAPS, ROBOTS, TEXTURES, SKIES) for p in _all_files(root) if p.stat().st_size > MAX_FILE_BYTES]
+    too_big = [p for root in (MAPS, TEXTURES, SKIES) for p in _all_files(root) if p.stat().st_size > MAX_FILE_BYTES]
     assert too_big == []
 
 

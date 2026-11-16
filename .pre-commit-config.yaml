@@ -13,7 +13,6 @@ repos:
         exclude: &skip |
           (?x)^(
             swarm_worlds/maps/.*|
-            swarm_worlds/robots/.*|
             swarm_worlds/textures/.*
           )$
       - id: end-of-file-fixer
