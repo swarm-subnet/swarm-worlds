@@ -16,6 +16,10 @@ assets/custom/people/lost_person_characters/* are not claimed as entirely
 authored or owned by Abdulla Alnasser. Their individual source and license
 status are documented in that folder's manifest.json and SOURCE.txt files.
 
+Exception: the test site assets under assets/custom/testsite/* are built from
+our own drone survey and from third-party data. Each source keeps its own
+license, listed with what was made from it in that folder's SOURCE.txt.
+
 ---
 
 Ownership

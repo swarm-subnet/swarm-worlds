@@ -1,0 +1,257 @@
+{
+ "group": "edges",
+ "written": "2026-11-12 11:42:12",
+ "notes": "lane walls, stones, lane, lamp posts, gate, weeds",
+ "items": [
+  {
+   "name": "walls",
+   "obj": "walls.obj",
+   "texture": "walls.png",
+   "triangles": 7232,
+   "bounds_min": [
+    -49.2555,
+    -2.489,
+    1009.9941
+   ],
+   "bounds_max": [
+    -0.7043,
+    34.166,
+    1015.2901
+   ],
+   "group": "edges",
+   "folder": "edges",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "edge_stones",
+   "obj": "edge_stones.obj",
+   "texture": "edge_stones.png",
+   "triangles": 220000,
+   "bounds_min": [
+    -49.3766,
+    -35.6716,
+    1005.1477
+   ],
+   "bounds_max": [
+    24.651,
+    34.2842,
+    1015.3752
+   ],
+   "group": "edges",
+   "folder": "edges",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "lane",
+   "obj": "lane.obj",
+   "texture": "lane.png",
+   "triangles": 226,
+   "bounds_min": [
+    -48.696,
+    -2.47,
+    1011.065
+   ],
+   "bounds_max": [
+    -1.049,
+    33.604,
+    1013.602
+   ],
+   "group": "edges",
+   "folder": "edges",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "lamps",
+   "obj": "lamps.obj",
+   "texture": "lamps.png",
+   "triangles": 216,
+   "bounds_min": [
+    -41.832,
+    8.409,
+    1011.8
+   ],
+   "bounds_max": [
+    -11.423,
+    32.412,
+    1016.821
+   ],
+   "group": "edges",
+   "folder": "edges",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "gate",
+   "obj": "gate.obj",
+   "texture": "gate.png",
+   "triangles": 276,
+   "bounds_min": [
+    -2.3908,
+    29.0473,
+    1011.045
+   ],
+   "bounds_max": [
+    -1.1342,
+    31.3667,
+    1012.195
+   ],
+   "group": "edges",
+   "folder": "edges",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "weeds",
+   "obj": "weeds.obj",
+   "texture": "weeds.png",
+   "triangles": 22140,
+   "bounds_min": [
+    -42.8042,
+    -35.1691,
+    1005.8303
+   ],
+   "bounds_max": [
+    15.2653,
+    28.3011,
+    1012.4834
+   ],
+   "group": "edges",
+   "folder": "edges",
+   "flags": [
+    "double_sided"
+   ],
+   "collision": "none",
+   "specular": 0.0
+  }
+ ],
+ "placements": [
+  {
+   "item": "walls",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "edges"
+  },
+  {
+   "item": "edge_stones",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "edges"
+  },
+  {
+   "item": "lane",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "edges"
+  },
+  {
+   "item": "lamps",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "edges"
+  },
+  {
+   "item": "gate",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "edges"
+  },
+  {
+   "item": "weeds",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "edges"
+  }
+ ]
+}

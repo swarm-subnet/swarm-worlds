@@ -47,6 +47,9 @@ EXPECTED_MAP_DIRS = {
     "custom/people/open_mannequin_raw/split",
     "custom/solar",
     "custom/solar/intruders",
+    "custom/testsite",
+    "custom/testsite/terrain",
+    "custom/testsite/plants",
     "custom/warehouse_shell",
     "forest/quaternius_ultimate_nature",
     "forest/textures",
@@ -177,6 +180,20 @@ def test_solar_public_road_is_drivable_with_places_to_turn_round():
     for line in lines.values():
         steps = [math.dist(a[:2], b[:2]) for a, b in zip(line, line[1:])]
         assert max(steps) <= road["spacing_m"] * 1.5
+
+
+def test_testsite_manifest_points_at_real_files():
+    """Every test site item names files that ship, every placement names an item, and the forest ships."""
+    testsite = MAPS / "custom" / "testsite"
+    manifest = json.loads((testsite / "manifest.json").read_text(encoding="utf-8"))
+    items = manifest["items"]
+    for name, item in items.items():
+        for key in ("obj", "texture"):
+            assert (testsite / item["folder"] / item[key]).is_file(), f"{name}: {item[key]}"
+    assert {place["item"] for place in manifest["placements"]} <= set(items)
+    forest = manifest["forest"]
+    for name in [forest["table"]] + forest["meshes"]:
+        assert (testsite / forest["folder"] / name).is_file(), name
 
 
 def test_lost_person_manifest_points_at_real_files():

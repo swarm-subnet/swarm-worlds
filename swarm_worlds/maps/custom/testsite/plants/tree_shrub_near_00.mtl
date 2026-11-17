@@ -1,0 +1,3 @@
+newmtl tree_shrub_near_00
+Kd 1 1 1
+map_Kd palette_shrub_near.png
