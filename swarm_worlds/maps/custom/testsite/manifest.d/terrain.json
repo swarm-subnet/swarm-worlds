@@ -1,0 +1,7401 @@
+{
+ "group": "terrain",
+ "written": "2026-11-12 12:49:22",
+ "notes": "terrain rings tiled with top-down colour, no sun in the colour",
+ "items": [
+  {
+   "name": "ground_core_00_00",
+   "obj": "ground_core_00_00.obj",
+   "texture": "ground_core_00_00.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -200.0,
+    -200.0,
+    998.8856
+   ],
+   "bounds_max": [
+    -150.0,
+    -150.0,
+    1012.1536
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_00_01",
+   "obj": "ground_core_00_01.obj",
+   "texture": "ground_core_00_01.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -200.0,
+    -150.0,
+    1003.2367
+   ],
+   "bounds_max": [
+    -150.0,
+    -100.0,
+    1019.0193
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_00_02",
+   "obj": "ground_core_00_02.obj",
+   "texture": "ground_core_00_02.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -200.0,
+    -100.0,
+    1010.1594
+   ],
+   "bounds_max": [
+    -150.0,
+    -50.0,
+    1023.3821
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_00_03",
+   "obj": "ground_core_00_03.obj",
+   "texture": "ground_core_00_03.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -200.0,
+    -50.0,
+    1012.3294
+   ],
+   "bounds_max": [
+    -150.0,
+    0.0,
+    1025.153
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_00_04",
+   "obj": "ground_core_00_04.obj",
+   "texture": "ground_core_00_04.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -200.0,
+    0.0,
+    1020.6181
+   ],
+   "bounds_max": [
+    -150.0,
+    50.0,
+    1037.7793
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_00_05",
+   "obj": "ground_core_00_05.obj",
+   "texture": "ground_core_00_05.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -200.0,
+    50.0,
+    1028.949
+   ],
+   "bounds_max": [
+    -150.0,
+    100.0,
+    1058.0243
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_00_06",
+   "obj": "ground_core_00_06.obj",
+   "texture": "ground_core_00_06.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -200.0,
+    100.0,
+    1036.1702
+   ],
+   "bounds_max": [
+    -150.0,
+    150.0,
+    1065.5216
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_00_07",
+   "obj": "ground_core_00_07.obj",
+   "texture": "ground_core_00_07.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -200.0,
+    150.0,
+    1053.3081
+   ],
+   "bounds_max": [
+    -150.0,
+    200.0,
+    1087.0497
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_01_00",
+   "obj": "ground_core_01_00.obj",
+   "texture": "ground_core_01_00.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -150.0,
+    -200.0,
+    992.2833
+   ],
+   "bounds_max": [
+    -100.0,
+    -150.0,
+    1003.2367
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_01_01",
+   "obj": "ground_core_01_01.obj",
+   "texture": "ground_core_01_01.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -150.0,
+    -150.0,
+    995.821
+   ],
+   "bounds_max": [
+    -100.0,
+    -100.0,
+    1010.1594
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_01_02",
+   "obj": "ground_core_01_02.obj",
+   "texture": "ground_core_01_02.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -150.0,
+    -100.0,
+    1001.5748
+   ],
+   "bounds_max": [
+    -100.0,
+    -50.0,
+    1012.4033
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_01_03",
+   "obj": "ground_core_01_03.obj",
+   "texture": "ground_core_01_03.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -150.0,
+    -50.0,
+    1008.829
+   ],
+   "bounds_max": [
+    -100.0,
+    0.0,
+    1020.9369
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_01_04",
+   "obj": "ground_core_01_04.obj",
+   "texture": "ground_core_01_04.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -150.0,
+    0.0,
+    1015.3683
+   ],
+   "bounds_max": [
+    -100.0,
+    50.0,
+    1028.949
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_01_05",
+   "obj": "ground_core_01_05.obj",
+   "texture": "ground_core_01_05.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -150.0,
+    50.0,
+    1022.4286
+   ],
+   "bounds_max": [
+    -100.0,
+    100.0,
+    1036.2208
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_01_06",
+   "obj": "ground_core_01_06.obj",
+   "texture": "ground_core_01_06.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -150.0,
+    100.0,
+    1034.5342
+   ],
+   "bounds_max": [
+    -100.0,
+    150.0,
+    1057.5023
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_01_07",
+   "obj": "ground_core_01_07.obj",
+   "texture": "ground_core_01_07.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -150.0,
+    150.0,
+    1049.6471
+   ],
+   "bounds_max": [
+    -100.0,
+    200.0,
+    1091.3486
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_02_00",
+   "obj": "ground_core_02_00.obj",
+   "texture": "ground_core_02_00.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -100.0,
+    -200.0,
+    983.6732
+   ],
+   "bounds_max": [
+    -50.0,
+    -150.0,
+    995.821
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_02_01",
+   "obj": "ground_core_02_01.obj",
+   "texture": "ground_core_02_01.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -100.0,
+    -150.0,
+    989.2765
+   ],
+   "bounds_max": [
+    -50.0,
+    -100.0,
+    1001.5748
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_02_02",
+   "obj": "ground_core_02_02.obj",
+   "texture": "ground_core_02_02.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -100.0,
+    -100.0,
+    993.9022
+   ],
+   "bounds_max": [
+    -50.0,
+    -50.0,
+    1008.829
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_02_03",
+   "obj": "ground_core_02_03.obj",
+   "texture": "ground_core_02_03.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -100.0,
+    -50.0,
+    1003.8885
+   ],
+   "bounds_max": [
+    -50.0,
+    0.0,
+    1016.1601
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_02_04",
+   "obj": "ground_core_02_04.obj",
+   "texture": "ground_core_02_04.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -100.0,
+    0.0,
+    1012.5927
+   ],
+   "bounds_max": [
+    -50.0,
+    50.0,
+    1022.4286
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_02_05",
+   "obj": "ground_core_02_05.obj",
+   "texture": "ground_core_02_05.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -100.0,
+    50.0,
+    1019.3878
+   ],
+   "bounds_max": [
+    -50.0,
+    100.0,
+    1034.5342
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_02_06",
+   "obj": "ground_core_02_06.obj",
+   "texture": "ground_core_02_06.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -100.0,
+    100.0,
+    1022.9148
+   ],
+   "bounds_max": [
+    -50.0,
+    150.0,
+    1049.6471
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_02_07",
+   "obj": "ground_core_02_07.obj",
+   "texture": "ground_core_02_07.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -100.0,
+    150.0,
+    1031.2524
+   ],
+   "bounds_max": [
+    -50.0,
+    200.0,
+    1088.6959
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_03_00",
+   "obj": "ground_core_03_00.obj",
+   "texture": "ground_core_03_00.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -50.0,
+    -200.0,
+    980.1527
+   ],
+   "bounds_max": [
+    0.0,
+    -150.0,
+    989.2765
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_03_01",
+   "obj": "ground_core_03_01.obj",
+   "texture": "ground_core_03_01.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -50.0,
+    -150.0,
+    983.9657
+   ],
+   "bounds_max": [
+    0.0,
+    -100.0,
+    993.9022
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_03_02",
+   "obj": "ground_core_03_02.obj",
+   "texture": "ground_core_03_02.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -50.0,
+    -100.0,
+    988.5677
+   ],
+   "bounds_max": [
+    0.0,
+    -50.0,
+    1003.8885
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_03_03",
+   "obj": "ground_core_03_03.obj",
+   "texture": "ground_core_03_03.png",
+   "triangles": 3204,
+   "bounds_min": [
+    -50.0,
+    -50.0,
+    1002.3232
+   ],
+   "bounds_max": [
+    0.0,
+    0.0,
+    1016.3241
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_03_04",
+   "obj": "ground_core_03_04.obj",
+   "texture": "ground_core_03_04.png",
+   "triangles": 3414,
+   "bounds_min": [
+    -50.0,
+    0.0,
+    1009.6695
+   ],
+   "bounds_max": [
+    0.0,
+    50.0,
+    1019.3878
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_03_05",
+   "obj": "ground_core_03_05.obj",
+   "texture": "ground_core_03_05.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -50.0,
+    50.0,
+    1011.0881
+   ],
+   "bounds_max": [
+    0.0,
+    100.0,
+    1023.442
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_03_06",
+   "obj": "ground_core_03_06.obj",
+   "texture": "ground_core_03_06.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -50.0,
+    100.0,
+    1011.0015
+   ],
+   "bounds_max": [
+    0.0,
+    150.0,
+    1031.2524
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_03_07",
+   "obj": "ground_core_03_07.obj",
+   "texture": "ground_core_03_07.png",
+   "triangles": 5000,
+   "bounds_min": [
+    -50.0,
+    150.0,
+    1012.1422
+   ],
+   "bounds_max": [
+    0.0,
+    200.0,
+    1077.6421
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_04_00",
+   "obj": "ground_core_04_00.obj",
+   "texture": "ground_core_04_00.png",
+   "triangles": 5000,
+   "bounds_min": [
+    0.0,
+    -200.0,
+    974.8184
+   ],
+   "bounds_max": [
+    50.0,
+    -150.0,
+    984.3986
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_04_01",
+   "obj": "ground_core_04_01.obj",
+   "texture": "ground_core_04_01.png",
+   "triangles": 5000,
+   "bounds_min": [
+    0.0,
+    -150.0,
+    977.9419
+   ],
+   "bounds_max": [
+    50.0,
+    -100.0,
+    990.4751
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_04_02",
+   "obj": "ground_core_04_02.obj",
+   "texture": "ground_core_04_02.png",
+   "triangles": 5000,
+   "bounds_min": [
+    0.0,
+    -100.0,
+    985.5978
+   ],
+   "bounds_max": [
+    50.0,
+    -50.0,
+    1002.3232
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_04_03",
+   "obj": "ground_core_04_03.obj",
+   "texture": "ground_core_04_03.png",
+   "triangles": 3920,
+   "bounds_min": [
+    0.0,
+    -50.0,
+    995.4696
+   ],
+   "bounds_max": [
+    50.0,
+    0.0,
+    1006.3304
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_04_04",
+   "obj": "ground_core_04_04.obj",
+   "texture": "ground_core_04_04.png",
+   "triangles": 4464,
+   "bounds_min": [
+    0.0,
+    0.0,
+    1001.0382
+   ],
+   "bounds_max": [
+    50.0,
+    50.0,
+    1013.3433
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_04_05",
+   "obj": "ground_core_04_05.obj",
+   "texture": "ground_core_04_05.png",
+   "triangles": 5000,
+   "bounds_min": [
+    0.0,
+    50.0,
+    1007.2293
+   ],
+   "bounds_max": [
+    50.0,
+    100.0,
+    1013.0363
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_04_06",
+   "obj": "ground_core_04_06.obj",
+   "texture": "ground_core_04_06.png",
+   "triangles": 5000,
+   "bounds_min": [
+    0.0,
+    100.0,
+    1006.2148
+   ],
+   "bounds_max": [
+    50.0,
+    150.0,
+    1013.021
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_04_07",
+   "obj": "ground_core_04_07.obj",
+   "texture": "ground_core_04_07.png",
+   "triangles": 5000,
+   "bounds_min": [
+    0.0,
+    150.0,
+    1005.9951
+   ],
+   "bounds_max": [
+    50.0,
+    200.0,
+    1037.0184
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_05_00",
+   "obj": "ground_core_05_00.obj",
+   "texture": "ground_core_05_00.png",
+   "triangles": 5000,
+   "bounds_min": [
+    50.0,
+    -200.0,
+    970.0777
+   ],
+   "bounds_max": [
+    100.0,
+    -150.0,
+    977.9419
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_05_01",
+   "obj": "ground_core_05_01.obj",
+   "texture": "ground_core_05_01.png",
+   "triangles": 5000,
+   "bounds_min": [
+    50.0,
+    -150.0,
+    973.2568
+   ],
+   "bounds_max": [
+    100.0,
+    -100.0,
+    986.334
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_05_02",
+   "obj": "ground_core_05_02.obj",
+   "texture": "ground_core_05_02.png",
+   "triangles": 5000,
+   "bounds_min": [
+    50.0,
+    -100.0,
+    978.6939
+   ],
+   "bounds_max": [
+    100.0,
+    -50.0,
+    995.4696
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_05_03",
+   "obj": "ground_core_05_03.obj",
+   "texture": "ground_core_05_03.png",
+   "triangles": 5000,
+   "bounds_min": [
+    50.0,
+    -50.0,
+    990.0051
+   ],
+   "bounds_max": [
+    100.0,
+    0.0,
+    1001.0382
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_05_04",
+   "obj": "ground_core_05_04.obj",
+   "texture": "ground_core_05_04.png",
+   "triangles": 5000,
+   "bounds_min": [
+    50.0,
+    0.0,
+    992.6654
+   ],
+   "bounds_max": [
+    100.0,
+    50.0,
+    1007.6399
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_05_05",
+   "obj": "ground_core_05_05.obj",
+   "texture": "ground_core_05_05.png",
+   "triangles": 5000,
+   "bounds_min": [
+    50.0,
+    50.0,
+    996.8884
+   ],
+   "bounds_max": [
+    100.0,
+    100.0,
+    1007.7847
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_05_06",
+   "obj": "ground_core_05_06.obj",
+   "texture": "ground_core_05_06.png",
+   "triangles": 5000,
+   "bounds_min": [
+    50.0,
+    100.0,
+    1001.0678
+   ],
+   "bounds_max": [
+    100.0,
+    150.0,
+    1007.8879
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_05_07",
+   "obj": "ground_core_05_07.obj",
+   "texture": "ground_core_05_07.png",
+   "triangles": 5000,
+   "bounds_min": [
+    50.0,
+    150.0,
+    999.7473
+   ],
+   "bounds_max": [
+    100.0,
+    200.0,
+    1009.2674
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_06_00",
+   "obj": "ground_core_06_00.obj",
+   "texture": "ground_core_06_00.png",
+   "triangles": 5000,
+   "bounds_min": [
+    100.0,
+    -200.0,
+    971.0876
+   ],
+   "bounds_max": [
+    150.0,
+    -150.0,
+    976.3439
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_06_01",
+   "obj": "ground_core_06_01.obj",
+   "texture": "ground_core_06_01.png",
+   "triangles": 5000,
+   "bounds_min": [
+    100.0,
+    -150.0,
+    973.3284
+   ],
+   "bounds_max": [
+    150.0,
+    -100.0,
+    978.6939
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_06_02",
+   "obj": "ground_core_06_02.obj",
+   "texture": "ground_core_06_02.png",
+   "triangles": 5000,
+   "bounds_min": [
+    100.0,
+    -100.0,
+    974.9856
+   ],
+   "bounds_max": [
+    150.0,
+    -50.0,
+    991.804
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_06_03",
+   "obj": "ground_core_06_03.obj",
+   "texture": "ground_core_06_03.png",
+   "triangles": 5000,
+   "bounds_min": [
+    100.0,
+    -50.0,
+    982.8156
+   ],
+   "bounds_max": [
+    150.0,
+    0.0,
+    994.8634
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_06_04",
+   "obj": "ground_core_06_04.obj",
+   "texture": "ground_core_06_04.png",
+   "triangles": 5000,
+   "bounds_min": [
+    100.0,
+    0.0,
+    987.3231
+   ],
+   "bounds_max": [
+    150.0,
+    50.0,
+    996.8884
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_06_05",
+   "obj": "ground_core_06_05.obj",
+   "texture": "ground_core_06_05.png",
+   "triangles": 5000,
+   "bounds_min": [
+    100.0,
+    50.0,
+    989.0645
+   ],
+   "bounds_max": [
+    150.0,
+    100.0,
+    1001.5107
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_06_06",
+   "obj": "ground_core_06_06.obj",
+   "texture": "ground_core_06_06.png",
+   "triangles": 5000,
+   "bounds_min": [
+    100.0,
+    100.0,
+    993.7177
+   ],
+   "bounds_max": [
+    150.0,
+    150.0,
+    1001.6243
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_06_07",
+   "obj": "ground_core_06_07.obj",
+   "texture": "ground_core_06_07.png",
+   "triangles": 5000,
+   "bounds_min": [
+    100.0,
+    150.0,
+    993.6599
+   ],
+   "bounds_max": [
+    150.0,
+    200.0,
+    1001.2642
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_07_00",
+   "obj": "ground_core_07_00.obj",
+   "texture": "ground_core_07_00.png",
+   "triangles": 5000,
+   "bounds_min": [
+    150.0,
+    -200.0,
+    974.0734
+   ],
+   "bounds_max": [
+    200.0,
+    -150.0,
+    985.7001
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_07_01",
+   "obj": "ground_core_07_01.obj",
+   "texture": "ground_core_07_01.png",
+   "triangles": 5000,
+   "bounds_min": [
+    150.0,
+    -150.0,
+    974.608
+   ],
+   "bounds_max": [
+    200.0,
+    -100.0,
+    986.9502
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_07_02",
+   "obj": "ground_core_07_02.obj",
+   "texture": "ground_core_07_02.png",
+   "triangles": 5000,
+   "bounds_min": [
+    150.0,
+    -100.0,
+    975.3037
+   ],
+   "bounds_max": [
+    200.0,
+    -50.0,
+    982.8156
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_07_03",
+   "obj": "ground_core_07_03.obj",
+   "texture": "ground_core_07_03.png",
+   "triangles": 5000,
+   "bounds_min": [
+    150.0,
+    -50.0,
+    974.9953
+   ],
+   "bounds_max": [
+    200.0,
+    0.0,
+    987.3294
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_07_04",
+   "obj": "ground_core_07_04.obj",
+   "texture": "ground_core_07_04.png",
+   "triangles": 5000,
+   "bounds_min": [
+    150.0,
+    0.0,
+    976.099
+   ],
+   "bounds_max": [
+    200.0,
+    50.0,
+    989.0645
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_07_05",
+   "obj": "ground_core_07_05.obj",
+   "texture": "ground_core_07_05.png",
+   "triangles": 5000,
+   "bounds_min": [
+    150.0,
+    50.0,
+    985.6171
+   ],
+   "bounds_max": [
+    200.0,
+    100.0,
+    993.8449
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_07_06",
+   "obj": "ground_core_07_06.obj",
+   "texture": "ground_core_07_06.png",
+   "triangles": 5000,
+   "bounds_min": [
+    150.0,
+    100.0,
+    988.3895
+   ],
+   "bounds_max": [
+    200.0,
+    150.0,
+    994.6173
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_core_07_07",
+   "obj": "ground_core_07_07.obj",
+   "texture": "ground_core_07_07.png",
+   "triangles": 5000,
+   "bounds_min": [
+    150.0,
+    150.0,
+    989.1935
+   ],
+   "bounds_max": [
+    200.0,
+    200.0,
+    995.0567
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_00_00",
+   "obj": "ground_mid_00_00.obj",
+   "texture": "ground_mid_00_00.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -1000.0,
+    -1000.0,
+    1197.3297
+   ],
+   "bounds_max": [
+    -800.0,
+    -800.0,
+    1392.218
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_00_01",
+   "obj": "ground_mid_00_01.obj",
+   "texture": "ground_mid_00_01.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -1000.0,
+    -800.0,
+    1166.3994
+   ],
+   "bounds_max": [
+    -800.0,
+    -600.0,
+    1377.829
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_00_02",
+   "obj": "ground_mid_00_02.obj",
+   "texture": "ground_mid_00_02.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -1000.0,
+    -600.0,
+    1166.6763
+   ],
+   "bounds_max": [
+    -800.0,
+    -400.0,
+    1373.8771
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_00_03",
+   "obj": "ground_mid_00_03.obj",
+   "texture": "ground_mid_00_03.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -1000.0,
+    -400.0,
+    1216.9185
+   ],
+   "bounds_max": [
+    -800.0,
+    -200.0,
+    1382.6284
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_00_04",
+   "obj": "ground_mid_00_04.obj",
+   "texture": "ground_mid_00_04.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -1000.0,
+    -200.0,
+    1347.4872
+   ],
+   "bounds_max": [
+    -800.0,
+    0.0,
+    1542.7118
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_00_05",
+   "obj": "ground_mid_00_05.obj",
+   "texture": "ground_mid_00_05.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -1000.0,
+    0.0,
+    1453.147
+   ],
+   "bounds_max": [
+    -800.0,
+    200.0,
+    1656.5885
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_00_06",
+   "obj": "ground_mid_00_06.obj",
+   "texture": "ground_mid_00_06.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -1000.0,
+    200.0,
+    1511.066
+   ],
+   "bounds_max": [
+    -800.0,
+    400.0,
+    1677.679
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_00_07",
+   "obj": "ground_mid_00_07.obj",
+   "texture": "ground_mid_00_07.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -1000.0,
+    400.0,
+    1473.58
+   ],
+   "bounds_max": [
+    -800.0,
+    600.0,
+    1676.1036
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_00_08",
+   "obj": "ground_mid_00_08.obj",
+   "texture": "ground_mid_00_08.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -1000.0,
+    600.0,
+    1386.3077
+   ],
+   "bounds_max": [
+    -800.0,
+    800.0,
+    1583.6722
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_00_09",
+   "obj": "ground_mid_00_09.obj",
+   "texture": "ground_mid_00_09.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -1000.0,
+    800.0,
+    1317.5726
+   ],
+   "bounds_max": [
+    -800.0,
+    1000.0,
+    1479.4795
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_01_00",
+   "obj": "ground_mid_01_00.obj",
+   "texture": "ground_mid_01_00.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -800.0,
+    -1000.0,
+    1021.9045
+   ],
+   "bounds_max": [
+    -600.0,
+    -800.0,
+    1315.8761
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_01_01",
+   "obj": "ground_mid_01_01.obj",
+   "texture": "ground_mid_01_01.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -800.0,
+    -800.0,
+    1080.0343
+   ],
+   "bounds_max": [
+    -600.0,
+    -600.0,
+    1294.3126
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_01_02",
+   "obj": "ground_mid_01_02.obj",
+   "texture": "ground_mid_01_02.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -800.0,
+    -600.0,
+    1080.0343
+   ],
+   "bounds_max": [
+    -600.0,
+    -400.0,
+    1235.2269
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_01_03",
+   "obj": "ground_mid_01_03.obj",
+   "texture": "ground_mid_01_03.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -800.0,
+    -400.0,
+    1167.6584
+   ],
+   "bounds_max": [
+    -600.0,
+    -200.0,
+    1347.4872
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_01_04",
+   "obj": "ground_mid_01_04.obj",
+   "texture": "ground_mid_01_04.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -800.0,
+    -200.0,
+    1246.1788
+   ],
+   "bounds_max": [
+    -600.0,
+    0.0,
+    1460.0465
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_01_05",
+   "obj": "ground_mid_01_05.obj",
+   "texture": "ground_mid_01_05.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -800.0,
+    0.0,
+    1281.8708
+   ],
+   "bounds_max": [
+    -600.0,
+    200.0,
+    1511.066
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_01_06",
+   "obj": "ground_mid_01_06.obj",
+   "texture": "ground_mid_01_06.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -800.0,
+    200.0,
+    1418.979
+   ],
+   "bounds_max": [
+    -600.0,
+    400.0,
+    1593.0529
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_01_07",
+   "obj": "ground_mid_01_07.obj",
+   "texture": "ground_mid_01_07.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -800.0,
+    400.0,
+    1374.8693
+   ],
+   "bounds_max": [
+    -600.0,
+    600.0,
+    1582.1584
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_01_08",
+   "obj": "ground_mid_01_08.obj",
+   "texture": "ground_mid_01_08.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -800.0,
+    600.0,
+    1271.6014
+   ],
+   "bounds_max": [
+    -600.0,
+    800.0,
+    1473.58
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_01_09",
+   "obj": "ground_mid_01_09.obj",
+   "texture": "ground_mid_01_09.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -800.0,
+    800.0,
+    1265.1083
+   ],
+   "bounds_max": [
+    -600.0,
+    1000.0,
+    1386.3077
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_02_00",
+   "obj": "ground_mid_02_00.obj",
+   "texture": "ground_mid_02_00.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -600.0,
+    -1000.0,
+    944.3823
+   ],
+   "bounds_max": [
+    -400.0,
+    -800.0,
+    1135.3286
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_02_01",
+   "obj": "ground_mid_02_01.obj",
+   "texture": "ground_mid_02_01.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -600.0,
+    -800.0,
+    996.9697
+   ],
+   "bounds_max": [
+    -400.0,
+    -600.0,
+    1154.1018
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_02_02",
+   "obj": "ground_mid_02_02.obj",
+   "texture": "ground_mid_02_02.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -600.0,
+    -600.0,
+    1024.3934
+   ],
+   "bounds_max": [
+    -400.0,
+    -400.0,
+    1183.131
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_02_03",
+   "obj": "ground_mid_02_03.obj",
+   "texture": "ground_mid_02_03.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -600.0,
+    -400.0,
+    1051.2297
+   ],
+   "bounds_max": [
+    -400.0,
+    -200.0,
+    1257.3411
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_02_04",
+   "obj": "ground_mid_02_04.obj",
+   "texture": "ground_mid_02_04.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -600.0,
+    -200.0,
+    1076.5856
+   ],
+   "bounds_max": [
+    -400.0,
+    0.0,
+    1307.5851
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_02_05",
+   "obj": "ground_mid_02_05.obj",
+   "texture": "ground_mid_02_05.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -600.0,
+    0.0,
+    1131.9714
+   ],
+   "bounds_max": [
+    -400.0,
+    200.0,
+    1418.979
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_02_06",
+   "obj": "ground_mid_02_06.obj",
+   "texture": "ground_mid_02_06.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -600.0,
+    200.0,
+    1231.84
+   ],
+   "bounds_max": [
+    -400.0,
+    400.0,
+    1438.8329
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_02_07",
+   "obj": "ground_mid_02_07.obj",
+   "texture": "ground_mid_02_07.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -600.0,
+    400.0,
+    1255.7552
+   ],
+   "bounds_max": [
+    -400.0,
+    600.0,
+    1448.4717
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_02_08",
+   "obj": "ground_mid_02_08.obj",
+   "texture": "ground_mid_02_08.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -600.0,
+    600.0,
+    1213.9829
+   ],
+   "bounds_max": [
+    -400.0,
+    800.0,
+    1374.8693
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_02_09",
+   "obj": "ground_mid_02_09.obj",
+   "texture": "ground_mid_02_09.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -600.0,
+    800.0,
+    1249.1354
+   ],
+   "bounds_max": [
+    -400.0,
+    1000.0,
+    1418.9769
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_03_00",
+   "obj": "ground_mid_03_00.obj",
+   "texture": "ground_mid_03_00.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -400.0,
+    -1000.0,
+    941.5568
+   ],
+   "bounds_max": [
+    -200.0,
+    -800.0,
+    1000.7449
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_03_01",
+   "obj": "ground_mid_03_01.obj",
+   "texture": "ground_mid_03_01.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -400.0,
+    -800.0,
+    953.4006
+   ],
+   "bounds_max": [
+    -200.0,
+    -600.0,
+    1024.3934
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_03_02",
+   "obj": "ground_mid_03_02.obj",
+   "texture": "ground_mid_03_02.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -400.0,
+    -600.0,
+    958.1633
+   ],
+   "bounds_max": [
+    -200.0,
+    -400.0,
+    1060.5198
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_03_03",
+   "obj": "ground_mid_03_03.obj",
+   "texture": "ground_mid_03_03.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -400.0,
+    -400.0,
+    966.5282
+   ],
+   "bounds_max": [
+    -200.0,
+    -200.0,
+    1076.5856
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_03_04",
+   "obj": "ground_mid_03_04.obj",
+   "texture": "ground_mid_03_04.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -400.0,
+    -200.0,
+    1001.6484
+   ],
+   "bounds_max": [
+    -200.0,
+    0.0,
+    1131.9714
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_03_05",
+   "obj": "ground_mid_03_05.obj",
+   "texture": "ground_mid_03_05.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -400.0,
+    0.0,
+    1025.153
+   ],
+   "bounds_max": [
+    -200.0,
+    200.0,
+    1239.5349
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_03_06",
+   "obj": "ground_mid_03_06.obj",
+   "texture": "ground_mid_03_06.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -400.0,
+    200.0,
+    1079.5764
+   ],
+   "bounds_max": [
+    -200.0,
+    400.0,
+    1329.9795
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_03_07",
+   "obj": "ground_mid_03_07.obj",
+   "texture": "ground_mid_03_07.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -400.0,
+    400.0,
+    1137.3365
+   ],
+   "bounds_max": [
+    -200.0,
+    600.0,
+    1339.1129
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_03_08",
+   "obj": "ground_mid_03_08.obj",
+   "texture": "ground_mid_03_08.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -400.0,
+    600.0,
+    1182.1775
+   ],
+   "bounds_max": [
+    -200.0,
+    800.0,
+    1358.3335
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_03_09",
+   "obj": "ground_mid_03_09.obj",
+   "texture": "ground_mid_03_09.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -400.0,
+    800.0,
+    1279.7057
+   ],
+   "bounds_max": [
+    -200.0,
+    1000.0,
+    1538.452
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_04_00",
+   "obj": "ground_mid_04_00.obj",
+   "texture": "ground_mid_04_00.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -200.0,
+    -1000.0,
+    943.9536
+   ],
+   "bounds_max": [
+    0.0,
+    -800.0,
+    1062.8917
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_04_01",
+   "obj": "ground_mid_04_01.obj",
+   "texture": "ground_mid_04_01.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -200.0,
+    -800.0,
+    947.2492
+   ],
+   "bounds_max": [
+    0.0,
+    -600.0,
+    967.2317
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_04_02",
+   "obj": "ground_mid_04_02.obj",
+   "texture": "ground_mid_04_02.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -200.0,
+    -600.0,
+    952.2983
+   ],
+   "bounds_max": [
+    0.0,
+    -400.0,
+    966.6725
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_04_03",
+   "obj": "ground_mid_04_03.obj",
+   "texture": "ground_mid_04_03.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -200.0,
+    -400.0,
+    961.4853
+   ],
+   "bounds_max": [
+    0.0,
+    -200.0,
+    1001.6484
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_04_04",
+   "obj": "ground_mid_04_04.obj",
+   "texture": "ground_mid_04_04.png",
+   "triangles": 158,
+   "bounds_min": [
+    -200.0,
+    -200.0,
+    980.0953
+   ],
+   "bounds_max": [
+    0.0,
+    0.0,
+    1025.153
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_04_05",
+   "obj": "ground_mid_04_05.obj",
+   "texture": "ground_mid_04_05.png",
+   "triangles": 158,
+   "bounds_min": [
+    -200.0,
+    0.0,
+    1023.7111
+   ],
+   "bounds_max": [
+    0.0,
+    200.0,
+    1091.3486
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_04_06",
+   "obj": "ground_mid_04_06.obj",
+   "texture": "ground_mid_04_06.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -200.0,
+    200.0,
+    1037.0184
+   ],
+   "bounds_max": [
+    0.0,
+    400.0,
+    1197.486
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_04_07",
+   "obj": "ground_mid_04_07.obj",
+   "texture": "ground_mid_04_07.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -200.0,
+    400.0,
+    1089.5409
+   ],
+   "bounds_max": [
+    0.0,
+    600.0,
+    1219.6139
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_04_08",
+   "obj": "ground_mid_04_08.obj",
+   "texture": "ground_mid_04_08.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -200.0,
+    600.0,
+    1164.6133
+   ],
+   "bounds_max": [
+    0.0,
+    800.0,
+    1377.5366
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_04_09",
+   "obj": "ground_mid_04_09.obj",
+   "texture": "ground_mid_04_09.png",
+   "triangles": 3200,
+   "bounds_min": [
+    -200.0,
+    800.0,
+    1310.8051
+   ],
+   "bounds_max": [
+    0.0,
+    1000.0,
+    1541.3663
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_05_00",
+   "obj": "ground_mid_05_00.obj",
+   "texture": "ground_mid_05_00.png",
+   "triangles": 3200,
+   "bounds_min": [
+    0.0,
+    -1000.0,
+    967.2317
+   ],
+   "bounds_max": [
+    200.0,
+    -800.0,
+    1147.1345
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_05_01",
+   "obj": "ground_mid_05_01.obj",
+   "texture": "ground_mid_05_01.png",
+   "triangles": 3200,
+   "bounds_min": [
+    0.0,
+    -800.0,
+    943.9277
+   ],
+   "bounds_max": [
+    200.0,
+    -600.0,
+    1075.9907
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_05_02",
+   "obj": "ground_mid_05_02.obj",
+   "texture": "ground_mid_05_02.png",
+   "triangles": 3200,
+   "bounds_min": [
+    0.0,
+    -600.0,
+    951.3284
+   ],
+   "bounds_max": [
+    200.0,
+    -400.0,
+    1048.7202
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_05_03",
+   "obj": "ground_mid_05_03.obj",
+   "texture": "ground_mid_05_03.png",
+   "triangles": 3200,
+   "bounds_min": [
+    0.0,
+    -400.0,
+    963.575
+   ],
+   "bounds_max": [
+    200.0,
+    -200.0,
+    1001.2567
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_05_04",
+   "obj": "ground_mid_05_04.obj",
+   "texture": "ground_mid_05_04.png",
+   "triangles": 158,
+   "bounds_min": [
+    0.0,
+    -200.0,
+    970.0837
+   ],
+   "bounds_max": [
+    200.0,
+    0.0,
+    986.9131
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_05_05",
+   "obj": "ground_mid_05_05.obj",
+   "texture": "ground_mid_05_05.png",
+   "triangles": 158,
+   "bounds_min": [
+    0.0,
+    0.0,
+    976.099
+   ],
+   "bounds_max": [
+    200.0,
+    200.0,
+    1037.0184
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_05_06",
+   "obj": "ground_mid_05_06.obj",
+   "texture": "ground_mid_05_06.png",
+   "triangles": 3200,
+   "bounds_min": [
+    0.0,
+    200.0,
+    981.1512
+   ],
+   "bounds_max": [
+    200.0,
+    400.0,
+    1140.251
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_05_07",
+   "obj": "ground_mid_05_07.obj",
+   "texture": "ground_mid_05_07.png",
+   "triangles": 3200,
+   "bounds_min": [
+    0.0,
+    400.0,
+    984.2915
+   ],
+   "bounds_max": [
+    200.0,
+    600.0,
+    1164.6133
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_05_08",
+   "obj": "ground_mid_05_08.obj",
+   "texture": "ground_mid_05_08.png",
+   "triangles": 3200,
+   "bounds_min": [
+    0.0,
+    600.0,
+    1066.1603
+   ],
+   "bounds_max": [
+    200.0,
+    800.0,
+    1316.2593
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_05_09",
+   "obj": "ground_mid_05_09.obj",
+   "texture": "ground_mid_05_09.png",
+   "triangles": 3200,
+   "bounds_min": [
+    0.0,
+    800.0,
+    1166.3947
+   ],
+   "bounds_max": [
+    200.0,
+    1000.0,
+    1493.7061
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_06_00",
+   "obj": "ground_mid_06_00.obj",
+   "texture": "ground_mid_06_00.png",
+   "triangles": 3200,
+   "bounds_min": [
+    200.0,
+    -1000.0,
+    1061.4546
+   ],
+   "bounds_max": [
+    400.0,
+    -800.0,
+    1197.9768
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_06_01",
+   "obj": "ground_mid_06_01.obj",
+   "texture": "ground_mid_06_01.png",
+   "triangles": 3200,
+   "bounds_min": [
+    200.0,
+    -800.0,
+    1039.964
+   ],
+   "bounds_max": [
+    400.0,
+    -600.0,
+    1203.1156
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_06_02",
+   "obj": "ground_mid_06_02.obj",
+   "texture": "ground_mid_06_02.png",
+   "triangles": 3200,
+   "bounds_min": [
+    200.0,
+    -600.0,
+    1001.2567
+   ],
+   "bounds_max": [
+    400.0,
+    -400.0,
+    1198.3727
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_06_03",
+   "obj": "ground_mid_06_03.obj",
+   "texture": "ground_mid_06_03.png",
+   "triangles": 3200,
+   "bounds_min": [
+    200.0,
+    -400.0,
+    982.6479
+   ],
+   "bounds_max": [
+    400.0,
+    -200.0,
+    1194.9745
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_06_04",
+   "obj": "ground_mid_06_04.obj",
+   "texture": "ground_mid_06_04.png",
+   "triangles": 3200,
+   "bounds_min": [
+    200.0,
+    -200.0,
+    971.0928
+   ],
+   "bounds_max": [
+    400.0,
+    0.0,
+    1157.7136
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_06_05",
+   "obj": "ground_mid_06_05.obj",
+   "texture": "ground_mid_06_05.png",
+   "triangles": 3200,
+   "bounds_min": [
+    200.0,
+    0.0,
+    974.0126
+   ],
+   "bounds_max": [
+    400.0,
+    200.0,
+    1009.5392
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_06_06",
+   "obj": "ground_mid_06_06.obj",
+   "texture": "ground_mid_06_06.png",
+   "triangles": 3200,
+   "bounds_min": [
+    200.0,
+    200.0,
+    976.1195
+   ],
+   "bounds_max": [
+    400.0,
+    400.0,
+    989.6259
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_06_07",
+   "obj": "ground_mid_06_07.obj",
+   "texture": "ground_mid_06_07.png",
+   "triangles": 3200,
+   "bounds_min": [
+    200.0,
+    400.0,
+    976.1195
+   ],
+   "bounds_max": [
+    400.0,
+    600.0,
+    1066.1603
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_06_08",
+   "obj": "ground_mid_06_08.obj",
+   "texture": "ground_mid_06_08.png",
+   "triangles": 3200,
+   "bounds_min": [
+    200.0,
+    600.0,
+    1001.3744
+   ],
+   "bounds_max": [
+    400.0,
+    800.0,
+    1166.3947
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_06_09",
+   "obj": "ground_mid_06_09.obj",
+   "texture": "ground_mid_06_09.png",
+   "triangles": 3200,
+   "bounds_min": [
+    200.0,
+    800.0,
+    1060.0005
+   ],
+   "bounds_max": [
+    400.0,
+    1000.0,
+    1387.6996
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_07_00",
+   "obj": "ground_mid_07_00.obj",
+   "texture": "ground_mid_07_00.png",
+   "triangles": 3200,
+   "bounds_min": [
+    400.0,
+    -1000.0,
+    1163.4952
+   ],
+   "bounds_max": [
+    600.0,
+    -800.0,
+    1301.1016
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_07_01",
+   "obj": "ground_mid_07_01.obj",
+   "texture": "ground_mid_07_01.png",
+   "triangles": 3200,
+   "bounds_min": [
+    400.0,
+    -800.0,
+    1182.3291
+   ],
+   "bounds_max": [
+    600.0,
+    -600.0,
+    1357.235
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_07_02",
+   "obj": "ground_mid_07_02.obj",
+   "texture": "ground_mid_07_02.png",
+   "triangles": 3200,
+   "bounds_min": [
+    400.0,
+    -600.0,
+    1167.5969
+   ],
+   "bounds_max": [
+    600.0,
+    -400.0,
+    1338.7694
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_07_03",
+   "obj": "ground_mid_07_03.obj",
+   "texture": "ground_mid_07_03.png",
+   "triangles": 3200,
+   "bounds_min": [
+    400.0,
+    -400.0,
+    1157.7136
+   ],
+   "bounds_max": [
+    600.0,
+    -200.0,
+    1345.312
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_07_04",
+   "obj": "ground_mid_07_04.obj",
+   "texture": "ground_mid_07_04.png",
+   "triangles": 3200,
+   "bounds_min": [
+    400.0,
+    -200.0,
+    1009.5392
+   ],
+   "bounds_max": [
+    600.0,
+    0.0,
+    1207.2518
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_07_05",
+   "obj": "ground_mid_07_05.obj",
+   "texture": "ground_mid_07_05.png",
+   "triangles": 3200,
+   "bounds_min": [
+    400.0,
+    0.0,
+    975.1868
+   ],
+   "bounds_max": [
+    600.0,
+    200.0,
+    1073.2894
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_07_06",
+   "obj": "ground_mid_07_06.obj",
+   "texture": "ground_mid_07_06.png",
+   "triangles": 3200,
+   "bounds_min": [
+    400.0,
+    200.0,
+    971.5991
+   ],
+   "bounds_max": [
+    600.0,
+    400.0,
+    990.1359
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_07_07",
+   "obj": "ground_mid_07_07.obj",
+   "texture": "ground_mid_07_07.png",
+   "triangles": 3200,
+   "bounds_min": [
+    400.0,
+    400.0,
+    976.7737
+   ],
+   "bounds_max": [
+    600.0,
+    600.0,
+    1001.3744
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_07_08",
+   "obj": "ground_mid_07_08.obj",
+   "texture": "ground_mid_07_08.png",
+   "triangles": 3200,
+   "bounds_min": [
+    400.0,
+    600.0,
+    989.1868
+   ],
+   "bounds_max": [
+    600.0,
+    800.0,
+    1060.0005
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_07_09",
+   "obj": "ground_mid_07_09.obj",
+   "texture": "ground_mid_07_09.png",
+   "triangles": 3200,
+   "bounds_min": [
+    400.0,
+    800.0,
+    1030.3059
+   ],
+   "bounds_max": [
+    600.0,
+    1000.0,
+    1250.9999
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_08_00",
+   "obj": "ground_mid_08_00.obj",
+   "texture": "ground_mid_08_00.png",
+   "triangles": 3200,
+   "bounds_min": [
+    600.0,
+    -1000.0,
+    1275.7601
+   ],
+   "bounds_max": [
+    800.0,
+    -800.0,
+    1432.1411
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_08_01",
+   "obj": "ground_mid_08_01.obj",
+   "texture": "ground_mid_08_01.png",
+   "triangles": 3200,
+   "bounds_min": [
+    600.0,
+    -800.0,
+    1301.1016
+   ],
+   "bounds_max": [
+    800.0,
+    -600.0,
+    1502.6919
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_08_02",
+   "obj": "ground_mid_08_02.obj",
+   "texture": "ground_mid_08_02.png",
+   "triangles": 3200,
+   "bounds_min": [
+    600.0,
+    -600.0,
+    1316.5076
+   ],
+   "bounds_max": [
+    800.0,
+    -400.0,
+    1491.1643
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_08_03",
+   "obj": "ground_mid_08_03.obj",
+   "texture": "ground_mid_08_03.png",
+   "triangles": 3200,
+   "bounds_min": [
+    600.0,
+    -400.0,
+    1207.2518
+   ],
+   "bounds_max": [
+    800.0,
+    -200.0,
+    1402.7362
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_08_04",
+   "obj": "ground_mid_08_04.obj",
+   "texture": "ground_mid_08_04.png",
+   "triangles": 3200,
+   "bounds_min": [
+    600.0,
+    -200.0,
+    1073.2894
+   ],
+   "bounds_max": [
+    800.0,
+    0.0,
+    1267.4564
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_08_05",
+   "obj": "ground_mid_08_05.obj",
+   "texture": "ground_mid_08_05.png",
+   "triangles": 3200,
+   "bounds_min": [
+    600.0,
+    0.0,
+    983.4585
+   ],
+   "bounds_max": [
+    800.0,
+    200.0,
+    1116.6782
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_08_06",
+   "obj": "ground_mid_08_06.obj",
+   "texture": "ground_mid_08_06.png",
+   "triangles": 3200,
+   "bounds_min": [
+    600.0,
+    200.0,
+    975.4756
+   ],
+   "bounds_max": [
+    800.0,
+    400.0,
+    1016.9296
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_08_07",
+   "obj": "ground_mid_08_07.obj",
+   "texture": "ground_mid_08_07.png",
+   "triangles": 3200,
+   "bounds_min": [
+    600.0,
+    400.0,
+    975.4407
+   ],
+   "bounds_max": [
+    800.0,
+    600.0,
+    999.5447
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_08_08",
+   "obj": "ground_mid_08_08.obj",
+   "texture": "ground_mid_08_08.png",
+   "triangles": 3200,
+   "bounds_min": [
+    600.0,
+    600.0,
+    979.2618
+   ],
+   "bounds_max": [
+    800.0,
+    800.0,
+    1030.3059
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_08_09",
+   "obj": "ground_mid_08_09.obj",
+   "texture": "ground_mid_08_09.png",
+   "triangles": 3200,
+   "bounds_min": [
+    600.0,
+    800.0,
+    992.9688
+   ],
+   "bounds_max": [
+    800.0,
+    1000.0,
+    1190.9115
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_09_00",
+   "obj": "ground_mid_09_00.obj",
+   "texture": "ground_mid_09_00.png",
+   "triangles": 3200,
+   "bounds_min": [
+    800.0,
+    -1000.0,
+    1387.9481
+   ],
+   "bounds_max": [
+    1000.0,
+    -800.0,
+    1600.3259
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_09_01",
+   "obj": "ground_mid_09_01.obj",
+   "texture": "ground_mid_09_01.png",
+   "triangles": 3200,
+   "bounds_min": [
+    800.0,
+    -800.0,
+    1418.6996
+   ],
+   "bounds_max": [
+    1000.0,
+    -600.0,
+    1633.7153
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_09_02",
+   "obj": "ground_mid_09_02.obj",
+   "texture": "ground_mid_09_02.png",
+   "triangles": 3200,
+   "bounds_min": [
+    800.0,
+    -600.0,
+    1395.4631
+   ],
+   "bounds_max": [
+    1000.0,
+    -400.0,
+    1592.8958
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_09_03",
+   "obj": "ground_mid_09_03.obj",
+   "texture": "ground_mid_09_03.png",
+   "triangles": 3200,
+   "bounds_min": [
+    800.0,
+    -400.0,
+    1260.4146
+   ],
+   "bounds_max": [
+    1000.0,
+    -200.0,
+    1421.2704
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_09_04",
+   "obj": "ground_mid_09_04.obj",
+   "texture": "ground_mid_09_04.png",
+   "triangles": 3200,
+   "bounds_min": [
+    800.0,
+    -200.0,
+    1116.6782
+   ],
+   "bounds_max": [
+    1000.0,
+    0.0,
+    1316.6411
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_09_05",
+   "obj": "ground_mid_09_05.obj",
+   "texture": "ground_mid_09_05.png",
+   "triangles": 3200,
+   "bounds_min": [
+    800.0,
+    0.0,
+    1016.9296
+   ],
+   "bounds_max": [
+    1000.0,
+    200.0,
+    1217.8966
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_09_06",
+   "obj": "ground_mid_09_06.obj",
+   "texture": "ground_mid_09_06.png",
+   "triangles": 3200,
+   "bounds_min": [
+    800.0,
+    200.0,
+    978.2985
+   ],
+   "bounds_max": [
+    1000.0,
+    400.0,
+    1083.6766
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_09_07",
+   "obj": "ground_mid_09_07.obj",
+   "texture": "ground_mid_09_07.png",
+   "triangles": 3200,
+   "bounds_min": [
+    800.0,
+    400.0,
+    972.9138
+   ],
+   "bounds_max": [
+    1000.0,
+    600.0,
+    992.798
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_09_08",
+   "obj": "ground_mid_09_08.obj",
+   "texture": "ground_mid_09_08.png",
+   "triangles": 3200,
+   "bounds_min": [
+    800.0,
+    600.0,
+    976.5813
+   ],
+   "bounds_max": [
+    1000.0,
+    800.0,
+    992.9688
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_mid_09_09",
+   "obj": "ground_mid_09_09.obj",
+   "texture": "ground_mid_09_09.png",
+   "triangles": 3200,
+   "bounds_min": [
+    800.0,
+    800.0,
+    981.3356
+   ],
+   "bounds_max": [
+    1000.0,
+    1000.0,
+    1103.1045
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_far_00_01",
+   "obj": "ground_far_00_01.obj",
+   "texture": "ground_far_00_01.png",
+   "triangles": 12800,
+   "bounds_min": [
+    -4000.0,
+    -2000.0,
+    1045.3502
+   ],
+   "bounds_max": [
+    -2000.0,
+    0.0,
+    1853.4926
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_far_00_02",
+   "obj": "ground_far_00_02.obj",
+   "texture": "ground_far_00_02.png",
+   "triangles": 12800,
+   "bounds_min": [
+    -4000.0,
+    0.0,
+    1328.3881
+   ],
+   "bounds_max": [
+    -2000.0,
+    2000.0,
+    2393.9463
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_far_01_00",
+   "obj": "ground_far_01_00.obj",
+   "texture": "ground_far_01_00.png",
+   "triangles": 12800,
+   "bounds_min": [
+    -2000.0,
+    -4000.0,
+    878.7654
+   ],
+   "bounds_max": [
+    0.0,
+    -2000.0,
+    1760.6177
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_far_01_01",
+   "obj": "ground_far_01_01.obj",
+   "texture": "ground_far_01_01.png",
+   "triangles": 9758,
+   "bounds_min": [
+    -2000.0,
+    -2000.0,
+    922.7578
+   ],
+   "bounds_max": [
+    0.0,
+    0.0,
+    1910.5002
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_far_01_02",
+   "obj": "ground_far_01_02.obj",
+   "texture": "ground_far_01_02.png",
+   "triangles": 9758,
+   "bounds_min": [
+    -2000.0,
+    0.0,
+    1316.0283
+   ],
+   "bounds_max": [
+    0.0,
+    2000.0,
+    2343.3584
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_far_01_03",
+   "obj": "ground_far_01_03.obj",
+   "texture": "ground_far_01_03.png",
+   "triangles": 12800,
+   "bounds_min": [
+    -2000.0,
+    2000.0,
+    1477.5769
+   ],
+   "bounds_max": [
+    0.0,
+    4000.0,
+    2343.3584
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_far_02_00",
+   "obj": "ground_far_02_00.obj",
+   "texture": "ground_far_02_00.png",
+   "triangles": 12800,
+   "bounds_min": [
+    0.0,
+    -4000.0,
+    929.501
+   ],
+   "bounds_max": [
+    2000.0,
+    -2000.0,
+    1656.6002
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_far_02_01",
+   "obj": "ground_far_02_01.obj",
+   "texture": "ground_far_02_01.png",
+   "triangles": 9758,
+   "bounds_min": [
+    0.0,
+    -2000.0,
+    1043.2231
+   ],
+   "bounds_max": [
+    2000.0,
+    0.0,
+    1994.0909
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_far_02_02",
+   "obj": "ground_far_02_02.obj",
+   "texture": "ground_far_02_02.png",
+   "triangles": 9758,
+   "bounds_min": [
+    0.0,
+    0.0,
+    974.2145
+   ],
+   "bounds_max": [
+    2000.0,
+    2000.0,
+    2007.7762
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_far_02_03",
+   "obj": "ground_far_02_03.obj",
+   "texture": "ground_far_02_03.png",
+   "triangles": 12800,
+   "bounds_min": [
+    0.0,
+    2000.0,
+    1186.3341
+   ],
+   "bounds_max": [
+    2000.0,
+    4000.0,
+    2315.1875
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_far_03_01",
+   "obj": "ground_far_03_01.obj",
+   "texture": "ground_far_03_01.png",
+   "triangles": 12800,
+   "bounds_min": [
+    2000.0,
+    -2000.0,
+    1292.0842
+   ],
+   "bounds_max": [
+    4000.0,
+    0.0,
+    2533.0103
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "none",
+   "specular": 0.0
+  },
+  {
+   "name": "ground_far_03_02",
+   "obj": "ground_far_03_02.obj",
+   "texture": "ground_far_03_02.png",
+   "triangles": 12800,
+   "bounds_min": [
+    2000.0,
+    0.0,
+    995.4852
+   ],
+   "bounds_max": [
+    4000.0,
+    2000.0,
+    1887.7034
+   ],
+   "group": "terrain",
+   "folder": "terrain",
+   "flags": [],
+   "collision": "none",
+   "specular": 0.0
+  }
+ ],
+ "placements": [
+  {
+   "item": "ground_core_00_00",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_00_01",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_00_02",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_00_03",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_00_04",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_00_05",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_00_06",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_00_07",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_01_00",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_01_01",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_01_02",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_01_03",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_01_04",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_01_05",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_01_06",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_01_07",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_02_00",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_02_01",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_02_02",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_02_03",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_02_04",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_02_05",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_02_06",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_02_07",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_03_00",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_03_01",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_03_02",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_03_03",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_03_04",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_03_05",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_03_06",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_03_07",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_04_00",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_04_01",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_04_02",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_04_03",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_04_04",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_04_05",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_04_06",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_04_07",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_05_00",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_05_01",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_05_02",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_05_03",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_05_04",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_05_05",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_05_06",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_05_07",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_06_00",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_06_01",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_06_02",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_06_03",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_06_04",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_06_05",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_06_06",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_06_07",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_07_00",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_07_01",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_07_02",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_07_03",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_07_04",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_07_05",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_07_06",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_core_07_07",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_core"
+  },
+  {
+   "item": "ground_mid_00_00",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_00_01",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_00_02",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_00_03",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_00_04",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_00_05",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_00_06",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_00_07",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_00_08",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_00_09",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_01_00",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_01_01",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_01_02",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_01_03",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_01_04",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_01_05",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_01_06",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_01_07",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_01_08",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_01_09",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_02_00",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_02_01",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_02_02",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_02_03",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_02_04",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_02_05",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_02_06",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_02_07",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_02_08",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_02_09",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_03_00",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_03_01",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_03_02",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_03_03",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_03_04",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_03_05",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_03_06",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_03_07",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_03_08",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_03_09",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_04_00",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_04_01",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_04_02",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_04_03",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_04_04",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_04_05",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_04_06",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_04_07",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_04_08",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_04_09",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_05_00",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_05_01",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_05_02",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_05_03",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_05_04",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_05_05",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_05_06",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_05_07",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_05_08",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_05_09",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_06_00",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_06_01",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_06_02",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_06_03",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_06_04",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_06_05",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_06_06",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_06_07",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_06_08",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_06_09",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_07_00",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_07_01",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_07_02",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_07_03",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_07_04",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_07_05",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_07_06",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_07_07",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_07_08",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_07_09",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_08_00",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_08_01",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_08_02",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_08_03",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_08_04",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_08_05",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_08_06",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_08_07",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_08_08",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_08_09",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_09_00",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_09_01",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_09_02",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_09_03",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_09_04",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_09_05",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_09_06",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_09_07",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_09_08",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_mid_09_09",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_mid"
+  },
+  {
+   "item": "ground_far_00_01",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_far"
+  },
+  {
+   "item": "ground_far_00_02",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_far"
+  },
+  {
+   "item": "ground_far_01_00",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_far"
+  },
+  {
+   "item": "ground_far_01_01",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_far"
+  },
+  {
+   "item": "ground_far_01_02",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_far"
+  },
+  {
+   "item": "ground_far_01_03",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_far"
+  },
+  {
+   "item": "ground_far_02_00",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_far"
+  },
+  {
+   "item": "ground_far_02_01",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_far"
+  },
+  {
+   "item": "ground_far_02_02",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_far"
+  },
+  {
+   "item": "ground_far_02_03",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_far"
+  },
+  {
+   "item": "ground_far_03_01",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_far"
+  },
+  {
+   "item": "ground_far_03_02",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "ring",
+   "ring": "ground_far"
+  }
+ ]
+}

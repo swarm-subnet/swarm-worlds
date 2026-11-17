@@ -38,6 +38,18 @@ move; everything else stays where the real park has it.
 - `LICENSE_SOMA.txt`: the body, skeleton and skin weights derive from NVIDIA Kimodo and SOMA-X under the
   Apache License 2.0, reproduced there. The garments and tools were made for Swarm.
 
+## Andorra test site
+
+`custom/testsite/` is the company's drone test field in Andorra and the valley around it, read by the test
+site map builder in the swarm repository. The place is real, so nothing in it moves with the seed. It is built
+from our own drone survey, Govern d'Andorra data and open data; `SOURCE.txt` names every source, its license
+and what was made from it.
+
+- `manifest.json`: every piece, its placements, the forest entry and the `site` block (the field outline,
+  the tree crowns the drone must not enter and the nearby buildings).
+- `terrain/`, `field/`, `edges/`, `buildings/`: the pieces, one folder per group.
+- `plants/`: the forest table and the tree meshes it names.
+
 ## Lost-person characters
 
 `custom/people/lost_person_characters/` contains character targets intended

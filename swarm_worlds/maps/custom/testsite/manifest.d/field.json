@@ -1,0 +1,50 @@
+{
+ "group": "field",
+ "written": "2026-11-12 12:49:49",
+ "notes": "the ploughed field, 0.2 m sim grid",
+ "items": [
+  {
+   "name": "field_soil",
+   "obj": "field_soil.obj",
+   "texture": "field_soil.png",
+   "triangles": 142056,
+   "bounds_min": [
+    -45.425,
+    -35.725,
+    1005.0521
+   ],
+   "bounds_max": [
+    24.575,
+    30.275,
+    1012.3726
+   ],
+   "group": "field",
+   "folder": "field",
+   "flags": [],
+   "collision": "mesh",
+   "specular": 0.0
+  }
+ ],
+ "placements": [
+  {
+   "item": "field_soil",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "kind": "field"
+  }
+ ]
+}

@@ -24,7 +24,7 @@ names the simulator has always used.
 
 from importlib.resources import files
 
-__version__ = "1.1.0"
+__version__ = "1.1.1"
 
 _ROOT = files(__name__)
 
