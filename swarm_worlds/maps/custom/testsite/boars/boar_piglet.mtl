@@ -1,0 +1,3 @@
+newmtl boar_piglet
+Kd 1 1 1
+map_Kd boar_piglet_striped.png

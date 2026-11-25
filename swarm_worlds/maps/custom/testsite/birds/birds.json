@@ -1,0 +1,475 @@
+{
+ "class": "bird",
+ "threat": false,
+ "decoy": true,
+ "frame": "x forward, z up, metres; origin at the centre of the standing footprint, feet on z = 0",
+ "poses": "the skin is built from poses[rest][source], uv and faces; poses[frame][source] is the resetMeshData upload; frames are clip.start + i",
+ "heat": {
+  "range_c": [
+   12.0,
+   38.0
+  ],
+  "emissivity": 0.98
+ },
+ "size_spread": [
+  0.94,
+  1.06
+ ],
+ "pace_spread": [
+  0.9,
+  1.1
+ ],
+ "blend_s": 0.25,
+ "joins": {
+  "stand": [
+   "walk",
+   "look",
+   "peck",
+   "take_off"
+  ],
+  "walk": [
+   "stand",
+   "hop"
+  ],
+  "hop": [
+   "walk"
+  ],
+  "look": [
+   "stand"
+  ],
+  "peck": [
+   "stand"
+  ],
+  "take_off": [
+   "fly"
+  ],
+  "fly": [
+   "glide",
+   "land"
+  ],
+  "glide": [
+   "fly",
+   "land"
+  ],
+  "land": [
+   "stand"
+  ]
+ },
+ "bodies": {
+  "crow": {
+   "obj": "bird_crow.obj",
+   "poses": "bird_crow_poses.npz",
+   "coats": {
+    "glossy": "bird_crow_glossy.png",
+    "worn": "bird_crow_worn.png",
+    "young": "bird_crow_young.png"
+   },
+   "heat_map": "bird_crow_heat.png",
+   "length_m": 0.463,
+   "height_m": 0.265,
+   "triangles": 1754,
+   "vertices": 1184,
+   "render_vertices": 1343,
+   "clips": {
+    "walk": {
+     "start": 0,
+     "frames": 12,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.4032
+    },
+    "hop": {
+     "start": 12,
+     "frames": 9,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.6933
+    },
+    "stand": {
+     "start": 21,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "look": {
+     "start": 117,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "peck": {
+     "start": 213,
+     "frames": 54,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "stand"
+    },
+    "take_off": {
+     "start": 267,
+     "frames": 24,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "fly"
+    },
+    "fly": {
+     "start": 291,
+     "frames": 12,
+     "fps": 40,
+     "loop": true,
+     "speed_m_s": 9.0
+    },
+    "glide": {
+     "start": 303,
+     "frames": 48,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 8.0
+    },
+    "land": {
+     "start": 351,
+     "frames": 30,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "stand"
+    }
+   }
+  },
+  "magpie": {
+   "obj": "bird_magpie.obj",
+   "poses": "bird_magpie_poses.npz",
+   "coats": {
+    "pied": "bird_magpie_pied.png",
+    "young": "bird_magpie_young.png"
+   },
+   "heat_map": "bird_magpie_heat.png",
+   "length_m": 0.445,
+   "height_m": 0.221,
+   "triangles": 1754,
+   "vertices": 1200,
+   "render_vertices": 1359,
+   "clips": {
+    "walk": {
+     "start": 0,
+     "frames": 11,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.4047
+    },
+    "hop": {
+     "start": 11,
+     "frames": 9,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.6379
+    },
+    "stand": {
+     "start": 20,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "look": {
+     "start": 116,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "peck": {
+     "start": 212,
+     "frames": 54,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "stand"
+    },
+    "take_off": {
+     "start": 266,
+     "frames": 24,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "fly"
+    },
+    "fly": {
+     "start": 290,
+     "frames": 10,
+     "fps": 40,
+     "loop": true,
+     "speed_m_s": 7.5
+    },
+    "glide": {
+     "start": 300,
+     "frames": 48,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 6.5
+    },
+    "land": {
+     "start": 348,
+     "frames": 30,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "stand"
+    }
+   }
+  },
+  "woodpigeon": {
+   "obj": "bird_woodpigeon.obj",
+   "poses": "bird_woodpigeon_poses.npz",
+   "coats": {
+    "adult": "bird_woodpigeon_adult.png",
+    "young": "bird_woodpigeon_young.png"
+   },
+   "heat_map": "bird_woodpigeon_heat.png",
+   "length_m": 0.402,
+   "height_m": 0.213,
+   "triangles": 1734,
+   "vertices": 1156,
+   "render_vertices": 1315,
+   "clips": {
+    "walk": {
+     "start": 0,
+     "frames": 10,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.3097
+    },
+    "hop": {
+     "start": 10,
+     "frames": 9,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.4437
+    },
+    "stand": {
+     "start": 19,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "look": {
+     "start": 115,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "peck": {
+     "start": 211,
+     "frames": 54,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "stand"
+    },
+    "take_off": {
+     "start": 265,
+     "frames": 24,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "fly"
+    },
+    "fly": {
+     "start": 289,
+     "frames": 9,
+     "fps": 48,
+     "loop": true,
+     "speed_m_s": 12.0
+    },
+    "glide": {
+     "start": 298,
+     "frames": 48,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 10.0
+    },
+    "land": {
+     "start": 346,
+     "frames": 30,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "stand"
+    }
+   }
+  },
+  "pigeon": {
+   "obj": "bird_pigeon.obj",
+   "poses": "bird_pigeon_poses.npz",
+   "coats": {
+    "blue_bar": "bird_pigeon_blue_bar.png",
+    "checker": "bird_pigeon_checker.png",
+    "dark": "bird_pigeon_dark.png",
+    "red": "bird_pigeon_red.png",
+    "pied": "bird_pigeon_pied.png",
+    "white": "bird_pigeon_white.png"
+   },
+   "heat_map": "bird_pigeon_heat.png",
+   "length_m": 0.314,
+   "height_m": 0.178,
+   "triangles": 1734,
+   "vertices": 1156,
+   "render_vertices": 1315,
+   "clips": {
+    "walk": {
+     "start": 0,
+     "frames": 9,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.2925
+    },
+    "hop": {
+     "start": 9,
+     "frames": 9,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.3772
+    },
+    "stand": {
+     "start": 18,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "look": {
+     "start": 114,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "peck": {
+     "start": 210,
+     "frames": 54,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "stand"
+    },
+    "take_off": {
+     "start": 264,
+     "frames": 24,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "fly"
+    },
+    "fly": {
+     "start": 288,
+     "frames": 8,
+     "fps": 48,
+     "loop": true,
+     "speed_m_s": 12.0
+    },
+    "glide": {
+     "start": 296,
+     "frames": 48,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 10.0
+    },
+    "land": {
+     "start": 344,
+     "frames": 30,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "stand"
+    }
+   }
+  },
+  "chough": {
+   "obj": "bird_chough.obj",
+   "poses": "bird_chough_poses.npz",
+   "coats": {
+    "adult": "bird_chough_adult.png",
+    "young": "bird_chough_young.png"
+   },
+   "heat_map": "bird_chough_heat.png",
+   "length_m": 0.388,
+   "height_m": 0.218,
+   "triangles": 1774,
+   "vertices": 1196,
+   "render_vertices": 1355,
+   "clips": {
+    "walk": {
+     "start": 0,
+     "frames": 11,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.3589
+    },
+    "hop": {
+     "start": 11,
+     "frames": 9,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.5658
+    },
+    "stand": {
+     "start": 20,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "look": {
+     "start": 116,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "peck": {
+     "start": 212,
+     "frames": 54,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "stand"
+    },
+    "take_off": {
+     "start": 266,
+     "frames": 24,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "fly"
+    },
+    "fly": {
+     "start": 290,
+     "frames": 11,
+     "fps": 40,
+     "loop": true,
+     "speed_m_s": 10.0
+    },
+    "glide": {
+     "start": 301,
+     "frames": 48,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 9.5
+    },
+    "land": {
+     "start": 349,
+     "frames": 30,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "stand"
+    }
+   }
+  }
+ }
+}

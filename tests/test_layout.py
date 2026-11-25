@@ -45,6 +45,15 @@ EXPECTED_MAP_DIRS = {
     "custom/people/open_mannequin_raw/split",
     "custom/solar",
     "custom/solar/intruders",
+    "custom/testsite",
+    "custom/testsite/terrain",
+    "custom/testsite/plants",
+    "custom/testsite/goats",
+    "custom/testsite/dogs",
+    "custom/testsite/motions",
+    "custom/testsite/people",
+    "custom/testsite/people/pieces",
+    "custom/testsite/people/pictures",
     "custom/warehouse_shell",
     "forest/quaternius_ultimate_nature",
     "forest/textures",
@@ -149,6 +158,82 @@ def test_solar_dogs_point_at_real_files():
             assert spec.get("then", clip) in body["clips"], f"{name}: {clip}"
 
 
+# The Test Field's animals, each a folder with its table and the class it must carry.
+TESTSITE_ANIMALS = (("goats", "goats.json", "goat"), ("dogs", "dogs.json", "dog"), ("birds", "birds.json", "bird"),
+                    ("boars", "boars.json", "boar"), ("rats", "rats.json", "rat"))
+
+
+def test_testsite_animals_point_at_real_files():
+    """Every animal of the Test Field names files that ship, its skin and pose table fit each other and cover every
+    clip, every clip that follows another exists, and no animal is a threat."""
+    for folder, table_name, kind in TESTSITE_ANIMALS:
+        home = MAPS / "custom" / "testsite" / folder
+        table = json.loads((home / table_name).read_text(encoding="utf-8"))
+        assert (table["class"], table["threat"], table["decoy"]) == (kind, False, True)
+        assert (home / "SOURCE.txt").is_file() and table["bodies"]
+        for name, body in table["bodies"].items():
+            for file in [body["obj"], body["poses"], body["heat_map"], *body["coats"].values()]:
+                assert (home / file).is_file(), f"{name}: {file}"
+            with zipfile.ZipFile(home / body["poses"]) as archive:
+                frames, points, axes = _npy_shape(archive, "poses.npy")
+                (drawn,) = _npy_shape(archive, "source.npy")
+                assert _npy_shape(archive, "uv.npy") == (drawn, 2), name
+                triangles, corners = _npy_shape(archive, "faces.npy")
+            assert (axes, corners) == (3, 3) and drawn >= points, name
+            assert (points, drawn, triangles) == (body["vertices"], body["render_vertices"], body["triangles"]), name
+            lines = (home / body["obj"]).read_text(encoding="utf-8").splitlines()
+            assert sum(line.startswith("v ") for line in lines) == drawn, name
+            assert sum(line.startswith("f ") for line in lines) == triangles, name
+            for clip, spec in body["clips"].items():
+                assert spec["start"] + spec["frames"] <= frames, f"{name}: {clip}"
+                assert spec.get("then", clip) in body["clips"], f"{name}: {clip}"
+        for clip, followers in table["joins"].items():
+            assert all(name in body["clips"] for body in table["bodies"].values() for name in [clip, *followers]), clip
+
+
+def test_testsite_people_point_at_real_files():
+    """The Test Field's people: every skin, piece and picture named ships, the skin and every piece hold their points
+    on every build with bone weights and a drawn surface that fit each other, every tint comes from a palette that
+    exists, women and men are both there, and the package carries its source note and the body's licence."""
+    home = MAPS / "custom" / "testsite" / "people"
+    table = json.loads((home / "people.json").read_text(encoding="utf-8"))
+    assert (home / "SOURCE.txt").is_file() and (home / "LICENSE_SOMA.txt").is_file()
+    with zipfile.ZipFile(home / "rig.npz") as archive:
+        builds, joints, rows, cols = _npy_shape(archive, "build_bind.npy")
+        points, per_point = _npy_shape(archive, "weights.npy")
+        assert _npy_shape(archive, "build_rest.npy") == (builds, joints, 3) and (rows, cols) == (4, 4)
+        assert _npy_shape(archive, "weight_joints.npy") == (points, per_point)
+    assert builds == len(table["builds"]) and {spec["sex"] for spec in table["builds"].values()} == {"f", "m"}
+    assert all(1.4 < spec["height_m"] < 2.0 for spec in table["builds"].values())
+
+    def drawn_surface(archive, name):
+        """Check one drawn surface: every drawn vertex has a picture place, and the triangles have three corners."""
+        (drawn,) = _npy_shape(archive, "source.npy")
+        assert _npy_shape(archive, "uv.npy") == (drawn, 2), name
+        assert _npy_shape(archive, "faces.npy")[1] == 3, name
+
+    with zipfile.ZipFile(home / "body.npz") as archive:
+        assert _npy_shape(archive, "points.npy") == (builds, points, 3)
+        drawn_surface(archive, "body")
+    assert table["skins"] and {skin["sex"] for skin in table["skins"].values()} == {"f", "m"}
+    for name, skin in table["skins"].items():
+        assert (home / skin["file"]).is_file(), name
+        assert skin["tone"] in table["eyes_of_tone"] and f"hair_{skin['hair']}" in table["palettes"], name
+    for name, piece in table["pieces"].items():
+        assert (home / piece["file"]).is_file() and piece["pictures"], name
+        for picture in piece["pictures"].values():
+            assert (home / picture["file"]).is_file(), name
+            # A hair picture is tinted from the palette of its wearer's hair, dark or light.
+            palettes = {key if piece["slot"] != "hair" else key.rsplit("_", 1)[0] for key in table["palettes"]}
+            assert picture.get("palette") is None or picture["palette"] in palettes | set(table["palettes"]), name
+        with zipfile.ZipFile(home / piece["file"]) as archive:
+            piece_builds, piece_points, axes = _npy_shape(archive, "points.npy")
+            assert (piece_builds, axes) == (builds, 3), name
+            assert _npy_shape(archive, "weights.npy")[0] == _npy_shape(archive, "weight_joints.npy")[0] == piece_points, name
+            drawn_surface(archive, name)
+    assert {"eyes", "hair", "top", "bottom", "shoes"} <= {piece["slot"] for piece in table["pieces"].values()}
+
+
 def test_solar_public_road_is_drivable_with_places_to_turn_round():
     """Both arms end on the same yard samples, no bend is tighter than a pickup turns, every pose is a unit rotation,
     and every turn starts on a sample of each arm it takes in and ends on one of each arm it leaves by: the yard's on
@@ -174,6 +259,20 @@ def test_solar_public_road_is_drivable_with_places_to_turn_round():
     for line in lines.values():
         steps = [math.dist(a[:2], b[:2]) for a, b in zip(line, line[1:])]
         assert max(steps) <= road["spacing_m"] * 1.5
+
+
+def test_testsite_manifest_points_at_real_files():
+    """Every test site item names files that ship, every placement names an item, and the forest ships."""
+    testsite = MAPS / "custom" / "testsite"
+    manifest = json.loads((testsite / "manifest.json").read_text(encoding="utf-8"))
+    items = manifest["items"]
+    for name, item in items.items():
+        for key in ("obj", "texture"):
+            assert (testsite / item["folder"] / item[key]).is_file(), f"{name}: {item[key]}"
+    assert {place["item"] for place in manifest["placements"]} <= set(items)
+    forest = manifest["forest"]
+    for name in [forest["table"]] + forest["meshes"]:
+        assert (testsite / forest["folder"] / name).is_file(), name
 
 
 def test_lost_person_manifest_points_at_real_files():

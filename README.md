@@ -111,6 +111,7 @@ here decide what it is built from.
 ```
 swarm_worlds/
   maps/
+    andorra/         the real areas: their catalogue and the list of their archives; the areas are fetched, see below
     custom/          project-made assets: office twin, mountains, buildings, warehouse shell, lost-person characters
     forest/          Quaternius nature packs and the forest ground texture
     kenney/          Kenney kits: suburban, commercial, roads, car, conveyor, furniture, holiday
@@ -153,6 +154,26 @@ pip, uv and pixi all install that line. The simulator writes small caches next t
 runtime, so the package must be installed somewhere the running user can write, which is the case
 for a virtualenv or a pixi environment owned by that user.
 
+### The real areas
+
+The 48 real areas are about 5 GB of meshes and pictures, too heavy to keep in a repository that
+every install copies whole. The package carries their catalogue (`maps/andorra/areas.json`) and a
+list (`maps/andorra/areas.lock.json`) of one archive an area, with each archive's size and SHA-256.
+The archives stay on the release named in the list until the areas themselves change.
+Each area archive is self-contained. The `shared` archive holds horizon, rock and tree assets from the shared folder.
+After installing the package, fetch the archives once:
+
+```bash
+python -m swarm_worlds.areas          # downloads what is missing, checks it, unpacks it
+python -m swarm_worlds.areas check    # says what is missing, exit code 1 if anything is
+```
+
+An area with the listed archive mark and file count is left alone, so after an update only the areas
+that changed are downloaded again. A download that does not match the list is refused and the area
+that was there stays. `--root` unpacks somewhere else than inside the package, and `--source`, or
+the variable `SWARM_WORLDS_AREAS_URL`, fetches from another folder or URL that holds the archives.
+Set `SWARM_WORLDS_AREAS_URL` to a staging folder or URL when trying a release before it is public.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
@@ -167,6 +188,12 @@ for a virtualenv or a pixi environment owned by that user.
 3. Bump the tag in the swarm repository's `requirements.txt`, refresh its `pixi.lock`, and bump the
    swarm version. A map change can change flight results, so it follows the same release rules as a
    scoring change.
+
+A change to the real areas adds one step. Pack the built areas with
+`python tools/pack_areas.py PACKAGE_ROOT OUT_FOLDER --release TAG`, commit the `areas.json` and `areas.lock.json`
+it writes into `swarm_worlds/maps/andorra/`, and attach every archive from `OUT_FOLDER` to the
+release of the tag. Packing unchanged files on the same machine with the same xz version gives the
+same archive bytes, so only the areas that changed get a new archive entry.
 
 ```bash
 python -m venv .venv && source .venv/bin/activate

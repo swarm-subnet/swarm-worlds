@@ -1,0 +1,166 @@
+{
+ "class": "goat",
+ "threat": false,
+ "decoy": true,
+ "frame": "x forward, z up, metres; origin at the centre of the standing footprint, feet on z = 0",
+ "poses": "the skin is built from poses[rest][source], uv and faces; poses[frame][source] is the resetMeshData upload; frames are clip.start + i",
+ "heat": {
+  "range_c": [
+   18.0,
+   38.0
+  ],
+  "emissivity": 0.98
+ },
+ "size_spread": [
+  0.88,
+  1.08
+ ],
+ "pace_spread": [
+  0.9,
+  1.1
+ ],
+ "blend_s": 0.25,
+ "joins": {
+  "stand": [
+   "walk",
+   "look",
+   "head_down",
+   "lie_down"
+  ],
+  "walk": [
+   "stand",
+   "trot",
+   "graze_walk"
+  ],
+  "trot": [
+   "walk"
+  ],
+  "graze_walk": [
+   "walk",
+   "graze"
+  ],
+  "head_down": [
+   "graze"
+  ],
+  "graze": [
+   "head_up",
+   "graze_walk"
+  ],
+  "head_up": [
+   "stand"
+  ],
+  "look": [
+   "stand"
+  ],
+  "lie_down": [
+   "lying"
+  ],
+  "lying": [
+   "get_up"
+  ],
+  "get_up": [
+   "stand"
+  ]
+ },
+ "bodies": {
+  "doe": {
+   "obj": "goat_doe.obj",
+   "poses": "goat_doe_poses.npz",
+   "coats": {
+    "chamois": "goat_doe_chamois.png",
+    "white": "goat_doe_white.png",
+    "black": "goat_doe_black.png",
+    "pied": "goat_doe_pied.png"
+   },
+   "heat_map": "goat_doe_heat.png",
+   "length_m": 1.215,
+   "height_m": 0.912,
+   "triangles": 2316,
+   "vertices": 1174,
+   "render_vertices": 1258,
+   "clips": {
+    "walk": {
+     "start": 0,
+     "frames": 28,
+     "fps": 40,
+     "loop": true,
+     "speed_m_s": 0.8081
+    },
+    "trot": {
+     "start": 28,
+     "frames": 14,
+     "fps": 34,
+     "loop": true,
+     "speed_m_s": 1.3738
+    },
+    "graze_walk": {
+     "start": 42,
+     "frames": 84,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.1591
+    },
+    "head_down": {
+     "start": 126,
+     "frames": 26,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "graze"
+    },
+    "graze": {
+     "start": 152,
+     "frames": 92,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "head_up": {
+     "start": 244,
+     "frames": 26,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "stand"
+    },
+    "stand": {
+     "start": 270,
+     "frames": 80,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "look": {
+     "start": 350,
+     "frames": 120,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "lie_down": {
+     "start": 470,
+     "frames": 50,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "lying"
+    },
+    "lying": {
+     "start": 520,
+     "frames": 120,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "get_up": {
+     "start": 640,
+     "frames": 34,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "stand"
+    }
+   }
+  }
+ }
+}

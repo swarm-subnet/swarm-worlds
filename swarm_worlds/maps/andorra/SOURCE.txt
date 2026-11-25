@@ -1,0 +1,10 @@
+Source: 48 real areas of Andorra, built from Govern d'Andorra data, open data and free textures.
+License: each source below keeps its original terms, and these credits travel with the assets.
+
+- Ground, buildings and trees: (c) Base cartografica (ortofotografia, LiDAR, models digitals de terreny i de
+  superficie) propietat del Govern d'Andorra, disponible a www.ideandorra.ad. Derived work, used with the
+  government's approval; no original government file is included.
+- Roads, paths, water and building outlines: (c) OpenStreetMap contributors. Contains information from
+  OpenStreetMap, which is made available here under the Open Database License (ODbL) 1.0.
+- Colour balance of the ground: contains modified Copernicus Sentinel data 2024-2026.
+- Ground, rock, house and bark textures: Poly Haven, CC0.

@@ -1,0 +1,11 @@
+Source: the birds of the Test Field, built for this map.
+License: our own work.
+
+Five birds, each made from its own measures with no outside model: the carrion crow, the magpie, the wood pigeon,
+the town pigeon and the alpine chough. Body, skeleton, the nine motions (walk, hop, stand, look, peck, take off,
+fly, glide, land), the coats and the heat maps were all made for this map.
+
+birds.json lists each bird's coats and clips and which clip may follow which. A skin is one surface of shared
+vertices: bird_<name>_poses.npz holds every pose of the body's points (poses), the body point each drawn vertex shows
+(source), its place on the coat (uv) and the triangles (faces). The OBJ is the same skin at rest, for any tool that
+reads one. A bird carries two sets of wings, spread and folded; the set not in use is drawn shrunk inside the body.

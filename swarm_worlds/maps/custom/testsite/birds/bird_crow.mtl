@@ -1,0 +1,3 @@
+newmtl bird_crow
+Kd 1 1 1
+map_Kd bird_crow_glossy.png

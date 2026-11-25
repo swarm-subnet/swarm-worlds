@@ -1,0 +1,207 @@
+{
+ "class": "rat",
+ "threat": false,
+ "decoy": true,
+ "frame": "x forward, z up, metres; origin at the centre of the standing footprint, feet on z = 0",
+ "poses": "the skin is built from poses[rest][source], uv and faces; poses[frame][source] is the resetMeshData upload; frames are clip.start + i",
+ "heat": {
+  "range_c": [
+   10.0,
+   38.0
+  ],
+  "emissivity": 0.98
+ },
+ "size_spread": [
+  0.9,
+  1.1
+ ],
+ "pace_spread": [
+  0.9,
+  1.1
+ ],
+ "blend_s": 0.25,
+ "joins": {
+  "stand": [
+   "walk",
+   "look",
+   "sniff",
+   "nose_down",
+   "groom"
+  ],
+  "walk": [
+   "stand",
+   "trot",
+   "sniff_walk"
+  ],
+  "trot": [
+   "walk"
+  ],
+  "sniff_walk": [
+   "walk",
+   "sniff"
+  ],
+  "sniff": [
+   "stand",
+   "sniff_walk"
+  ],
+  "nose_down": [
+   "sniff"
+  ],
+  "look": [
+   "stand"
+  ],
+  "groom": [
+   "stand"
+  ]
+ },
+ "bodies": {
+  "rat": {
+   "obj": "rat_rat.obj",
+   "poses": "rat_rat_poses.npz",
+   "coats": {
+    "brown": "rat_rat_brown.png",
+    "grey": "rat_rat_grey.png",
+    "dark": "rat_rat_dark.png"
+   },
+   "heat_map": "rat_rat_heat.png",
+   "length_m": 0.409,
+   "height_m": 0.075,
+   "triangles": 2500,
+   "vertices": 1393,
+   "render_vertices": 1686,
+   "clips": {
+    "walk": {
+     "start": 0,
+     "frames": 8,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.3
+    },
+    "trot": {
+     "start": 8,
+     "frames": 6,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 1.4084
+    },
+    "stand": {
+     "start": 14,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "look": {
+     "start": 110,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "sniff_walk": {
+     "start": 206,
+     "frames": 12,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.09
+    },
+    "nose_down": {
+     "start": 218,
+     "frames": 18,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "sniff"
+    },
+    "sniff": {
+     "start": 236,
+     "frames": 72,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "groom": {
+     "start": 308,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    }
+   }
+  },
+  "mouse": {
+   "obj": "rat_mouse.obj",
+   "poses": "rat_mouse_poses.npz",
+   "coats": {
+    "wood": "rat_mouse_wood.png",
+    "house": "rat_mouse_house.png",
+    "dark": "rat_mouse_dark.png"
+   },
+   "heat_map": "rat_mouse_heat.png",
+   "length_m": 0.18,
+   "height_m": 0.036,
+   "triangles": 2500,
+   "vertices": 1393,
+   "render_vertices": 1686,
+   "clips": {
+    "walk": {
+     "start": 0,
+     "frames": 8,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.16
+    },
+    "trot": {
+     "start": 8,
+     "frames": 6,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.66
+    },
+    "stand": {
+     "start": 14,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "look": {
+     "start": 110,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "sniff_walk": {
+     "start": 206,
+     "frames": 12,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.048
+    },
+    "nose_down": {
+     "start": 218,
+     "frames": 18,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "sniff"
+    },
+    "sniff": {
+     "start": 236,
+     "frames": 72,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "groom": {
+     "start": 308,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    }
+   }
+  }
+ }
+}

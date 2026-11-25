@@ -1,0 +1,2503 @@
+{
+ "format": 1,
+ "fps": 30,
+ "source": "NVIDIA kimodo-soma-rp-v1.2, 100 denoising steps, generated offline",
+ "frame": "Kimodo SOMA frame: y up, metres; every block starts with its root at x = z = 0 facing +z",
+ "rotations": "rotations[first:first + frames] are local xyzw rotations of the 30 joints below, in that order",
+ "joints": [
+  "Hips",
+  "Spine1",
+  "Spine2",
+  "Chest",
+  "Neck1",
+  "Neck2",
+  "Head",
+  "Jaw",
+  "LeftEye",
+  "RightEye",
+  "LeftShoulder",
+  "LeftArm",
+  "LeftForeArm",
+  "LeftHand",
+  "LeftHandThumbEnd",
+  "LeftHandMiddleEnd",
+  "RightShoulder",
+  "RightArm",
+  "RightForeArm",
+  "RightHand",
+  "RightHandThumbEnd",
+  "RightHandMiddleEnd",
+  "LeftLeg",
+  "LeftShin",
+  "LeftFoot",
+  "LeftToeBase",
+  "RightLeg",
+  "RightShin",
+  "RightFoot",
+  "RightToeBase"
+ ],
+ "mirror": {
+  "pairs": [
+   [
+    8,
+    9
+   ],
+   [
+    10,
+    16
+   ],
+   [
+    11,
+    17
+   ],
+   [
+    12,
+    18
+   ],
+   [
+    13,
+    19
+   ],
+   [
+    14,
+    20
+   ],
+   [
+    15,
+    21
+   ],
+   [
+    22,
+    26
+   ],
+   [
+    23,
+    27
+   ],
+   [
+    24,
+    28
+   ],
+   [
+    25,
+    29
+   ]
+  ],
+  "rotation": "(x, y, z, w) -> (x, -y, -z, w), then swap each pair",
+  "root": "x -> -x",
+  "travel": "x -> -x, turn -> -turn"
+ },
+ "chaining": "a block may follow another when its start equals the other's next; a loop repeats itself, each cycle placed at travel (x, z, turn) from the previous one; start {'hub': h} follows any block whose next is {'hub': h}; next null means hold the last frame",
+ "travel": "where the block that follows starts, relative to this block's first frame, in the standard build's metres: scale x and z by the build's root scale, as the root already is when posed",
+ "pin_frames": 3,
+ "gates": {
+  "seam_m": 0.03,
+  "loop_m": 0.06,
+  "slide_cm_s": 6.0,
+  "jitter_m_s3": 400.0,
+  "tmr_rank": 5,
+  "legs_cm": 0.5,
+  "hands_cm_s": 20.0
+ },
+ "sprint_gates": {
+  "slide_cm_s": 13.0,
+  "jitter_m_s3": 3600.0
+ },
+ "blocks": {
+  "crouch_idle.0": {
+   "kind": "crouch_idle",
+   "stage": "low",
+   "loop": true,
+   "first": 0,
+   "frames": 60,
+   "start": {
+    "loop": "crouch_idle.0"
+   },
+   "next": {
+    "loop": "crouch_idle.0"
+   },
+   "travel": {
+    "x": -0.010294900634029158,
+    "z": -0.012479128580382248,
+    "turn": 0.0
+   },
+   "prompt": "A person squatting low looks at the ground and touches it with one hand, then rests the arms on the knees.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.1512,
+    "jitter_m_s3": 21.2858,
+    "loop_m": 0.0142,
+    "tmr": 0.8136,
+    "tmr_rank": 3.0,
+    "seam_m": 0.0,
+    "upright_m": 0.1507,
+    "nearest_m": 0.1017
+   }
+  },
+  "crouch_idle.0.in": {
+   "kind": "crouch_idle_in",
+   "stage": "low",
+   "loop": false,
+   "first": 60,
+   "frames": 163,
+   "start": {
+    "hub": "crouch"
+   },
+   "next": {
+    "loop": "crouch_idle.0"
+   },
+   "travel": {
+    "x": -0.039237034380246845,
+    "z": 0.043162255747949414,
+    "turn": 0.11388921737670898
+   },
+   "prompt": "A person squatting low looks at the ground and touches it with one hand, then rests the arms on the knees.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "crouch_idle.1": {
+   "kind": "crouch_idle",
+   "stage": "low",
+   "loop": true,
+   "first": 223,
+   "frames": 60,
+   "start": {
+    "loop": "crouch_idle.1"
+   },
+   "next": {
+    "loop": "crouch_idle.1"
+   },
+   "travel": {
+    "x": -0.013288353420941978,
+    "z": -0.002828248060126548,
+    "turn": 0.0
+   },
+   "prompt": "A person squatting low looks at the ground and touches it with one hand, then rests the arms on the knees.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.1887,
+    "jitter_m_s3": 18.1833,
+    "loop_m": 0.021,
+    "tmr": 0.7326,
+    "tmr_rank": 3.0,
+    "seam_m": 0.0,
+    "upright_m": 0.2215,
+    "nearest_m": 0.1017
+   }
+  },
+  "crouch_idle.1.in": {
+   "kind": "crouch_idle_in",
+   "stage": "low",
+   "loop": false,
+   "first": 283,
+   "frames": 181,
+   "start": {
+    "hub": "crouch"
+   },
+   "next": {
+    "loop": "crouch_idle.1"
+   },
+   "travel": {
+    "x": -0.006206538098224536,
+    "z": 0.02689846034700973,
+    "turn": 0.09353137016296387
+   },
+   "prompt": "A person squatting low looks at the ground and touches it with one hand, then rests the arms on the knees.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "crouch_idle_to_stand.0": {
+   "kind": "crouch_idle_to_stand",
+   "stage": "low",
+   "loop": false,
+   "first": 464,
+   "frames": 87,
+   "start": {
+    "loop": "crouch_idle.0"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.009737745127739965,
+    "z": -0.05244396267993214,
+    "turn": 0.0027916431427001953
+   },
+   "prompt": "A person squatting low stands up slowly and stands relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.1279,
+    "jitter_m_s3": 231.5012,
+    "tmr": 0.8716,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "crouch_idle_to_stand.1": {
+   "kind": "crouch_idle_to_stand",
+   "stage": "low",
+   "loop": false,
+   "first": 551,
+   "frames": 87,
+   "start": {
+    "loop": "crouch_idle.1"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": -0.05086072583591836,
+    "z": 0.11341876347459526,
+    "turn": -0.17464232444763184
+   },
+   "prompt": "A person squatting low stands up slowly and stands relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 4.997,
+    "jitter_m_s3": 120.3791,
+    "tmr": 0.8914,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "crouch_to_stand.0": {
+   "kind": "crouch_to_stand",
+   "stage": "low",
+   "loop": false,
+   "first": 638,
+   "frames": 87,
+   "start": {
+    "hub": "crouch"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.015090980735590563,
+    "z": 0.19082891969197674,
+    "turn": 0.16136550903320312
+   },
+   "prompt": "A person squatting low stands up slowly and stands relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 3.1021,
+    "jitter_m_s3": 128.057,
+    "tmr": 0.9337,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "crouch_to_stand.1": {
+   "kind": "crouch_to_stand",
+   "stage": "low",
+   "loop": false,
+   "first": 725,
+   "frames": 87,
+   "start": {
+    "hub": "crouch"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": -0.05288225049948415,
+    "z": 0.20529581507824265,
+    "turn": -0.1246943473815918
+   },
+   "prompt": "A person squatting low stands up slowly and stands relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 5.0166,
+    "jitter_m_s3": 74.7376,
+    "tmr": 0.9099,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "idle.0": {
+   "kind": "idle",
+   "stage": "stand",
+   "loop": true,
+   "first": 812,
+   "frames": 67,
+   "start": {
+    "loop": "idle.0"
+   },
+   "next": {
+    "loop": "idle.0"
+   },
+   "travel": {
+    "x": 0.0010836416595765795,
+    "z": -0.0007636371141012217,
+    "turn": 0.0
+   },
+   "prompt": "A person stands relaxed, shifting the weight from one foot to the other and glancing around calmly.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.3334,
+    "jitter_m_s3": 6.1774,
+    "loop_m": 0.0024,
+    "tmr": 0.8858,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0,
+    "nearest_m": 0.0495
+   }
+  },
+  "idle.0.in": {
+   "kind": "idle_in",
+   "stage": "stand",
+   "loop": false,
+   "first": 879,
+   "frames": 222,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "loop": "idle.0"
+   },
+   "travel": {
+    "x": -0.0005384880932979286,
+    "z": -0.0006187211838550866,
+    "turn": 0.05204582214355469
+   },
+   "prompt": "A person stands relaxed, shifting the weight from one foot to the other and glancing around calmly.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "idle.1": {
+   "kind": "idle",
+   "stage": "stand",
+   "loop": true,
+   "first": 1101,
+   "frames": 119,
+   "start": {
+    "loop": "idle.1"
+   },
+   "next": {
+    "loop": "idle.1"
+   },
+   "travel": {
+    "x": -0.02318124687677768,
+    "z": 0.0015906394492951337,
+    "turn": 0.0
+   },
+   "prompt": "A person stands relaxed, shifting the weight from one foot to the other and glancing around calmly.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.4814,
+    "jitter_m_s3": 16.806,
+    "loop_m": 0.0243,
+    "tmr": 0.663,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0,
+    "nearest_m": 0.0495
+   }
+  },
+  "idle.1.in": {
+   "kind": "idle_in",
+   "stage": "stand",
+   "loop": false,
+   "first": 1220,
+   "frames": 45,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "loop": "idle.1"
+   },
+   "travel": {
+    "x": 0.016322646290063858,
+    "z": -0.0068176439963281155,
+    "turn": -0.12494897842407227
+   },
+   "prompt": "A person stands relaxed, shifting the weight from one foot to the other and glancing around calmly.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "idle_crossed.0": {
+   "kind": "idle_crossed",
+   "stage": "stand",
+   "loop": true,
+   "first": 1265,
+   "frames": 73,
+   "start": {
+    "loop": "idle_crossed.0"
+   },
+   "next": {
+    "loop": "idle_crossed.0"
+   },
+   "travel": {
+    "x": -0.004399719167088312,
+    "z": -0.009656103299717222,
+    "turn": 0.0
+   },
+   "prompt": "A person stands with the arms crossed over the chest, shifting the weight and looking around.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.5871,
+    "jitter_m_s3": 11.3707,
+    "loop_m": 0.013,
+    "tmr": 0.7992,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "idle_crossed.0.in": {
+   "kind": "idle_crossed_in",
+   "stage": "stand",
+   "loop": false,
+   "first": 1338,
+   "frames": 125,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "loop": "idle_crossed.0"
+   },
+   "travel": {
+    "x": 0.05907810479402542,
+    "z": 0.01945737935602665,
+    "turn": -0.18588542938232422
+   },
+   "prompt": "A person stands with the arms crossed over the chest, shifting the weight and looking around.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "idle_crossed_to_stand.0": {
+   "kind": "idle_crossed_to_stand",
+   "stage": "stand",
+   "loop": false,
+   "first": 1463,
+   "frames": 72,
+   "start": {
+    "loop": "idle_crossed.0"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": -0.06165641561460796,
+    "z": -0.008203560274497942,
+    "turn": 0.18588471412658691
+   },
+   "prompt": "A person with the arms crossed uncrosses them and stands relaxed with the arms at the sides.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.0266,
+    "jitter_m_s3": 210.09,
+    "tmr": 0.9076,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "idle_hips.0": {
+   "kind": "idle_hips",
+   "stage": "stand",
+   "loop": true,
+   "first": 1535,
+   "frames": 94,
+   "start": {
+    "loop": "idle_hips.0"
+   },
+   "next": {
+    "loop": "idle_hips.0"
+   },
+   "travel": {
+    "x": 0.01139498244521986,
+    "z": -0.004188859846046788,
+    "turn": 0.0
+   },
+   "prompt": "A person stands with both hands on the hips, looking around.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.4419,
+    "jitter_m_s3": 10.1845,
+    "loop_m": 0.0153,
+    "tmr": 0.7184,
+    "tmr_rank": 3.0,
+    "seam_m": 0.0
+   }
+  },
+  "idle_hips.0.in": {
+   "kind": "idle_hips_in",
+   "stage": "stand",
+   "loop": false,
+   "first": 1629,
+   "frames": 73,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "loop": "idle_hips.0"
+   },
+   "travel": {
+    "x": -0.023432986810803413,
+    "z": -0.006684247869998217,
+    "turn": 0.020526885986328125
+   },
+   "prompt": "A person stands with both hands on the hips, looking around.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "idle_hips_to_stand.0": {
+   "kind": "idle_hips_to_stand",
+   "stage": "stand",
+   "loop": false,
+   "first": 1702,
+   "frames": 72,
+   "start": {
+    "loop": "idle_hips.0"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.02329085368173688,
+    "z": 0.0071638132700835135,
+    "turn": -0.020526647567749023
+   },
+   "prompt": "A person with the hands on the hips lowers the arms and stands relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.945,
+    "jitter_m_s3": 48.3391,
+    "tmr": 0.7606,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  },
+  "idle_look_up.0": {
+   "kind": "idle_look_up",
+   "stage": "stand",
+   "loop": true,
+   "first": 1774,
+   "frames": 135,
+   "start": {
+    "loop": "idle_look_up.0"
+   },
+   "next": {
+    "loop": "idle_look_up.0"
+   },
+   "travel": {
+    "x": 0.017210517202382376,
+    "z": 0.010024491308955136,
+    "turn": 0.0
+   },
+   "prompt": "A person stands with the head tilted far back, looking straight up at the sky and following something overhead.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.608,
+    "jitter_m_s3": 18.7985,
+    "loop_m": 0.021,
+    "tmr": 0.9876,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "idle_look_up.0.in": {
+   "kind": "idle_look_up_in",
+   "stage": "stand",
+   "loop": false,
+   "first": 1909,
+   "frames": 164,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "loop": "idle_look_up.0"
+   },
+   "travel": {
+    "x": -0.010208694264292717,
+    "z": -0.00767723610624671,
+    "turn": 0.013316869735717773
+   },
+   "prompt": "A person stands with the head tilted far back, looking straight up at the sky and following something overhead.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "idle_look_up_to_stand.0": {
+   "kind": "idle_look_up_to_stand",
+   "stage": "stand",
+   "loop": false,
+   "first": 2073,
+   "frames": 72,
+   "start": {
+    "loop": "idle_look_up.0"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.0101055550906291,
+    "z": 0.007812498881296582,
+    "turn": -0.013316631317138672
+   },
+   "prompt": "A person looking up at the sky lowers the head and stands relaxed, looking ahead.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.7004,
+    "jitter_m_s3": 14.5709,
+    "tmr": 0.5531,
+    "tmr_rank": 10.0,
+    "seam_m": 0.0
+   }
+  },
+  "idle_phone.0": {
+   "kind": "idle_phone",
+   "stage": "stand",
+   "loop": true,
+   "first": 2145,
+   "frames": 69,
+   "start": {
+    "loop": "idle_phone.0"
+   },
+   "next": {
+    "loop": "idle_phone.0"
+   },
+   "travel": {
+    "x": 0.0018381587164656753,
+    "z": -0.007340738348722968,
+    "turn": 0.0
+   },
+   "prompt": "A person stands looking down at a phone held in one hand, tapping it with the thumb.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.2924,
+    "jitter_m_s3": 6.2722,
+    "loop_m": 0.006,
+    "tmr": 0.9271,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "idle_phone.0.in": {
+   "kind": "idle_phone_in",
+   "stage": "stand",
+   "loop": false,
+   "first": 2214,
+   "frames": 171,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "loop": "idle_phone.0"
+   },
+   "travel": {
+    "x": 0.0014903321862220764,
+    "z": -0.011775587685406208,
+    "turn": -0.008310556411743164
+   },
+   "prompt": "A person stands looking down at a phone held in one hand, tapping it with the thumb.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "idle_phone_to_stand.0": {
+   "kind": "idle_phone_to_stand",
+   "stage": "stand",
+   "loop": false,
+   "first": 2385,
+   "frames": 72,
+   "start": {
+    "loop": "idle_phone.0"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": -0.0013924201484769583,
+    "z": 0.011787566356360912,
+    "turn": 0.008310556411743164
+   },
+   "prompt": "A person looking at a phone lowers the arm and stands relaxed, looking ahead.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.5377,
+    "jitter_m_s3": 25.5289,
+    "tmr": 0.7232,
+    "tmr_rank": 4.0,
+    "seam_m": 0.0
+   }
+  },
+  "idle_photo.0": {
+   "kind": "idle_photo",
+   "stage": "stand",
+   "loop": true,
+   "first": 2457,
+   "frames": 90,
+   "start": {
+    "loop": "idle_photo.0"
+   },
+   "next": {
+    "loop": "idle_photo.0"
+   },
+   "travel": {
+    "x": -0.004753050533185921,
+    "z": -0.009137132478597404,
+    "turn": 0.0
+   },
+   "prompt": "A person stands holding a camera up to the face with both hands, taking pictures.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.7573,
+    "jitter_m_s3": 15.2754,
+    "loop_m": 0.0156,
+    "tmr": 0.9284,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "idle_photo.0.in": {
+   "kind": "idle_photo_in",
+   "stage": "stand",
+   "loop": false,
+   "first": 2547,
+   "frames": 209,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "loop": "idle_photo.0"
+   },
+   "travel": {
+    "x": -0.013546437956392765,
+    "z": -0.005305917002260685,
+    "turn": 0.16495203971862793
+   },
+   "prompt": "A person stands holding a camera up to the face with both hands, taking pictures.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "idle_photo_to_stand.0": {
+   "kind": "idle_photo_to_stand",
+   "stage": "stand",
+   "loop": false,
+   "first": 2756,
+   "frames": 72,
+   "start": {
+    "loop": "idle_photo.0"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.012491303496062756,
+    "z": 0.007458288688212633,
+    "turn": -0.16495132446289062
+   },
+   "prompt": "A person holding a camera up lowers both hands and stands relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.1398,
+    "jitter_m_s3": 65.2194,
+    "tmr": 0.9194,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "idle_point.0": {
+   "kind": "idle_point",
+   "stage": "stand",
+   "loop": true,
+   "first": 2828,
+   "frames": 60,
+   "start": {
+    "loop": "idle_point.0"
+   },
+   "next": {
+    "loop": "idle_point.0"
+   },
+   "travel": {
+    "x": -0.0035744678125976034,
+    "z": 0.013132791913840697,
+    "turn": 0.0
+   },
+   "prompt": "A person stands and points forward with one arm, then lowers it and looks around.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.4674,
+    "jitter_m_s3": 7.4822,
+    "loop_m": 0.0089,
+    "tmr": 0.7196,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  },
+  "idle_point.0.in": {
+   "kind": "idle_point_in",
+   "stage": "stand",
+   "loop": false,
+   "first": 2888,
+   "frames": 217,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "loop": "idle_point.0"
+   },
+   "travel": {
+    "x": -0.007893149740993977,
+    "z": 0.0014558319235220551,
+    "turn": -0.019146442413330078
+   },
+   "prompt": "A person stands and points forward with one arm, then lowers it and looks around.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "idle_point_to_stand.0": {
+   "kind": "idle_point_to_stand",
+   "stage": "stand",
+   "loop": false,
+   "first": 3105,
+   "frames": 72,
+   "start": {
+    "loop": "idle_point.0"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.007863830804819191,
+    "z": -0.0016066814711383282,
+    "turn": 0.019146203994750977
+   },
+   "prompt": "A person pointing forward lowers the arm and stands relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.7632,
+    "jitter_m_s3": 12.9274,
+    "tmr": 0.4806,
+    "tmr_rank": 31.0,
+    "seam_m": 0.0
+   }
+  },
+  "idle_stretch.0": {
+   "kind": "idle_stretch",
+   "stage": "stand",
+   "loop": true,
+   "first": 3177,
+   "frames": 73,
+   "start": {
+    "loop": "idle_stretch.0"
+   },
+   "next": {
+    "loop": "idle_stretch.0"
+   },
+   "travel": {
+    "x": 0.0072927453505052114,
+    "z": -0.004878140607713067,
+    "turn": 0.0
+   },
+   "prompt": "A person stands and stretches both arms above the head, then lowers them.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.4469,
+    "jitter_m_s3": 16.4507,
+    "loop_m": 0.0284,
+    "tmr": 0.9399,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "idle_stretch.0.in": {
+   "kind": "idle_stretch_in",
+   "stage": "stand",
+   "loop": false,
+   "first": 3250,
+   "frames": 226,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "loop": "idle_stretch.0"
+   },
+   "travel": {
+    "x": 0.00031243471312336624,
+    "z": -0.008389533497393131,
+    "turn": 0.028459787368774414
+   },
+   "prompt": "A person stands and stretches both arms above the head, then lowers them.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "idle_stretch_to_stand.0": {
+   "kind": "idle_stretch_to_stand",
+   "stage": "stand",
+   "loop": false,
+   "first": 3476,
+   "frames": 72,
+   "start": {
+    "loop": "idle_stretch.0"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": -0.0005510402843356133,
+    "z": 0.008377245627343655,
+    "turn": -0.028459548950195312
+   },
+   "prompt": "A person stretching lowers both arms and stands relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.7658,
+    "jitter_m_s3": 35.059,
+    "tmr": 0.5575,
+    "tmr_rank": 9.0,
+    "seam_m": 0.0
+   }
+  },
+  "idle_talk.0": {
+   "kind": "idle_talk",
+   "stage": "stand",
+   "loop": true,
+   "first": 3548,
+   "frames": 78,
+   "start": {
+    "loop": "idle_talk.0"
+   },
+   "next": {
+    "loop": "idle_talk.0"
+   },
+   "travel": {
+    "x": 0.0062574443896695475,
+    "z": -0.008626384301929226,
+    "turn": 0.0
+   },
+   "prompt": "A person stands and talks, gesturing calmly with both hands.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.7683,
+    "jitter_m_s3": 118.3061,
+    "loop_m": 0.0231,
+    "tmr": 0.9617,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0,
+    "nearest_m": 0.1063
+   }
+  },
+  "idle_talk.0.in": {
+   "kind": "idle_talk_in",
+   "stage": "stand",
+   "loop": false,
+   "first": 3626,
+   "frames": 172,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "loop": "idle_talk.0"
+   },
+   "travel": {
+    "x": -0.00839589536190033,
+    "z": -0.007864536717534065,
+    "turn": 0.012336254119873047
+   },
+   "prompt": "A person stands and talks, gesturing calmly with both hands.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "idle_talk.1": {
+   "kind": "idle_talk",
+   "stage": "stand",
+   "loop": true,
+   "first": 3798,
+   "frames": 60,
+   "start": {
+    "loop": "idle_talk.1"
+   },
+   "next": {
+    "loop": "idle_talk.1"
+   },
+   "travel": {
+    "x": 0.0025716025596856235,
+    "z": 0.032035511763424264,
+    "turn": 0.0
+   },
+   "prompt": "A person stands and talks, gesturing calmly with both hands.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.7096,
+    "jitter_m_s3": 20.7632,
+    "loop_m": 0.0315,
+    "tmr": 0.8357,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0,
+    "nearest_m": 0.1063
+   }
+  },
+  "idle_talk.1.in": {
+   "kind": "idle_talk_in",
+   "stage": "stand",
+   "loop": false,
+   "first": 3858,
+   "frames": 239,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "loop": "idle_talk.1"
+   },
+   "travel": {
+    "x": 0.006876369472593069,
+    "z": -0.032279662787914276,
+    "turn": -0.022266387939453125
+   },
+   "prompt": "A person stands and talks, gesturing calmly with both hands.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "idle_talk_to_stand.0": {
+   "kind": "idle_talk_to_stand",
+   "stage": "stand",
+   "loop": false,
+   "first": 4097,
+   "frames": 72,
+   "start": {
+    "loop": "idle_talk.0"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.008298239522959227,
+    "z": 0.007967509483186095,
+    "turn": -0.012336254119873047
+   },
+   "prompt": "A person talking and gesturing lowers both arms and stands relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.8956,
+    "jitter_m_s3": 56.8356,
+    "tmr": 0.8048,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  },
+  "idle_talk_to_stand.1": {
+   "kind": "idle_talk_to_stand",
+   "stage": "stand",
+   "loop": false,
+   "first": 4169,
+   "frames": 72,
+   "start": {
+    "loop": "idle_talk.1"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": -0.0061559722334408986,
+    "z": 0.0324247592338961,
+    "turn": 0.022266149520874023
+   },
+   "prompt": "A person talking and gesturing lowers both arms and stands relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.9927,
+    "jitter_m_s3": 53.5942,
+    "tmr": 0.7465,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "idle_to_stand.0": {
+   "kind": "idle_to_stand",
+   "stage": "stand",
+   "loop": false,
+   "first": 4241,
+   "frames": 57,
+   "start": {
+    "loop": "idle.0"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.0005055716028437018,
+    "z": 0.0006458967691287398,
+    "turn": -0.052045345306396484
+   },
+   "prompt": "A person standing relaxed stops shifting and stands still with the arms at the sides.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.7724,
+    "jitter_m_s3": 16.653,
+    "tmr": 0.7243,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  },
+  "idle_to_stand.1": {
+   "kind": "idle_to_stand",
+   "stage": "stand",
+   "loop": false,
+   "first": 4298,
+   "frames": 57,
+   "start": {
+    "loop": "idle.1"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": -0.015345752565536995,
+    "z": 0.008798688081015986,
+    "turn": 0.12494802474975586
+   },
+   "prompt": "A person standing relaxed stops shifting and stands still with the arms at the sides.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.0511,
+    "jitter_m_s3": 41.8373,
+    "tmr": 0.7791,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "idle_wave.0": {
+   "kind": "idle_wave",
+   "stage": "stand",
+   "loop": true,
+   "first": 4355,
+   "frames": 62,
+   "start": {
+    "loop": "idle_wave.0"
+   },
+   "next": {
+    "loop": "idle_wave.0"
+   },
+   "travel": {
+    "x": 0.012702449059462773,
+    "z": -0.009558022434708144,
+    "turn": 0.0
+   },
+   "prompt": "A person stands and waves one arm high above the head, back and forth.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.0637,
+    "jitter_m_s3": 156.9872,
+    "loop_m": 0.0339,
+    "tmr": 0.9218,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "idle_wave.0.in": {
+   "kind": "idle_wave_in",
+   "stage": "stand",
+   "loop": false,
+   "first": 4417,
+   "frames": 83,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "loop": "idle_wave.0"
+   },
+   "travel": {
+    "x": -0.009341423399746418,
+    "z": 0.002829922828823328,
+    "turn": 0.1461038589477539
+   },
+   "prompt": "A person stands and waves one arm high above the head, back and forth.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "idle_wave_to_stand.0": {
+   "kind": "idle_wave_to_stand",
+   "stage": "stand",
+   "loop": false,
+   "first": 4500,
+   "frames": 72,
+   "start": {
+    "loop": "idle_wave.0"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.009653891383360954,
+    "z": -0.0014398050349317037,
+    "turn": -0.1461031436920166
+   },
+   "prompt": "A person waving one arm above the head lowers it and stands relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.8405,
+    "jitter_m_s3": 135.7771,
+    "tmr": 0.9085,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "kneel_idle.0": {
+   "kind": "kneel_idle",
+   "stage": "low",
+   "loop": true,
+   "first": 4572,
+   "frames": 64,
+   "start": {
+    "loop": "kneel_idle.0"
+   },
+   "next": {
+    "loop": "kneel_idle.0"
+   },
+   "travel": {
+    "x": -0.007441775872276346,
+    "z": -0.004790701376148621,
+    "turn": 0.0
+   },
+   "prompt": "A person kneeling upright on one knee looks around and reaches down to touch the ground with one hand.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.8169,
+    "jitter_m_s3": 11.4016,
+    "loop_m": 0.0113,
+    "tmr": 0.7397,
+    "tmr_rank": 5.0,
+    "seam_m": 0.0,
+    "upright_m": 0.3275,
+    "nearest_m": 0.1735
+   }
+  },
+  "kneel_idle.0.in": {
+   "kind": "kneel_idle_in",
+   "stage": "low",
+   "loop": false,
+   "first": 4636,
+   "frames": 220,
+   "start": {
+    "hub": "kneel"
+   },
+   "next": {
+    "loop": "kneel_idle.0"
+   },
+   "travel": {
+    "x": -0.037189333857927345,
+    "z": -0.08336145465290222,
+    "turn": -0.038811683654785156
+   },
+   "prompt": "A person kneeling upright on one knee looks around and reaches down to touch the ground with one hand.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "kneel_idle.1": {
+   "kind": "kneel_idle",
+   "stage": "low",
+   "loop": true,
+   "first": 4856,
+   "frames": 60,
+   "start": {
+    "loop": "kneel_idle.1"
+   },
+   "next": {
+    "loop": "kneel_idle.1"
+   },
+   "travel": {
+    "x": -0.00415861374440904,
+    "z": 0.010906814423665997,
+    "turn": 0.0
+   },
+   "prompt": "A person kneeling upright on one knee looks around and reaches down to touch the ground with one hand.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.9333,
+    "jitter_m_s3": 13.5478,
+    "loop_m": 0.0325,
+    "tmr": 0.6663,
+    "tmr_rank": 5.0,
+    "seam_m": 0.0,
+    "upright_m": 0.5065,
+    "nearest_m": 0.1735
+   }
+  },
+  "kneel_idle.1.in": {
+   "kind": "kneel_idle_in",
+   "stage": "low",
+   "loop": false,
+   "first": 4916,
+   "frames": 64,
+   "start": {
+    "hub": "kneel"
+   },
+   "next": {
+    "loop": "kneel_idle.1"
+   },
+   "travel": {
+    "x": 0.0012557228142897638,
+    "z": -0.010550579044499022,
+    "turn": 0.0025131702423095703
+   },
+   "prompt": "A person kneeling upright on one knee looks around and reaches down to touch the ground with one hand.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "kneel_idle_to_stand.0": {
+   "kind": "kneel_idle_to_stand",
+   "stage": "low",
+   "loop": false,
+   "first": 4980,
+   "frames": 87,
+   "start": {
+    "loop": "kneel_idle.0"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.091734985541247,
+    "z": 0.26612028649737063,
+    "turn": -0.06111335754394531
+   },
+   "prompt": "A person kneeling upright on one knee stands up and stands relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 3.2841,
+    "jitter_m_s3": 116.7483,
+    "tmr": 0.928,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  },
+  "kneel_idle_to_stand.1": {
+   "kind": "kneel_idle_to_stand",
+   "stage": "low",
+   "loop": false,
+   "first": 5067,
+   "frames": 87,
+   "start": {
+    "loop": "kneel_idle.1"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": -0.06100115441870669,
+    "z": 0.2824365789003068,
+    "turn": -0.08497762680053711
+   },
+   "prompt": "A person kneeling upright on one knee stands up and stands relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.7997,
+    "jitter_m_s3": 129.4114,
+    "tmr": 0.9309,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  },
+  "kneel_to_stand.0": {
+   "kind": "kneel_to_stand",
+   "stage": "low",
+   "loop": false,
+   "first": 5154,
+   "frames": 87,
+   "start": {
+    "hub": "kneel"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": -0.09979106577580282,
+    "z": 0.09892515000548535,
+    "turn": -0.04123568534851074
+   },
+   "prompt": "A person kneeling on one knee stands up and stands relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 3.0909,
+    "jitter_m_s3": 121.204,
+    "tmr": 0.9156,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "kneel_to_stand.1": {
+   "kind": "kneel_to_stand",
+   "stage": "low",
+   "loop": false,
+   "first": 5241,
+   "frames": 87,
+   "start": {
+    "hub": "kneel"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": -0.10453419659353107,
+    "z": 0.29332759879448944,
+    "turn": -0.06576013565063477
+   },
+   "prompt": "A person kneeling on one knee stands up and stands relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.8113,
+    "jitter_m_s3": 105.8725,
+    "tmr": 0.9101,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "sit_idle.0": {
+   "kind": "sit_idle",
+   "stage": "low",
+   "loop": true,
+   "first": 5328,
+   "frames": 82,
+   "start": {
+    "loop": "sit_idle.0"
+   },
+   "next": {
+    "loop": "sit_idle.0"
+   },
+   "travel": {
+    "x": 0.0009902132021443867,
+    "z": 0.00042760692169226057,
+    "turn": 0.0
+   },
+   "prompt": "A person sitting on the ground with the legs crossed looks around calmly.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.1511,
+    "jitter_m_s3": 7.682,
+    "loop_m": 0.0015,
+    "tmr": 0.8895,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0,
+    "upright_m": 0.5588
+   }
+  },
+  "sit_idle.0.in": {
+   "kind": "sit_idle_in",
+   "stage": "low",
+   "loop": false,
+   "first": 5410,
+   "frames": 174,
+   "start": {
+    "hub": "sit"
+   },
+   "next": {
+    "loop": "sit_idle.0"
+   },
+   "travel": {
+    "x": -0.001689920201462094,
+    "z": -5.864283138086548e-06,
+    "turn": -0.000362396240234375
+   },
+   "prompt": "A person sitting on the ground with the legs crossed looks around calmly.",
+   "checks_failed": [],
+   "measures": {}
+  },
+  "sit_idle_to_stand.0": {
+   "kind": "sit_idle_to_stand",
+   "stage": "low",
+   "loop": false,
+   "first": 5584,
+   "frames": 117,
+   "start": {
+    "loop": "sit_idle.0"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.1776490311429571,
+    "z": 0.13225566509839606,
+    "turn": 0.2833127975463867
+   },
+   "prompt": "A person sitting on the ground gets up and stands relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.4479,
+    "jitter_m_s3": 171.6959,
+    "tmr": 0.7957,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  },
+  "sit_to_stand.0": {
+   "kind": "sit_to_stand",
+   "stage": "low",
+   "loop": false,
+   "first": 5701,
+   "frames": 117,
+   "start": {
+    "hub": "sit"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": -0.0345262358267241,
+    "z": 0.24367888015384667,
+    "turn": -0.05772852897644043
+   },
+   "prompt": "A person sitting on the ground with crossed legs gets up and stands relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.6683,
+    "jitter_m_s3": 133.6465,
+    "tmr": 0.9799,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "sit_to_stand.1": {
+   "kind": "sit_to_stand",
+   "stage": "low",
+   "loop": false,
+   "first": 5818,
+   "frames": 117,
+   "start": {
+    "hub": "sit"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": -0.007970124416692271,
+    "z": -0.013434060509862778,
+    "turn": -0.007846832275390625
+   },
+   "prompt": "A person sitting on the ground with crossed legs gets up and stands relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.5025,
+    "jitter_m_s3": 162.256,
+    "tmr": 0.9789,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "stand_breathe.0": {
+   "kind": "stand_breathe",
+   "stage": "stand",
+   "loop": false,
+   "first": 5935,
+   "frames": 97,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.0,
+    "z": 0.0,
+    "turn": 0.0
+   },
+   "prompt": "A person stands still and relaxed with the arms at the sides, breathing calmly.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.5895,
+    "jitter_m_s3": 9.8897,
+    "tmr": 0.7332,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "stand_breathe.1": {
+   "kind": "stand_breathe",
+   "stage": "stand",
+   "loop": false,
+   "first": 6032,
+   "frames": 97,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.0,
+    "z": 0.0,
+    "turn": 0.0
+   },
+   "prompt": "A person stands still and relaxed with the arms at the sides, breathing calmly.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.4506,
+    "jitter_m_s3": 9.3825,
+    "tmr": 0.7425,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "stand_fidget.0": {
+   "kind": "stand_fidget",
+   "stage": "stand",
+   "loop": false,
+   "first": 6129,
+   "frames": 117,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.0,
+    "z": 0.0,
+    "turn": 0.0
+   },
+   "prompt": "A person standing scratches the head with one hand, then lowers the arm to the side.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.6913,
+    "jitter_m_s3": 323.434,
+    "tmr": 0.9174,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "stand_fidget.1": {
+   "kind": "stand_fidget",
+   "stage": "stand",
+   "loop": false,
+   "first": 6246,
+   "frames": 117,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.0,
+    "z": 0.0,
+    "turn": 0.0
+   },
+   "prompt": "A person standing scratches the head with one hand, then lowers the arm to the side.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.5817,
+    "jitter_m_s3": 106.5717,
+    "tmr": 0.9097,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "stand_look.0": {
+   "kind": "stand_look",
+   "stage": "stand",
+   "loop": false,
+   "first": 6363,
+   "frames": 117,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.0,
+    "z": 0.0,
+    "turn": 0.0
+   },
+   "prompt": "A person standing turns the head to look to the left and to the right, then looks ahead again.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.5407,
+    "jitter_m_s3": 12.7152,
+    "tmr": 0.8921,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "stand_look.1": {
+   "kind": "stand_look",
+   "stage": "stand",
+   "loop": false,
+   "first": 6480,
+   "frames": 117,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.0,
+    "z": 0.0,
+    "turn": 0.0
+   },
+   "prompt": "A person standing turns the head to look to the left and to the right, then looks ahead again.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.5442,
+    "jitter_m_s3": 19.6573,
+    "tmr": 0.9127,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "stand_shift.0": {
+   "kind": "stand_shift",
+   "stage": "stand",
+   "loop": false,
+   "first": 6597,
+   "frames": 97,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.0,
+    "z": 0.0,
+    "turn": 0.0
+   },
+   "prompt": "A person standing relaxed shifts the weight from one leg to the other and settles.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.8467,
+    "jitter_m_s3": 37.1524,
+    "tmr": 0.7586,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "stand_shift.1": {
+   "kind": "stand_shift",
+   "stage": "stand",
+   "loop": false,
+   "first": 6694,
+   "frames": 97,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.0,
+    "z": 0.0,
+    "turn": 0.0
+   },
+   "prompt": "A person standing relaxed shifts the weight from one leg to the other and settles.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 0.7729,
+    "jitter_m_s3": 26.8411,
+    "tmr": 0.569,
+    "tmr_rank": 5.0,
+    "seam_m": 0.0
+   }
+  },
+  "stand_to_crouch.0": {
+   "kind": "stand_to_crouch",
+   "stage": "low",
+   "loop": false,
+   "first": 6791,
+   "frames": 72,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "hub": "crouch"
+   },
+   "travel": {
+    "x": 0.0030911739449948072,
+    "z": 0.003731055650860071,
+    "turn": 0.007043123245239258
+   },
+   "prompt": "A person standing squats down low and rests the forearms on the knees.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.5101,
+    "jitter_m_s3": 134.4391,
+    "tmr": 0.9313,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "stand_to_crouch.1": {
+   "kind": "stand_to_crouch",
+   "stage": "low",
+   "loop": false,
+   "first": 6863,
+   "frames": 72,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "hub": "crouch"
+   },
+   "travel": {
+    "x": -0.0023735249415040016,
+    "z": -0.003091485472396016,
+    "turn": 0.01266336441040039
+   },
+   "prompt": "A person standing squats down low and rests the forearms on the knees.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.6407,
+    "jitter_m_s3": 96.9736,
+    "tmr": 0.9296,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "stand_to_kneel.0": {
+   "kind": "stand_to_kneel",
+   "stage": "low",
+   "loop": false,
+   "first": 6935,
+   "frames": 87,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "hub": "kneel"
+   },
+   "travel": {
+    "x": -0.010270746424794197,
+    "z": -0.08024301379919052,
+    "turn": 0.05215883255004883
+   },
+   "prompt": "A person standing kneels down on one knee, keeping the back straight and the head up.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 3.5702,
+    "jitter_m_s3": 95.5054,
+    "tmr": 0.7763,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "stand_to_kneel.1": {
+   "kind": "stand_to_kneel",
+   "stage": "low",
+   "loop": false,
+   "first": 7022,
+   "frames": 87,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "hub": "kneel"
+   },
+   "travel": {
+    "x": 0.014508526772260666,
+    "z": 0.41961225867271423,
+    "turn": 0.01368093490600586
+   },
+   "prompt": "A person standing kneels down on one knee, keeping the back straight and the head up.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 3.6761,
+    "jitter_m_s3": 118.7857,
+    "tmr": 0.8018,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "stand_to_sit.0": {
+   "kind": "stand_to_sit",
+   "stage": "low",
+   "loop": false,
+   "first": 7109,
+   "frames": 117,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "hub": "sit"
+   },
+   "travel": {
+    "x": -0.1333359181880951,
+    "z": -0.42869070172309875,
+    "turn": 0.004965066909790039
+   },
+   "prompt": "A person standing sits down on the ground and crosses the legs.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.9866,
+    "jitter_m_s3": 141.3014,
+    "tmr": 0.953,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "stand_to_sit.1": {
+   "kind": "stand_to_sit",
+   "stage": "low",
+   "loop": false,
+   "first": 7226,
+   "frames": 117,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "hub": "sit"
+   },
+   "travel": {
+    "x": -0.05491267517209053,
+    "z": -0.18078020215034485,
+    "turn": -0.03614640235900879
+   },
+   "prompt": "A person standing sits down on the ground and crosses the legs.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.4295,
+    "jitter_m_s3": 116.4537,
+    "tmr": 0.9437,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "stand_to_stroll.0": {
+   "kind": "stand_to_stroll",
+   "stage": "walk",
+   "loop": false,
+   "first": 7343,
+   "frames": 72,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "loop": "stroll.0"
+   },
+   "travel": {
+    "x": -0.026789885014295578,
+    "z": 0.17119427025318146,
+    "turn": 4.9591064453125e-05
+   },
+   "prompt": "A person standing still starts strolling forward slowly, looking around.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.2077,
+    "jitter_m_s3": 96.5308,
+    "tmr": 0.8611,
+    "tmr_rank": 3.0,
+    "seam_m": 0.0
+   }
+  },
+  "stand_to_walk.0": {
+   "kind": "stand_to_walk",
+   "stage": "walk",
+   "loop": false,
+   "first": 7415,
+   "frames": 72,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "loop": "walk.0"
+   },
+   "travel": {
+    "x": -0.06168655678629875,
+    "z": 0.4237353503704071,
+    "turn": -0.1027679443359375
+   },
+   "prompt": "A person standing still starts walking forward at a relaxed normal pace.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.2508,
+    "jitter_m_s3": 87.7701,
+    "tmr": 0.8703,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "stand_to_walk_phone.0": {
+   "kind": "stand_to_walk_phone",
+   "stage": "walk",
+   "loop": false,
+   "first": 7487,
+   "frames": 87,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "loop": "walk_phone.0"
+   },
+   "travel": {
+    "x": 0.025189686566591263,
+    "z": 0.41568002104759216,
+    "turn": 0.11571002006530762
+   },
+   "prompt": "A person standing still looks down at a phone in one hand and starts walking forward slowly.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 3.5445,
+    "jitter_m_s3": 70.5394,
+    "tmr": 0.9386,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "stand_to_walk_pockets.0": {
+   "kind": "stand_to_walk_pockets",
+   "stage": "walk",
+   "loop": false,
+   "first": 7574,
+   "frames": 87,
+   "start": {
+    "hub": "stand"
+   },
+   "next": {
+    "loop": "walk_pockets.0"
+   },
+   "travel": {
+    "x": 0.10482225567102432,
+    "z": 0.3205287456512451,
+    "turn": 0.27376294136047363
+   },
+   "prompt": "A person standing still starts walking forward casually with the arms hanging down.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 4.5403,
+    "jitter_m_s3": 37.4135,
+    "tmr": 0.9282,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "stroll.0": {
+   "kind": "stroll",
+   "stage": "walk",
+   "loop": true,
+   "first": 7661,
+   "frames": 44,
+   "start": {
+    "loop": "stroll.0"
+   },
+   "next": {
+    "loop": "stroll.0"
+   },
+   "travel": {
+    "x": 0.001019576023941482,
+    "z": 1.2432860882379286,
+    "turn": 0.0
+   },
+   "prompt": "A person strolls forward slowly and relaxed, looking around at the surroundings.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.8053,
+    "jitter_m_s3": 111.4013,
+    "loop_m": 0.0194,
+    "tmr": 0.8554,
+    "tmr_rank": 5.0,
+    "legs_cm": 2.5271,
+    "nearest_m": 0.5974
+   }
+  },
+  "stroll.1": {
+   "kind": "stroll",
+   "stage": "walk",
+   "loop": true,
+   "first": 7705,
+   "frames": 83,
+   "start": {
+    "loop": "stroll.1"
+   },
+   "next": {
+    "loop": "stroll.1"
+   },
+   "travel": {
+    "x": 0.009813890146559034,
+    "z": 2.3593037460450805,
+    "turn": 0.0
+   },
+   "prompt": "A person strolls forward slowly and relaxed, looking around at the surroundings.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.8528,
+    "jitter_m_s3": 126.7041,
+    "loop_m": 0.0173,
+    "tmr": 0.7001,
+    "tmr_rank": 7.0,
+    "legs_cm": 1.7744,
+    "nearest_m": 0.5974
+   }
+  },
+  "stroll_look_up.0": {
+   "kind": "stroll_look_up",
+   "stage": "react",
+   "loop": false,
+   "first": 7788,
+   "frames": 147,
+   "start": {
+    "loop": "stroll.0"
+   },
+   "next": {
+    "loop": "stroll.0"
+   },
+   "travel": {
+    "x": 0.06696361166759161,
+    "z": 1.3247275153561384,
+    "turn": 0.27820467948913574
+   },
+   "prompt": "A person strolling slowly stops and looks up at the sky for a moment, then strolls on.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.9292,
+    "jitter_m_s3": 86.9562,
+    "tmr": 0.8168,
+    "tmr_rank": 6.0,
+    "seam_m": 0.0
+   }
+  },
+  "stroll_look_up.1": {
+   "kind": "stroll_look_up",
+   "stage": "react",
+   "loop": false,
+   "first": 7935,
+   "frames": 147,
+   "start": {
+    "loop": "stroll.1"
+   },
+   "next": {
+    "loop": "stroll.1"
+   },
+   "travel": {
+    "x": -0.2326491824864582,
+    "z": 2.677697996198196,
+    "turn": 0.04387164115905762
+   },
+   "prompt": "A person strolling slowly stops and looks up at the sky for a moment, then strolls on.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.3205,
+    "jitter_m_s3": 108.605,
+    "tmr": 0.7562,
+    "tmr_rank": 8.0,
+    "seam_m": 0.0
+   }
+  },
+  "stroll_to_stand.0": {
+   "kind": "stroll_to_stand",
+   "stage": "walk",
+   "loop": false,
+   "first": 8082,
+   "frames": 72,
+   "start": {
+    "loop": "stroll.0"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.03540911392139229,
+    "z": 1.5004072084148334,
+    "turn": 0.1247408390045166
+   },
+   "prompt": "A person strolling slowly comes to a stop and stands relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.2239,
+    "jitter_m_s3": 138.1851,
+    "tmr": 0.9731,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "stroll_to_stand.1": {
+   "kind": "stroll_to_stand",
+   "stage": "walk",
+   "loop": false,
+   "first": 8154,
+   "frames": 72,
+   "start": {
+    "loop": "stroll.1"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.023615687072859135,
+    "z": 0.41245304530819266,
+    "turn": 0.02083563804626465
+   },
+   "prompt": "A person strolling slowly comes to a stop and stands relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.8114,
+    "jitter_m_s3": 105.5126,
+    "tmr": 0.9045,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk.0": {
+   "kind": "walk",
+   "stage": "walk",
+   "loop": true,
+   "first": 8226,
+   "frames": 35,
+   "start": {
+    "loop": "walk.0"
+   },
+   "next": {
+    "loop": "walk.0"
+   },
+   "travel": {
+    "x": -0.001652450815727291,
+    "z": 1.521830815301264,
+    "turn": 0.0
+   },
+   "prompt": "A person walks forward at a relaxed normal pace with the arms swinging naturally.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.685,
+    "jitter_m_s3": 257.2218,
+    "loop_m": 0.0182,
+    "tmr": 0.9622,
+    "tmr_rank": 1.0,
+    "legs_cm": 2.7574,
+    "nearest_m": 0.8441
+   }
+  },
+  "walk.1": {
+   "kind": "walk",
+   "stage": "walk",
+   "loop": true,
+   "first": 8261,
+   "frames": 75,
+   "start": {
+    "loop": "walk.1"
+   },
+   "next": {
+    "loop": "walk.1"
+   },
+   "travel": {
+    "x": -0.09263049760521525,
+    "z": 3.2280040302060233,
+    "turn": 0.0
+   },
+   "prompt": "A person walks forward at a relaxed normal pace with the arms swinging naturally.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 4.0859,
+    "jitter_m_s3": 196.7695,
+    "loop_m": 0.0206,
+    "tmr": 0.9674,
+    "tmr_rank": 1.0,
+    "legs_cm": 3.2079,
+    "nearest_m": 0.8441
+   }
+  },
+  "walk_look_up.0": {
+   "kind": "walk_look_up",
+   "stage": "react",
+   "loop": false,
+   "first": 8336,
+   "frames": 147,
+   "start": {
+    "loop": "walk.0"
+   },
+   "next": {
+    "loop": "walk.0"
+   },
+   "travel": {
+    "x": -0.9432048315487034,
+    "z": 8.41900213893631,
+    "turn": -0.010921955108642578
+   },
+   "prompt": "A person walking forward stops and looks up at the sky for a moment, then walks on.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 3.9271,
+    "jitter_m_s3": 348.4524,
+    "tmr": 0.7532,
+    "tmr_rank": 6.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk_look_up.1": {
+   "kind": "walk_look_up",
+   "stage": "react",
+   "loop": false,
+   "first": 8483,
+   "frames": 147,
+   "start": {
+    "loop": "walk.1"
+   },
+   "next": {
+    "loop": "walk.1"
+   },
+   "travel": {
+    "x": 0.02440534316749204,
+    "z": 3.00769564725884,
+    "turn": -0.007953405380249023
+   },
+   "prompt": "A person walking forward stops and looks up at the sky for a moment, then walks on.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 3.124,
+    "jitter_m_s3": 149.1301,
+    "tmr": 0.8308,
+    "tmr_rank": 4.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk_phone.0": {
+   "kind": "walk_phone",
+   "stage": "walk",
+   "loop": true,
+   "first": 8630,
+   "frames": 36,
+   "start": {
+    "loop": "walk_phone.0"
+   },
+   "next": {
+    "loop": "walk_phone.0"
+   },
+   "travel": {
+    "x": 0.017132136870962184,
+    "z": 1.2089045663885511,
+    "turn": 0.0
+   },
+   "prompt": "A person walks forward slowly while looking down at a phone held in one hand.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.2007,
+    "jitter_m_s3": 277.8076,
+    "loop_m": 0.0186,
+    "tmr": 0.9617,
+    "tmr_rank": 1.0,
+    "legs_cm": 2.6982
+   }
+  },
+  "walk_phone_to_stand.0": {
+   "kind": "walk_phone_to_stand",
+   "stage": "walk",
+   "loop": false,
+   "first": 8666,
+   "frames": 87,
+   "start": {
+    "loop": "walk_phone.0"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": -0.1032863670366359,
+    "z": 0.9922544014909886,
+    "turn": 0.0534365177154541
+   },
+   "prompt": "A person walking while looking at a phone stops, lowers the arm and stands relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.3475,
+    "jitter_m_s3": 108.0073,
+    "tmr": 0.9456,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk_pockets.0": {
+   "kind": "walk_pockets",
+   "stage": "walk",
+   "loop": true,
+   "first": 8753,
+   "frames": 31,
+   "start": {
+    "loop": "walk_pockets.0"
+   },
+   "next": {
+    "loop": "walk_pockets.0"
+   },
+   "travel": {
+    "x": -0.004023520155696569,
+    "z": 1.1418301587390418,
+    "turn": 0.0
+   },
+   "prompt": "A person walks forward casually with relaxed shoulders, the arms hanging down and hardly swinging.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 1.1926,
+    "jitter_m_s3": 197.3805,
+    "loop_m": 0.0181,
+    "tmr": 0.9043,
+    "tmr_rank": 2.0,
+    "legs_cm": 2.6203
+   }
+  },
+  "walk_pockets_to_stand.0": {
+   "kind": "walk_pockets_to_stand",
+   "stage": "walk",
+   "loop": false,
+   "first": 8784,
+   "frames": 87,
+   "start": {
+    "loop": "walk_pockets.0"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": -0.12249768907340958,
+    "z": 1.6672574963157802,
+    "turn": -0.1652827262878418
+   },
+   "prompt": "A person walking casually with the arms hanging down slows and stops, standing relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.2621,
+    "jitter_m_s3": 138.1654,
+    "tmr": 0.879,
+    "tmr_rank": 3.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk_to_stand.0": {
+   "kind": "walk_to_stand",
+   "stage": "walk",
+   "loop": false,
+   "first": 8871,
+   "frames": 72,
+   "start": {
+    "loop": "walk.0"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": -0.26165710383609003,
+    "z": 1.783173835559822,
+    "turn": -0.1561756134033203
+   },
+   "prompt": "A person walking forward slows down and comes to a stop, standing relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 2.3248,
+    "jitter_m_s3": 214.6032,
+    "tmr": 0.9757,
+    "tmr_rank": 1.0,
+    "seam_m": 0.0
+   }
+  },
+  "walk_to_stand.1": {
+   "kind": "walk_to_stand",
+   "stage": "walk",
+   "loop": false,
+   "first": 8943,
+   "frames": 72,
+   "start": {
+    "loop": "walk.1"
+   },
+   "next": {
+    "hub": "stand"
+   },
+   "travel": {
+    "x": 0.00966329010280145,
+    "z": 1.4462023864038016,
+    "turn": 0.01814556121826172
+   },
+   "prompt": "A person walking forward slows down and comes to a stop, standing relaxed.",
+   "checks_failed": [],
+   "measures": {
+    "slide_cm_s": 3.0358,
+    "jitter_m_s3": 141.2703,
+    "tmr": 0.9777,
+    "tmr_rank": 2.0,
+    "seam_m": 0.0
+   }
+  }
+ }
+}

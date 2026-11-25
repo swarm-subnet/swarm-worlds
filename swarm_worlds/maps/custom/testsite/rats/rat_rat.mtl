@@ -1,0 +1,3 @@
+newmtl rat_rat
+Kd 1 1 1
+map_Kd rat_rat_brown.png

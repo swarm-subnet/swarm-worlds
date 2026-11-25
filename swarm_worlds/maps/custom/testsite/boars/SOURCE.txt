@@ -1,0 +1,14 @@
+Source: the wild boars of the Test Field, built for this map.
+License: our own work.
+
+Two bodies, each made from its own measures with no outside model: the wild boar (about 1.45 m long and 0.87 m at the
+shoulder, in a dark, a grey winter and a rusty summer coat) and its piglet of a few weeks (about 0.42 m long, striped,
+or with the stripes fading). Each has bead eyes, hollow ears and forelegs that bend forward at the knee; the boar
+carries a mane of bristles along its spine and two small tusks. Body, skeleton, the eleven motions (stand, walk, trot, graze_walk, head_down, graze,
+head_up, look, lie_down, lying, get_up), the coats and the heat maps were all made for this map. The motions carry
+the goat's names, so one herd's mind moves both: for a boar, graze is rooting in the ground.
+
+boars.json lists each body's coats and clips and which clip may follow which. A skin is one surface of shared
+vertices: boar_<name>_poses.npz holds every pose of the body's points (poses), the body point each drawn vertex shows
+(source), its place on the coat (uv) and the triangles (faces). The OBJ is the same skin at rest, for any tool that
+reads one.

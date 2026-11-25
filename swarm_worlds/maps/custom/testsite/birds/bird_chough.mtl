@@ -1,0 +1,3 @@
+newmtl bird_chough
+Kd 1 1 1
+map_Kd bird_chough_adult.png

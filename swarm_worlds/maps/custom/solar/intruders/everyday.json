@@ -1,0 +1,149 @@
+{
+ "format": 1,
+ "about": "Everyday clothing colours for people who are not thieves: each piece of a garment people wear every day, by colour group, as sRGB from 0 to 1. Two colours of one kind of part (top, trousers, head) in different groups are at least 20 apart in CIE Lab. Sentinel's thieves keep the colours in intruders.json.",
+ "colours": {
+  "pieces/tshirt_main": {
+   "white": [0.88, 0.88, 0.86],
+   "light_grey": [0.62, 0.63, 0.64],
+   "black": [0.06, 0.06, 0.07],
+   "navy": [0.1, 0.13, 0.3],
+   "blue": [0.15, 0.35, 0.7],
+   "sky": [0.48, 0.68, 0.86],
+   "red": [0.72, 0.1, 0.1],
+   "green": [0.15, 0.45, 0.22],
+   "olive": [0.36, 0.38, 0.18],
+   "yellow": [0.92, 0.78, 0.15],
+   "orange": [0.9, 0.45, 0.1],
+   "pink": [0.9, 0.56, 0.66]
+  },
+  "pieces/hoodie_main": {
+   "charcoal": [0.24, 0.24, 0.25],
+   "black": [0.06, 0.06, 0.07],
+   "light_grey": [0.62, 0.63, 0.64],
+   "navy": [0.1, 0.13, 0.3],
+   "blue": [0.15, 0.35, 0.7],
+   "red": [0.72, 0.1, 0.1],
+   "burgundy": [0.4, 0.07, 0.13],
+   "green": [0.15, 0.45, 0.22],
+   "olive": [0.36, 0.38, 0.18],
+   "orange": [0.9, 0.45, 0.1],
+   "beige": [0.78, 0.68, 0.52]
+  },
+  "pieces/hoodie_trim": {
+   "white": [0.85, 0.85, 0.83],
+   "black": [0.05, 0.05, 0.06]
+  },
+  "pieces/hoodie_up_main": {
+   "charcoal": [0.24, 0.24, 0.25],
+   "black": [0.06, 0.06, 0.07],
+   "light_grey": [0.62, 0.63, 0.64],
+   "navy": [0.1, 0.13, 0.3],
+   "blue": [0.15, 0.35, 0.7],
+   "red": [0.72, 0.1, 0.1],
+   "burgundy": [0.4, 0.07, 0.13],
+   "green": [0.15, 0.45, 0.22],
+   "olive": [0.36, 0.38, 0.18],
+   "orange": [0.9, 0.45, 0.1],
+   "beige": [0.78, 0.68, 0.52]
+  },
+  "pieces/hoodie_up_trim": {
+   "white": [0.85, 0.85, 0.83],
+   "black": [0.05, 0.05, 0.06]
+  },
+  "pieces/work_jacket_main": {
+   "brown": [0.42, 0.29, 0.16],
+   "olive": [0.36, 0.38, 0.18],
+   "navy": [0.1, 0.13, 0.3],
+   "black": [0.06, 0.06, 0.07],
+   "green": [0.15, 0.45, 0.22],
+   "orange": [0.9, 0.45, 0.1],
+   "beige": [0.78, 0.68, 0.52]
+  },
+  "pieces/work_jacket_trim": {
+   "black": [0.07, 0.07, 0.07]
+  },
+  "pieces/puffer_main": {
+   "black": [0.06, 0.06, 0.07],
+   "navy": [0.1, 0.13, 0.3],
+   "red": [0.72, 0.1, 0.1],
+   "blue": [0.15, 0.35, 0.7],
+   "green": [0.15, 0.45, 0.22],
+   "yellow": [0.92, 0.78, 0.15],
+   "light_grey": [0.62, 0.63, 0.64],
+   "burgundy": [0.4, 0.07, 0.13],
+   "orange": [0.9, 0.45, 0.1]
+  },
+  "pieces/puffer_trim": {
+   "black": [0.05, 0.05, 0.05]
+  },
+  "pieces/work_trousers_main": {
+   "grey": [0.4, 0.4, 0.42],
+   "black": [0.07, 0.07, 0.08],
+   "khaki": [0.7, 0.62, 0.46],
+   "dark_blue": [0.13, 0.18, 0.33],
+   "olive": [0.3, 0.32, 0.19]
+  },
+  "pieces/work_trousers_trim": {
+   "black": [0.06, 0.06, 0.06]
+  },
+  "pieces/jeans_main": {
+   "dark_blue": [0.13, 0.18, 0.33],
+   "light_blue": [0.38, 0.5, 0.66],
+   "black": [0.07, 0.07, 0.08],
+   "grey": [0.4, 0.4, 0.42]
+  },
+  "pieces/jeans_trim": {
+   "brown": [0.14, 0.09, 0.06],
+   "black": [0.05, 0.05, 0.05]
+  },
+  "pieces/cargo_main": {
+   "khaki": [0.7, 0.62, 0.46],
+   "olive": [0.3, 0.32, 0.19],
+   "black": [0.07, 0.07, 0.08],
+   "grey": [0.4, 0.4, 0.42]
+  },
+  "pieces/work_boots_main": {
+   "brown": [0.28, 0.18, 0.1],
+   "black": [0.06, 0.05, 0.05],
+   "tan": [0.45, 0.33, 0.2]
+  },
+  "pieces/work_boots_sole": {
+   "black": [0.06, 0.05, 0.05]
+  },
+  "pieces/trainers_main": {
+   "white": [0.88, 0.88, 0.86],
+   "black": [0.08, 0.08, 0.09],
+   "grey": [0.35, 0.35, 0.37]
+  },
+  "pieces/trainers_sole": {
+   "white": [0.92, 0.92, 0.9],
+   "black": [0.06, 0.06, 0.06]
+  },
+  "pieces/hair_short_main": {
+   "dark": [0.06, 0.04, 0.03],
+   "brown": [0.3, 0.2, 0.11],
+   "blond": [0.66, 0.54, 0.33],
+   "grey": [0.58, 0.57, 0.55]
+  },
+  "pieces/cap_main": {
+   "black": [0.06, 0.06, 0.07],
+   "navy": [0.1, 0.13, 0.3],
+   "red": [0.72, 0.1, 0.1],
+   "white": [0.88, 0.88, 0.86],
+   "green": [0.15, 0.45, 0.22],
+   "beige": [0.78, 0.68, 0.52],
+   "blue": [0.15, 0.35, 0.7],
+   "yellow": [0.92, 0.78, 0.15]
+  },
+  "pieces/beanie_main": {
+   "black": [0.06, 0.06, 0.07],
+   "charcoal": [0.24, 0.24, 0.25],
+   "navy": [0.1, 0.13, 0.3],
+   "red": [0.72, 0.1, 0.1],
+   "orange": [0.9, 0.45, 0.1],
+   "green": [0.15, 0.45, 0.22],
+   "light_grey": [0.62, 0.63, 0.64],
+   "yellow": [0.92, 0.78, 0.15]
+  }
+ }
+}

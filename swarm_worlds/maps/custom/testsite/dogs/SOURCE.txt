@@ -1,0 +1,11 @@
+Source: the dogs of the Test Field, built for this map.
+License: CC0 1.0 for the source models; the coats, the heat maps and the reworked motions are our own work.
+
+- Bodies, skeletons and the walking, standing and sniffing motions: the Husky, the Shiba Inu and the Wolf of the
+  Ultimate Animated Animal Pack by Quaternius (quaternius.com), CC0 1.0. The Wolf carries shepherd coats. Legs were
+  given real length, paws planted, and lying down, lying and getting up made for these dogs.
+- Coats and heat maps: painted for this map from each dog's own surface.
+
+dogs.json lists the clips and which clip may follow which. Each skin is one surface of shared vertices:
+dog_<name>_poses.npz holds every pose of the body's points (poses), the body point each drawn vertex shows (source),
+its place on the coat (uv) and the triangles (faces). The OBJ is the same skin at rest, for any tool that reads one.
