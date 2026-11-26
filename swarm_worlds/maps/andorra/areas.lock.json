@@ -1,0 +1,300 @@
+{
+ "archives": {
+  "01_estanys_de_l_angonella_comapedrosa": {
+   "bytes": 40541592,
+   "file": "01_estanys_de_l_angonella_comapedrosa.tar.xz",
+   "files": 3324,
+   "sha256": "f855aec9cea103581098bad4a7d40015565dc1d573f5837ca12f251f56a79d1e"
+  },
+  "02_estany_del_mig_tristaina": {
+   "bytes": 39317120,
+   "file": "02_estany_del_mig_tristaina.tar.xz",
+   "files": 3324,
+   "sha256": "ae4aec089cea845238cc8e7afe2c3c80c6c2455ea4b86bc6a70f5c932fcfd7d5"
+  },
+  "03_estany_de_la_nou_madriu": {
+   "bytes": 50700168,
+   "file": "03_estany_de_la_nou_madriu.tar.xz",
+   "files": 3276,
+   "sha256": "4028b516a8c36b8bac3bb219fb1ebb9a1045bc27f0fd840339ecff345540c69d"
+  },
+  "04_estany_de_baix_de_siscaro": {
+   "bytes": 42111116,
+   "file": "04_estany_de_baix_de_siscaro.tar.xz",
+   "files": 3336,
+   "sha256": "a570b9a218624e4d38c615c076affda8a9e9c2614745fd0a0ac8398decc7266c"
+  },
+  "05_estany_de_querol_incles": {
+   "bytes": 41803440,
+   "file": "05_estany_de_querol_incles.tar.xz",
+   "files": 3333,
+   "sha256": "288cf20843d134f6e0cfb0d1b0fb5bff3d48c779926afc9b6f6758dbcab24a8b"
+  },
+  "06_estany_de_montmalus": {
+   "bytes": 34400132,
+   "file": "06_estany_de_montmalus.tar.xz",
+   "files": 3309,
+   "sha256": "5a375da75cf79be598e7356ea3a29778753fd158c9adb2bc3c868e4474831aff"
+  },
+  "07_l_obaga_hay_meadows": {
+   "bytes": 60105544,
+   "file": "07_l_obaga_hay_meadows.tar.xz",
+   "files": 3270,
+   "sha256": "46c78a597ebeb0cb29eef76f22320009713df0669ecb3cb4e5e07c0b92c26594"
+  },
+  "08_el_rebollar": {
+   "bytes": 57810032,
+   "file": "08_el_rebollar.tar.xz",
+   "files": 3315,
+   "sha256": "11d2e292a77f3d61a30db728240128048268dbec6a5a73e93f0ccd620a5d8105"
+  },
+  "09_fontaneda_hay_meadows": {
+   "bytes": 62964496,
+   "file": "09_fontaneda_hay_meadows.tar.xz",
+   "files": 3309,
+   "sha256": "f4d007becf372d073b58f4f56783f785ef68dabaeed6f210bf4ef3e3bc991cb4"
+  },
+  "10_cami_ral_d_ordino_arans": {
+   "bytes": 63734960,
+   "file": "10_cami_ral_d_ordino_arans.tar.xz",
+   "files": 3363,
+   "sha256": "ee8ebf681d037eb52c5670e0632566a36ac84e6d1bfaf99f9f6bd07bdbedf5dd"
+  },
+  "11_engolasters_hamlet_meadows": {
+   "bytes": 60300840,
+   "file": "11_engolasters_hamlet_meadows.tar.xz",
+   "files": 3408,
+   "sha256": "b5c41ee5515209d44d174065811d5ac69d046dd746f76f67f215884795aaa60f"
+  },
+  "12_sornas": {
+   "bytes": 62672980,
+   "file": "12_sornas.tar.xz",
+   "files": 3915,
+   "sha256": "2f1726a6fb6bc7c27ae511722c5bd274f8bbb1c97b2650a4f19cfa395bd5b364"
+  },
+  "13_llorts": {
+   "bytes": 58498796,
+   "file": "13_llorts.tar.xz",
+   "files": 3657,
+   "sha256": "0bd7ed3ab91b6e3821b4685ac1de4d84ebaaa9a3010874a6d152759f79193e89"
+  },
+  "14_pont_de_la_baladosa_incles": {
+   "bytes": 60090280,
+   "file": "14_pont_de_la_baladosa_incles.tar.xz",
+   "files": 3387,
+   "sha256": "12bf15fffd5f9c2ba456862137d53ab26b786957f6c444b92947a55d599f8e02"
+  },
+  "15_bordes_de_rigoder": {
+   "bytes": 63467072,
+   "file": "15_bordes_de_rigoder.tar.xz",
+   "files": 3384,
+   "sha256": "7f9d4ddc841a798c32f0f93ade7f66c3acaf6be372854b2394c767cf7a1eae1c"
+  },
+  "16_prats_valira_d_orient": {
+   "bytes": 55308000,
+   "file": "16_prats_valira_d_orient.tar.xz",
+   "files": 3342,
+   "sha256": "b3f047757d2b1c2421590aa68729ab6f87f6a9874b0677a2a8d518fe51607871"
+  },
+  "17_l_aldosa_de_la_massana": {
+   "bytes": 57695328,
+   "file": "17_l_aldosa_de_la_massana.tar.xz",
+   "files": 3654,
+   "sha256": "dd64648521077a7eb6bd6879f7e4c2b2993bea909fb275eb3d1de99273364bfd"
+  },
+  "18_canal_de_la_bova": {
+   "bytes": 57234572,
+   "file": "18_canal_de_la_bova.tar.xz",
+   "files": 3309,
+   "sha256": "9f989e96ca57ac334f54a40c956ac71e8be8d485d0678c125acd4561c06f7761"
+  },
+  "19_cami_de_l_alt_del_griu": {
+   "bytes": 49346700,
+   "file": "19_cami_de_l_alt_del_griu.tar.xz",
+   "files": 3309,
+   "sha256": "f1f2b1e4fc33d523f965b99e25fd4017200ce3df5ea67a7a2dbf83fbd5a0db53"
+  },
+  "20_planell_dels_becos": {
+   "bytes": 53679076,
+   "file": "20_planell_dels_becos.tar.xz",
+   "files": 3357,
+   "sha256": "bca97f3f33a7e818de48c6c93faec225ee3e3aa44f8c340339716395931faaad"
+  },
+  "21_cortal_del_masover": {
+   "bytes": 52535696,
+   "file": "21_cortal_del_masover.tar.xz",
+   "files": 3315,
+   "sha256": "e9ae7dbc8d170ac3b02b9bf8ba7f20b769043d5437eef4efb592d369ed728be0"
+  },
+  "22_salador_de_l_andorrana": {
+   "bytes": 55039664,
+   "file": "22_salador_de_l_andorrana.tar.xz",
+   "files": 3315,
+   "sha256": "a5b28ef6ce9d7eb8a5d8ae1d08a744ece28d50c91a37266dec484ea250870ba4"
+  },
+  "23_pic_d_ortafa": {
+   "bytes": 37859808,
+   "file": "23_pic_d_ortafa.tar.xz",
+   "files": 3315,
+   "sha256": "75361e1cf760bb6000c8eec1f79a03d6851f44da903fd0654c6c74b8510a308a"
+  },
+  "24_calm_de_claror": {
+   "bytes": 35231796,
+   "file": "24_calm_de_claror.tar.xz",
+   "files": 3309,
+   "sha256": "0b0b761f7760ec84365e335652f58070574276909925ac49b1cfd00caeac043e"
+  },
+  "25_planells_de_caraup": {
+   "bytes": 46642324,
+   "file": "25_planells_de_caraup.tar.xz",
+   "files": 3315,
+   "sha256": "d976e7bf7496c806fe04c355c0f63d2666408b1e818af8aa09b84f1b90da8405"
+  },
+  "26_port_de_rat": {
+   "bytes": 44174328,
+   "file": "26_port_de_rat.tar.xz",
+   "files": 3402,
+   "sha256": "d49ee02024b6f0b3d7833d02da267f5d4250934eea0c0ec394d01c3008cd9607"
+  },
+  "27_la_tosa_de_les_mussoles": {
+   "bytes": 42199952,
+   "file": "27_la_tosa_de_les_mussoles.tar.xz",
+   "files": 3327,
+   "sha256": "c3eea848fbfe0d3f3ce02fe7a274662aa1b2abfe7244fe776da313c1daca5cbd"
+  },
+  "28_pic_de_l_estanyo_grp1": {
+   "bytes": 43913668,
+   "file": "28_pic_de_l_estanyo_grp1.tar.xz",
+   "files": 3354,
+   "sha256": "9973b0351f8a9a4caefcbd62ecba01686651fd26fe20e4a198021f6df8c17441"
+  },
+  "29_pla_de_les_pedres": {
+   "bytes": 50601728,
+   "file": "29_pla_de_les_pedres.tar.xz",
+   "files": 3420,
+   "sha256": "54441943f8a95fca68a803af319e64e0ceae8f7949ccf4dc73aa639f35c314eb"
+  },
+  "30_prat_dels_orris": {
+   "bytes": 63670028,
+   "file": "30_prat_dels_orris.tar.xz",
+   "files": 3435,
+   "sha256": "7f868e55bc639390ee240e4d52a37118c128afe2c80e8b34b54b30a894b6682f"
+  },
+  "31_obac_de_soldeu": {
+   "bytes": 54756248,
+   "file": "31_obac_de_soldeu.tar.xz",
+   "files": 3468,
+   "sha256": "caf4f75790325475d41f379de43b6c405216cb079946756efdd47e5dd65f6feb"
+  },
+  "32_pic_dels_aspres_pal": {
+   "bytes": 47016136,
+   "file": "32_pic_dels_aspres_pal.tar.xz",
+   "files": 3537,
+   "sha256": "e6b6e49a82758b2f54a3f8501e9c543c3a48a33e10ff6298deb619b60941de43"
+  },
+  "33_andorra_la_vella_test_field": {
+   "bytes": 58106416,
+   "file": "33_andorra_la_vella_test_field.tar.xz",
+   "files": 4206,
+   "sha256": "3b7c4dc4f6c8f1ed110121e1a502f225bd59a867ca58e6c02ce16b114e5e9352"
+  },
+  "34_andorra_la_vella_valira_river": {
+   "bytes": 58039380,
+   "file": "34_andorra_la_vella_valira_river.tar.xz",
+   "files": 3855,
+   "sha256": "5d98c3f6a7346a8d46af9a62ffceab1a66a4cf71ad845df950635308b1e8eb67"
+  },
+  "35_sant_julia_de_loria_old_town": {
+   "bytes": 60515340,
+   "file": "35_sant_julia_de_loria_old_town.tar.xz",
+   "files": 4491,
+   "sha256": "5a91b00642f0fa9caee4348e0ae7da12942e57458cef1ef21ebd70d8c3b1dda1"
+  },
+  "36_sant_julia_de_loria_east_edge": {
+   "bytes": 59231300,
+   "file": "36_sant_julia_de_loria_east_edge.tar.xz",
+   "files": 3666,
+   "sha256": "d2a3399368320bc7d7d92fb447260f0a5c477fe753c1462f509d5a9c32d71428"
+  },
+  "37_escaldes_caldea_park": {
+   "bytes": 59499520,
+   "file": "37_escaldes_caldea_park.tar.xz",
+   "files": 4605,
+   "sha256": "e1045624394235da3fbdd1d30871b3425028f47afedef7dd9b08c3fcea307c0c"
+  },
+  "38_escaldes_engordany_slope": {
+   "bytes": 66760904,
+   "file": "38_escaldes_engordany_slope.tar.xz",
+   "files": 4502,
+   "sha256": "1081b4d97edc41b8d69de417a5fa54d4edf5c64ef64faa466eb8acd27ed857c5"
+  },
+  "39_ordino_village_and_meadows": {
+   "bytes": 58002892,
+   "file": "39_ordino_village_and_meadows.tar.xz",
+   "files": 3705,
+   "sha256": "1f2955c095ed64ce83fef1e711941e02cc755aa4f1378a4a79d98c904c41708e"
+  },
+  "40_ordino_river_meadows": {
+   "bytes": 58614788,
+   "file": "40_ordino_river_meadows.tar.xz",
+   "files": 3720,
+   "sha256": "a22cbbd00b369a44980260fb3ad9e674056fe30234bc7c4b1a5e21ce3d17925a"
+  },
+  "41_la_massana_valira_bank": {
+   "bytes": 60073460,
+   "file": "41_la_massana_valira_bank.tar.xz",
+   "files": 4167,
+   "sha256": "2a7a5a8d7e0a055d059225cd724ee3b89ad53841cad9d1e250c3cf79fb28dcbf"
+  },
+  "42_la_massana_village_fields": {
+   "bytes": 64263708,
+   "file": "42_la_massana_village_fields.tar.xz",
+   "files": 4275,
+   "sha256": "f59a9a1fa12cf5c1f21e18eae191940dc27e6d9be754f05d5ec3a8fc141335ba"
+  },
+  "43_encamp_centre": {
+   "bytes": 61098208,
+   "file": "43_encamp_centre.tar.xz",
+   "files": 4827,
+   "sha256": "dacd1760a5e4de9795c95080845b897fd067f814e0de794fc64bc4609ad2d76d"
+  },
+  "44_encamp_stadium_and_river": {
+   "bytes": 60703304,
+   "file": "44_encamp_stadium_and_river.tar.xz",
+   "files": 4611,
+   "sha256": "d1ca0c51504f3c0261c515e1a1956c3cd8fd5d800693eff08671c3bae7d618da"
+  },
+  "45_canillo_centre_and_river": {
+   "bytes": 63924896,
+   "file": "45_canillo_centre_and_river.tar.xz",
+   "files": 5445,
+   "sha256": "326514e69ab4cb934cc3b0cb61b63b76fe1b7eaf19abce7e64b3fe70aa7889e9"
+  },
+  "46_canillo_hillside_edge": {
+   "bytes": 60990132,
+   "file": "46_canillo_hillside_edge.tar.xz",
+   "files": 3741,
+   "sha256": "ea0d7a8d909ef293b5dd075aa6e0269815bb90f4e059c6857a3fdbf526553900"
+  },
+  "47_pas_de_la_casa_shopping_centre": {
+   "bytes": 43870640,
+   "file": "47_pas_de_la_casa_shopping_centre.tar.xz",
+   "files": 3516,
+   "sha256": "b365be20036f4cf97c789bca96fb56a76e54ad64f07d34a729c2a02df7138bca"
+  },
+  "48_pas_de_la_casa_apartment_slope": {
+   "bytes": 46660072,
+   "file": "48_pas_de_la_casa_apartment_slope.tar.xz",
+   "files": 3969,
+   "sha256": "0211796e62c0ee538b3279d85e3c6f43f3abb689a2020f2c5d8d24078d5c53b5"
+  },
+  "shared": {
+   "bytes": 19975676,
+   "file": "shared.tar.xz",
+   "files": 420,
+   "sha256": "33cb7fcef02192e59765269df677164f7d5522822885612b62865fc9d065c484"
+  }
+ },
+ "format": 1,
+ "release": "v1.2.0"
+}

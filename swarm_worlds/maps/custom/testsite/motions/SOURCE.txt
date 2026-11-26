@@ -1,0 +1,29 @@
+Source: the everyday motions of the Test Field's people, generated for this map.
+License: our own output of NVIDIA Kimodo (https://github.com/nv-tlabs/kimodo, code under Apache-2.0) with its model
+Kimodo-SOMA-RP-v1.2 (NVIDIA Open Model License), on the SOMA skeleton the people stand on (see
+../people/LICENSE_SOMA.txt).
+
+91 short blocks at 30 frames a second, 300 seconds in all, each written from a plain sentence ("A person walks
+forward at a relaxed normal pace with the arms swinging naturally.") and kept only if it passed its checks: the
+frames it is joined on within 3 cm of the pose it joins, a loop closing on itself, feet on the ground sliding under
+6 cm a second, no pops. motions.json keeps every block's sentence and what it measured.
+
+What it holds:
+- four base poses every block starts or ends on: standing, squatting, kneeling upright on one knee, sitting
+  cross-legged;
+- ways of walking, each a loop with a block that sets off into it from standing and one that stops out of it: a
+  plain walk (two takes), a slow stroll (two takes), a walk while looking at a phone, a casual walk with the arms
+  hanging (named walk_pockets); a walker can stop, look up and walk on (walk_look_up, stroll_look_up);
+- things done standing, each a loop with its way in and its way back: shifting the weight (idle), talking, looking
+  at a phone, arms crossed, hands on the hips, taking a picture, stretching, pointing, looking up at the sky, waving;
+- four small moves from standing back to standing, two takes each: a shift of the weight, a look round, a hand to
+  the head, a quiet breath;
+- low poses: a loop worked in each (touching the ground squatting, looking round kneeling, sitting), and the blocks
+  that go down into each pose from standing and get up again.
+
+Everything done on one spot ends exactly where and facing as it began: a small move in itself, a thing done standing
+over its way in, its loop and its way back. So a person who stays put never drifts off his place.
+
+The file format is the one of ../../solar/motions (motions.json names it): rotations[first:first + frames] are the
+local rotations of 30 joints, root the root's place, every block starting at the origin facing +z, with the rule
+for mirroring a block left to right.

@@ -1,0 +1,24 @@
+Source: the Andorra test site (Santa Coloma, Andorra), built from our own drone survey, Govern d'Andorra data
+and open data.
+License: each source below keeps its original terms, and these credits travel with the assets.
+
+- Field colour and shape, ground near the field, lane walls, roof and tree heights: our own drone survey of the site
+  (DJI Matrice 4TD footage, 9 October 2026).
+- Govern d'Andorra (IDE Andorra), derived work used with the government's approval, received on 12 November 2026
+  and kept with the company's records; no original government file is included: Ortofoto color 25 cm 2025 (colour of the ground near the field and of the middle ground, blended with the
+  scan textures under the ground masks, and the frame every layer is registered to); Cartografia 1:10.000, buildings
+  layer (Edificacions), accessed October 2026 (building outlines, rebuilt as house meshes).
+- Building heights: Overture Maps Foundation, buildings theme, ODbL 1.0.
+  Contains information from OpenStreetMap (c) OpenStreetMap contributors, ODbL 1.0; Microsoft Global ML Building
+  Footprints, ODbL 1.0; work derived from BTN 2024 ign.es (Instituto Geografico Nacional de Espana), CC BY 4.0.
+- Roads, paths and water: (c) OpenStreetMap contributors, ODbL 1.0.
+- Terrain: GEDTM30 global ensemble digital terrain model, OpenGeoHub, CC BY 4.0.
+- Tree positions and heights: High Resolution Canopy Height Maps by WRI and Meta, CC BY 4.0.
+- Colour of the far ground and colour balance of the near ground: contains modified Copernicus Sentinel data
+  2024-2026.
+- Ground, rock and bark textures: Poly Haven, CC0.
+
+ODbL: the house, road, path and water meshes are a Produced Work under the Open Database License 1.0. They are not a
+database, and no derivative database of OpenStreetMap or Overture is distributed, so the share-alike terms of section
+4.4 do not apply to them (section 4.5 b). The notices above give the attribution section 4.3 asks for. The extracts of
+those databases the meshes were made from, clipped to the area, are available on request, as section 4.6 asks.

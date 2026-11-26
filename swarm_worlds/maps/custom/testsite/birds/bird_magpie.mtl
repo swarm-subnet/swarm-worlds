@@ -1,0 +1,3 @@
+newmtl bird_magpie
+Kd 1 1 1
+map_Kd bird_magpie_pied.png

@@ -1,0 +1,3 @@
+newmtl boar_boar
+Kd 1 1 1
+map_Kd boar_boar_dark.png

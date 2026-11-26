@@ -1,0 +1,3 @@
+newmtl bird_pigeon
+Kd 1 1 1
+map_Kd bird_pigeon_blue_bar.png

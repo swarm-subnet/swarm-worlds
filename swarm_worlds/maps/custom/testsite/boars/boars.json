@@ -1,0 +1,262 @@
+{
+ "class": "boar",
+ "threat": false,
+ "decoy": true,
+ "frame": "x forward, z up, metres; origin at the centre of the standing footprint, feet on z = 0",
+ "poses": "the skin is built from poses[rest][source], uv and faces; poses[frame][source] is the resetMeshData upload; frames are clip.start + i",
+ "heat": {
+  "range_c": [
+   10.0,
+   38.0
+  ],
+  "emissivity": 0.98
+ },
+ "size_spread": [
+  0.9,
+  1.1
+ ],
+ "pace_spread": [
+  0.9,
+  1.1
+ ],
+ "blend_s": 0.25,
+ "joins": {
+  "stand": [
+   "walk",
+   "look",
+   "head_down",
+   "lie_down"
+  ],
+  "walk": [
+   "stand",
+   "trot",
+   "graze_walk"
+  ],
+  "trot": [
+   "walk"
+  ],
+  "graze_walk": [
+   "walk",
+   "graze"
+  ],
+  "head_down": [
+   "graze"
+  ],
+  "graze": [
+   "head_up",
+   "graze_walk"
+  ],
+  "head_up": [
+   "stand"
+  ],
+  "look": [
+   "stand"
+  ],
+  "lie_down": [
+   "lying"
+  ],
+  "lying": [
+   "get_up"
+  ],
+  "get_up": [
+   "stand"
+  ]
+ },
+ "bodies": {
+  "boar": {
+   "obj": "boar_boar.obj",
+   "poses": "boar_boar_poses.npz",
+   "coats": {
+    "dark": "boar_boar_dark.png",
+    "grey": "boar_boar_grey.png",
+    "rusty": "boar_boar_rusty.png"
+   },
+   "heat_map": "boar_boar_heat.png",
+   "length_m": 1.462,
+   "height_m": 0.906,
+   "triangles": 2846,
+   "vertices": 1631,
+   "render_vertices": 1954,
+   "clips": {
+    "walk": {
+     "start": 0,
+     "frames": 18,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 1.0
+    },
+    "trot": {
+     "start": 18,
+     "frames": 11,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 3.0
+    },
+    "stand": {
+     "start": 29,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "look": {
+     "start": 125,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "graze_walk": {
+     "start": 221,
+     "frames": 27,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.3
+    },
+    "head_down": {
+     "start": 248,
+     "frames": 18,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "graze"
+    },
+    "graze": {
+     "start": 266,
+     "frames": 72,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "head_up": {
+     "start": 338,
+     "frames": 18,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "stand"
+    },
+    "lie_down": {
+     "start": 356,
+     "frames": 30,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "lying"
+    },
+    "lying": {
+     "start": 386,
+     "frames": 72,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "get_up": {
+     "start": 458,
+     "frames": 30,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "stand"
+    }
+   }
+  },
+  "piglet": {
+   "obj": "boar_piglet.obj",
+   "poses": "boar_piglet_poses.npz",
+   "coats": {
+    "striped": "boar_piglet_striped.png",
+    "fading": "boar_piglet_fading.png"
+   },
+   "heat_map": "boar_piglet_heat.png",
+   "length_m": 0.423,
+   "height_m": 0.264,
+   "triangles": 2588,
+   "vertices": 1367,
+   "render_vertices": 1680,
+   "clips": {
+    "walk": {
+     "start": 0,
+     "frames": 12,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.55
+    },
+    "trot": {
+     "start": 12,
+     "frames": 8,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 1.3381
+    },
+    "stand": {
+     "start": 20,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "look": {
+     "start": 116,
+     "frames": 96,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "graze_walk": {
+     "start": 212,
+     "frames": 18,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.165
+    },
+    "head_down": {
+     "start": 230,
+     "frames": 18,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "graze"
+    },
+    "graze": {
+     "start": 248,
+     "frames": 72,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "head_up": {
+     "start": 320,
+     "frames": 18,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "stand"
+    },
+    "lie_down": {
+     "start": 338,
+     "frames": 30,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "lying"
+    },
+    "lying": {
+     "start": 368,
+     "frames": 72,
+     "fps": 24,
+     "loop": true,
+     "speed_m_s": 0.0
+    },
+    "get_up": {
+     "start": 440,
+     "frames": 30,
+     "fps": 24,
+     "loop": false,
+     "speed_m_s": 0.0,
+     "then": "stand"
+    }
+   }
+  }
+ }
+}

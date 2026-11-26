@@ -1,0 +1,3 @@
+newmtl bird_woodpigeon
+Kd 1 1 1
+map_Kd bird_woodpigeon_adult.png

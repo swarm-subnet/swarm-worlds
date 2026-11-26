@@ -19,12 +19,13 @@
 
 The package carries files, not code. Each function below returns the absolute
 path of one asset root; everything under a root is addressed by the relative
-names the simulator has always used.
+names the simulator has always used. The one tool it carries, swarm_worlds.areas,
+fetches the real areas, which are too heavy to ship inside it.
 """
 
 from importlib.resources import files
 
-__version__ = "1.1.0"
+__version__ = "1.2.0"
 
 _ROOT = files(__name__)
 

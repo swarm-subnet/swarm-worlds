@@ -7,3 +7,7 @@ dist/
 .pixi/
 .pytest_cache/
 .ruff_cache/
+# The real areas are fetched (python -m swarm_worlds.areas), never committed: only their catalogue and list are.
+swarm_worlds/maps/andorra/*/
+swarm_worlds/maps/andorra/.download/
+swarm_worlds/maps/andorra/.fetch.lock

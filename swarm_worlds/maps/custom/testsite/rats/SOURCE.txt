@@ -1,0 +1,13 @@
+Source: the rats and mice of the Test Field, built for this map.
+License: our own work.
+
+Two bodies, each made from its own measures with no outside model: the brown rat (body about 0.23 m with a tail nearly
+as long, in a brown, a grey and a dark coat) and the mouse (body about 0.09 m with a tail as long, as a wood mouse, a
+house mouse and a dark one). Each has bead eyes, round cupped ears and whiskers. Body, skeleton, the eight motions (stand, walk, trot, sniff_walk, sniff, nose_down, look,
+groom), the coats and the heat maps were all made for this map. Trot is the scurry, look is rearing up on the hind
+legs to scent the air, groom is sitting up to wash the face; neither body lies down.
+
+rats.json lists each body's coats and clips and which clip may follow which. A skin is one surface of shared
+vertices: rat_<name>_poses.npz holds every pose of the body's points (poses), the body point each drawn vertex shows
+(source), its place on the coat (uv) and the triangles (faces). The OBJ is the same skin at rest, for any tool that
+reads one. The tail lies on the ground in every pose.

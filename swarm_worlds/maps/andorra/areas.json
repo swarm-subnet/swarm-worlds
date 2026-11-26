@@ -1,0 +1,1253 @@
+{
+ "version": 1,
+ "areas": [
+  {
+   "id": 1,
+   "slug": "01_estanys_de_l_angonella_comapedrosa",
+   "place": "Estanys de l'Angonella (Comapedrosa)",
+   "kind": "lake",
+   "parish": "Ordino",
+   "e": 530300,
+   "n": 34500,
+   "frame": {
+    "base_height_m": 2294.64,
+    "blender_frame_z_m": 2350.09,
+    "blender_origin_en": [
+     530300.0,
+     34500.0
+    ],
+    "origin_en": [
+     530300.0,
+     34500.0
+    ],
+    "rebase_shift_m": -53.44900131225586,
+    "z_offset_m": -2.001
+   },
+   "size_bytes": 26566367,
+   "files": 944,
+   "size_with_shared_bytes": 60976447
+  },
+  {
+   "id": 2,
+   "slug": "02_estany_del_mig_tristaina",
+   "place": "Estany del Mig (Tristaina)",
+   "kind": "lake",
+   "parish": "Ordino",
+   "e": 530300,
+   "n": 38100,
+   "frame": {
+    "base_height_m": 2248.05,
+    "blender_frame_z_m": 2292.22,
+    "blender_origin_en": [
+     530300.0,
+     38100.0
+    ],
+    "origin_en": [
+     530300.0,
+     38100.0
+    ],
+    "rebase_shift_m": -39.27642822265625,
+    "z_offset_m": -4.8936
+   },
+   "size_bytes": 25839961,
+   "files": 944,
+   "size_with_shared_bytes": 60250041
+  },
+  {
+   "id": 3,
+   "slug": "03_estany_de_la_nou_madriu",
+   "place": "Estany de la Nou (Madriu)",
+   "kind": "lake",
+   "parish": "Escaldes-Engordany",
+   "e": 537500,
+   "n": 19900,
+   "frame": {
+    "base_height_m": 2163.97,
+    "blender_frame_z_m": 2228.13,
+    "blender_origin_en": [
+     537500.0,
+     19900.0
+    ],
+    "origin_en": [
+     537500.0,
+     19900.0
+    ],
+    "rebase_shift_m": -58.46841812133789,
+    "z_offset_m": -5.6916
+   },
+   "size_bytes": 25930414,
+   "files": 893,
+   "size_with_shared_bytes": 87205334
+  },
+  {
+   "id": 4,
+   "slug": "04_estany_de_baix_de_siscaro",
+   "place": "Estany de Baix de Siscar\u00f3",
+   "kind": "lake",
+   "parish": "Canillo",
+   "e": 547900,
+   "n": 32100,
+   "frame": {
+    "base_height_m": 2302.82,
+    "blender_frame_z_m": 2324.75,
+    "blender_origin_en": [
+     547900.0,
+     32100.0
+    ],
+    "origin_en": [
+     547900.0,
+     32100.0
+    ],
+    "rebase_shift_m": -15.945610046386719,
+    "z_offset_m": -5.9844
+   },
+   "size_bytes": 26730962,
+   "files": 956,
+   "size_with_shared_bytes": 61141042
+  },
+  {
+   "id": 5,
+   "slug": "05_estany_de_querol_incles",
+   "place": "Estany de Querol (Incles)",
+   "kind": "lake",
+   "parish": "Canillo",
+   "e": 544300,
+   "n": 33700,
+   "frame": {
+    "base_height_m": 2293.42,
+    "blender_frame_z_m": 2364.83,
+    "blender_origin_en": [
+     544300.0,
+     33700.0
+    ],
+    "origin_en": [
+     544300.0,
+     33700.0
+    ],
+    "rebase_shift_m": -70.6944580078125,
+    "z_offset_m": -0.7155
+   },
+   "size_bytes": 27032058,
+   "files": 950,
+   "size_with_shared_bytes": 56013380
+  },
+  {
+   "id": 6,
+   "slug": "06_estany_de_montmalus",
+   "place": "Estany de Montmal\u00fas",
+   "kind": "lake",
+   "parish": "Encamp",
+   "e": 546300,
+   "n": 22300,
+   "frame": {
+    "base_height_m": 2432.22,
+    "blender_frame_z_m": 2456.3,
+    "blender_origin_en": [
+     546300.0,
+     22300.0
+    ],
+    "origin_en": [
+     546300.0,
+     22300.0
+    ],
+    "rebase_shift_m": -28.47781753540039,
+    "z_offset_m": 4.3978
+   },
+   "size_bytes": 24805907,
+   "files": 929,
+   "size_with_shared_bytes": 33302593
+  },
+  {
+   "id": 7,
+   "slug": "07_l_obaga_hay_meadows",
+   "place": "l'Obaga (hay meadows)",
+   "kind": "valley",
+   "parish": "Sant Juli\u00e0 de L\u00f2ria",
+   "e": 531300,
+   "n": 16900,
+   "frame": {
+    "base_height_m": 1287.66,
+    "blender_frame_z_m": 1367.4,
+    "blender_origin_en": [
+     531300.0,
+     16900.0
+    ],
+    "origin_en": [
+     531300.0,
+     16900.0
+    ],
+    "rebase_shift_m": -73.8344497680664,
+    "z_offset_m": -5.9056
+   },
+   "size_bytes": 30334006,
+   "files": 890,
+   "size_with_shared_bytes": 88689587
+  },
+  {
+   "id": 8,
+   "slug": "08_el_rebollar",
+   "place": "el Rebollar",
+   "kind": "valley",
+   "parish": "Sant Juli\u00e0 de L\u00f2ria",
+   "e": 528100,
+   "n": 16300,
+   "frame": {
+    "base_height_m": 1411.04,
+    "blender_frame_z_m": 1535.11,
+    "blender_origin_en": [
+     528100.0,
+     16300.0
+    ],
+    "origin_en": [
+     528100.0,
+     16300.0
+    ],
+    "rebase_shift_m": -117.78022766113281,
+    "z_offset_m": -6.2898
+   },
+   "size_bytes": 29352082,
+   "files": 935,
+   "size_with_shared_bytes": 87707663
+  },
+  {
+   "id": 9,
+   "slug": "09_fontaneda_hay_meadows",
+   "place": "Fontaneda (hay meadows)",
+   "kind": "valley",
+   "parish": "Sant Juli\u00e0 de L\u00f2ria",
+   "e": 528300,
+   "n": 17100,
+   "frame": {
+    "base_height_m": 1307.18,
+    "blender_frame_z_m": 1402.71,
+    "blender_origin_en": [
+     528300.0,
+     17100.0
+    ],
+    "origin_en": [
+     528300.0,
+     17100.0
+    ],
+    "rebase_shift_m": -90.14264678955078,
+    "z_offset_m": -5.3874
+   },
+   "size_bytes": 28576480,
+   "files": 923,
+   "size_with_shared_bytes": 91680176
+  },
+  {
+   "id": 10,
+   "slug": "10_cami_ral_d_ordino_arans",
+   "place": "Cam\u00ed Ral d'Ordino (Arans)",
+   "kind": "valley",
+   "parish": "Ordino",
+   "e": 533300,
+   "n": 32300,
+   "frame": {
+    "base_height_m": 1363.32,
+    "blender_frame_z_m": 1390.45,
+    "blender_origin_en": [
+     533300.0,
+     32300.0
+    ],
+    "origin_en": [
+     533300.0,
+     32300.0
+    ],
+    "rebase_shift_m": -22.30828857421875,
+    "z_offset_m": -4.8217
+   },
+   "size_bytes": 32106297,
+   "files": 977,
+   "size_with_shared_bytes": 100378354
+  },
+  {
+   "id": 11,
+   "slug": "11_engolasters_hamlet_meadows",
+   "place": "Engolasters hamlet meadows",
+   "kind": "valley",
+   "parish": "Encamp",
+   "e": 535900,
+   "n": 26100,
+   "frame": {
+    "base_height_m": 1512.18,
+    "blender_frame_z_m": 1603.51,
+    "blender_origin_en": [
+     535900.0,
+     26100.0
+    ],
+    "origin_en": [
+     535900.0,
+     26100.0
+    ],
+    "rebase_shift_m": -85.31844329833984,
+    "z_offset_m": -6.0116
+   },
+   "size_bytes": 31246057,
+   "files": 1019,
+   "size_with_shared_bytes": 123895643
+  },
+  {
+   "id": 12,
+   "slug": "12_sornas",
+   "place": "Sorn\u00e0s",
+   "kind": "village",
+   "parish": "Ordino",
+   "e": 533500,
+   "n": 29900,
+   "frame": {
+    "base_height_m": 1289.35,
+    "blender_frame_z_m": 1349.66,
+    "blender_origin_en": [
+     533500.0,
+     29900.0
+    ],
+    "origin_en": [
+     533500.0,
+     29900.0
+    ],
+    "rebase_shift_m": -55.58375549316406,
+    "z_offset_m": -4.7262
+   },
+   "size_bytes": 43802719,
+   "files": 1526,
+   "size_with_shared_bytes": 107754806
+  },
+  {
+   "id": 13,
+   "slug": "13_llorts",
+   "place": "Llorts",
+   "kind": "village",
+   "parish": "Ordino",
+   "e": 533700,
+   "n": 33300,
+   "frame": {
+    "base_height_m": 1398.64,
+    "blender_frame_z_m": 1409.68,
+    "blender_origin_en": [
+     533700.0,
+     33300.0
+    ],
+    "origin_en": [
+     533700.0,
+     33300.0
+    ],
+    "rebase_shift_m": -6.2633209228515625,
+    "z_offset_m": -4.7767
+   },
+   "size_bytes": 37896463,
+   "files": 1277,
+   "size_with_shared_bytes": 121599364
+  },
+  {
+   "id": 14,
+   "slug": "14_pont_de_la_baladosa_incles",
+   "place": "Pont de la Baladosa (Incles)",
+   "kind": "village",
+   "parish": "Canillo",
+   "e": 546700,
+   "n": 33700,
+   "frame": {
+    "base_height_m": 1821.64,
+    "blender_frame_z_m": 1834.75,
+    "blender_origin_en": [
+     546700.0,
+     33700.0
+    ],
+    "origin_en": [
+     546700.0,
+     33700.0
+    ],
+    "rebase_shift_m": -8.196212768554688,
+    "z_offset_m": -4.9138
+   },
+   "size_bytes": 33226219,
+   "files": 1004,
+   "size_with_shared_bytes": 119731478
+  },
+  {
+   "id": 15,
+   "slug": "15_bordes_de_rigoder",
+   "place": "Bordes de Rigoder",
+   "kind": "village",
+   "parish": "Encamp",
+   "e": 540700,
+   "n": 26500,
+   "frame": {
+    "base_height_m": 1847.84,
+    "blender_frame_z_m": 1865.7,
+    "blender_origin_en": [
+     540700.0,
+     26500.0
+    ],
+    "origin_en": [
+     540700.0,
+     26500.0
+    ],
+    "rebase_shift_m": -12.595382690429688,
+    "z_offset_m": -5.2646
+   },
+   "size_bytes": 30724968,
+   "files": 1001,
+   "size_with_shared_bytes": 121813060
+  },
+  {
+   "id": 16,
+   "slug": "16_prats_valira_d_orient",
+   "place": "Prats (Valira d'Orient)",
+   "kind": "river",
+   "parish": "Canillo",
+   "e": 539300,
+   "n": 28900,
+   "frame": {
+    "base_height_m": 1596.39,
+    "blender_frame_z_m": 1659.94,
+    "blender_origin_en": [
+     539300.0,
+     28900.0
+    ],
+    "origin_en": [
+     539300.0,
+     28900.0
+    ],
+    "rebase_shift_m": -58.29753112792969,
+    "z_offset_m": -5.2525
+   },
+   "size_bytes": 28561381,
+   "files": 956,
+   "size_with_shared_bytes": 117256718
+  },
+  {
+   "id": 17,
+   "slug": "17_l_aldosa_de_la_massana",
+   "place": "l'Aldosa de la Massana",
+   "kind": "river",
+   "parish": "La Massana",
+   "e": 533100,
+   "n": 27100,
+   "frame": {
+    "base_height_m": 1185.42,
+    "blender_frame_z_m": 1252.38,
+    "blender_origin_en": [
+     533100.0,
+     27100.0
+    ],
+    "origin_en": [
+     533100.0,
+     27100.0
+    ],
+    "rebase_shift_m": -61.90839385986328,
+    "z_offset_m": -5.0516
+   },
+   "size_bytes": 39223823,
+   "files": 1268,
+   "size_with_shared_bytes": 102374682
+  },
+  {
+   "id": 18,
+   "slug": "18_canal_de_la_bova",
+   "place": "Canal de la Bova",
+   "kind": "forest",
+   "parish": "Escaldes-Engordany",
+   "e": 540500,
+   "n": 20900,
+   "frame": {
+    "base_height_m": 2022.06,
+    "blender_frame_z_m": 2044.95,
+    "blender_origin_en": [
+     540500.0,
+     20900.0
+    ],
+    "origin_en": [
+     540500.0,
+     20900.0
+    ],
+    "rebase_shift_m": -17.463619232177734,
+    "z_offset_m": -5.4264
+   },
+   "size_bytes": 29691378,
+   "files": 920,
+   "size_with_shared_bytes": 78004114
+  },
+  {
+   "id": 19,
+   "slug": "19_cami_de_l_alt_del_griu",
+   "place": "Cam\u00ed de l'Alt del Griu",
+   "kind": "forest",
+   "parish": "Encamp",
+   "e": 541500,
+   "n": 25500,
+   "frame": {
+    "base_height_m": 2158.26,
+    "blender_frame_z_m": 2231.1,
+    "blender_origin_en": [
+     541500.0,
+     25500.0
+    ],
+    "origin_en": [
+     541500.0,
+     25500.0
+    ],
+    "rebase_shift_m": -67.78324890136719,
+    "z_offset_m": -5.0568
+   },
+   "size_bytes": 26927448,
+   "files": 923,
+   "size_with_shared_bytes": 95335492
+  },
+  {
+   "id": 20,
+   "slug": "20_planell_dels_becos",
+   "place": "Planell dels Be\u00e7os",
+   "kind": "forest",
+   "parish": "Ordino",
+   "e": 536300,
+   "n": 36100,
+   "frame": {
+    "base_height_m": 1879.68,
+    "blender_frame_z_m": 1921.49,
+    "blender_origin_en": [
+     536300.0,
+     36100.0
+    ],
+    "origin_en": [
+     536300.0,
+     36100.0
+    ],
+    "rebase_shift_m": -35.81059265136719,
+    "z_offset_m": -5.9994
+   },
+   "size_bytes": 29493234,
+   "files": 971,
+   "size_with_shared_bytes": 125940688
+  },
+  {
+   "id": 21,
+   "slug": "21_cortal_del_masover",
+   "place": "Cortal del Masover",
+   "kind": "forest",
+   "parish": "La Massana",
+   "e": 534300,
+   "n": 26100,
+   "frame": {
+    "base_height_m": 1501.02,
+    "blender_frame_z_m": 1614.48,
+    "blender_origin_en": [
+     534300.0,
+     26100.0
+    ],
+    "origin_en": [
+     534300.0,
+     26100.0
+    ],
+    "rebase_shift_m": -108.0467758178711,
+    "z_offset_m": -5.4132
+   },
+   "size_bytes": 27033913,
+   "files": 929,
+   "size_with_shared_bytes": 110300492
+  },
+  {
+   "id": 22,
+   "slug": "22_salador_de_l_andorrana",
+   "place": "Salador de l'Andorrana",
+   "kind": "alpine",
+   "parish": "La Massana",
+   "e": 525500,
+   "n": 27900,
+   "frame": {
+    "base_height_m": 2009.05,
+    "blender_frame_z_m": 2041.03,
+    "blender_origin_en": [
+     525500.0,
+     27900.0
+    ],
+    "origin_en": [
+     525500.0,
+     27900.0
+    ],
+    "rebase_shift_m": -26.801223754882812,
+    "z_offset_m": -5.1788
+   },
+   "size_bytes": 29649197,
+   "files": 935,
+   "size_with_shared_bytes": 56695815
+  },
+  {
+   "id": 23,
+   "slug": "23_pic_d_ortafa",
+   "place": "Pic d'Ortaf\u00e0",
+   "kind": "alpine",
+   "parish": "Canillo",
+   "e": 547900,
+   "n": 29700,
+   "frame": {
+    "base_height_m": 2346.55,
+    "blender_frame_z_m": 2421.39,
+    "blender_origin_en": [
+     547900.0,
+     29700.0
+    ],
+    "origin_en": [
+     547900.0,
+     29700.0
+    ],
+    "rebase_shift_m": -69.54508209228516,
+    "z_offset_m": -5.2949
+   },
+   "size_bytes": 26221111,
+   "files": 932,
+   "size_with_shared_bytes": 60631191
+  },
+  {
+   "id": 24,
+   "slug": "24_calm_de_claror",
+   "place": "Calm de Claror",
+   "kind": "alpine",
+   "parish": "Sant Juli\u00e0 de L\u00f2ria",
+   "e": 535300,
+   "n": 18900,
+   "frame": {
+    "base_height_m": 2473.19,
+    "blender_frame_z_m": 2588.86,
+    "blender_origin_en": [
+     535300.0,
+     18900.0
+    ],
+    "origin_en": [
+     535300.0,
+     18900.0
+    ],
+    "rebase_shift_m": -109.94364929199219,
+    "z_offset_m": -5.7264
+   },
+   "size_bytes": 24634778,
+   "files": 929,
+   "size_with_shared_bytes": 24672686
+  },
+  {
+   "id": 25,
+   "slug": "25_planells_de_caraup",
+   "place": "Planells de Caraup",
+   "kind": "alpine",
+   "parish": "Canillo",
+   "e": 541500,
+   "n": 35300,
+   "frame": {
+    "base_height_m": 2163.04,
+    "blender_frame_z_m": 2238.09,
+    "blender_origin_en": [
+     541500.0,
+     35300.0
+    ],
+    "origin_en": [
+     541500.0,
+     35300.0
+    ],
+    "rebase_shift_m": -69.333984375,
+    "z_offset_m": -5.716
+   },
+   "size_bytes": 29022417,
+   "files": 932,
+   "size_with_shared_bytes": 63432497
+  },
+  {
+   "id": 26,
+   "slug": "26_port_de_rat",
+   "place": "Port de Rat",
+   "kind": "scree",
+   "parish": "Ordino",
+   "e": 529700,
+   "n": 35900,
+   "frame": {
+    "base_height_m": 2368.43,
+    "blender_frame_z_m": 2419.08,
+    "blender_origin_en": [
+     529700.0,
+     35900.0
+    ],
+    "origin_en": [
+     529700.0,
+     35900.0
+    ],
+    "rebase_shift_m": -45.17402648925781,
+    "z_offset_m": -5.476
+   },
+   "size_bytes": 31710597,
+   "files": 1016,
+   "size_with_shared_bytes": 43752341
+  },
+  {
+   "id": 27,
+   "slug": "27_la_tosa_de_les_mussoles",
+   "place": "la Tosa de les Mussoles",
+   "kind": "scree",
+   "parish": "Canillo",
+   "e": 546700,
+   "n": 35300,
+   "frame": {
+    "base_height_m": 2178.16,
+    "blender_frame_z_m": 2252.28,
+    "blender_origin_en": [
+     546700.0,
+     35300.0
+    ],
+    "origin_en": [
+     546700.0,
+     35300.0
+    ],
+    "rebase_shift_m": -67.63467407226562,
+    "z_offset_m": -6.4853
+   },
+   "size_bytes": 26643604,
+   "files": 947,
+   "size_with_shared_bytes": 43750266
+  },
+  {
+   "id": 28,
+   "slug": "28_pic_de_l_estanyo_grp1",
+   "place": "Pic de l'Estany\u00f3 (GRP1)",
+   "kind": "scree",
+   "parish": "Ordino",
+   "e": 538500,
+   "n": 35700,
+   "frame": {
+    "base_height_m": 2258.76,
+    "blender_frame_z_m": 2321.0,
+    "blender_origin_en": [
+     538500.0,
+     35700.0
+    ],
+    "origin_en": [
+     538500.0,
+     35700.0
+    ],
+    "rebase_shift_m": -57.037109375,
+    "z_offset_m": -5.2029
+   },
+   "size_bytes": 29292659,
+   "files": 974,
+   "size_with_shared_bytes": 63702739
+  },
+  {
+   "id": 29,
+   "slug": "29_pla_de_les_pedres",
+   "place": "Pla de les Pedres",
+   "kind": "ski",
+   "parish": "Encamp",
+   "e": 546100,
+   "n": 28100,
+   "frame": {
+    "base_height_m": 2092.31,
+    "blender_frame_z_m": 2152.85,
+    "blender_origin_en": [
+     546100.0,
+     28100.0
+    ],
+    "origin_en": [
+     546100.0,
+     28100.0
+    ],
+    "rebase_shift_m": -54.37480926513672,
+    "z_offset_m": -6.1652
+   },
+   "size_bytes": 31547226,
+   "files": 1037,
+   "size_with_shared_bytes": 99955270
+  },
+  {
+   "id": 30,
+   "slug": "30_prat_dels_orris",
+   "place": "Prat dels Orris",
+   "kind": "ski",
+   "parish": "Encamp",
+   "e": 541900,
+   "n": 26700,
+   "frame": {
+    "base_height_m": 1974.92,
+    "blender_frame_z_m": 2023.32,
+    "blender_origin_en": [
+     541900.0,
+     26700.0
+    ],
+    "origin_en": [
+     541900.0,
+     26700.0
+    ],
+    "rebase_shift_m": -43.24579620361328,
+    "z_offset_m": -5.1542
+   },
+   "size_bytes": 34458462,
+   "files": 1055,
+   "size_with_shared_bytes": 82509808
+  },
+  {
+   "id": 31,
+   "slug": "31_obac_de_soldeu",
+   "place": "Obac de Soldeu",
+   "kind": "ski",
+   "parish": "Canillo",
+   "e": 544900,
+   "n": 30300,
+   "frame": {
+    "base_height_m": 1931.18,
+    "blender_frame_z_m": 2009.9,
+    "blender_origin_en": [
+     544900.0,
+     30300.0
+    ],
+    "origin_en": [
+     544900.0,
+     30300.0
+    ],
+    "rebase_shift_m": -72.47942352294922,
+    "z_offset_m": -6.2406
+   },
+   "size_bytes": 33032928,
+   "files": 1085,
+   "size_with_shared_bytes": 81345664
+  },
+  {
+   "id": 32,
+   "slug": "32_pic_dels_aspres_pal",
+   "place": "Pic dels Aspres (Pal)",
+   "kind": "ski",
+   "parish": "La Massana",
+   "e": 527700,
+   "n": 30300,
+   "frame": {
+    "base_height_m": 2151.87,
+    "blender_frame_z_m": 2210.74,
+    "blender_origin_en": [
+     527700.0,
+     30300.0
+    ],
+    "origin_en": [
+     527700.0,
+     30300.0
+    ],
+    "rebase_shift_m": -53.06645202636719,
+    "z_offset_m": -5.8035
+   },
+   "size_bytes": 33145759,
+   "files": 1157,
+   "size_with_shared_bytes": 70194047
+  },
+  {
+   "id": 33,
+   "slug": "33_andorra_la_vella_test_field",
+   "place": "Andorra la Vella, test field",
+   "kind": "town",
+   "parish": "Andorra la Vella",
+   "e": 530700,
+   "n": 21700,
+   "frame": {
+    "base_height_m": 961.78,
+    "blender_frame_z_m": 1002.37,
+    "blender_origin_en": [
+     530700.0,
+     21700.0
+    ],
+    "origin_en": [
+     530700.0,
+     21700.0
+    ],
+    "rebase_shift_m": -35.43788146972656,
+    "z_offset_m": -5.1521
+   },
+   "size_bytes": 54594236,
+   "files": 1823,
+   "size_with_shared_bytes": 117417549
+  },
+  {
+   "id": 34,
+   "slug": "34_andorra_la_vella_valira_river",
+   "place": "Andorra la Vella, Valira river",
+   "kind": "town",
+   "parish": "Andorra la Vella",
+   "e": 532700,
+   "n": 22900,
+   "frame": {
+    "base_height_m": 989.05,
+    "blender_frame_z_m": 1003.96,
+    "blender_origin_en": [
+     532700.0,
+     22900.0
+    ],
+    "origin_en": [
+     532700.0,
+     22900.0
+    ],
+    "rebase_shift_m": -10.032440185546875,
+    "z_offset_m": -4.8776
+   },
+   "size_bytes": 62655257,
+   "files": 1475,
+   "size_with_shared_bytes": 126607344
+  },
+  {
+   "id": 35,
+   "slug": "35_sant_julia_de_loria_old_town",
+   "place": "Sant Juli\u00e0 de L\u00f2ria, old town",
+   "kind": "town",
+   "parish": "Sant Juli\u00e0 de L\u00f2ria",
+   "e": 530700,
+   "n": 18700,
+   "frame": {
+    "base_height_m": 901.66,
+    "blender_frame_z_m": 945.74,
+    "blender_origin_en": [
+     530700.0,
+     18700.0
+    ],
+    "origin_en": [
+     530700.0,
+     18700.0
+    ],
+    "rebase_shift_m": -38.67646789550781,
+    "z_offset_m": -5.4035
+   },
+   "size_bytes": 66027195,
+   "files": 2108,
+   "size_with_shared_bytes": 129979282
+  },
+  {
+   "id": 36,
+   "slug": "36_sant_julia_de_loria_east_edge",
+   "place": "Sant Juli\u00e0 de L\u00f2ria, east edge",
+   "kind": "town",
+   "parish": "Sant Juli\u00e0 de L\u00f2ria",
+   "e": 531300,
+   "n": 19300,
+   "frame": {
+    "base_height_m": 1039.82,
+    "blender_frame_z_m": 1151.55,
+    "blender_origin_en": [
+     531300.0,
+     19300.0
+    ],
+    "origin_en": [
+     531300.0,
+     19300.0
+    ],
+    "rebase_shift_m": -105.5189208984375,
+    "z_offset_m": -6.2111
+   },
+   "size_bytes": 40433256,
+   "files": 1277,
+   "size_with_shared_bytes": 103256569
+  },
+  {
+   "id": 37,
+   "slug": "37_escaldes_caldea_park",
+   "place": "Escaldes, Caldea park",
+   "kind": "town",
+   "parish": "Escaldes-Engordany",
+   "e": 534300,
+   "n": 23900,
+   "frame": {
+    "base_height_m": 1017.98,
+    "blender_frame_z_m": 1029.98,
+    "blender_origin_en": [
+     534300.0,
+     23900.0
+    ],
+    "origin_en": [
+     534300.0,
+     23900.0
+    ],
+    "rebase_shift_m": -7.18597412109375,
+    "z_offset_m": -4.814
+   },
+   "size_bytes": 90973403,
+   "files": 2225,
+   "size_with_shared_bytes": 154925490
+  },
+  {
+   "id": 38,
+   "slug": "38_escaldes_engordany_slope",
+   "place": "Escaldes, Engordany slope",
+   "kind": "town",
+   "parish": "Escaldes-Engordany",
+   "e": 534900,
+   "n": 23700,
+   "frame": {
+    "base_height_m": 1044.19,
+    "blender_frame_z_m": 1115.51,
+    "blender_origin_en": [
+     534900.0,
+     23700.0
+    ],
+    "origin_en": [
+     534900.0,
+     23700.0
+    ],
+    "rebase_shift_m": -67.05748748779297,
+    "z_offset_m": -4.2625
+   },
+   "size_bytes": 93275438,
+   "files": 2113,
+   "size_with_shared_bytes": 156098751
+  },
+  {
+   "id": 39,
+   "slug": "39_ordino_village_and_meadows",
+   "place": "Ordino, village and meadows",
+   "kind": "town",
+   "parish": "Ordino",
+   "e": 534300,
+   "n": 28500,
+   "frame": {
+    "base_height_m": 1299.8,
+    "blender_frame_z_m": 1345.61,
+    "blender_origin_en": [
+     534300.0,
+     28500.0
+    ],
+    "origin_en": [
+     534300.0,
+     28500.0
+    ],
+    "rebase_shift_m": -40.76075744628906,
+    "z_offset_m": -5.0492
+   },
+   "size_bytes": 55982993,
+   "files": 1316,
+   "size_with_shared_bytes": 114338574
+  },
+  {
+   "id": 40,
+   "slug": "40_ordino_river_meadows",
+   "place": "Ordino, river meadows",
+   "kind": "town",
+   "parish": "Ordino",
+   "e": 533700,
+   "n": 28700,
+   "frame": {
+    "base_height_m": 1246.9,
+    "blender_frame_z_m": 1260.35,
+    "blender_origin_en": [
+     533700.0,
+     28700.0
+    ],
+    "origin_en": [
+     533700.0,
+     28700.0
+    ],
+    "rebase_shift_m": -8.654365539550781,
+    "z_offset_m": -4.7956
+   },
+   "size_bytes": 46047954,
+   "files": 1340,
+   "size_with_shared_bytes": 109198813
+  },
+  {
+   "id": 41,
+   "slug": "41_la_massana_valira_bank",
+   "place": "La Massana, Valira bank",
+   "kind": "town",
+   "parish": "La Massana",
+   "e": 532700,
+   "n": 27700,
+   "frame": {
+    "base_height_m": 1210.18,
+    "blender_frame_z_m": 1247.85,
+    "blender_origin_en": [
+     532700.0,
+     27700.0
+    ],
+    "origin_en": [
+     532700.0,
+     27700.0
+    ],
+    "rebase_shift_m": -32.848350524902344,
+    "z_offset_m": -4.8216
+   },
+   "size_bytes": 63130043,
+   "files": 1784,
+   "size_with_shared_bytes": 126280902
+  },
+  {
+   "id": 42,
+   "slug": "42_la_massana_village_fields",
+   "place": "La Massana, village fields",
+   "kind": "town",
+   "parish": "La Massana",
+   "e": 532300,
+   "n": 27300,
+   "frame": {
+    "base_height_m": 1254.84,
+    "blender_frame_z_m": 1306.33,
+    "blender_origin_en": [
+     532300.0,
+     27300.0
+    ],
+    "origin_en": [
+     532300.0,
+     27300.0
+    ],
+    "rebase_shift_m": -45.85511016845703,
+    "z_offset_m": -5.6349
+   },
+   "size_bytes": 53945484,
+   "files": 1892,
+   "size_with_shared_bytes": 103537051
+  },
+  {
+   "id": 43,
+   "slug": "43_encamp_centre",
+   "place": "Encamp, centre",
+   "kind": "town",
+   "parish": "Encamp",
+   "e": 538100,
+   "n": 26500,
+   "frame": {
+    "base_height_m": 1239.79,
+    "blender_frame_z_m": 1267.51,
+    "blender_origin_en": [
+     538100.0,
+     26500.0
+    ],
+    "origin_en": [
+     538100.0,
+     26500.0
+    ],
+    "rebase_shift_m": -22.62029266357422,
+    "z_offset_m": -5.0997
+   },
+   "size_bytes": 79708637,
+   "files": 2438,
+   "size_with_shared_bytes": 143660724
+  },
+  {
+   "id": 44,
+   "slug": "44_encamp_stadium_and_river",
+   "place": "Encamp, stadium and river",
+   "kind": "town",
+   "parish": "Encamp",
+   "e": 537500,
+   "n": 26300,
+   "frame": {
+    "base_height_m": 1224.32,
+    "blender_frame_z_m": 1236.22,
+    "blender_origin_en": [
+     537500.0,
+     26300.0
+    ],
+    "origin_en": [
+     537500.0,
+     26300.0
+    ],
+    "rebase_shift_m": -7.0930633544921875,
+    "z_offset_m": -4.8069
+   },
+   "size_bytes": 80186725,
+   "files": 2231,
+   "size_with_shared_bytes": 139109240
+  },
+  {
+   "id": 45,
+   "slug": "45_canillo_centre_and_river",
+   "place": "Canillo, centre and river",
+   "kind": "town",
+   "parish": "Canillo",
+   "e": 539300,
+   "n": 29900,
+   "frame": {
+    "base_height_m": 1518.26,
+    "blender_frame_z_m": 1535.02,
+    "blender_origin_en": [
+     539300.0,
+     29900.0
+    ],
+    "origin_en": [
+     539300.0,
+     29900.0
+    ],
+    "rebase_shift_m": -12.259735107421875,
+    "z_offset_m": -4.5003
+   },
+   "size_bytes": 83113372,
+   "files": 3059,
+   "size_with_shared_bytes": 168257998
+  },
+  {
+   "id": 46,
+   "slug": "46_canillo_hillside_edge",
+   "place": "Canillo, hillside edge",
+   "kind": "town",
+   "parish": "Canillo",
+   "e": 539700,
+   "n": 29500,
+   "frame": {
+    "base_height_m": 1540.01,
+    "blender_frame_z_m": 1653.15,
+    "blender_origin_en": [
+     539700.0,
+     29500.0
+    ],
+    "origin_en": [
+     539700.0,
+     29500.0
+    ],
+    "rebase_shift_m": -107.9922866821289,
+    "z_offset_m": -5.1477
+   },
+   "size_bytes": 39999472,
+   "files": 1358,
+   "size_with_shared_bytes": 149746934
+  },
+  {
+   "id": 47,
+   "slug": "47_pas_de_la_casa_shopping_centre",
+   "place": "Pas de la Casa, shopping centre",
+   "kind": "town",
+   "parish": "Encamp",
+   "e": 550300,
+   "n": 27500,
+   "frame": {
+    "base_height_m": 2048.51,
+    "blender_frame_z_m": 2105.22,
+    "blender_origin_en": [
+     550300.0,
+     27500.0
+    ],
+    "origin_en": [
+     550300.0,
+     27500.0
+    ],
+    "rebase_shift_m": -51.53407287597656,
+    "z_offset_m": -5.1759
+   },
+   "size_bytes": 44142240,
+   "files": 1136,
+   "size_with_shared_bytes": 81991756
+  },
+  {
+   "id": 48,
+   "slug": "48_pas_de_la_casa_apartment_slope",
+   "place": "Pas de la Casa, apartment slope",
+   "kind": "town",
+   "parish": "Encamp",
+   "e": 550100,
+   "n": 26900,
+   "frame": {
+    "base_height_m": 2117.69,
+    "blender_frame_z_m": 2191.53,
+    "blender_origin_en": [
+     550100.0,
+     26900.0
+    ],
+    "origin_en": [
+     550100.0,
+     26900.0
+    ],
+    "rebase_shift_m": -68.50801086425781,
+    "z_offset_m": -5.332
+   },
+   "size_bytes": 54728557,
+   "files": 1589,
+   "size_with_shared_bytes": 114874703
+  }
+ ]
+}

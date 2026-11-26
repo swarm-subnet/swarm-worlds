@@ -1,0 +1,22 @@
+Source: the people of the Test Field, built for this map.
+License: our own work on NVIDIA's SOMA body (Apache-2.0, see LICENSE_SOMA.txt).
+
+Women and men in twelve builds, from 1.55 to 1.88 m and from slim to heavy, each a shape of the SOMA body with a
+skeleton fitted to it and its lips closed. On them: 42 painted skins (seven tones, for dark and for light hair, as a
+woman, a man shaved and a man with stubble), eyes in six colours, hair (short, a bob, long, a ponytail, a bun),
+tops (T-shirt, tank top, long sleeve, shirt, sweater, jacket, puffer jacket), a safety vest, bottoms (jeans, trousers,
+joggers, shorts, leggings, a short and a long skirt), sneakers and boots, a beanie, and a cap and two backpacks carried
+over from Sentinel's wardrobe. Clothes and hair are built from the body's own surface, so each piece carries the
+body's bone weights and is shaped again on every build; nothing is fitted when a person is dressed.
+
+people.json is the table of contents: the builds with their sex and height, the skins, which eyes go with which
+tone, the palettes, and every piece with its slot (eyes, hair, top, bottom, shoes, over, head, back), who wears it,
+how warm it is, the bulk of top it is cut for, its temperature for the thermal camera and its pictures, each with the
+palette it is tinted from (none for a picture in its own colours). A picture painted pale takes its colour from a
+tint.
+
+rig.npz holds the skeleton, each build's fitted bind transforms, rest joints and stride, and the skin's bone weights.
+body.npz holds the skin's points on every build (points) and the drawn skin: its triangles (faces), the point each
+drawn vertex shows (source) and its place on the skin's picture (uv). pieces/<name>.npz holds a piece: its points on
+every build (points), bone weights (weight_joints, weights), drawn triangles (faces, source, uv) and the triangles of
+the drawn skin it hides (hides).

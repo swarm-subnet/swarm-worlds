@@ -1,0 +1,1117 @@
+{
+ "body": {
+  "temperature_c": 33.0
+ },
+ "builds": {
+  "man": {
+   "height_m": 1.76,
+   "sex": "m"
+  },
+  "man_heavy": {
+   "height_m": 1.75,
+   "sex": "m"
+  },
+  "man_slim": {
+   "height_m": 1.8,
+   "sex": "m"
+  },
+  "man_small": {
+   "height_m": 1.66,
+   "sex": "m"
+  },
+  "man_stocky": {
+   "height_m": 1.7,
+   "sex": "m"
+  },
+  "man_tall": {
+   "height_m": 1.88,
+   "sex": "m"
+  },
+  "woman": {
+   "height_m": 1.63,
+   "sex": "f"
+  },
+  "woman_full": {
+   "height_m": 1.62,
+   "sex": "f"
+  },
+  "woman_heavy": {
+   "height_m": 1.6,
+   "sex": "f"
+  },
+  "woman_slim": {
+   "height_m": 1.68,
+   "sex": "f"
+  },
+  "woman_small": {
+   "height_m": 1.55,
+   "sex": "f"
+  },
+  "woman_tall": {
+   "height_m": 1.73,
+   "sex": "f"
+  }
+ },
+ "eyes_of_tone": {
+  "brown": [
+   "dark",
+   "brown"
+  ],
+  "deep": [
+   "dark"
+  ],
+  "fair": [
+   "blue",
+   "hazel",
+   "green",
+   "brown"
+  ],
+  "light": [
+   "brown",
+   "hazel",
+   "green"
+  ],
+  "olive": [
+   "brown",
+   "dark",
+   "hazel"
+  ],
+  "porcelain": [
+   "blue",
+   "grey",
+   "green"
+  ],
+  "tan": [
+   "brown",
+   "dark"
+  ]
+ },
+ "format": 1,
+ "palettes": {
+  "bottom": [
+   [
+    0.14,
+    0.15,
+    0.17
+   ],
+   [
+    0.25,
+    0.33,
+    0.5
+   ],
+   [
+    0.17,
+    0.22,
+    0.36
+   ],
+   [
+    0.44,
+    0.52,
+    0.64
+   ],
+   [
+    0.6,
+    0.54,
+    0.42
+   ],
+   [
+    0.36,
+    0.34,
+    0.3
+   ],
+   [
+    0.3,
+    0.34,
+    0.24
+   ],
+   [
+    0.4,
+    0.28,
+    0.2
+   ],
+   [
+    0.62,
+    0.62,
+    0.62
+   ],
+   [
+    0.82,
+    0.8,
+    0.74
+   ]
+  ],
+  "hair_dark": [
+   [
+    0.1,
+    0.09,
+    0.09
+   ],
+   [
+    0.19,
+    0.14,
+    0.11
+   ],
+   [
+    0.36,
+    0.25,
+    0.17
+   ],
+   [
+    0.47,
+    0.3,
+    0.18
+   ]
+  ],
+  "hair_light": [
+   [
+    0.75,
+    0.6,
+    0.39
+   ],
+   [
+    0.62,
+    0.31,
+    0.16
+   ],
+   [
+    0.6,
+    0.59,
+    0.57
+   ],
+   [
+    0.9,
+    0.89,
+    0.86
+   ]
+  ],
+  "hat": [
+   [
+    0.1,
+    0.1,
+    0.11
+   ],
+   [
+    0.74,
+    0.16,
+    0.15
+   ],
+   [
+    0.17,
+    0.3,
+    0.56
+   ],
+   [
+    0.86,
+    0.86,
+    0.84
+   ],
+   [
+    0.2,
+    0.44,
+    0.3
+   ],
+   [
+    0.88,
+    0.72,
+    0.22
+   ],
+   [
+    0.45,
+    0.45,
+    0.47
+   ]
+  ],
+  "pack": [
+   [
+    0.1,
+    0.1,
+    0.11
+   ],
+   [
+    0.14,
+    0.18,
+    0.3
+   ],
+   [
+    0.3,
+    0.32,
+    0.26
+   ],
+   [
+    0.55,
+    0.14,
+    0.12
+   ],
+   [
+    0.42,
+    0.4,
+    0.38
+   ],
+   [
+    0.2,
+    0.36,
+    0.4
+   ]
+  ],
+  "shoe": [
+   [
+    0.95,
+    0.95,
+    0.95
+   ],
+   [
+    0.13,
+    0.13,
+    0.14
+   ],
+   [
+    0.42,
+    0.3,
+    0.22
+   ],
+   [
+    0.5,
+    0.52,
+    0.55
+   ],
+   [
+    0.74,
+    0.16,
+    0.15
+   ],
+   [
+    0.17,
+    0.3,
+    0.56
+   ]
+  ],
+  "skirt": [
+   [
+    0.14,
+    0.15,
+    0.17
+   ],
+   [
+    0.74,
+    0.16,
+    0.15
+   ],
+   [
+    0.17,
+    0.3,
+    0.56
+   ],
+   [
+    0.88,
+    0.72,
+    0.22
+   ],
+   [
+    0.86,
+    0.56,
+    0.62
+   ],
+   [
+    0.2,
+    0.44,
+    0.3
+   ],
+   [
+    0.92,
+    0.92,
+    0.9
+   ],
+   [
+    0.48,
+    0.24,
+    0.5
+   ],
+   [
+    0.42,
+    0.66,
+    0.8
+   ],
+   [
+    0.6,
+    0.54,
+    0.42
+   ]
+  ],
+  "top": [
+   [
+    0.92,
+    0.92,
+    0.9
+   ],
+   [
+    0.16,
+    0.17,
+    0.19
+   ],
+   [
+    0.55,
+    0.57,
+    0.6
+   ],
+   [
+    0.74,
+    0.16,
+    0.15
+   ],
+   [
+    0.17,
+    0.3,
+    0.56
+   ],
+   [
+    0.2,
+    0.44,
+    0.3
+   ],
+   [
+    0.88,
+    0.72,
+    0.22
+   ],
+   [
+    0.9,
+    0.48,
+    0.16
+   ],
+   [
+    0.48,
+    0.24,
+    0.5
+   ],
+   [
+    0.86,
+    0.56,
+    0.62
+   ],
+   [
+    0.42,
+    0.66,
+    0.8
+   ],
+   [
+    0.42,
+    0.32,
+    0.24
+   ],
+   [
+    0.36,
+    0.4,
+    0.26
+   ],
+   [
+    0.78,
+    0.74,
+    0.62
+   ],
+   [
+    0.12,
+    0.42,
+    0.46
+   ],
+   [
+    0.6,
+    0.14,
+    0.26
+   ]
+  ]
+ },
+ "pieces": {
+  "backpack": {
+   "bulk": "thin",
+   "file": "pieces/backpack.npz",
+   "pictures": {
+    "plain": {
+     "file": "pictures/backpack_plain.png",
+     "palette": "pack"
+    }
+   },
+   "sex": "any",
+   "slot": "back",
+   "temperature_c": 22.0,
+   "warmth": "any"
+  },
+  "backpack_big": {
+   "bulk": "thick",
+   "file": "pieces/backpack_big.npz",
+   "pictures": {
+    "plain": {
+     "file": "pictures/backpack_big_plain.png",
+     "palette": "pack"
+    }
+   },
+   "sex": "any",
+   "slot": "back",
+   "temperature_c": 22.0,
+   "warmth": "any"
+  },
+  "beanie": {
+   "bulk": "thin",
+   "file": "pieces/beanie.npz",
+   "pictures": {
+    "knit": {
+     "file": "pictures/beanie_knit.png",
+     "palette": "hat"
+    }
+   },
+   "sex": "any",
+   "slot": "head",
+   "temperature_c": 25.0,
+   "warmth": "warm"
+  },
+  "boots": {
+   "bulk": "thin",
+   "file": "pieces/boots.npz",
+   "pictures": {
+    "plain": {
+     "file": "pictures/boots_plain.png",
+     "palette": "shoe"
+    }
+   },
+   "sex": "any",
+   "slot": "shoes",
+   "temperature_c": 23.0,
+   "warmth": "any"
+  },
+  "cap": {
+   "bulk": "thin",
+   "file": "pieces/cap.npz",
+   "pictures": {
+    "plain": {
+     "file": "pictures/cap_plain.png",
+     "palette": "hat"
+    }
+   },
+   "sex": "any",
+   "slot": "head",
+   "temperature_c": 26.0,
+   "warmth": "any"
+  },
+  "eyes": {
+   "bulk": "thin",
+   "file": "pieces/eyes.npz",
+   "pictures": {
+    "blue": {
+     "file": "pictures/eyes_blue.png",
+     "palette": null
+    },
+    "brown": {
+     "file": "pictures/eyes_brown.png",
+     "palette": null
+    },
+    "dark": {
+     "file": "pictures/eyes_dark.png",
+     "palette": null
+    },
+    "green": {
+     "file": "pictures/eyes_green.png",
+     "palette": null
+    },
+    "grey": {
+     "file": "pictures/eyes_grey.png",
+     "palette": null
+    },
+    "hazel": {
+     "file": "pictures/eyes_hazel.png",
+     "palette": null
+    }
+   },
+   "sex": "any",
+   "slot": "eyes",
+   "temperature_c": 33.5,
+   "warmth": "any"
+  },
+  "hair_bob": {
+   "bulk": "thin",
+   "file": "pieces/hair_bob.npz",
+   "pictures": {
+    "straight": {
+     "file": "pictures/hair_bob_straight.png",
+     "palette": "hair"
+    }
+   },
+   "sex": "f",
+   "slot": "hair",
+   "temperature_c": 28.0,
+   "warmth": "any"
+  },
+  "hair_bun": {
+   "bulk": "thin",
+   "file": "pieces/hair_bun.npz",
+   "pictures": {
+    "combed": {
+     "file": "pictures/hair_bun_combed.png",
+     "palette": "hair"
+    }
+   },
+   "sex": "f",
+   "slot": "hair",
+   "temperature_c": 29.0,
+   "warmth": "any"
+  },
+  "hair_long": {
+   "bulk": "thin",
+   "file": "pieces/hair_long.npz",
+   "pictures": {
+    "straight": {
+     "file": "pictures/hair_long_straight.png",
+     "palette": "hair"
+    }
+   },
+   "sex": "f",
+   "slot": "hair",
+   "temperature_c": 27.0,
+   "warmth": "any"
+  },
+  "hair_ponytail": {
+   "bulk": "thin",
+   "file": "pieces/hair_ponytail.npz",
+   "pictures": {
+    "combed": {
+     "file": "pictures/hair_ponytail_combed.png",
+     "palette": "hair"
+    }
+   },
+   "sex": "f",
+   "slot": "hair",
+   "temperature_c": 29.0,
+   "warmth": "any"
+  },
+  "hair_short": {
+   "bulk": "thin",
+   "file": "pieces/hair_short.npz",
+   "pictures": {
+    "combed": {
+     "file": "pictures/hair_short_combed.png",
+     "palette": "hair"
+    }
+   },
+   "sex": "any",
+   "slot": "hair",
+   "temperature_c": 30.0,
+   "warmth": "any"
+  },
+  "jacket": {
+   "bulk": "thick",
+   "file": "pieces/jacket.npz",
+   "pictures": {
+    "plain": {
+     "file": "pictures/jacket_plain.png",
+     "palette": "top"
+    }
+   },
+   "sex": "any",
+   "slot": "top",
+   "temperature_c": 24.5,
+   "warmth": "warm"
+  },
+  "jeans": {
+   "bulk": "thin",
+   "file": "pieces/jeans.npz",
+   "pictures": {
+    "denim": {
+     "file": "pictures/jeans_denim.png",
+     "palette": "bottom"
+    }
+   },
+   "sex": "any",
+   "slot": "bottom",
+   "temperature_c": 27.5,
+   "warmth": "any"
+  },
+  "joggers": {
+   "bulk": "thin",
+   "file": "pieces/joggers.npz",
+   "pictures": {
+    "plain": {
+     "file": "pictures/joggers_plain.png",
+     "palette": "bottom"
+    }
+   },
+   "sex": "any",
+   "slot": "bottom",
+   "temperature_c": 27.0,
+   "warmth": "any"
+  },
+  "leggings": {
+   "bulk": "thin",
+   "file": "pieces/leggings.npz",
+   "pictures": {
+    "plain": {
+     "file": "pictures/leggings_plain.png",
+     "palette": "bottom"
+    }
+   },
+   "sex": "f",
+   "slot": "bottom",
+   "temperature_c": 30.0,
+   "warmth": "any"
+  },
+  "longsleeve": {
+   "bulk": "thin",
+   "file": "pieces/longsleeve.npz",
+   "pictures": {
+    "plain": {
+     "file": "pictures/longsleeve_plain.png",
+     "palette": "top"
+    },
+    "striped": {
+     "file": "pictures/longsleeve_striped.png",
+     "palette": "top"
+    }
+   },
+   "sex": "any",
+   "slot": "top",
+   "temperature_c": 28.5,
+   "warmth": "any"
+  },
+  "puffer": {
+   "bulk": "thick",
+   "file": "pieces/puffer.npz",
+   "pictures": {
+    "plain": {
+     "file": "pictures/puffer_plain.png",
+     "palette": "top"
+    }
+   },
+   "sex": "any",
+   "slot": "top",
+   "temperature_c": 22.5,
+   "warmth": "warm"
+  },
+  "shirt": {
+   "bulk": "thin",
+   "file": "pieces/shirt.npz",
+   "pictures": {
+    "checked": {
+     "file": "pictures/shirt_checked.png",
+     "palette": "top"
+    },
+    "pinstripe": {
+     "file": "pictures/shirt_pinstripe.png",
+     "palette": "top"
+    },
+    "plain": {
+     "file": "pictures/shirt_plain.png",
+     "palette": "top"
+    }
+   },
+   "sex": "any",
+   "slot": "top",
+   "temperature_c": 28.0,
+   "warmth": "any"
+  },
+  "shorts": {
+   "bulk": "thin",
+   "file": "pieces/shorts.npz",
+   "pictures": {
+    "plain": {
+     "file": "pictures/shorts_plain.png",
+     "palette": "bottom"
+    }
+   },
+   "sex": "any",
+   "slot": "bottom",
+   "temperature_c": 28.5,
+   "warmth": "light"
+  },
+  "skirt_long": {
+   "bulk": "thin",
+   "file": "pieces/skirt_long.npz",
+   "pictures": {
+    "dotted": {
+     "file": "pictures/skirt_long_dotted.png",
+     "palette": "skirt"
+    },
+    "plain": {
+     "file": "pictures/skirt_long_plain.png",
+     "palette": "skirt"
+    }
+   },
+   "sex": "f",
+   "slot": "bottom",
+   "temperature_c": 26.5,
+   "warmth": "any"
+  },
+  "skirt_short": {
+   "bulk": "thin",
+   "file": "pieces/skirt_short.npz",
+   "pictures": {
+    "checked": {
+     "file": "pictures/skirt_short_checked.png",
+     "palette": "skirt"
+    },
+    "plain": {
+     "file": "pictures/skirt_short_plain.png",
+     "palette": "skirt"
+    }
+   },
+   "sex": "f",
+   "slot": "bottom",
+   "temperature_c": 27.0,
+   "warmth": "light"
+  },
+  "sneakers": {
+   "bulk": "thin",
+   "file": "pieces/sneakers.npz",
+   "pictures": {
+    "plain": {
+     "file": "pictures/sneakers_plain.png",
+     "palette": "shoe"
+    }
+   },
+   "sex": "any",
+   "slot": "shoes",
+   "temperature_c": 24.0,
+   "warmth": "any"
+  },
+  "sweater": {
+   "bulk": "thick",
+   "file": "pieces/sweater.npz",
+   "pictures": {
+    "plain": {
+     "file": "pictures/sweater_plain.png",
+     "palette": "top"
+    },
+    "striped": {
+     "file": "pictures/sweater_striped.png",
+     "palette": "top"
+    }
+   },
+   "sex": "any",
+   "slot": "top",
+   "temperature_c": 26.0,
+   "warmth": "warm"
+  },
+  "tank": {
+   "bulk": "thin",
+   "file": "pieces/tank.npz",
+   "pictures": {
+    "plain": {
+     "file": "pictures/tank_plain.png",
+     "palette": "top"
+    }
+   },
+   "sex": "any",
+   "slot": "top",
+   "temperature_c": 30.0,
+   "warmth": "light"
+  },
+  "tee": {
+   "bulk": "thin",
+   "file": "pieces/tee.npz",
+   "pictures": {
+    "dotted": {
+     "file": "pictures/tee_dotted.png",
+     "palette": "top"
+    },
+    "plain": {
+     "file": "pictures/tee_plain.png",
+     "palette": "top"
+    },
+    "striped": {
+     "file": "pictures/tee_striped.png",
+     "palette": "top"
+    }
+   },
+   "sex": "any",
+   "slot": "top",
+   "temperature_c": 29.0,
+   "warmth": "light"
+  },
+  "trousers": {
+   "bulk": "thin",
+   "file": "pieces/trousers.npz",
+   "pictures": {
+    "cargo": {
+     "file": "pictures/trousers_cargo.png",
+     "palette": "bottom"
+    },
+    "plain": {
+     "file": "pictures/trousers_plain.png",
+     "palette": "bottom"
+    }
+   },
+   "sex": "any",
+   "slot": "bottom",
+   "temperature_c": 27.0,
+   "warmth": "any"
+  },
+  "vest": {
+   "bulk": "thin",
+   "file": "pieces/vest.npz",
+   "pictures": {
+    "orange": {
+     "file": "pictures/vest_orange.png",
+     "palette": null
+    },
+    "yellow": {
+     "file": "pictures/vest_yellow.png",
+     "palette": null
+    }
+   },
+   "sex": "any",
+   "slot": "over",
+   "temperature_c": 26.0,
+   "warmth": "any"
+  }
+ },
+ "skins": {
+  "brown_dark_f": {
+   "file": "pictures/skin_brown_dark_f.png",
+   "hair": "dark",
+   "sex": "f",
+   "tone": "brown"
+  },
+  "brown_dark_m": {
+   "file": "pictures/skin_brown_dark_m.png",
+   "hair": "dark",
+   "sex": "m",
+   "tone": "brown"
+  },
+  "brown_dark_m_stubble": {
+   "file": "pictures/skin_brown_dark_m_stubble.png",
+   "hair": "dark",
+   "sex": "m",
+   "tone": "brown"
+  },
+  "brown_light_f": {
+   "file": "pictures/skin_brown_light_f.png",
+   "hair": "light",
+   "sex": "f",
+   "tone": "brown"
+  },
+  "brown_light_m": {
+   "file": "pictures/skin_brown_light_m.png",
+   "hair": "light",
+   "sex": "m",
+   "tone": "brown"
+  },
+  "brown_light_m_stubble": {
+   "file": "pictures/skin_brown_light_m_stubble.png",
+   "hair": "light",
+   "sex": "m",
+   "tone": "brown"
+  },
+  "deep_dark_f": {
+   "file": "pictures/skin_deep_dark_f.png",
+   "hair": "dark",
+   "sex": "f",
+   "tone": "deep"
+  },
+  "deep_dark_m": {
+   "file": "pictures/skin_deep_dark_m.png",
+   "hair": "dark",
+   "sex": "m",
+   "tone": "deep"
+  },
+  "deep_dark_m_stubble": {
+   "file": "pictures/skin_deep_dark_m_stubble.png",
+   "hair": "dark",
+   "sex": "m",
+   "tone": "deep"
+  },
+  "deep_light_f": {
+   "file": "pictures/skin_deep_light_f.png",
+   "hair": "light",
+   "sex": "f",
+   "tone": "deep"
+  },
+  "deep_light_m": {
+   "file": "pictures/skin_deep_light_m.png",
+   "hair": "light",
+   "sex": "m",
+   "tone": "deep"
+  },
+  "deep_light_m_stubble": {
+   "file": "pictures/skin_deep_light_m_stubble.png",
+   "hair": "light",
+   "sex": "m",
+   "tone": "deep"
+  },
+  "fair_dark_f": {
+   "file": "pictures/skin_fair_dark_f.png",
+   "hair": "dark",
+   "sex": "f",
+   "tone": "fair"
+  },
+  "fair_dark_m": {
+   "file": "pictures/skin_fair_dark_m.png",
+   "hair": "dark",
+   "sex": "m",
+   "tone": "fair"
+  },
+  "fair_dark_m_stubble": {
+   "file": "pictures/skin_fair_dark_m_stubble.png",
+   "hair": "dark",
+   "sex": "m",
+   "tone": "fair"
+  },
+  "fair_light_f": {
+   "file": "pictures/skin_fair_light_f.png",
+   "hair": "light",
+   "sex": "f",
+   "tone": "fair"
+  },
+  "fair_light_m": {
+   "file": "pictures/skin_fair_light_m.png",
+   "hair": "light",
+   "sex": "m",
+   "tone": "fair"
+  },
+  "fair_light_m_stubble": {
+   "file": "pictures/skin_fair_light_m_stubble.png",
+   "hair": "light",
+   "sex": "m",
+   "tone": "fair"
+  },
+  "light_dark_f": {
+   "file": "pictures/skin_light_dark_f.png",
+   "hair": "dark",
+   "sex": "f",
+   "tone": "light"
+  },
+  "light_dark_m": {
+   "file": "pictures/skin_light_dark_m.png",
+   "hair": "dark",
+   "sex": "m",
+   "tone": "light"
+  },
+  "light_dark_m_stubble": {
+   "file": "pictures/skin_light_dark_m_stubble.png",
+   "hair": "dark",
+   "sex": "m",
+   "tone": "light"
+  },
+  "light_light_f": {
+   "file": "pictures/skin_light_light_f.png",
+   "hair": "light",
+   "sex": "f",
+   "tone": "light"
+  },
+  "light_light_m": {
+   "file": "pictures/skin_light_light_m.png",
+   "hair": "light",
+   "sex": "m",
+   "tone": "light"
+  },
+  "light_light_m_stubble": {
+   "file": "pictures/skin_light_light_m_stubble.png",
+   "hair": "light",
+   "sex": "m",
+   "tone": "light"
+  },
+  "olive_dark_f": {
+   "file": "pictures/skin_olive_dark_f.png",
+   "hair": "dark",
+   "sex": "f",
+   "tone": "olive"
+  },
+  "olive_dark_m": {
+   "file": "pictures/skin_olive_dark_m.png",
+   "hair": "dark",
+   "sex": "m",
+   "tone": "olive"
+  },
+  "olive_dark_m_stubble": {
+   "file": "pictures/skin_olive_dark_m_stubble.png",
+   "hair": "dark",
+   "sex": "m",
+   "tone": "olive"
+  },
+  "olive_light_f": {
+   "file": "pictures/skin_olive_light_f.png",
+   "hair": "light",
+   "sex": "f",
+   "tone": "olive"
+  },
+  "olive_light_m": {
+   "file": "pictures/skin_olive_light_m.png",
+   "hair": "light",
+   "sex": "m",
+   "tone": "olive"
+  },
+  "olive_light_m_stubble": {
+   "file": "pictures/skin_olive_light_m_stubble.png",
+   "hair": "light",
+   "sex": "m",
+   "tone": "olive"
+  },
+  "porcelain_dark_f": {
+   "file": "pictures/skin_porcelain_dark_f.png",
+   "hair": "dark",
+   "sex": "f",
+   "tone": "porcelain"
+  },
+  "porcelain_dark_m": {
+   "file": "pictures/skin_porcelain_dark_m.png",
+   "hair": "dark",
+   "sex": "m",
+   "tone": "porcelain"
+  },
+  "porcelain_dark_m_stubble": {
+   "file": "pictures/skin_porcelain_dark_m_stubble.png",
+   "hair": "dark",
+   "sex": "m",
+   "tone": "porcelain"
+  },
+  "porcelain_light_f": {
+   "file": "pictures/skin_porcelain_light_f.png",
+   "hair": "light",
+   "sex": "f",
+   "tone": "porcelain"
+  },
+  "porcelain_light_m": {
+   "file": "pictures/skin_porcelain_light_m.png",
+   "hair": "light",
+   "sex": "m",
+   "tone": "porcelain"
+  },
+  "porcelain_light_m_stubble": {
+   "file": "pictures/skin_porcelain_light_m_stubble.png",
+   "hair": "light",
+   "sex": "m",
+   "tone": "porcelain"
+  },
+  "tan_dark_f": {
+   "file": "pictures/skin_tan_dark_f.png",
+   "hair": "dark",
+   "sex": "f",
+   "tone": "tan"
+  },
+  "tan_dark_m": {
+   "file": "pictures/skin_tan_dark_m.png",
+   "hair": "dark",
+   "sex": "m",
+   "tone": "tan"
+  },
+  "tan_dark_m_stubble": {
+   "file": "pictures/skin_tan_dark_m_stubble.png",
+   "hair": "dark",
+   "sex": "m",
+   "tone": "tan"
+  },
+  "tan_light_f": {
+   "file": "pictures/skin_tan_light_f.png",
+   "hair": "light",
+   "sex": "f",
+   "tone": "tan"
+  },
+  "tan_light_m": {
+   "file": "pictures/skin_tan_light_m.png",
+   "hair": "light",
+   "sex": "m",
+   "tone": "tan"
+  },
+  "tan_light_m_stubble": {
+   "file": "pictures/skin_tan_light_m_stubble.png",
+   "hair": "light",
+   "sex": "m",
+   "tone": "tan"
+  }
+ }
+}

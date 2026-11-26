@@ -1,0 +1,3 @@
+newmtl dog_shiba
+Kd 1 1 1
+map_Kd dog_shiba_red.png
